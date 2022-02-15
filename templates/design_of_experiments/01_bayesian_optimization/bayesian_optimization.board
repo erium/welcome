@@ -1,0 +1,766 @@
+{
+  "nodes": [
+    {
+      "id": "4108c27c-f85b-40d1-bc21-dbe14d8e2801",
+      "title": "trials",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"...the trials...\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "02d6cbf8-bd25-4a65-9401-876be3cae479",
+          "connector": "top"
+        },
+        {
+          "id": "0108c772-5fd6-42fd-8ba4-e0ce6498b05e",
+          "connector": "left"
+        },
+        {
+          "id": "67e7952e-d85c-4e62-9f8c-a870eec81fc3",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1676.9675912353514,
+        "y": 382.69489682108576
+      },
+      "size": {
+        "width": 374.15178571428584,
+        "height": 352.4821428571429
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "0d43f2cb-7a7a-49e9-9af4-618a39770ed2",
+      "title": "1. Describe The Project",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Project\\\", \\ndescribe the use case,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe how the use case connects to a DoE and optimization problem,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the general procedure of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the noteboook \\\"optimization.ipnb\\\", adjust the respecitve lines (linked to the card) to\\nspecify the name of the optimization experiment,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specifiy the directory for the data.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "220f9f9e-de19-405b-9fe3-df13b670d722",
+          "connector": "bottom"
+        },
+        {
+          "id": "5b82ba72-d785-4980-bcba-7e30f99d76c7",
+          "connector": "right"
+        },
+        {
+          "id": "04c329e2-af61-46f7-b3cf-279053ddbf24",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -861.5411220703123,
+        "y": -145.3930305175781
+      },
+      "size": {
+        "width": 400.12287999999995,
+        "height": 400.02688
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "aa9395ff-109a-415b-a28a-6a7fb92b44b2",
+      "title": "PRoject",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"...the project...\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "220f9f9e-de19-405b-9fe3-df13b670d722",
+          "connector": "top"
+        },
+        {
+          "id": "004fb201-d384-4f16-9b12-0ed5375ff4d3",
+          "connector": "right"
+        },
+        {
+          "id": "776a8c02-3a05-4ab8-aa0b-8e8a38efd085",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -862.014921875,
+        "y": 366.460009765625
+      },
+      "size": {
+        "width": 395.80799999999994,
+        "height": 379.08799999999997
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "0ef191a9-7f0d-4999-bae8-940af315e277",
+      "title": "2. Specify The OBjective",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Objective\\\", \\ndecribe the objective,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe any other metrics of importance for judging the result.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the noteboook \\\"optimization.ipnb\\\", adjust the respecitve lines (linked to the card) to\\nspecify the objective,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify any further metrics used.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "4d819e24-3bf7-44bd-9c77-8f062c733bd9",
+          "connector": "bottom"
+        },
+        {
+          "id": "5b82ba72-d785-4980-bcba-7e30f99d76c7",
+          "connector": "left"
+        },
+        {
+          "id": "190e7f88-35a4-4844-a8b5-928eebb340c5",
+          "connector": "right"
+        },
+        {
+          "id": "2acd7dd1-c491-4df9-9690-20826ff69139",
+          "connector": "right"
+        },
+        {
+          "id": "cf7b885c-5f07-4796-b321-230a144ad0b4",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -366.2975218749999,
+        "y": -147.0687902343749
+      },
+      "size": {
+        "width": 396.085632,
+        "height": 404.522112
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "1c8e10c4-a028-4fa4-a2da-ae57b6974fa8",
+      "title": "Parameters",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"...the parameters...\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "01cef54c-1ccd-49f7-848d-03482f19d487",
+          "connector": "left"
+        },
+        {
+          "id": "ff54fad4-eea0-409a-884d-83f5dc56fd63",
+          "connector": "right"
+        },
+        {
+          "id": "16555102-964d-4d7b-870f-5ae8c71435b0",
+          "connector": "top"
+        },
+        {
+          "id": "b9a50a4d-ad18-4338-bc2b-01e7a07eb6a0",
+          "connector": "top"
+        },
+        {
+          "id": "f7f26888-aeeb-4ec1-aa10-8817740e32d1",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 152.45689453125001,
+        "y": 375.3516809082032
+      },
+      "size": {
+        "width": 391.82,
+        "height": 365.85999999999996
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "fbc5cc92-e445-4668-8559-defc4f14a9ee",
+      "title": "4. Specify The constraints",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Contraints\\\",\\ndescribe any additional constraints on the parameters (apart from those described in 3.),\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe any constraints on the objective and other metrics.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the noteboook \\\"optimization.ipnb\\\", adjust the respecitve lines (linked to the card) to\\nspecify any parameters constraints,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify any constraints on the objective and other metrics.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "5e175b7a-2e4d-41fd-8c34-84ec6c13b266",
+          "connector": "left"
+        },
+        {
+          "id": "7bcbfd5b-a2fc-49cc-b074-de6bebbcd79d",
+          "connector": "bottom"
+        },
+        {
+          "id": "4cdd5f43-484e-4965-a847-4af8cf7671df",
+          "connector": "right"
+        },
+        {
+          "id": "503e4420-f102-4237-ba85-2e862a07bec8",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 663.88955078125,
+        "y": -144.714012207031
+      },
+      "size": {
+        "width": 401.57824,
+        "height": 408.5792
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "2634b044-8e84-4577-8318-694f5e6362d9",
+      "title": "Constraints",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"...the parameter constraints...\\n\\n...the outcome constraints...\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "ff54fad4-eea0-409a-884d-83f5dc56fd63",
+          "connector": "left"
+        },
+        {
+          "id": "7bcbfd5b-a2fc-49cc-b074-de6bebbcd79d",
+          "connector": "top"
+        },
+        {
+          "id": "10d81b2c-848d-43c5-baab-f1a27069f587",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 663.3706249999999,
+        "y": 379.5733593749999
+      },
+      "size": {
+        "width": 400.79999999999995,
+        "height": 359.11999999999995
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "6b5cd6ec-fe88-4f50-8fc7-e85c1e075c06",
+      "title": "5. Specify the schedule",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Schedule\\\",\\ndescribe the (expected) total number of trials to run,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe how many trials could or should be run concurrently in a batch.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the noteboook \\\"optimization.ipnb\\\", adjust the respecitve lines (linked to the card) to\\nspecify maximum number of trials in a batch,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify whether to always suggest that maximum number of trials for each batch (or just the number of trials preferred by the optimization algorithm).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "ec5ecf29-6ccd-4711-91c0-6681c33c4d7e",
+          "connector": "bottom"
+        },
+        {
+          "id": "4cdd5f43-484e-4965-a847-4af8cf7671df",
+          "connector": "left"
+        },
+        {
+          "id": "aababf8e-7cef-4dd9-9607-7a90249c2634",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1142.730625,
+        "y": -147.40335937499998
+      },
+      "size": {
+        "width": 397.1136,
+        "height": 414.98943999999995
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "c811f274-8354-4456-be2a-b39b05002330",
+      "title": "Schedule",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"...the schedule...\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "10d81b2c-848d-43c5-baab-f1a27069f587",
+          "connector": "left"
+        },
+        {
+          "id": "ec5ecf29-6ccd-4711-91c0-6681c33c4d7e",
+          "connector": "top"
+        },
+        {
+          "id": "0108c772-5fd6-42fd-8ba4-e0ce6498b05e",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1162.250625,
+        "y": 377.86664062499995
+      },
+      "size": {
+        "width": 370.0799999999999,
+        "height": 359.11999999999995
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "341b0f62-84de-4d93-9537-bc51c6740c27",
+      "title": "6. RUn the trials",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Run the trials with the help of the notebook \\\"optimization.ipynb\\\":\\nTo start, execute all the notebook cells in order (e.g. click the play icon at the top of the notebook) to obtain the first set of suggestions for trials. The suggested parameters will be be witten to a data file \\\"data_*_running_trials.csv\\\".\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Perform the suggested trials to obtain the objective and any other metrics.\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Add the results of the trials to the data file.\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Execute the whole notebook again to feed the results of the suggested trials to the optimization algorithm and to obtain new suggestions.\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Repeat steps 2 to 4 as often as desired (or the search is exhausted).\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the card \\\"Trials\\\",\\nreport the parameters and results of the trials performed.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "02d6cbf8-bd25-4a65-9401-876be3cae479",
+          "connector": "bottom"
+        },
+        {
+          "id": "aababf8e-7cef-4dd9-9607-7a90249c2634",
+          "connector": "left"
+        },
+        {
+          "id": "9341c237-7bdf-41c7-a060-5ce0abfc7991",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1661.376431875,
+        "y": -156.4258159375
+      },
+      "size": {
+        "width": 409.12255999999996,
+        "height": 417.47776
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "fec314d5-f53a-479b-9cab-9006f42383a0",
+      "title": "Final results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"...the final results...\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f1c58213-7aba-4bf1-903b-983435449e1a",
+          "connector": "top"
+        },
+        {
+          "id": "67e7952e-d85c-4e62-9f8c-a870eec81fc3",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2201.1413281249997,
+        "y": 377.48265624999993
+      },
+      "size": {
+        "width": 363.67999999999995,
+        "height": 348.88
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "139cc287-28ac-417b-8cd5-e84248fe21a5",
+      "title": "7.  Get the Final Results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the noteboook \\\"optimization.ipnb\\\",\\nset the variable \\\"sugget_new_trials = False\\\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"execute the notebook cell again,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"read the best parameters expected by the optimization algorithm from the cell output.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the card \\\"Final Results\\\",\\nreport the best parameters and results reported by the optimization algorithm.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "9341c237-7bdf-41c7-a060-5ce0abfc7991",
+          "connector": "left"
+        },
+        {
+          "id": "f1c58213-7aba-4bf1-903b-983435449e1a",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2184.2400390625,
+        "y": -144.05332031249998
+      },
+      "size": {
+        "width": 386.4,
+        "height": 395.59999999999997
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "a5bb1875-5a99-4207-b103-344c3586cd2a",
+      "title": "3. Specify the parameters",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Parameters\\\",\\ndecribe the parameters, including\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"name,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"brief description of meaning,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"type (discrete or continuous),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"possible values (for discrete)\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"bounds (for continous).\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\\nIn the noteboook \\\"optimization.ipnb\\\", adjust the respecitve lines (linked to the card) to\\nspecify the parameters, including their\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"name,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"type,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"possible values or bounds.\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "2acd7dd1-c491-4df9-9690-20826ff69139",
+          "connector": "left"
+        },
+        {
+          "id": "503e4420-f102-4237-ba85-2e862a07bec8",
+          "connector": "right"
+        },
+        {
+          "id": "b9a50a4d-ad18-4338-bc2b-01e7a07eb6a0",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 149.90583333333345,
+        "y": -144.4774233333334
+      },
+      "size": {
+        "width": 397.6426666666668,
+        "height": 400.3360000000002
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "87940343-1c0c-4f3b-991a-867536350ada",
+      "title": "Metrics and Objective",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"...the objective...\\n\\n...any other metrics...\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "cf7b885c-5f07-4796-b321-230a144ad0b4",
+          "connector": "top"
+        },
+        {
+          "id": "776a8c02-3a05-4ab8-aa0b-8e8a38efd085",
+          "connector": "left"
+        },
+        {
+          "id": "f7f26888-aeeb-4ec1-aa10-8817740e32d1",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -367.7468133333335,
+        "y": 368.8059733333335
+      },
+      "size": {
+        "width": 396.27733333333344,
+        "height": 373.02933333333345
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "ad2724ed-b137-459d-9d24-0f57b7f5b6f9",
+      "title": "0. How to use the board",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Go through through the yellow cards in order. Follow the instructions on each of these cards. These will instruct you to adjust and/or run code in the associated notebook, and/or to fill in informantion on the associated green card below. \\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "04c329e2-af61-46f7-b3cf-279053ddbf24",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -1339.302916666667,
+        "y": -143.90401041666672
+      },
+      "size": {
+        "width": 357.70666666666676,
+        "height": 396.24000000000007
+      },
+      "color": "#51455b",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 357.70666666666676,
+        "height": 57
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "220f9f9e-de19-405b-9fe3-df13b670d722",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "0d43f2cb-7a7a-49e9-9af4-618a39770ed2",
+        "aa9395ff-109a-415b-a28a-6a7fb92b44b2"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "4d819e24-3bf7-44bd-9c77-8f062c733bd9",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "0ef191a9-7f0d-4999-bae8-940af315e277",
+        "2b48a575-e938-4305-a1d0-8c013578cd7a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "5b82ba72-d785-4980-bcba-7e30f99d76c7",
+      "type": "solid_arrow",
+      "node_connections": [
+        "0d43f2cb-7a7a-49e9-9af4-618a39770ed2",
+        "0ef191a9-7f0d-4999-bae8-940af315e277"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "004fb201-d384-4f16-9b12-0ed5375ff4d3",
+      "type": "solid_arrow",
+      "node_connections": [
+        "aa9395ff-109a-415b-a28a-6a7fb92b44b2",
+        "2b48a575-e938-4305-a1d0-8c013578cd7a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "190e7f88-35a4-4844-a8b5-928eebb340c5",
+      "type": "solid_arrow",
+      "node_connections": [
+        "0ef191a9-7f0d-4999-bae8-940af315e277",
+        "68e3e917-800e-4f54-a454-b71f25a8ac9a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "5e175b7a-2e4d-41fd-8c34-84ec6c13b266",
+      "type": "solid_arrow",
+      "node_connections": [
+        "68e3e917-800e-4f54-a454-b71f25a8ac9a",
+        "fbc5cc92-e445-4668-8559-defc4f14a9ee"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "01cef54c-1ccd-49f7-848d-03482f19d487",
+      "type": "solid_arrow",
+      "node_connections": [
+        "2b48a575-e938-4305-a1d0-8c013578cd7a",
+        "1c8e10c4-a028-4fa4-a2da-ae57b6974fa8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ff54fad4-eea0-409a-884d-83f5dc56fd63",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1c8e10c4-a028-4fa4-a2da-ae57b6974fa8",
+        "2634b044-8e84-4577-8318-694f5e6362d9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "16555102-964d-4d7b-870f-5ae8c71435b0",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "68e3e917-800e-4f54-a454-b71f25a8ac9a",
+        "1c8e10c4-a028-4fa4-a2da-ae57b6974fa8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7bcbfd5b-a2fc-49cc-b074-de6bebbcd79d",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "fbc5cc92-e445-4668-8559-defc4f14a9ee",
+        "2634b044-8e84-4577-8318-694f5e6362d9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "10d81b2c-848d-43c5-baab-f1a27069f587",
+      "type": "solid_arrow",
+      "node_connections": [
+        "2634b044-8e84-4577-8318-694f5e6362d9",
+        "c811f274-8354-4456-be2a-b39b05002330"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ec5ecf29-6ccd-4711-91c0-6681c33c4d7e",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "6b5cd6ec-fe88-4f50-8fc7-e85c1e075c06",
+        "c811f274-8354-4456-be2a-b39b05002330"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "02d6cbf8-bd25-4a65-9401-876be3cae479",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "341b0f62-84de-4d93-9537-bc51c6740c27",
+        "4108c27c-f85b-40d1-bc21-dbe14d8e2801"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "4cdd5f43-484e-4965-a847-4af8cf7671df",
+      "type": "solid_arrow",
+      "node_connections": [
+        "fbc5cc92-e445-4668-8559-defc4f14a9ee",
+        "6b5cd6ec-fe88-4f50-8fc7-e85c1e075c06"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "aababf8e-7cef-4dd9-9607-7a90249c2634",
+      "type": "solid_arrow",
+      "node_connections": [
+        "6b5cd6ec-fe88-4f50-8fc7-e85c1e075c06",
+        "341b0f62-84de-4d93-9537-bc51c6740c27"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "0108c772-5fd6-42fd-8ba4-e0ce6498b05e",
+      "type": "solid_arrow",
+      "node_connections": [
+        "c811f274-8354-4456-be2a-b39b05002330",
+        "4108c27c-f85b-40d1-bc21-dbe14d8e2801"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "9341c237-7bdf-41c7-a060-5ce0abfc7991",
+      "type": "solid_arrow",
+      "node_connections": [
+        "341b0f62-84de-4d93-9537-bc51c6740c27",
+        "139cc287-28ac-417b-8cd5-e84248fe21a5"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f1c58213-7aba-4bf1-903b-983435449e1a",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "139cc287-28ac-417b-8cd5-e84248fe21a5",
+        "fec314d5-f53a-479b-9cab-9006f42383a0"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "67e7952e-d85c-4e62-9f8c-a870eec81fc3",
+      "type": "solid_arrow",
+      "node_connections": [
+        "4108c27c-f85b-40d1-bc21-dbe14d8e2801",
+        "fec314d5-f53a-479b-9cab-9006f42383a0"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "2acd7dd1-c491-4df9-9690-20826ff69139",
+      "type": "solid_arrow",
+      "node_connections": [
+        "0ef191a9-7f0d-4999-bae8-940af315e277",
+        "a5bb1875-5a99-4207-b103-344c3586cd2a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "503e4420-f102-4237-ba85-2e862a07bec8",
+      "type": "solid_arrow",
+      "node_connections": [
+        "a5bb1875-5a99-4207-b103-344c3586cd2a",
+        "fbc5cc92-e445-4668-8559-defc4f14a9ee"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "b9a50a4d-ad18-4338-bc2b-01e7a07eb6a0",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "a5bb1875-5a99-4207-b103-344c3586cd2a",
+        "1c8e10c4-a028-4fa4-a2da-ae57b6974fa8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "cf7b885c-5f07-4796-b321-230a144ad0b4",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "0ef191a9-7f0d-4999-bae8-940af315e277",
+        "87940343-1c0c-4f3b-991a-867536350ada"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "776a8c02-3a05-4ab8-aa0b-8e8a38efd085",
+      "type": "solid_arrow",
+      "node_connections": [
+        "aa9395ff-109a-415b-a28a-6a7fb92b44b2",
+        "87940343-1c0c-4f3b-991a-867536350ada"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f7f26888-aeeb-4ec1-aa10-8817740e32d1",
+      "type": "solid_arrow",
+      "node_connections": [
+        "87940343-1c0c-4f3b-991a-867536350ada",
+        "1c8e10c4-a028-4fa4-a2da-ae57b6974fa8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "04c329e2-af61-46f7-b3cf-279053ddbf24",
+      "type": "solid_arrow",
+      "node_connections": [
+        "ad2724ed-b137-459d-9d24-0f57b7f5b6f9",
+        "0d43f2cb-7a7a-49e9-9af4-618a39770ed2"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}
