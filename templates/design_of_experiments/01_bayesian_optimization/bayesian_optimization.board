@@ -22,8 +22,8 @@
       ],
       "type": "note",
       "position": {
-        "x": 1663.8603912353515,
-        "y": 378.32583015441907
+        "x": 1676.9675912353514,
+        "y": 382.69489682108576
       },
       "size": {
         "width": 374.15178571428584,
@@ -35,7 +35,7 @@
       "id": "0d43f2cb-7a7a-49e9-9af4-618a39770ed2",
       "title": "1. Describe The Project",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Project\\\", \\ndescribe the use case,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe how the use case connects to a DoE and optimization problem,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the general procedure of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the noteboook \\\"optimization.ipnb\\\", adjust the respecitve lines (linked to the card) to\\nspecify the name of the optimization experiment,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specifiy the directory for the data.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Project\\\", \\ndescribe the use case,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe how the use case connects to a DoE and optimization problem,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the general procedure of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the noteboook \\\"bayesian_optimization.ipynb\\\", adjust the respecitve lines (linked to the card) to\\nspecify the name of the optimization experiment,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specifiy the directory for the data.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -97,7 +97,7 @@
       "id": "0ef191a9-7f0d-4999-bae8-940af315e277",
       "title": "2. Specify The OBjective",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Objective\\\", \\ndecribe the objective,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe any other metrics of importance for judging the result.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the noteboook \\\"optimization.ipnb\\\", adjust the respecitve lines (linked to the card) to\\nspecify the objective,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify any further metrics used.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Objective\\\", \\ndecribe the objective,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe any other metrics of importance for judging the result.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the noteboook \\\"bayesian_optimization.ipynb\\\", adjust the respecitve lines (linked to the card) to\\nspecify the objective,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify any further metrics used.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -123,8 +123,8 @@
       ],
       "type": "note",
       "position": {
-        "x": -370.6665885416666,
-        "y": -138.33065690104155
+        "x": -366.2975218749999,
+        "y": -147.0687902343749
       },
       "size": {
         "width": 396.085632,
@@ -175,7 +175,7 @@
       "id": "fbc5cc92-e445-4668-8559-defc4f14a9ee",
       "title": "4. Specify The constraints",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Contraints\\\",\\ndescribe any additional constraints on the parameters (apart from those described in 3.),\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe any constraints on the objective and other metrics.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the noteboook \\\"optimization.ipnb\\\", adjust the respecitve lines (linked to the card) to\\nspecify any parameters constraints,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify any constraints on the objective and other metrics.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Contraints\\\",\\ndescribe any additional constraints on the parameters (apart from those described in 3.),\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe any constraints on the objective and other metrics.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the noteboook \\\"bayesian_optimization.ipynb\\\", adjust the respecitve lines (linked to the card) to\\nspecify any parameters constraints,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify any constraints on the objective and other metrics.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -241,7 +241,7 @@
       "id": "6b5cd6ec-fe88-4f50-8fc7-e85c1e075c06",
       "title": "5. Specify the schedule",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Schedule\\\",\\ndescribe the (expected) total number of trials to run,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe how many trials could or should be run concurrently in a batch.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the noteboook \\\"optimization.ipnb\\\", adjust the respecitve lines (linked to the card) to\\nspecify maximum number of trials in a batch,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify whether to always suggest that maximum number of trials for each batch (or just the number of trials preferred by the optimization algorithm).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Schedule\\\",\\ndescribe the (expected) total number of trials to run,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe how many trials could or should be run concurrently in a batch.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the noteboook \\\"bayesian_optimization.ipynb\\\", adjust the respecitve lines (linked to the card) to\\nspecify maximum number of trials in a batch,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify whether to always suggest that maximum number of trials for each batch (or just the number of trials preferred by the optimization algorithm).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -303,7 +303,7 @@
       "id": "341b0f62-84de-4d93-9537-bc51c6740c27",
       "title": "6. RUn the trials",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Run the trials with the help of the notebook \\\"optimization.ipynb\\\":\\nTo start, execute all the notebook cells in order (e.g. click the play icon at the top of the notebook) to obtain the first set of suggestions for trials. The suggested parameters will be be witten to a data file \\\"data_*_running_trials.csv\\\".\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Perform the suggested trials to obtain the objective and any other metrics.\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Add the results of the trials to the data file.\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Execute the whole notebook again to feed the results of the suggested trials to the optimization algorithm and to obtain new suggestions.\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Repeat steps 2 to 4 as often as desired (or the search is exhausted).\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the card \\\"Trials\\\",\\nreport the parameters and results of the trials performed.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"Run the trials with the help of the notebook \\\"bayesian_optimization.ipynb\\\":\\nTo start, execute all the notebook cells in order (e.g. click the play icon at the top of the notebook) to obtain the first set of suggestions for trials. The suggested parameters will be be witten to a data file \\\"data_*_running_trials.csv\\\".\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Perform the suggested trials to obtain the objective and any other metrics.\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Add the results of the trials to the data file.\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Execute the whole notebook again to feed the results of the suggested trials to the optimization algorithm and to obtain new suggestions.\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Repeat steps 2 to 4 as often as desired (or the search is exhausted).\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the card \\\"Trials\\\",\\nreport the parameters and results of the trials performed.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -321,8 +321,8 @@
       ],
       "type": "note",
       "position": {
-        "x": 1661.376431875,
-        "y": -156.4258159375
+        "x": 1660.2841652083332,
+        "y": -146.5954159375
       },
       "size": {
         "width": 409.12255999999996,
@@ -361,7 +361,7 @@
       "id": "139cc287-28ac-417b-8cd5-e84248fe21a5",
       "title": "7.  Get the Final Results",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the noteboook \\\"optimization.ipnb\\\",\\nset the variable \\\"sugget_new_trials = False\\\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"execute the notebook cell again,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"read the best parameters expected by the optimization algorithm from the cell output.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the card \\\"Final Results\\\",\\nreport the best parameters and results reported by the optimization algorithm.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the noteboook \\\"bayesian_optimization.ipynb\\\",\\nset the variable \\\"sugget_new_trials = False\\\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"execute the notebook cell again,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"read the best parameters expected by the optimization algorithm from the cell output.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIn the card \\\"Final Results\\\",\\nreport the best parameters and results reported by the optimization algorithm.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -388,7 +388,7 @@
       "id": "a5bb1875-5a99-4207-b103-344c3586cd2a",
       "title": "3. Specify the parameters",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Parameters\\\",\\ndecribe the parameters, including\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"name,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"brief description of meaning,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"type (discrete or continuous),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"possible values (for discrete)\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"bounds (for continous).\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\\nIn the noteboook \\\"optimization.ipnb\\\", adjust the respecitve lines (linked to the card) to\\nspecify the parameters, including their\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"name,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"type,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"possible values or bounds.\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Parameters\\\",\\ndecribe the parameters, including\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"name,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"brief description of meaning,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"type (discrete or continuous),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"possible values (for discrete)\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"bounds (for continous).\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\\nIn the noteboook \\\"bayesian_optimization.ipynb\\\", adjust the respecitve lines (linked to the card) to\\nspecify the parameters, including their\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"name,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"type,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"possible values or bounds.\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -407,7 +407,7 @@
       "type": "note",
       "position": {
         "x": 149.90583333333345,
-        "y": -137.48691666666673
+        "y": -144.4774233333334
       },
       "size": {
         "width": 397.6426666666668,
@@ -417,7 +417,7 @@
     },
     {
       "id": "87940343-1c0c-4f3b-991a-867536350ada",
-      "title": "Objective",
+      "title": "Metrics and Objective",
       "type_specific": {
         "message": "{\"ops\":[{\"insert\":\"...the objective...\\n\\n...any other metrics...\\n\"}]}"
       },
@@ -437,8 +437,8 @@
       ],
       "type": "note",
       "position": {
-        "x": -366.87300000000016,
-        "y": 374.9226666666668
+        "x": -367.7468133333335,
+        "y": 368.8059733333335
       },
       "size": {
         "width": 396.27733333333344,
