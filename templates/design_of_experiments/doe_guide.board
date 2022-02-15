@@ -4,7 +4,7 @@
       "id": "2750e57e-29e7-4976-9af6-3198963ef663",
       "title": "2. What is the goal?",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"There are 3 basic categories of goals:\\noptimization\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"model parameter estimation\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"function fitting\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nOptimization\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Your goal is to find the optimal input parameters for your process.\\nPredicting the output of the process for various inputs is of low priority (this would be function fitting).\\n\\nA prerequisite for this is that you can mathematically \\\"grade\\\" process iterations with a cost function.\\nOptimization means finding the inputs that minimize the cost function.\\nIf a cost function is not available, you will have to design it. \\nThe corresponding template will provide some guidelines.\\n\\nIf an iterative procedure with consecutive batches of trials is feasible, the template for optimization is best suited.\\nIf instead all trials have to be planned and/or executed in one go, the tempate for classical DoEs is better suited.\\n\\nModel Parameter estimation\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Your goal is to to estimate the value of parameters that cannot be controlled nor directly measured.\\nFor example, these parameters might correspond to some real-world quantity you are interested in.\\n\\nA prerequisite is that you can express the relationship between the outcomes of a process and its adustable parameters as a probabilistic model with model parameters.\\nThese model parameters need to:\\ninclude the parameters that you want to estimate,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"be a static property of the process itself and do not change from trial to trial,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"affect the outcome of the process.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nFor this goal, the template for Bayesian modelling is best suited.\\nHowever, in case all trials have to be planned and/or executed in one go, the template for classical DoEs might also be used.\\n\\n\\nFunction fitting\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Your goal is to predict the outcome of the process as a function of the input parameters as accurately as possible.\\nYou do not just want to know the best parameters, nor do you care about specific model parameters.\\n\\nFor this goal, the template for classical DoEs is best suited.\\nHowever, in case you have significant prior knowledge about the process (e.g. functional relationships), the template for Bayesian modelling might be a better choice.\\n\\n\\n\\n\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"There are 3 basic categories of goals:\\noptimization\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"estimation of hidden model parameters\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"function fitting\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nOptimization\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Your goal is to find the optimal input parameters for your process.\\nPredicting the output of the process for various inputs is of low priority (this would be function fitting).\\n\\nA prerequisite for this is that you can mathematically \\\"grade\\\" process iterations with a cost function.\\nOptimization means finding the inputs that minimize the cost function.\\nIf a cost function is not available, you will have to design it. \\nThe corresponding template will provide some guidelines.\\n\\nIf an iterative procedure with consecutive batches of trials is feasible, the template for optimization is best suited.\\nIf instead all trials have to be planned and/or executed in one go, the tempate for classical DoEs is better suited.\\n\\nHidden Model Parameter estimation\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Your goal is to to estimate the value of parameters that cannot be controlled nor directly measured.\\nFor example, these parameters might correspond to some real-world quantity you are interested in.\\n\\nA prerequisite is that you can express the relationship between the outcomes of a process and its adustable parameters as a probabilistic model with model parameters.\\nThese model parameters need to:\\ninclude the parameters that you want to estimate,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"be a static property of the process itself and do not change from trial to trial,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"affect the outcome of the process.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nFor this goal, the template for Bayesian modelling is best suited.\\nHowever, in case all trials have to be planned and/or executed in one go, the template for classical DoEs might also be used.\\n\\n\\nFunction fitting\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Your goal is to predict the outcome of the process as a function of the input parameters as accurately as possible.\\nYou do not just want to know the best parameters, nor do you care about specific model parameters.\\n\\nFor this goal, the template for classical DoEs is best suited.\\nHowever, in case you have significant prior knowledge about the process (e.g. functional relationships), the template for Bayesian modelling might be a better choice.\\n\\n\\n\\n\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -18,6 +18,10 @@
         {
           "id": "20b1b955-a507-4d8e-8188-f44cf4529ced",
           "connector": "right"
+        },
+        {
+          "id": "398dfac4-2923-4638-a5e6-e02ef2beed44",
+          "connector": "left"
         }
       ],
       "type": "note",
@@ -69,13 +73,18 @@
         "width": 275,
         "height": 171
       },
-      "color": "#51455b"
+      "color": "#51455b",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 275,
+        "height": 57
+      }
     },
     {
       "id": "30d2a4b7-8488-4097-8890-4c08aa3a3072",
-      "title": "Your answer",
+      "title": "Discrete vs. continous",
       "type_specific": {
-        "message": ""
+        "message": "{\"ops\":[{\"insert\":\"Is the process discrete or continuous?\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -85,6 +94,14 @@
         {
           "id": "cb019537-20e2-44d8-9fb1-0171a30160d1",
           "connector": "top"
+        },
+        {
+          "id": "efa36bdc-4425-4cd6-a66c-df739718feeb",
+          "connector": "bottom"
+        },
+        {
+          "id": "f86c861e-e6d5-4da7-a600-5b096d5961e3",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -94,15 +111,15 @@
       },
       "size": {
         "width": 266.5,
-        "height": 297.25
+        "height": 134.5110048
       },
       "color": "#125059"
     },
     {
       "id": "d46d6350-7514-4f00-8ebe-a72c0d06f391",
-      "title": "Your Answer",
+      "title": "Purpose of data generation",
       "type_specific": {
-        "message": ""
+        "message": "{\"ops\":[{\"insert\":\"Why do you have to generate new data?\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -137,7 +154,7 @@
       "id": "5c7a674a-e7f8-444f-9d24-46c25b0ac3bc",
       "title": "4. Experiment abundancE",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"As a rule of thumb, to get an insight on how the process outcome depends on the adjustable parameters, the number different sets of parameters to try must be larger than the number of adjustable parameters. The number of trials required may be multiple times the number of parameters, if the relationship between the adjustable parameters and the outcome of the process is expected to be more complex than just a linear response, and/or if noise is significant. Having specific knowledge of the process that allows you to model the process with just a few internal model parameters, may decrease the number of trials needed.\\n\\nFor example, consider a process with n adjustable parameters and negligible noise:\\nIf you describe the process as a linear model, you need to try at least n + 1 different sets of parameters.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For a simple quadratic model without mixed terms, you need 2n + 1 trials.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For a quadrativ model with mixed terms, you need n(n + 1) / 2 + 1 trials.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For your home-grown model with just one internal model parameter, you only need one trial.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nConversely, if you have a limited number of trials available, your model of the process should be simple. This may even mean that you keep some adjustable parameters at a fixed value and do not even try to estimate their influence on the outcome.\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"As a rule of thumb, to get an insight on how the process outcome depends on the adjustable parameters, the number different sets of parameters to try must be larger than the number of adjustable parameters. The number of trials required may be multiple times the number of parameters, if the relationship between the adjustable parameters and the outcome of the process is expected to be more complex than just a linear response, and/or if noise is significant. Having specific knowledge of the process that allows you to model the process with just a few internal model parameters, may decrease the number of trials needed.\\n\\nFor example, consider a process with n adjustable parameters and negligible noise:\\nIf you describe the process as a linear model, you need to try at least n + 1 different sets of parameters.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For a simple quadratic model without mixed terms, you need 2n + 1 trials.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For a quadratic model with mixed terms, you need n(n + 1) / 2 + 1 trials.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For your home-grown model with just one internal model parameter, you only need one trial.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nConversely, if you have a limited number of trials available, your model of the process should be simple. This may even mean that you keep some adjustable parameters at a fixed value and do not even try to estimate their influence on the outcome.\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -202,9 +219,9 @@
     },
     {
       "id": "6ed603e6-7c67-4232-b937-9bfb80db0fce",
-      "title": "Your answer",
+      "title": "Prior Knowledge",
       "type_specific": {
-        "message": ""
+        "message": "{\"ops\":[{\"insert\":\"Adjustable parameters and their limits:\\n\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nNon-adjustable (hidden) parameters:\\n\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nMetric of outcome?\\n\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -218,6 +235,10 @@
         {
           "id": "b1e2279f-33c7-42e8-adb6-513e177d0f06",
           "connector": "bottom"
+        },
+        {
+          "id": "cc2cba5d-2aa7-4b5c-b16c-e5d05214b413",
+          "connector": "right"
         }
       ],
       "type": "note",
@@ -233,20 +254,28 @@
     },
     {
       "id": "886e2517-300e-484a-8b98-2108557a6fb1",
-      "title": "Your answer",
+      "title": "#Parameters vs. #Experiments",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"number of parameters:...\\n\\nnumber of experiments:...\\n\\nnumber of parameters << number of experiments?\\n\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"Number of parameters:\\nNumber of experiments:\\n-> Number of parameters << Number of experiments?\\n\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "2259c7ed-f427-4c06-9265-98b876e391fb",
           "connector": "top"
+        },
+        {
+          "id": "cc2cba5d-2aa7-4b5c-b16c-e5d05214b413",
+          "connector": "left"
+        },
+        {
+          "id": "7f2ce808-4998-4b1c-8e83-ef5f865ec807",
+          "connector": "bottom"
         }
       ],
       "type": "note",
       "position": {
-        "x": 1247.1708312988278,
-        "y": -231.08749999999992
+        "x": 1255.517496258828,
+        "y": -230.41641135999993
       },
       "size": {
         "width": 247.8,
@@ -283,13 +312,18 @@
         "width": 256,
         "height": 169
       },
-      "color": "#51455b"
+      "color": "#51455b",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 256,
+        "height": 57
+      }
     },
     {
       "id": "381c4b9a-4f92-4a2b-a27a-7fc5150a556e",
       "title": "3. What kind of prior knowledge is to be included?",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Prior knowledge is information about the process you have before conducting the experiment.\\n\\nBasic Prior Knowledge\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nPrior knowledge includes basic information on the process such as:\\nthe adjustable parameters and their possible values (e.g. lower and upper bounds for continuous parameters, or available choices for discrete parametes),\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"the metrics used to quantify the outcome of a process (e.g. the quality or production cost of an item).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nThis information should be available for any DoE project \"},{\"attributes\":{\"bold\":true},\"insert\":\"before \"},{\"insert\":\"a design is created and trials are performed according to that design.\\nIf this information is missing, exploratory trials might be conducted to help decide:\\nWhich adjustable parameters are to be included in the DoE?\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"What are the feasible values for these parameters?\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"What are metrics to be used to quantify the process outcome?\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For planning such exploratory trials, one could also use a (classical) DoE, wich includes any potential adjustable parameters and outcome metrics.\\n\\nFor many use cases, the basic information is all one has or needs as prior knowledge for the DoE.\\n\\nDetailed Prior Knowledge\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nIn some cases, one has much more detailed information, e.g. on\\nthe functional relationships between adjustable parameters and outcome metrics,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"the non-adjustable parameters featuring in these functional relationships\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"and their values, which could be known exactly, or known to lie in a well-defined range.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nFor example, the outcome metrics might be well described by a linear function or second-order polynomial of the adjustable parameters with coefficients to be constrained by the experiment. Or a certain outcome metric might depend on the adjustable parameters, another outcome metric, one non-adjustable parameter, and a small white-noise term in a complicated but known manner (including e.g. products, cosines, and logarithms).\\n\\nIf such detailed knowledge on the relationships between adjustable parameters and outcome metrics is available, one may construct a bayesian model capturing these relationships, and use that model to guide the DoE. However, taking these steps has to be justified:\\nIf, for example, the resulting model has many non-adjustable parameters that need to be constrained by the experiment, but one can only perform a few trials, then including this complex bayesian model in the DoE like does not yield any benefits.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"If, however, the goal is to determine the value for a certain non-adjustable parameter of the model, then there is no way around constructing this model, and fitting it to the trial results. In that case, one may consider to also use the model for finding an experimental design optimized to constrain the parameter of interest.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"Prior knowledge is information about the process you have before conducting the experiment.\\n\\nBasic Prior Knowledge\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nPrior knowledge includes basic information on the process such as:\\nthe adjustable parameters and their possible values (e.g. lower and upper bounds for continuous parameters, or available choices for discrete parametes),\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"the metrics used to quantify the outcome of a process (e.g. the quality or production cost of an item).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nThis information should be available for any DoE project \"},{\"attributes\":{\"bold\":true},\"insert\":\"before \"},{\"insert\":\"a design is created and trials are performed according to that design.\\nIf this information is missing, exploratory trials might be conducted to help decide:\\nWhich adjustable parameters are to be included in the DoE?\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"What are the feasible values for these parameters?\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"What are metrics to be used to quantify the process outcome?\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For planning such exploratory trials, one could also use a (classical) DoE, wich includes any potential adjustable parameters and outcome metrics.\\n\\nFor many use cases, the basic information is all one has or needs as prior knowledge for the DoE.\\n\\nDetailed Prior Knowledge\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nIn some cases, one has much more detailed information, e.g. on\\nthe functional relationships between adjustable parameters and outcome metrics,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"the non-adjustable parameters featuring in these functional relationships\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"and their values, which could be known exactly, or known to lie in a well-defined range.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nFor example, the outcome metrics might be well described by a linear function or second-order polynomial of the adjustable parameters with coefficients to be constrained by the experiment. Or a certain outcome metric might depend on the adjustable parameters, another outcome metric, one non-adjustable parameter, and a small white-noise term in a complicated but known manner (including e.g. products, cosines, and logarithms).\\n\\n\\n\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -380,7 +414,7 @@
           "connector": "left"
         },
         {
-          "id": "073680ff-54c0-4474-ba72-93cc5a2abfa4",
+          "id": "70602d75-2c39-4109-9a20-efd792f5248d",
           "connector": "left"
         }
       ],
@@ -399,7 +433,7 @@
       "id": "7e26b55b-94ad-4f18-9b8b-0b2a0aa4c930",
       "title": "1 - Optimization",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Clone the template folder \\\"optimization\\\".\\n\\nHow to clone the folder:\\nOpen a terminal.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Navigate into the main folder 'design_of_experiments' (the same this board should be located in).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Run the command 'clone_tree ./01_optimization <dst>', where <dst> is the destination folder you want to be working in.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"Clone the template folder \\\"optimization\\\".\\n\\nHow to clone the folder:\\nOpen a terminal.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Navigate into the main folder 'design_of_experiments' (the same this board should be located in).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Run the command 'clone_tree ./01_bayesian_optimization <dst>', where <dst> is the destination folder you want to be working in.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -419,7 +453,7 @@
       "color": "#28337e",
       "collapsed": false,
       "collapsed_size": {
-        "width": 269.1666666666667,
+        "width": 295.8333333333333,
         "height": 57
       }
     },
@@ -548,8 +582,8 @@
       ],
       "type": "note",
       "position": {
-        "x": 469.6531412760415,
-        "y": 228.24977864583343
+        "x": 468.3424212760415,
+        "y": 381.60401864583343
       },
       "size": {
         "width": 218.42499999999995,
@@ -564,7 +598,7 @@
     },
     {
       "id": "ea2781a1-ae3e-427a-9602-234bf24a8ce3",
-      "title": "Model parAmeter Estimation",
+      "title": "Hidden Model parAmeter Estimation",
       "type_specific": {
         "message": ""
       },
@@ -584,17 +618,17 @@
       ],
       "type": "note",
       "position": {
-        "x": 564.2085328674311,
-        "y": 321.15024806976334
+        "x": 532.7512528674312,
+        "y": 466.6401680697634
       },
       "size": {
-        "width": 222.75624999999988,
+        "width": 283.0493699999999,
         "height": 130
       },
       "color": "#125059",
       "collapsed": true,
       "collapsed_size": {
-        "width": 222.75624999999988,
+        "width": 283.0493699999999,
         "height": 57
       }
     },
@@ -620,8 +654,8 @@
       ],
       "type": "note",
       "position": {
-        "x": 649.5614420572915,
-        "y": 419.4533365885416
+        "x": 650.8721620572915,
+        "y": 553.1467765885416
       },
       "size": {
         "width": 223.99999999999997,
@@ -727,39 +761,39 @@
     },
     {
       "id": "40ad763b-d7db-425c-b847-ffa12bdf03a3",
-      "title": "Include             Detailed Prior Knowledge",
+      "title": "Detailed Prior Knowledge available",
       "type_specific": {
         "message": ""
       },
       "edge_connections": [
         {
-          "id": "073680ff-54c0-4474-ba72-93cc5a2abfa4",
-          "connector": "right"
-        },
-        {
           "id": "60ee04de-96eb-4192-a91f-abecdfa81337",
           "connector": "top"
+        },
+        {
+          "id": "cc391681-3977-4d36-a23b-5309c006e598",
+          "connector": "right"
         }
       ],
       "type": "note",
       "position": {
-        "x": 850.1725000000004,
-        "y": 114.33958333333337
+        "x": 980.4580680000003,
+        "y": 148.68044733333338
       },
       "size": {
-        "width": 129.06487466666667,
+        "width": 206.65949866666665,
         "height": 130
       },
       "color": "#125059",
       "collapsed": true,
       "collapsed_size": {
-        "width": 129.06487466666667,
-        "height": 99
+        "width": 206.65949866666665,
+        "height": 78
       }
     },
     {
       "id": "c41a2ece-85ff-4462-89ea-85b4233c58ce",
-      "title": "Don't include      detailed prior knowledge",
+      "title": "No detailed prior knowledge available",
       "type_specific": {
         "message": ""
       },
@@ -779,19 +813,118 @@
       ],
       "type": "note",
       "position": {
-        "x": 1012.8400000000008,
-        "y": 117.44877866666673
+        "x": 769.308224000001,
+        "y": 251.66650666666672
       },
       "size": {
-        "width": 126.53734400000005,
+        "width": 229.29779200000004,
         "height": 130
       },
       "color": "#125059",
       "collapsed": true,
       "collapsed_size": {
-        "width": 126.53734400000005,
-        "height": 99
+        "width": 229.29779200000004,
+        "height": 78
       }
+    },
+    {
+      "id": "feac4a01-c973-4a50-919b-c291366db07f",
+      "title": "Discrete",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "efa36bdc-4425-4cd6-a66c-df739718feeb",
+          "connector": "top"
+        },
+        {
+          "id": "398dfac4-2923-4638-a5e6-e02ef2beed44",
+          "connector": "right"
+        },
+        {
+          "id": "0312aadf-2840-43b8-83b3-c65d373df252",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 257.847552,
+        "y": -23.5651584
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 57
+      }
+    },
+    {
+      "id": "e144e182-1e37-40fa-a28a-187058dfe701",
+      "title": "Continuous",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Try to make an discrete approximation.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f86c861e-e6d5-4da7-a600-5b096d5961e3",
+          "connector": "top"
+        },
+        {
+          "id": "0312aadf-2840-43b8-83b3-c65d373df252",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 38.06602240000001,
+        "y": 59.4820608
+      },
+      "size": {
+        "width": 136.0710144,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 123.4881024,
+        "height": 57
+      }
+    },
+    {
+      "id": "ecb5fa8e-369d-4c78-aa69-b2384c732148",
+      "title": "Feasibility Check",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"If detailed knowledge on the relationships between adjustable parameters and outcome metrics is available, one may construct a bayesian model capturing these relationships, and use that model to guide the DoE. However, taking these steps has to be justified:\\n\\nIf, for example, the resulting model has many non-adjustable parameters that need to be constrained by the experiment, but one can only perform a few trials, then including this complex bayesian model in the DoE like does not yield any benefits.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"If, however, the goal is to determine the value for a certain non-adjustable parameter of the model, then there is no way around constructing this model, and fitting it to the trial results. In that case, one may consider to also use the model for finding an experimental design optimized to constrain the parameter of interest.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "cc391681-3977-4d36-a23b-5309c006e598",
+          "connector": "left"
+        },
+        {
+          "id": "7f2ce808-4998-4b1c-8e83-ef5f865ec807",
+          "connector": "top"
+        },
+        {
+          "id": "70602d75-2c39-4109-9a20-efd792f5248d",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1266.87824,
+        "y": 122.09952000000003
+      },
+      "size": {
+        "width": 232.12057600000003,
+        "height": 130
+      },
+      "color": "#125059"
     }
   ],
   "edges": [
@@ -1115,17 +1248,6 @@
       }
     },
     {
-      "id": "073680ff-54c0-4474-ba72-93cc5a2abfa4",
-      "type": "solid_arrow",
-      "node_connections": [
-        "40ad763b-d7db-425c-b847-ffa12bdf03a3",
-        "c9e417cf-9079-485d-be1c-e5a370828e12"
-      ],
-      "type_specific": {
-        "annotation": ""
-      }
-    },
-    {
       "id": "865bbc42-6390-43a6-ab3f-5d2e95e35ace",
       "type": "solid_arrow",
       "node_connections": [
@@ -1164,6 +1286,94 @@
       "node_connections": [
         "6ed603e6-7c67-4232-b937-9bfb80db0fce",
         "c41a2ece-85ff-4462-89ea-85b4233c58ce"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "efa36bdc-4425-4cd6-a66c-df739718feeb",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "30d2a4b7-8488-4097-8890-4c08aa3a3072",
+        "feac4a01-c973-4a50-919b-c291366db07f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "398dfac4-2923-4638-a5e6-e02ef2beed44",
+      "type": "solid_arrow",
+      "node_connections": [
+        "feac4a01-c973-4a50-919b-c291366db07f",
+        "2750e57e-29e7-4976-9af6-3198963ef663"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f86c861e-e6d5-4da7-a600-5b096d5961e3",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e144e182-1e37-40fa-a28a-187058dfe701",
+        "30d2a4b7-8488-4097-8890-4c08aa3a3072"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "0312aadf-2840-43b8-83b3-c65d373df252",
+      "type": "solid_arrow",
+      "node_connections": [
+        "e144e182-1e37-40fa-a28a-187058dfe701",
+        "feac4a01-c973-4a50-919b-c291366db07f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "cc2cba5d-2aa7-4b5c-b16c-e5d05214b413",
+      "type": "solid_arrow",
+      "node_connections": [
+        "6ed603e6-7c67-4232-b937-9bfb80db0fce",
+        "886e2517-300e-484a-8b98-2108557a6fb1"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "cc391681-3977-4d36-a23b-5309c006e598",
+      "type": "solid_arrow",
+      "node_connections": [
+        "40ad763b-d7db-425c-b847-ffa12bdf03a3",
+        "ecb5fa8e-369d-4c78-aa69-b2384c732148"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7f2ce808-4998-4b1c-8e83-ef5f865ec807",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "886e2517-300e-484a-8b98-2108557a6fb1",
+        "ecb5fa8e-369d-4c78-aa69-b2384c732148"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "70602d75-2c39-4109-9a20-efd792f5248d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "ecb5fa8e-369d-4c78-aa69-b2384c732148",
+        "c9e417cf-9079-485d-be1c-e5a370828e12"
       ],
       "type_specific": {
         "annotation": ""
