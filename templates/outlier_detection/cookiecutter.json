@@ -1,0 +1,9 @@
+{
+    "directory_name": "outlier_detection",
+    "timestamp": "{{cookiecutter.timestamp}}",
+    "timestamp_directory_name": "{{cookiecutter.timestamp}}_{{cookiecutter.directory_name}}",
+    "destination_path": "Personal/zihan/template-test/experiments/erium",
+    "project_name": "'Outlier_Detection'",
+    "data_path": "default example",
+    "model_templates": ["1-autoencoder","2-bayesian_supervised","3-bayesian_unsupervised","4-supervised","5-unsupervised"]
+}

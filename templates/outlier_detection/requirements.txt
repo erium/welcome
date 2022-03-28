@@ -1,0 +1,6 @@
+cookiecutter
+streamlit
+seaborn
+halerium
+halerium_utilities
+statsmodels

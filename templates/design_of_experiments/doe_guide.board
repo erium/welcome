@@ -363,10 +363,6 @@
       },
       "edge_connections": [
         {
-          "id": "ad9233c3-7955-49e5-84ae-1a3daea84ea4",
-          "connector": "right"
-        },
-        {
           "id": "fb62186b-cd86-41b7-bab9-4e33cbd9afb5",
           "connector": "left"
         },
@@ -377,6 +373,10 @@
         {
           "id": "865bbc42-6390-43a6-ab3f-5d2e95e35ace",
           "connector": "left"
+        },
+        {
+          "id": "b336c7ad-9689-483d-8089-5b5bfe3940f1",
+          "connector": "right"
         }
       ],
       "type": "note",
@@ -388,7 +388,7 @@
         "width": 358.23999999999995,
         "height": 273.96000000000004
       },
-      "color": "#51455b"
+      "color": "#28337e"
     },
     {
       "id": "c9e417cf-9079-485d-be1c-e5a370828e12",
@@ -397,10 +397,6 @@
         "message": "{\"ops\":[{\"insert\":\"Suitable if:\\nThe relation between the outcome and the adjustable parameters of a trial can be expressed as parametrized equations.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"The goals is model parameter estimation.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nNot suitable if:\\nNo prior knowledge about the functional form of the process is available.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
-        {
-          "id": "9da1e8f2-7b9f-4302-8a52-e277d69d978a",
-          "connector": "right"
-        },
         {
           "id": "622f2882-731e-47fa-a3e0-519e74873133",
           "connector": "left"
@@ -416,6 +412,10 @@
         {
           "id": "70602d75-2c39-4109-9a20-efd792f5248d",
           "connector": "left"
+        },
+        {
+          "id": "46e4e418-1d2f-41b4-b23d-503ee6f5e6b1",
+          "connector": "right"
         }
       ],
       "type": "note",
@@ -427,95 +427,7 @@
         "width": 358.9375,
         "height": 246
       },
-      "color": "#51455b"
-    },
-    {
-      "id": "7e26b55b-94ad-4f18-9b8b-0b2a0aa4c930",
-      "title": "1 - Optimization",
-      "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Clone the template folder \\\"optimization\\\".\\n\\nHow to clone the folder:\\nOpen a terminal.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Navigate into the main folder 'design_of_experiments' (the same this board should be located in).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Run the command 'clone_tree ./01_bayesian_optimization <dst>', where <dst> is the destination folder you want to be working in.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
-      },
-      "edge_connections": [
-        {
-          "id": "ad9233c3-7955-49e5-84ae-1a3daea84ea4",
-          "connector": "left"
-        }
-      ],
-      "type": "note",
-      "position": {
-        "x": 2560.078125,
-        "y": 162.06639862060547
-      },
-      "size": {
-        "width": 295.8333333333333,
-        "height": 140
-      },
-      "color": "#28337e",
-      "collapsed": false,
-      "collapsed_size": {
-        "width": 295.8333333333333,
-        "height": 57
-      }
-    },
-    {
-      "id": "8a420dd9-6499-4f4b-a41e-b42d7b017e8a",
-      "title": "2 - Classical DoE",
-      "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Clone the template folder \\\"classical_doe\\\".\\n\\nHow to clone the folder:\\nOpen a terminal.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Navigate into the main folder 'design_of_experiments' (the same this board should be located in).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Run the command 'clone_tree ./02_classical_doe <dst>', where <dst> is the destination folder you want to be working in.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
-      },
-      "edge_connections": [
-        {
-          "id": "0815eec8-b7ed-45f1-bec5-3a180053deed",
-          "connector": "left"
-        },
-        {
-          "id": "248e79bd-ffca-42dc-b085-9381d6b33691",
-          "connector": "left"
-        }
-      ],
-      "type": "note",
-      "position": {
-        "x": 2567.8294270833335,
-        "y": 503.2044194539387
-      },
-      "size": {
-        "width": 281.25,
-        "height": 140
-      },
-      "color": "#28337e",
-      "collapsed": false,
-      "collapsed_size": {
-        "width": 281.25,
-        "height": 57
-      }
-    },
-    {
-      "id": "ab9f6754-64c9-4330-b445-47c21dce4597",
-      "title": "3 - Bayesian Modeling",
-      "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Clone the template folder \\\"bayesian_modelling\\\".\\n\\nHow to clone the folder:\\n\\nOpen a terminal.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Navigate into the main folder 'design_of_experiments' (the same this board should be located in).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Run the command 'clone_tree ./03_bayesian_modelling <dst>', where <dst> is the destination folder you want to be working in.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
-      },
-      "edge_connections": [
-        {
-          "id": "9da1e8f2-7b9f-4302-8a52-e277d69d978a",
-          "connector": "left"
-        }
-      ],
-      "type": "note",
-      "position": {
-        "x": 2569.93359375,
-        "y": 844.2083257039388
-      },
-      "size": {
-        "width": 272.5,
-        "height": 150
-      },
-      "color": "#28337e",
-      "collapsed": false,
-      "collapsed_size": {
-        "width": 272.5,
-        "height": 78
-      }
+      "color": "#28337e"
     },
     {
       "id": "172bdc0d-eaa8-4ca0-9de0-348b91307fff",
@@ -524,10 +436,6 @@
         "message": "{\"ops\":[{\"insert\":\"Suitable if:\\nAll trials have to be planned before results from any other trials are available (e.g. all trials have to be run in parallel).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nNot suitable if:\\nTrials can be run in sequence (with previous results informing the choice of later trials), and the total number of trials should be as small as possible (e.g. if trials are expensive).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
-        {
-          "id": "248e79bd-ffca-42dc-b085-9381d6b33691",
-          "connector": "right"
-        },
         {
           "id": "4dc7115d-5b31-417d-903f-022c001dca7a",
           "connector": "left"
@@ -547,6 +455,10 @@
         {
           "id": "ddb50d29-7d96-4659-982f-ddac7e724447",
           "connector": "left"
+        },
+        {
+          "id": "9994efb4-3a92-41e4-86c2-eabe442e6a1d",
+          "connector": "right"
         }
       ],
       "type": "note",
@@ -558,7 +470,7 @@
         "width": 361.365,
         "height": 283.04249999999996
       },
-      "color": "#51455b"
+      "color": "#28337e"
     },
     {
       "id": "f7f239fe-5a15-464b-8bb4-4cd38d875cb9",
@@ -925,6 +837,37 @@
         "height": 130
       },
       "color": "#125059"
+    },
+    {
+      "id": "73cc682e-123d-4eac-bf0e-32ea0c46692d",
+      "title": "6. copy template using cookiecutter",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After you have selected a suitable model, you may use cookiecutter to copy a template model to work on.\\n\\nRun the notebook 'cookiecutter.ipynb' linked to this card and select the specific model you wish to run.\\n\\nThe available selections are:\\n1-bayesian_optimization\\n2-classical_doe\\n3-bayesian_modelling\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b336c7ad-9689-483d-8089-5b5bfe3940f1",
+          "connector": "left"
+        },
+        {
+          "id": "9994efb4-3a92-41e4-86c2-eabe442e6a1d",
+          "connector": "left"
+        },
+        {
+          "id": "46e4e418-1d2f-41b4-b23d-503ee6f5e6b1",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2741.025634765626,
+        "y": 412.3895670572918
+      },
+      "size": {
+        "width": 321.1840000000001,
+        "height": 315.68533333333346
+      },
+      "color": "#51455b"
     }
   ],
   "edges": [
@@ -934,50 +877,6 @@
       "node_connections": [
         "4d313ba4-d766-4f9c-b915-3babd0fb9385",
         "9d43fb9f-2688-4cda-804c-1cf1d183a936"
-      ],
-      "type_specific": {
-        "annotation": ""
-      }
-    },
-    {
-      "id": "ad9233c3-7955-49e5-84ae-1a3daea84ea4",
-      "type": "solid_arrow",
-      "node_connections": [
-        "66fce767-d0dc-4329-b4ea-e105b25235b5",
-        "7e26b55b-94ad-4f18-9b8b-0b2a0aa4c930"
-      ],
-      "type_specific": {
-        "annotation": ""
-      }
-    },
-    {
-      "id": "0815eec8-b7ed-45f1-bec5-3a180053deed",
-      "type": "solid_arrow",
-      "node_connections": [
-        "e77c0ceb-9cda-4189-8a1f-87ce52d8c431",
-        "8a420dd9-6499-4f4b-a41e-b42d7b017e8a"
-      ],
-      "type_specific": {
-        "annotation": ""
-      }
-    },
-    {
-      "id": "9da1e8f2-7b9f-4302-8a52-e277d69d978a",
-      "type": "solid_arrow",
-      "node_connections": [
-        "c9e417cf-9079-485d-be1c-e5a370828e12",
-        "ab9f6754-64c9-4330-b445-47c21dce4597"
-      ],
-      "type_specific": {
-        "annotation": ""
-      }
-    },
-    {
-      "id": "248e79bd-ffca-42dc-b085-9381d6b33691",
-      "type": "solid_arrow",
-      "node_connections": [
-        "172bdc0d-eaa8-4ca0-9de0-348b91307fff",
-        "8a420dd9-6499-4f4b-a41e-b42d7b017e8a"
       ],
       "type_specific": {
         "annotation": ""
@@ -1374,6 +1273,39 @@
       "node_connections": [
         "ecb5fa8e-369d-4c78-aa69-b2384c732148",
         "c9e417cf-9079-485d-be1c-e5a370828e12"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "b336c7ad-9689-483d-8089-5b5bfe3940f1",
+      "type": "solid_arrow",
+      "node_connections": [
+        "66fce767-d0dc-4329-b4ea-e105b25235b5",
+        "73cc682e-123d-4eac-bf0e-32ea0c46692d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "9994efb4-3a92-41e4-86c2-eabe442e6a1d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "172bdc0d-eaa8-4ca0-9de0-348b91307fff",
+        "73cc682e-123d-4eac-bf0e-32ea0c46692d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "46e4e418-1d2f-41b4-b23d-503ee6f5e6b1",
+      "type": "solid_arrow",
+      "node_connections": [
+        "c9e417cf-9079-485d-be1c-e5a370828e12",
+        "73cc682e-123d-4eac-bf0e-32ea0c46692d"
       ],
       "type_specific": {
         "annotation": ""

@@ -1,0 +1,9 @@
+{
+    "directory_name": "prediction",
+    "timestamp": "{{cookiecutter.timestamp}}",
+    "timestamp_directory_name": "{{cookiecutter.timestamp}}_{{cookiecutter.directory_name}}",
+    "destination_path": "current",
+    "project_name": "Prediction",
+    "data_path": "default example",
+    "model_templates": ["1-regression"]
+}
