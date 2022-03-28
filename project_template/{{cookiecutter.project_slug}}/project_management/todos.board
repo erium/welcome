@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "id": "7aa2937b-5bd7-4b02-85f7-eae1d065b11a",
+      "title": "Todo",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "cc9c56b2-5bd7-40b5-b8c3-2edaa03430c1",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 188.816650390625,
+        "y": 132
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#513063",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "1b6370af-16a2-477d-a3e5-e8ec9970a313",
+      "title": "Doing",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "cc9c56b2-5bd7-40b5-b8c3-2edaa03430c1",
+          "connector": "left"
+        },
+        {
+          "id": "8b1e6af1-62bc-4cea-bc3d-80898f3beef1",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 393.816650390625,
+        "y": 131
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#28337e",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "75b1d6f8-5971-44aa-a2dc-0fab038c1279",
+      "title": "Done",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "8b1e6af1-62bc-4cea-bc3d-80898f3beef1",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 593.816650390625,
+        "y": 131
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "cc9c56b2-5bd7-40b5-b8c3-2edaa03430c1",
+      "type": "solid_arrow",
+      "node_connections": [
+        "7aa2937b-5bd7-4b02-85f7-eae1d065b11a",
+        "1b6370af-16a2-477d-a3e5-e8ec9970a313"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8b1e6af1-62bc-4cea-bc3d-80898f3beef1",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1b6370af-16a2-477d-a3e5-e8ec9970a313",
+        "75b1d6f8-5971-44aa-a2dc-0fab038c1279"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

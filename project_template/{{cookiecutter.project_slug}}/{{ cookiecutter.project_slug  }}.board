@@ -1,0 +1,23 @@
+{
+  "nodes": [
+    {
+      "id": "08045337-dbb4-424e-aae1-4bca80ef41ab",
+      "title": "{{ cookiecutter.project_name }}",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [],
+      "type": "note",
+      "position": {
+        "x": 76.0999755859375,
+        "y": -53
+      },
+      "size": {
+        "width": 318,
+        "height": 204
+      },
+      "color": "#125059"
+    }
+  ],
+  "edges": []
+}

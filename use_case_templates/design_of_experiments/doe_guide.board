@@ -1,0 +1,1315 @@
+{
+  "nodes": [
+    {
+      "id": "2750e57e-29e7-4976-9af6-3198963ef663",
+      "title": "2. What is the goal?",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"There are 3 basic categories of goals:\\noptimization\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"estimation of hidden model parameters\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"function fitting\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nOptimization\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Your goal is to find the optimal input parameters for your process.\\nPredicting the output of the process for various inputs is of low priority (this would be function fitting).\\n\\nA prerequisite for this is that you can mathematically \\\"grade\\\" process iterations with a cost function.\\nOptimization means finding the inputs that minimize the cost function.\\nIf a cost function is not available, you will have to design it. \\nThe corresponding template will provide some guidelines.\\n\\nIf an iterative procedure with consecutive batches of trials is feasible, the template for optimization is best suited.\\nIf instead all trials have to be planned and/or executed in one go, the tempate for classical DoEs is better suited.\\n\\nHidden Model Parameter estimation\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Your goal is to to estimate the value of parameters that cannot be controlled nor directly measured.\\nFor example, these parameters might correspond to some real-world quantity you are interested in.\\n\\nA prerequisite is that you can express the relationship between the outcomes of a process and its adustable parameters as a probabilistic model with model parameters.\\nThese model parameters need to:\\ninclude the parameters that you want to estimate,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"be a static property of the process itself and do not change from trial to trial,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"affect the outcome of the process.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nFor this goal, the template for Bayesian modelling is best suited.\\nHowever, in case all trials have to be planned and/or executed in one go, the template for classical DoEs might also be used.\\n\\n\\nFunction fitting\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Your goal is to predict the outcome of the process as a function of the input parameters as accurately as possible.\\nYou do not just want to know the best parameters, nor do you care about specific model parameters.\\n\\nFor this goal, the template for classical DoEs is best suited.\\nHowever, in case you have significant prior knowledge about the process (e.g. functional relationships), the template for Bayesian modelling might be a better choice.\\n\\n\\n\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "1c88f08a-9f46-4f5a-acad-f8c14e9ce2ae",
+          "connector": "left"
+        },
+        {
+          "id": "50601694-4567-4ce0-b950-5c5be836ca31",
+          "connector": "bottom"
+        },
+        {
+          "id": "20b1b955-a507-4d8e-8188-f44cf4529ced",
+          "connector": "right"
+        },
+        {
+          "id": "398dfac4-2923-4638-a5e6-e02ef2beed44",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 492.7031249999999,
+        "y": -492.8281249999999
+      },
+      "size": {
+        "width": 269,
+        "height": 164
+      },
+      "color": "#51455b",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 269,
+        "height": 57
+      }
+    },
+    {
+      "id": "b966e67e-7dc8-4f84-8d9c-414e9bcb5988",
+      "title": "1. Is the process suitable for DOE?",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We can distinguish between two types of processes:\\n\\ndiscrete processes and continuous processes\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Discrete process\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Here we can think of the process being being based on countable inputs and outputs.\\nFor example, you bake one bread (output) at a time using specific flour type and temperature (inputs).\\nThe principle also works for batched discrete processes, e.g. you bake 20 breads at a time with the same flour and temperature.\\n\\nDesign of experiments is very suitable for discrete processes.\\n\\nContinuous process\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Here we continuously have an inflow of input material and a outflow of output material.\\nFor example, you have a sourdough starter that you refresh by putting in new flour and water (inputs) and from which you regularly take out bits to make bread. You can vary the inputs over time, but the effects influence the outputs in a delayed way.\\n\\nDesign of experiments for continuous processes is not a straight-forward matter and is a matter of current research.\\nIf your process is continuous, we advise you to investigate whether the process can be approximately discretized.\\nThis usually means that you group (e.g. by averaging) your inputs and outputs over time intervals that are expected to be longer than the processes delays.\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b18b0cea-6542-4723-9ba4-40de4c2258ac",
+          "connector": "right"
+        },
+        {
+          "id": "1c88f08a-9f46-4f5a-acad-f8c14e9ce2ae",
+          "connector": "right"
+        },
+        {
+          "id": "cb019537-20e2-44d8-9fb1-0171a30160d1",
+          "connector": "bottom"
+        },
+        {
+          "id": "b347334e-c039-427d-93f3-78bd6d0419f9",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 92.14062500000011,
+        "y": -496.93749999999994
+      },
+      "size": {
+        "width": 275,
+        "height": 171
+      },
+      "color": "#51455b",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 275,
+        "height": 57
+      }
+    },
+    {
+      "id": "30d2a4b7-8488-4097-8890-4c08aa3a3072",
+      "title": "Discrete vs. continous",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Is the process discrete or continuous?\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b18b0cea-6542-4723-9ba4-40de4c2258ac",
+          "connector": "left"
+        },
+        {
+          "id": "cb019537-20e2-44d8-9fb1-0171a30160d1",
+          "connector": "top"
+        },
+        {
+          "id": "efa36bdc-4425-4cd6-a66c-df739718feeb",
+          "connector": "bottom"
+        },
+        {
+          "id": "f86c861e-e6d5-4da7-a600-5b096d5961e3",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 95.10208129882835,
+        "y": -225.875
+      },
+      "size": {
+        "width": 266.5,
+        "height": 134.5110048
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "d46d6350-7514-4f00-8ebe-a72c0d06f391",
+      "title": "Purpose of data generation",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Why do you have to generate new data?\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "50601694-4567-4ce0-b950-5c5be836ca31",
+          "connector": "top"
+        },
+        {
+          "id": "14b17d1c-c7ff-4a14-a9b6-70751b5b9158",
+          "connector": "bottom"
+        },
+        {
+          "id": "64d7a826-f6c2-418d-8889-1f8ac7e245d4",
+          "connector": "bottom"
+        },
+        {
+          "id": "bbf909e3-70bd-4b0e-8276-edc2912c953c",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 496.06145629882826,
+        "y": -226.46874999999994
+      },
+      "size": {
+        "width": 259.9375,
+        "height": 293.8125
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "5c7a674a-e7f8-444f-9d24-46c25b0ac3bc",
+      "title": "4. Experiment abundancE",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"As a rule of thumb, to get an insight on how the process outcome depends on the adjustable parameters, the number different sets of parameters to try must be larger than the number of adjustable parameters. The number of trials required may be multiple times the number of parameters, if the relationship between the adjustable parameters and the outcome of the process is expected to be more complex than just a linear response, and/or if noise is significant. Having specific knowledge of the process that allows you to model the process with just a few internal model parameters, may decrease the number of trials needed.\\n\\nFor example, consider a process with n adjustable parameters and negligible noise:\\nIf you describe the process as a linear model, you need to try at least n + 1 different sets of parameters.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For a simple quadratic model without mixed terms, you need 2n + 1 trials.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For a quadratic model with mixed terms, you need n(n + 1) / 2 + 1 trials.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For your home-grown model with just one internal model parameter, you only need one trial.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nConversely, if you have a limited number of trials available, your model of the process should be simple. This may even mean that you keep some adjustable parameters at a fixed value and do not even try to estimate their influence on the outcome.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "495313fd-d3fa-4fea-958e-92044837f4ce",
+          "connector": "right"
+        },
+        {
+          "id": "2259c7ed-f427-4c06-9265-98b876e391fb",
+          "connector": "bottom"
+        },
+        {
+          "id": "054aefd2-2bbb-454b-9741-840327ea3e75",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1246.555206298828,
+        "y": -491.19374999999997
+      },
+      "size": {
+        "width": 255.375,
+        "height": 164.6875
+      },
+      "color": "#51455b",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 263,
+        "height": 57
+      }
+    },
+    {
+      "id": "948ab3e7-3969-418a-b521-72730f3a14e6",
+      "title": "Your answer",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "8867197c-20a1-4213-9e01-aa03687924e7",
+          "connector": "top"
+        },
+        {
+          "id": "51b4797a-9f65-4c27-976c-041867ebb8dd",
+          "connector": "bottom"
+        },
+        {
+          "id": "218a8f8d-a2b0-4f0c-9e25-c4cb5d2407a8",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1626.6833312988279,
+        "y": -215.02499999999992
+      },
+      "size": {
+        "width": 256.4625,
+        "height": 294.9375
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "6ed603e6-7c67-4232-b937-9bfb80db0fce",
+      "title": "Prior Knowledge",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Adjustable parameters and their limits:\\n\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nNon-adjustable (hidden) parameters:\\n\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nMetric of outcome?\\n\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "50a36d91-60d9-40c3-913f-c176acdd07f7",
+          "connector": "top"
+        },
+        {
+          "id": "60ee04de-96eb-4192-a91f-abecdfa81337",
+          "connector": "bottom"
+        },
+        {
+          "id": "b1e2279f-33c7-42e8-adb6-513e177d0f06",
+          "connector": "bottom"
+        },
+        {
+          "id": "cc2cba5d-2aa7-4b5c-b16c-e5d05214b413",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 888.4302062988281,
+        "y": -229.0624999999999
+      },
+      "size": {
+        "width": 231.59375,
+        "height": 288.984375
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "886e2517-300e-484a-8b98-2108557a6fb1",
+      "title": "#Parameters vs. #Experiments",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Number of parameters:\\nNumber of experiments:\\n-> Number of parameters << Number of experiments?\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "2259c7ed-f427-4c06-9265-98b876e391fb",
+          "connector": "top"
+        },
+        {
+          "id": "cc2cba5d-2aa7-4b5c-b16c-e5d05214b413",
+          "connector": "left"
+        },
+        {
+          "id": "7f2ce808-4998-4b1c-8e83-ef5f865ec807",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1255.517496258828,
+        "y": -230.41641135999993
+      },
+      "size": {
+        "width": 247.8,
+        "height": 288.275
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "4d313ba4-d766-4f9c-b915-3babd0fb9385",
+      "title": "5. How many iterations?",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Can you repeatedly run a small batch of trials and obtain their results before deciding on the parameters for the next batch of trials?\\n\\nThen, you may choose one of the templates for iterative designs for optimization or parameter estimation.\\n\\nIf however, you prefer to plan and/or run all trials at once, one of the classical designs may be a better choice.\\n \\n\\n \\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "dc69a1aa-d403-4b96-a0e1-a68d36086403",
+          "connector": "right"
+        },
+        {
+          "id": "495313fd-d3fa-4fea-958e-92044837f4ce",
+          "connector": "left"
+        },
+        {
+          "id": "8867197c-20a1-4213-9e01-aa03687924e7",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1630.045831298828,
+        "y": -493.34999999999974
+      },
+      "size": {
+        "width": 256,
+        "height": 169
+      },
+      "color": "#51455b",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 256,
+        "height": 57
+      }
+    },
+    {
+      "id": "381c4b9a-4f92-4a2b-a27a-7fc5150a556e",
+      "title": "3. What kind of prior knowledge is to be included?",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Prior knowledge is information about the process you have before conducting the experiment.\\n\\nBasic Prior Knowledge\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nPrior knowledge includes basic information on the process such as:\\nthe adjustable parameters and their possible values (e.g. lower and upper bounds for continuous parameters, or available choices for discrete parametes),\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"the metrics used to quantify the outcome of a process (e.g. the quality or production cost of an item).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nThis information should be available for any DoE project \"},{\"attributes\":{\"bold\":true},\"insert\":\"before \"},{\"insert\":\"a design is created and trials are performed according to that design.\\nIf this information is missing, exploratory trials might be conducted to help decide:\\nWhich adjustable parameters are to be included in the DoE?\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"What are the feasible values for these parameters?\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"What are metrics to be used to quantify the process outcome?\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For planning such exploratory trials, one could also use a (classical) DoE, wich includes any potential adjustable parameters and outcome metrics.\\n\\nFor many use cases, the basic information is all one has or needs as prior knowledge for the DoE.\\n\\nDetailed Prior Knowledge\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nIn some cases, one has much more detailed information, e.g. on\\nthe functional relationships between adjustable parameters and outcome metrics,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"the non-adjustable parameters featuring in these functional relationships\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"and their values, which could be known exactly, or known to lie in a well-defined range.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nFor example, the outcome metrics might be well described by a linear function or second-order polynomial of the adjustable parameters with coefficients to be constrained by the experiment. Or a certain outcome metric might depend on the adjustable parameters, another outcome metric, one non-adjustable parameter, and a small white-noise term in a complicated but known manner (including e.g. products, cosines, and logarithms).\\n\\n\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "20b1b955-a507-4d8e-8188-f44cf4529ced",
+          "connector": "left"
+        },
+        {
+          "id": "50a36d91-60d9-40c3-913f-c176acdd07f7",
+          "connector": "bottom"
+        },
+        {
+          "id": "054aefd2-2bbb-454b-9741-840327ea3e75",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 876.283331298828,
+        "y": -498.22499999999974
+      },
+      "size": {
+        "width": 258,
+        "height": 175
+      },
+      "color": "#51455b",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 258,
+        "height": 78
+      }
+    },
+    {
+      "id": "66fce767-d0dc-4329-b4ea-e105b25235b5",
+      "title": "Checklist: Optimization",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Suitable if:\\nThe goal is optimization.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Trials can be run in multiple consecutive batches such that results from previous batches are available for suggesting the parameters for the next batch.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nNot suitable if:\\nAll trials have to be planned before results from any other trials are available (e.g. all trials have to be run in parallel).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "fb62186b-cd86-41b7-bab9-4e33cbd9afb5",
+          "connector": "left"
+        },
+        {
+          "id": "79e726ba-abf9-418b-baae-701db20362e4",
+          "connector": "left"
+        },
+        {
+          "id": "865bbc42-6390-43a6-ab3f-5d2e95e35ace",
+          "connector": "left"
+        },
+        {
+          "id": "b336c7ad-9689-483d-8089-5b5bfe3940f1",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2105.47703125,
+        "y": 159.45499237060545
+      },
+      "size": {
+        "width": 358.23999999999995,
+        "height": 273.96000000000004
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "c9e417cf-9079-485d-be1c-e5a370828e12",
+      "title": "Checklist: Bayesian modelLing",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Suitable if:\\nThe relation between the outcome and the adjustable parameters of a trial can be expressed as parametrized equations.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"The goals is model parameter estimation.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nNot suitable if:\\nNo prior knowledge about the functional form of the process is available.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "622f2882-731e-47fa-a3e0-519e74873133",
+          "connector": "left"
+        },
+        {
+          "id": "e636f3bb-6c39-4873-a4f8-c5ff21cbc244",
+          "connector": "left"
+        },
+        {
+          "id": "452cb633-1a5d-45da-afc5-1105d5123fc3",
+          "connector": "left"
+        },
+        {
+          "id": "70602d75-2c39-4109-9a20-efd792f5248d",
+          "connector": "left"
+        },
+        {
+          "id": "46e4e418-1d2f-41b4-b23d-503ee6f5e6b1",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2115.8934837499996,
+        "y": 828.3481132039389
+      },
+      "size": {
+        "width": 358.9375,
+        "height": 246
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "172bdc0d-eaa8-4ca0-9de0-348b91307fff",
+      "title": "Checklist: Classical Doe",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Suitable if:\\nAll trials have to be planned before results from any other trials are available (e.g. all trials have to be run in parallel).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nNot suitable if:\\nTrials can be run in sequence (with previous results informing the choice of later trials), and the total number of trials should be as small as possible (e.g. if trials are expensive).\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "4dc7115d-5b31-417d-903f-022c001dca7a",
+          "connector": "left"
+        },
+        {
+          "id": "3b532e50-d50c-48d3-b487-0f189b19bf4a",
+          "connector": "left"
+        },
+        {
+          "id": "a9750a43-7075-423d-af20-0c2d9673d9f1",
+          "connector": "left"
+        },
+        {
+          "id": "c0aadb73-00e2-4758-827e-ddfc6368058a",
+          "connector": "left"
+        },
+        {
+          "id": "ddb50d29-7d96-4659-982f-ddac7e724447",
+          "connector": "left"
+        },
+        {
+          "id": "9994efb4-3a92-41e4-86c2-eabe442e6a1d",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2106.1733885955805,
+        "y": 495.7553315734863
+      },
+      "size": {
+        "width": 361.365,
+        "height": 283.04249999999996
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "f7f239fe-5a15-464b-8bb4-4cd38d875cb9",
+      "title": "Optimization",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "fb62186b-cd86-41b7-bab9-4e33cbd9afb5",
+          "connector": "right"
+        },
+        {
+          "id": "4dc7115d-5b31-417d-903f-022c001dca7a",
+          "connector": "right"
+        },
+        {
+          "id": "14b17d1c-c7ff-4a14-a9b6-70751b5b9158",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 468.3424212760415,
+        "y": 381.60401864583343
+      },
+      "size": {
+        "width": 218.42499999999995,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 218.42499999999995,
+        "height": 57
+      }
+    },
+    {
+      "id": "ea2781a1-ae3e-427a-9602-234bf24a8ce3",
+      "title": "Hidden Model parAmeter Estimation",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "3b532e50-d50c-48d3-b487-0f189b19bf4a",
+          "connector": "right"
+        },
+        {
+          "id": "622f2882-731e-47fa-a3e0-519e74873133",
+          "connector": "right"
+        },
+        {
+          "id": "64d7a826-f6c2-418d-8889-1f8ac7e245d4",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 532.7512528674312,
+        "y": 466.6401680697634
+      },
+      "size": {
+        "width": 283.0493699999999,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 283.0493699999999,
+        "height": 57
+      }
+    },
+    {
+      "id": "3a259b30-0f06-4d8c-904a-72ea0aa5124d",
+      "title": "Function fitting",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "a9750a43-7075-423d-af20-0c2d9673d9f1",
+          "connector": "right"
+        },
+        {
+          "id": "e636f3bb-6c39-4873-a4f8-c5ff21cbc244",
+          "connector": "right"
+        },
+        {
+          "id": "bbf909e3-70bd-4b0e-8276-edc2912c953c",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 650.8721620572915,
+        "y": 553.1467765885416
+      },
+      "size": {
+        "width": 223.99999999999997,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 223.99999999999997,
+        "height": 57
+      }
+    },
+    {
+      "id": "02f70820-ae31-43ca-a9b7-89d4b54b775b",
+      "title": "one",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "c0aadb73-00e2-4758-827e-ddfc6368058a",
+          "connector": "right"
+        },
+        {
+          "id": "51b4797a-9f65-4c27-976c-041867ebb8dd",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1622.2395896911619,
+        "y": 143.85421752929693
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 57
+      }
+    },
+    {
+      "id": "647963f4-8e89-4f0f-9940-60abfd4a47d1",
+      "title": "many",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "79e726ba-abf9-418b-baae-701db20362e4",
+          "connector": "right"
+        },
+        {
+          "id": "452cb633-1a5d-45da-afc5-1105d5123fc3",
+          "connector": "right"
+        },
+        {
+          "id": "218a8f8d-a2b0-4f0c-9e25-c4cb5d2407a8",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1796.1770896911619,
+        "y": 146.97921752929688
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 57
+      }
+    },
+    {
+      "id": "4c3806dc-e458-495d-92c4-a4160b5ee770",
+      "title": "0. How to use the board",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Go through through the yellow cards in order. Follow the instructions on each of these cards. These will help you to decide which template to use. \\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b347334e-c039-427d-93f3-78bd6d0419f9",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -279.6463,
+        "y": -495.1087
+      },
+      "size": {
+        "width": 260.5632,
+        "height": 169.3216
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "40ad763b-d7db-425c-b847-ffa12bdf03a3",
+      "title": "Detailed Prior Knowledge available",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "60ee04de-96eb-4192-a91f-abecdfa81337",
+          "connector": "top"
+        },
+        {
+          "id": "cc391681-3977-4d36-a23b-5309c006e598",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 980.4580680000003,
+        "y": 148.68044733333338
+      },
+      "size": {
+        "width": 206.65949866666665,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 206.65949866666665,
+        "height": 78
+      }
+    },
+    {
+      "id": "c41a2ece-85ff-4462-89ea-85b4233c58ce",
+      "title": "No detailed prior knowledge available",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "865bbc42-6390-43a6-ab3f-5d2e95e35ace",
+          "connector": "right"
+        },
+        {
+          "id": "ddb50d29-7d96-4659-982f-ddac7e724447",
+          "connector": "right"
+        },
+        {
+          "id": "b1e2279f-33c7-42e8-adb6-513e177d0f06",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 769.308224000001,
+        "y": 251.66650666666672
+      },
+      "size": {
+        "width": 229.29779200000004,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 229.29779200000004,
+        "height": 78
+      }
+    },
+    {
+      "id": "feac4a01-c973-4a50-919b-c291366db07f",
+      "title": "Discrete",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "efa36bdc-4425-4cd6-a66c-df739718feeb",
+          "connector": "top"
+        },
+        {
+          "id": "398dfac4-2923-4638-a5e6-e02ef2beed44",
+          "connector": "right"
+        },
+        {
+          "id": "0312aadf-2840-43b8-83b3-c65d373df252",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 257.847552,
+        "y": -23.5651584
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 57
+      }
+    },
+    {
+      "id": "e144e182-1e37-40fa-a28a-187058dfe701",
+      "title": "Continuous",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Try to make an discrete approximation.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f86c861e-e6d5-4da7-a600-5b096d5961e3",
+          "connector": "top"
+        },
+        {
+          "id": "0312aadf-2840-43b8-83b3-c65d373df252",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 38.06602240000001,
+        "y": 59.4820608
+      },
+      "size": {
+        "width": 136.0710144,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 123.4881024,
+        "height": 57
+      }
+    },
+    {
+      "id": "ecb5fa8e-369d-4c78-aa69-b2384c732148",
+      "title": "Feasibility Check",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"If detailed knowledge on the relationships between adjustable parameters and outcome metrics is available, one may construct a bayesian model capturing these relationships, and use that model to guide the DoE. However, taking these steps has to be justified:\\n\\nIf, for example, the resulting model has many non-adjustable parameters that need to be constrained by the experiment, but one can only perform a few trials, then including this complex bayesian model in the DoE like does not yield any benefits.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"If, however, the goal is to determine the value for a certain non-adjustable parameter of the model, then there is no way around constructing this model, and fitting it to the trial results. In that case, one may consider to also use the model for finding an experimental design optimized to constrain the parameter of interest.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "cc391681-3977-4d36-a23b-5309c006e598",
+          "connector": "left"
+        },
+        {
+          "id": "7f2ce808-4998-4b1c-8e83-ef5f865ec807",
+          "connector": "top"
+        },
+        {
+          "id": "70602d75-2c39-4109-9a20-efd792f5248d",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1266.87824,
+        "y": 122.09952000000003
+      },
+      "size": {
+        "width": 232.12057600000003,
+        "height": 130
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "73cc682e-123d-4eac-bf0e-32ea0c46692d",
+      "title": "6. copy template using cookiecutter",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After you have selected a suitable model, you may use cookiecutter to copy a template model to work on.\\n\\nRun the notebook 'cookiecutter.ipynb' linked to this card and select the specific model you wish to run.\\n\\nThe available selections are:\\n1-bayesian_optimization\\n2-classical_doe\\n3-bayesian_modelling\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b336c7ad-9689-483d-8089-5b5bfe3940f1",
+          "connector": "left"
+        },
+        {
+          "id": "9994efb4-3a92-41e4-86c2-eabe442e6a1d",
+          "connector": "left"
+        },
+        {
+          "id": "46e4e418-1d2f-41b4-b23d-503ee6f5e6b1",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2741.025634765626,
+        "y": 412.3895670572918
+      },
+      "size": {
+        "width": 321.1840000000001,
+        "height": 315.68533333333346
+      },
+      "color": "#51455b"
+    }
+  ],
+  "edges": [
+    {
+      "id": "dc69a1aa-d403-4b96-a0e1-a68d36086403",
+      "type": "solid_arrow",
+      "node_connections": [
+        "4d313ba4-d766-4f9c-b915-3babd0fb9385",
+        "9d43fb9f-2688-4cda-804c-1cf1d183a936"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "fb62186b-cd86-41b7-bab9-4e33cbd9afb5",
+      "type": "solid_arrow",
+      "node_connections": [
+        "f7f239fe-5a15-464b-8bb4-4cd38d875cb9",
+        "66fce767-d0dc-4329-b4ea-e105b25235b5"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "4dc7115d-5b31-417d-903f-022c001dca7a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "f7f239fe-5a15-464b-8bb4-4cd38d875cb9",
+        "172bdc0d-eaa8-4ca0-9de0-348b91307fff"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "1c88f08a-9f46-4f5a-acad-f8c14e9ce2ae",
+      "type": "solid_arrow",
+      "node_connections": [
+        "b966e67e-7dc8-4f84-8d9c-414e9bcb5988",
+        "2750e57e-29e7-4976-9af6-3198963ef663"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "cb019537-20e2-44d8-9fb1-0171a30160d1",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "b966e67e-7dc8-4f84-8d9c-414e9bcb5988",
+        "30d2a4b7-8488-4097-8890-4c08aa3a3072"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "50601694-4567-4ce0-b950-5c5be836ca31",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "2750e57e-29e7-4976-9af6-3198963ef663",
+        "d46d6350-7514-4f00-8ebe-a72c0d06f391"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "3b532e50-d50c-48d3-b487-0f189b19bf4a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "ea2781a1-ae3e-427a-9602-234bf24a8ce3",
+        "172bdc0d-eaa8-4ca0-9de0-348b91307fff"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "622f2882-731e-47fa-a3e0-519e74873133",
+      "type": "solid_arrow",
+      "node_connections": [
+        "ea2781a1-ae3e-427a-9602-234bf24a8ce3",
+        "c9e417cf-9079-485d-be1c-e5a370828e12"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a9750a43-7075-423d-af20-0c2d9673d9f1",
+      "type": "solid_arrow",
+      "node_connections": [
+        "3a259b30-0f06-4d8c-904a-72ea0aa5124d",
+        "172bdc0d-eaa8-4ca0-9de0-348b91307fff"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "e636f3bb-6c39-4873-a4f8-c5ff21cbc244",
+      "type": "solid_arrow",
+      "node_connections": [
+        "3a259b30-0f06-4d8c-904a-72ea0aa5124d",
+        "c9e417cf-9079-485d-be1c-e5a370828e12"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "495313fd-d3fa-4fea-958e-92044837f4ce",
+      "type": "solid_arrow",
+      "node_connections": [
+        "5c7a674a-e7f8-444f-9d24-46c25b0ac3bc",
+        "4d313ba4-d766-4f9c-b915-3babd0fb9385"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "2259c7ed-f427-4c06-9265-98b876e391fb",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "5c7a674a-e7f8-444f-9d24-46c25b0ac3bc",
+        "886e2517-300e-484a-8b98-2108557a6fb1"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8867197c-20a1-4213-9e01-aa03687924e7",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4d313ba4-d766-4f9c-b915-3babd0fb9385",
+        "948ab3e7-3969-418a-b521-72730f3a14e6"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "20b1b955-a507-4d8e-8188-f44cf4529ced",
+      "type": "solid_arrow",
+      "node_connections": [
+        "2750e57e-29e7-4976-9af6-3198963ef663",
+        "381c4b9a-4f92-4a2b-a27a-7fc5150a556e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "50a36d91-60d9-40c3-913f-c176acdd07f7",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "381c4b9a-4f92-4a2b-a27a-7fc5150a556e",
+        "6ed603e6-7c67-4232-b937-9bfb80db0fce"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "054aefd2-2bbb-454b-9741-840327ea3e75",
+      "type": "solid_arrow",
+      "node_connections": [
+        "381c4b9a-4f92-4a2b-a27a-7fc5150a556e",
+        "5c7a674a-e7f8-444f-9d24-46c25b0ac3bc"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "79e726ba-abf9-418b-baae-701db20362e4",
+      "type": "solid_arrow",
+      "node_connections": [
+        "647963f4-8e89-4f0f-9940-60abfd4a47d1",
+        "66fce767-d0dc-4329-b4ea-e105b25235b5"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c0aadb73-00e2-4758-827e-ddfc6368058a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "02f70820-ae31-43ca-a9b7-89d4b54b775b",
+        "172bdc0d-eaa8-4ca0-9de0-348b91307fff"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "452cb633-1a5d-45da-afc5-1105d5123fc3",
+      "type": "solid_arrow",
+      "node_connections": [
+        "647963f4-8e89-4f0f-9940-60abfd4a47d1",
+        "c9e417cf-9079-485d-be1c-e5a370828e12"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "14b17d1c-c7ff-4a14-a9b6-70751b5b9158",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d46d6350-7514-4f00-8ebe-a72c0d06f391",
+        "f7f239fe-5a15-464b-8bb4-4cd38d875cb9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "64d7a826-f6c2-418d-8889-1f8ac7e245d4",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d46d6350-7514-4f00-8ebe-a72c0d06f391",
+        "ea2781a1-ae3e-427a-9602-234bf24a8ce3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "bbf909e3-70bd-4b0e-8276-edc2912c953c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d46d6350-7514-4f00-8ebe-a72c0d06f391",
+        "3a259b30-0f06-4d8c-904a-72ea0aa5124d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "51b4797a-9f65-4c27-976c-041867ebb8dd",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "948ab3e7-3969-418a-b521-72730f3a14e6",
+        "02f70820-ae31-43ca-a9b7-89d4b54b775b"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "218a8f8d-a2b0-4f0c-9e25-c4cb5d2407a8",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "948ab3e7-3969-418a-b521-72730f3a14e6",
+        "647963f4-8e89-4f0f-9940-60abfd4a47d1"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "b347334e-c039-427d-93f3-78bd6d0419f9",
+      "type": "solid_arrow",
+      "node_connections": [
+        "4c3806dc-e458-495d-92c4-a4160b5ee770",
+        "b966e67e-7dc8-4f84-8d9c-414e9bcb5988"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "865bbc42-6390-43a6-ab3f-5d2e95e35ace",
+      "type": "solid_arrow",
+      "node_connections": [
+        "c41a2ece-85ff-4462-89ea-85b4233c58ce",
+        "66fce767-d0dc-4329-b4ea-e105b25235b5"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ddb50d29-7d96-4659-982f-ddac7e724447",
+      "type": "solid_arrow",
+      "node_connections": [
+        "c41a2ece-85ff-4462-89ea-85b4233c58ce",
+        "172bdc0d-eaa8-4ca0-9de0-348b91307fff"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "60ee04de-96eb-4192-a91f-abecdfa81337",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "6ed603e6-7c67-4232-b937-9bfb80db0fce",
+        "40ad763b-d7db-425c-b847-ffa12bdf03a3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "b1e2279f-33c7-42e8-adb6-513e177d0f06",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "6ed603e6-7c67-4232-b937-9bfb80db0fce",
+        "c41a2ece-85ff-4462-89ea-85b4233c58ce"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "efa36bdc-4425-4cd6-a66c-df739718feeb",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "30d2a4b7-8488-4097-8890-4c08aa3a3072",
+        "feac4a01-c973-4a50-919b-c291366db07f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "398dfac4-2923-4638-a5e6-e02ef2beed44",
+      "type": "solid_arrow",
+      "node_connections": [
+        "feac4a01-c973-4a50-919b-c291366db07f",
+        "2750e57e-29e7-4976-9af6-3198963ef663"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f86c861e-e6d5-4da7-a600-5b096d5961e3",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e144e182-1e37-40fa-a28a-187058dfe701",
+        "30d2a4b7-8488-4097-8890-4c08aa3a3072"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "0312aadf-2840-43b8-83b3-c65d373df252",
+      "type": "solid_arrow",
+      "node_connections": [
+        "e144e182-1e37-40fa-a28a-187058dfe701",
+        "feac4a01-c973-4a50-919b-c291366db07f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "cc2cba5d-2aa7-4b5c-b16c-e5d05214b413",
+      "type": "solid_arrow",
+      "node_connections": [
+        "6ed603e6-7c67-4232-b937-9bfb80db0fce",
+        "886e2517-300e-484a-8b98-2108557a6fb1"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "cc391681-3977-4d36-a23b-5309c006e598",
+      "type": "solid_arrow",
+      "node_connections": [
+        "40ad763b-d7db-425c-b847-ffa12bdf03a3",
+        "ecb5fa8e-369d-4c78-aa69-b2384c732148"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7f2ce808-4998-4b1c-8e83-ef5f865ec807",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "886e2517-300e-484a-8b98-2108557a6fb1",
+        "ecb5fa8e-369d-4c78-aa69-b2384c732148"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "70602d75-2c39-4109-9a20-efd792f5248d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "ecb5fa8e-369d-4c78-aa69-b2384c732148",
+        "c9e417cf-9079-485d-be1c-e5a370828e12"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "b336c7ad-9689-483d-8089-5b5bfe3940f1",
+      "type": "solid_arrow",
+      "node_connections": [
+        "66fce767-d0dc-4329-b4ea-e105b25235b5",
+        "73cc682e-123d-4eac-bf0e-32ea0c46692d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "9994efb4-3a92-41e4-86c2-eabe442e6a1d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "172bdc0d-eaa8-4ca0-9de0-348b91307fff",
+        "73cc682e-123d-4eac-bf0e-32ea0c46692d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "46e4e418-1d2f-41b4-b23d-503ee6f5e6b1",
+      "type": "solid_arrow",
+      "node_connections": [
+        "c9e417cf-9079-485d-be1c-e5a370828e12",
+        "73cc682e-123d-4eac-bf0e-32ea0c46692d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

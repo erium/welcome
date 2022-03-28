@@ -1,0 +1,443 @@
+{
+  "nodes": [
+    {
+      "id": "fcbdf8ed-038c-48e0-a0f6-2e74bb15411f",
+      "title": "0. How to use the board",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Go through through the yellow cards in order. Follow the instructions on each of these cards. These will instruct you to adjust and/or run code in the associated notebook, fill in information on the corresponding green card, and provide more information regarding the process at each step.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "40782164-760f-4389-af73-3a81033bc087",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 182.5725,
+        "y": 216
+      },
+      "size": {
+        "width": 248.8125,
+        "height": 263.5
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "1844fce2-e00c-4ef9-8d2c-c9d3d607ee19",
+      "title": "1. Describe the project",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this unsupervised outlier detection project. This would provide a documented summary for the entire project.\\n\\nIn the card \\\"Project\\\", \\ndescribe the use case,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the objective of the outlier detection,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the general procedure of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "40782164-760f-4389-af73-3a81033bc087",
+          "connector": "left"
+        },
+        {
+          "id": "e960c030-c10e-4cf4-8163-2a72d2734eb6",
+          "connector": "right"
+        },
+        {
+          "id": "ff003737-17f9-4a19-9ab5-3cd7426bce14",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 537.9375343322752,
+        "y": 211.31248950958243
+      },
+      "size": {
+        "width": 242.18749999999994,
+        "height": 269.06249999999994
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "c1b0819e-99ce-41f8-ad01-db3bc7ce3b08",
+      "title": "2. Import the dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We would need to import our dataset for training the models. It is important to understand the size, properties, and features of our dataset such that we can decide on if and how much preprocessing and feature engineering/selection would be needed, as well as if uni/multivariate approaches should be used.\\n\\nIt is not required to divide the data set into sets for training and testing as unsupervised outlier detection algorithms would process and detect outliers in the existing data. Performance of models improve with more data if existing dataset is small.\\n\\nIn the card \\\"Dataset\\\",\\ndescribe the dataset,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "e960c030-c10e-4cf4-8163-2a72d2734eb6",
+          "connector": "left"
+        },
+        {
+          "id": "f98f84b6-f5b3-4ffe-8b3a-381be7522deb",
+          "connector": "right"
+        },
+        {
+          "id": "173190af-f410-4bbd-8fdb-3d5c3b917241",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 887.937534332275,
+        "y": 212.87500143051136
+      },
+      "size": {
+        "width": 246.87499999999994,
+        "height": 271.01933333333324
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "8f46effc-c44d-4fb6-98c2-235b5ee959d3",
+      "title": "3. Run the models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"With the set up complete, you may now run the notebook. You can choose specific models to run (refer to outlier_detection.board for a description of the models) or run all the models available.\\n\\nYou may also adjust the parameters for the models in the corresponding cell to adjust sensitivity thresholds or proportion of outliers.\\n\\nNote that for z-score, only features deemed to have normal distribution would be used\\n\\nIn the card \\\"Models\\\",\\nspecify the models to be used.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f98f84b6-f5b3-4ffe-8b3a-381be7522deb",
+          "connector": "left"
+        },
+        {
+          "id": "97ed2791-0cdf-4a36-ac41-1edea17457f3",
+          "connector": "right"
+        },
+        {
+          "id": "6fb1a9de-9a8e-4abf-a7e6-fb35bfb8c744",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1248.8749866485591,
+        "y": 215.99998950958243
+      },
+      "size": {
+        "width": 246.87499999999994,
+        "height": 270.62499999999994
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "ce83f492-2ea9-4aca-9231-d440d1d046ce",
+      "title": "4. Get the results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After the notebook has completed running, you can view the final results of all the models.\\n\\nNote that decision boundaries would only be shown for multivariate models trained on bivariate data.\\n\\nIn the card \\\"Final Results\\\",\\nreport the best parameters and results reported by the outlier detection models.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "97ed2791-0cdf-4a36-ac41-1edea17457f3",
+          "connector": "left"
+        },
+        {
+          "id": "4f806792-af13-4bf2-a42d-c3267ab44ccb",
+          "connector": "right"
+        },
+        {
+          "id": "2abafaa1-d922-481d-b8ad-c164cad7d813",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1612.6249999999995,
+        "y": 216.12499999999994
+      },
+      "size": {
+        "width": 249.99999999999997,
+        "height": 271
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "9bcd64b9-2be9-4341-b644-97f6ba23c48e",
+      "title": "5. Interpret the results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Unlike with supervised metrics, there is no ground truth for a confusion matrix to be constructed. The notebook provides 3 clustering based metrics that evaluates the clustering of the outlier and non-outlier classes. \\n\\nSilhouette Coefficient\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Higher\u00a0means\u00a0better\u00a0defined\u00a0clusters.\u00a0Bounded\u00a0between\u00a0-1\u00a0(incorrect\u00a0clustering)\u00a0to\u00a01\u00a0(highly\u00a0dense\u00a0clustering).\u00a0Scores\u00a0around\u00a0zero\u00a0indicate\u00a0overlapping\u00a0clusters.\\n\\nCalinski-Harabasz Index\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Higher\u00a0means\u00a0better\u00a0defined\u00a0clusters.\\n\\nDavies-Bouldin Index\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Lower\u00a0means\u00a0better\u00a0separation\u00a0between\u00a0clusters.\u00a0Lower\u00a0bound\u00a0of\u00a00;\u00a0values\u00a0close\u00a0to\u00a00\u00a0indicate\u00a0better\u00a0partition.\\n\\nNote\u00a0that\u00a0clustering\u00a0outlier\u00a0detection\u00a0evaluation\u00a0may\u00a0not\u00a0reflect\u00a0your\u00a0use\u00a0case.\u00a0Eg\u00a0if\u00a0abnormal\u00a0data\u00a0is\u00a0hidden\u00a0in\u00a0the\u00a0clusters.\u00a0\\n\\nOften, we would require external validation of the identified outliers to determine if the models can predict the outliers accurately.\\n\\nIn the card \\\"Interpret and Improve\\\",\\nreport and compare the best score to a benchmark score (if available)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify possible ways to improve results if not satisfactory\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "4f806792-af13-4bf2-a42d-c3267ab44ccb",
+          "connector": "left"
+        },
+        {
+          "id": "2c7b23dc-0562-4df3-a474-db9769dd0ff5",
+          "connector": "right"
+        },
+        {
+          "id": "759b66c7-e3ea-4827-a143-e56253222bc8",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1985.6249999999995,
+        "y": 215.12499999999994
+      },
+      "size": {
+        "width": 244.99999999999997,
+        "height": 272.99999999999994
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "32774c18-d408-4fe3-89ca-06e6778fb42f",
+      "title": "6. Export and use trained model on streamlit app",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After the notebook runs, a joblib file containing the data is exported to the ./out folder.\\n\\nProceed to 'detect_outliers.ipynb' and run it. Copy the link to a new tab from the first cell and change the last few digits (port) to the corresponding port in the second cell. This will open a streamlit web app that will import the trained models and data, and allow you to make outlier predictions with new inputs based on the trained models.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "2c7b23dc-0562-4df3-a474-db9769dd0ff5",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2359.6249999999995,
+        "y": 215.12499999999994
+      },
+      "size": {
+        "width": 255.99999999999997,
+        "height": 276
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "e1a82664-84ca-448e-af22-9d5da214ad5f",
+      "title": "project",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Use Case\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Given the a dataset of ... without outlier labels, we would like to predict the cases of abnormal...\\n\\nObjective\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"eg. To detect outliers from the given dataset.\\n\\nGeneral Procedure\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Import data - Pick model(s) to run - Interpret and validate results\\n\\n_________________________________\\nIn the notebook \\\"unsupervised.ipynb\\\", adjust the respective lines (linked to the card) to\\nspecify the name of the outlier detection project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "ff003737-17f9-4a19-9ab5-3cd7426bce14",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 532.6406364440916,
+        "y": 570.3593659400938
+      },
+      "size": {
+        "width": 253.12499999999994,
+        "height": 292.49999999999994
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "850be935-5441-43cc-ae96-3048190a2379",
+      "title": "dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Dataset\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Name: eg. Diabetes\\nSamples: eg. 442\\nDimensions: eg 11\\n\\n_________________________________\\nIn the notebook \\\"unsupervised.ipynb\\\", adjust the respective lines (linked to the card) to\\nspecify the paths of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify if the data is time-series\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "173190af-f410-4bbd-8fdb-3d5c3b917241",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 867.3886661529538,
+        "y": 571.1405801773069
+      },
+      "size": {
+        "width": 287.49999999999994,
+        "height": 303.43749999999994
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "338c4b6e-d00a-442f-b527-e028a045b91d",
+      "title": "Models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Models Chosen: All\\nUnivariate Features Chosen: \\n\\n_________________________________\\n\\n\\n\\nRun the trials with the help of the notebook \\\"unsupervised.ipynb\\\":\\n\\nSelect which models to run.\\nTo start, execute all the notebook cells in order (e.g. click the play icon at the top of the notebook)\u00a0\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "6fb1a9de-9a8e-4abf-a7e6-fb35bfb8c744",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1234.5761542320247,
+        "y": 568.0155846476553
+      },
+      "size": {
+        "width": 290.62499999999994,
+        "height": 303.43749999999994
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "226b4f94-9c73-4782-ab23-179b04c13ebd",
+      "title": "interpret and improve",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Does the result detect the specified outlier proportion\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Benchmark: 0.8 (80% non-outlier data)\\nResult: 0.7\\n\\nAre the results accurate upon validation?\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "759b66c7-e3ea-4827-a143-e56253222bc8",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1967.3885946273795,
+        "y": 563.3280920982359
+      },
+      "size": {
+        "width": 296.8749999999999,
+        "height": 322.18749999999994
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "f2789032-4f62-4f23-b2ea-25695aad36dc",
+      "title": "Final Results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Model:\\n\\nNumber of outliers detected\\n\\nClustering Score:\\n\\nParameters:\\n\\n_________________________________\\nIn the notebook \\\"unsupervised.ipynb\\\",\\ngo to the linked cell that displays the results\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "2abafaa1-d922-481d-b8ad-c164cad7d813",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1597.9868977864587,
+        "y": 560.3807067871095
+      },
+      "size": {
+        "width": 289.33333333333337,
+        "height": 321.2533333333334
+      },
+      "color": "#125059"
+    }
+  ],
+  "edges": [
+    {
+      "id": "40782164-760f-4389-af73-3a81033bc087",
+      "type": "solid_arrow",
+      "node_connections": [
+        "fcbdf8ed-038c-48e0-a0f6-2e74bb15411f",
+        "1844fce2-e00c-4ef9-8d2c-c9d3d607ee19"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "e960c030-c10e-4cf4-8163-2a72d2734eb6",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1844fce2-e00c-4ef9-8d2c-c9d3d607ee19",
+        "c1b0819e-99ce-41f8-ad01-db3bc7ce3b08"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f98f84b6-f5b3-4ffe-8b3a-381be7522deb",
+      "type": "solid_arrow",
+      "node_connections": [
+        "c1b0819e-99ce-41f8-ad01-db3bc7ce3b08",
+        "8f46effc-c44d-4fb6-98c2-235b5ee959d3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "97ed2791-0cdf-4a36-ac41-1edea17457f3",
+      "type": "solid_arrow",
+      "node_connections": [
+        "8f46effc-c44d-4fb6-98c2-235b5ee959d3",
+        "ce83f492-2ea9-4aca-9231-d440d1d046ce"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "4f806792-af13-4bf2-a42d-c3267ab44ccb",
+      "type": "solid_arrow",
+      "node_connections": [
+        "ce83f492-2ea9-4aca-9231-d440d1d046ce",
+        "9bcd64b9-2be9-4341-b644-97f6ba23c48e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "2c7b23dc-0562-4df3-a474-db9769dd0ff5",
+      "type": "solid_arrow",
+      "node_connections": [
+        "9bcd64b9-2be9-4341-b644-97f6ba23c48e",
+        "32774c18-d408-4fe3-89ca-06e6778fb42f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ff003737-17f9-4a19-9ab5-3cd7426bce14",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "1844fce2-e00c-4ef9-8d2c-c9d3d607ee19",
+        "e1a82664-84ca-448e-af22-9d5da214ad5f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "173190af-f410-4bbd-8fdb-3d5c3b917241",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "c1b0819e-99ce-41f8-ad01-db3bc7ce3b08",
+        "850be935-5441-43cc-ae96-3048190a2379"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "6fb1a9de-9a8e-4abf-a7e6-fb35bfb8c744",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8f46effc-c44d-4fb6-98c2-235b5ee959d3",
+        "338c4b6e-d00a-442f-b527-e028a045b91d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "759b66c7-e3ea-4827-a143-e56253222bc8",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "9bcd64b9-2be9-4341-b644-97f6ba23c48e",
+        "226b4f94-9c73-4782-ab23-179b04c13ebd"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "2abafaa1-d922-481d-b8ad-c164cad7d813",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "ce83f492-2ea9-4aca-9231-d440d1d046ce",
+        "f2789032-4f62-4f23-b2ea-25695aad36dc"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

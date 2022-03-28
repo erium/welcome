@@ -1,0 +1,8 @@
+{
+    "directory_name": "design_of_experiments",
+    "timestamp": "{{cookiecutter.timestamp}}",
+    "timestamp_directory_name": "{{cookiecutter.timestamp}}_{{cookiecutter.directory_name}}",
+    "destination_path": "current",
+    "project_name": "Design of experiments",
+    "model_templates": ["01_bayesian_optimization", "02_classical_doe", "03_bayesian_modelling"]
+}
