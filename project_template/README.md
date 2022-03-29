@@ -21,5 +21,5 @@ $ conda install cookiecutter
 ### To start a new project, run:
 ------------
 
-    cookiecutter https://gitlab.com/erium/cookiecutter-halerium
+    cookiecutter https://github.com/erium/welcome --directory="project_template"
     
