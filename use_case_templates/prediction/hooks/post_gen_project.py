@@ -7,16 +7,9 @@ model_templates = '{{cookiecutter.model_templates}}'
 all_templates = ['1-regression'] 
 for template in all_templates:
     if template != model_templates:
-        shutil.rmtree('./' + template)
+        shutil.rmtree('{{ cookiecutter.use_case_folder }}/' + template)
         
 hu.file.assign_new_card_ids_to_tree('./')
-
-# Move to destination directory
-source_dir = os.getcwd()
-target_dir = '{{ cookiecutter.destination_path }}'
-if target_dir != 'current':
-    target_dir = '/home/jovyan/' + target_dir
-    shutil.move(source_dir, target_dir)
 
 # Create new cards in project template folder
 project_path = './../../hypotheses_experiments_learnings.board'

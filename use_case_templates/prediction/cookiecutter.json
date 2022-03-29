@@ -1,9 +1,10 @@
 {
-    "directory_name": "prediction",
-    "timestamp": "{{cookiecutter.timestamp}}",
-    "timestamp_directory_name": "{{cookiecutter.timestamp}}_{{cookiecutter.directory_name}}",
-    "destination_path": "current",
-    "project_name": "Prediction",
+    "use_case_name": "Prediction",
+    "use_case_slug": "{{ cookiecutter.use_case_name|lower|replace(' ', '-') }}",
+    "timestamp": "{{ cookiecutter.timestamp }}",
+    "author_name": "Your name (or your organization/company/team)", 
+    "author_slug": "{{ cookiecutter.author_name|lower|replace(' ', '_') }}",
+    "use_case_folder": "{{ cookiecutter.author_slug }}/{{ cookiecutter.timestamp }}_{{ cookiecutter.use_case_slug }}",
     "data_path": "default example",
     "model_templates": ["1-regression"]
 }
