@@ -1,0 +1,97 @@
+{
+  "nodes": [
+    {
+      "id": "6bead8d1-ed2a-466a-a289-8769771303bd",
+      "title": "Adjustable Parameter",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [],
+      "type": "note",
+      "position": {
+        "x": 67.7833251953125,
+        "y": 223
+      },
+      "size": {
+        "width": 182,
+        "height": 130
+      },
+      "color": "#513063",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 182,
+        "height": 37
+      }
+    },
+    {
+      "id": "043dd29f-cc0f-490a-9253-7de8a8bf9e99",
+      "title": "Unadjustable Parameter",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [],
+      "type": "note",
+      "position": {
+        "x": 351.4552001953125,
+        "y": 223
+      },
+      "size": {
+        "width": 196,
+        "height": 130
+      },
+      "color": "#28337e",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 196,
+        "height": 37
+      }
+    },
+    {
+      "id": "39908a78-6d4c-4483-a714-543d7be80426",
+      "title": "measurements",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [],
+      "type": "note",
+      "position": {
+        "x": 657.7833251953125,
+        "y": 221
+      },
+      "size": {
+        "width": 132,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 132,
+        "height": 37
+      }
+    },
+    {
+      "id": "2ebdf048-ff9a-41e4-8f03-db78f6800c24",
+      "title": "Hidden Parameters ",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [],
+      "type": "note",
+      "position": {
+        "x": 924.7833251953125,
+        "y": 222
+      },
+      "size": {
+        "width": 167,
+        "height": 130
+      },
+      "color": "#51455b",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 167,
+        "height": 37
+      }
+    }
+  ],
+  "edges": []
+}

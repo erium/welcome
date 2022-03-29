@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    {
+      "id": "e5514c80-f09c-4600-8be7-916d57ccb9e0",
+      "title": "Questions",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [],
+      "type": "note",
+      "position": {
+        "x": 103.7833251953125,
+        "y": 354
+      },
+      "size": {
+        "width": 102,
+        "height": 130
+      },
+      "color": "#513063",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 102,
+        "height": 37
+      }
+    },
+    {
+      "id": "816b0ed6-75bb-4249-aabc-d5d228ab5e14",
+      "title": "Answers",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [],
+      "type": "note",
+      "position": {
+        "x": 316.7833251953125,
+        "y": 355
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "d54f38a3-49ab-44b3-b91a-31cf4f70c4f3",
+      "title": "Generic Domain knowledge",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [],
+      "type": "note",
+      "position": {
+        "x": 538.7833251953125,
+        "y": 353
+      },
+      "size": {
+        "width": 220,
+        "height": 130
+      },
+      "color": "#28337e",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 220,
+        "height": 37
+      }
+    }
+  ],
+  "edges": []
+}
