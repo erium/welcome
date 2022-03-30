@@ -32,6 +32,10 @@
         {
           "id": "496a178d-0769-410a-a55a-08648e9c978f",
           "connector": "right"
+        },
+        {
+          "id": "014d3d3a-e94f-4ce3-840f-90abad2c72b3",
+          "connector": "left"
         }
       ],
       "type": "note",
@@ -64,6 +68,10 @@
         {
           "id": "eef1516f-cede-4e2d-94c1-cac441289cf0",
           "connector": "bottom"
+        },
+        {
+          "id": "014d3d3a-e94f-4ce3-840f-90abad2c72b3",
+          "connector": "right"
         }
       ],
       "type": "note",
@@ -138,6 +146,10 @@
         {
           "id": "610786ab-847e-4830-b84b-f7ebd6080fbe",
           "connector": "bottom"
+        },
+        {
+          "id": "b286a9b3-bd00-4c2f-8ef4-cb7ac9347ae0",
+          "connector": "left"
         }
       ],
       "type": "note",
@@ -169,6 +181,10 @@
         {
           "id": "0f13d450-810a-4fec-ae36-c8f9e1edc7be",
           "connector": "right"
+        },
+        {
+          "id": "566146b2-b2ab-47a3-95b2-f4ac7f7500f2",
+          "connector": "right"
         }
       ],
       "type": "note",
@@ -191,6 +207,10 @@
       "edge_connections": [
         {
           "id": "8441b9c5-96de-42fb-9d04-b42c551ec899",
+          "connector": "right"
+        },
+        {
+          "id": "b286a9b3-bd00-4c2f-8ef4-cb7ac9347ae0",
           "connector": "right"
         }
       ],
@@ -349,8 +369,8 @@
           "connector": "right"
         },
         {
-          "id": "f9885b3c-d8a5-457f-81d0-d5ff6bff406f",
-          "connector": "bottom"
+          "id": "af894313-6219-422a-ab1c-3b425decf62b",
+          "connector": "right"
         }
       ],
       "type": "note",
@@ -374,6 +394,14 @@
         {
           "id": "b030dddc-8c55-4bd2-aed2-92651a2e118b",
           "connector": "left"
+        },
+        {
+          "id": "af894313-6219-422a-ab1c-3b425decf62b",
+          "connector": "left"
+        },
+        {
+          "id": "083394ba-6420-4f6b-9c4f-0952aed60d22",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -424,8 +452,8 @@
       ],
       "type": "note",
       "position": {
-        "x": 270.4746837913989,
-        "y": 1366.8907231092446
+        "x": 274.6689877913989,
+        "y": 1465.4568671092445
       },
       "size": {
         "width": 213.99999999999997,
@@ -441,20 +469,43 @@
       },
       "edge_connections": [
         {
-          "id": "f9885b3c-d8a5-457f-81d0-d5ff6bff406f",
+          "id": "083394ba-6420-4f6b-9c4f-0952aed60d22",
           "connector": "top"
         }
       ],
       "type": "note",
       "position": {
-        "x": 2045.9541089385737,
-        "y": 1299.758911356329
+        "x": 2510.3474478185735,
+        "y": 1275.599720316329
       },
       "size": {
         "width": 194.60449218749994,
         "height": 230.44921874999994
       },
       "color": "#513063"
+    },
+    {
+      "id": "ab96ccd7-a5fb-4c60-91bd-56a23ea725d9",
+      "title": "Deployment Strategy",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "566146b2-b2ab-47a3-95b2-f4ac7f7500f2",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 914.99015168,
+        "y": 302.02468224
+      },
+      "size": {
+        "width": 255.69256448,
+        "height": 140.73741824
+      },
+      "color": "#125059"
     }
   ],
   "edges": [
@@ -591,11 +642,55 @@
       }
     },
     {
-      "id": "f9885b3c-d8a5-457f-81d0-d5ff6bff406f",
+      "id": "014d3d3a-e94f-4ce3-840f-90abad2c72b3",
+      "type": "solid_arrow",
+      "node_connections": [
+        "7837dc20-9ff9-45c6-b32c-122eb9aab127",
+        "553d772e-636d-43a9-8d7a-00d216f5ac1d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "566146b2-b2ab-47a3-95b2-f4ac7f7500f2",
+      "type": "solid_arrow",
+      "node_connections": [
+        "66a20603-879a-4601-ab9d-795efbcaf30f",
+        "ab96ccd7-a5fb-4c60-91bd-56a23ea725d9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "af894313-6219-422a-ab1c-3b425decf62b",
+      "type": "solid_arrow",
+      "node_connections": [
+        "0e441f01-0a59-40bf-a5a7-e63875d79334",
+        "27f6b856-1eb3-48cc-9ea8-6cbd5ce37410"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "083394ba-6420-4f6b-9c4f-0952aed60d22",
       "type": "dashed_arrow",
       "node_connections": [
         "a1a9208e-f0d0-4996-ba96-c93da29e8bc7",
-        "0e441f01-0a59-40bf-a5a7-e63875d79334"
+        "27f6b856-1eb3-48cc-9ea8-6cbd5ce37410"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "b286a9b3-bd00-4c2f-8ef4-cb7ac9347ae0",
+      "type": "solid_arrow",
+      "node_connections": [
+        "40f7ae2a-e648-4f37-9bb2-6c66dcec9e55",
+        "d3159ac7-347f-4a98-be37-c4d1a4fee771"
       ],
       "type_specific": {
         "annotation": ""
