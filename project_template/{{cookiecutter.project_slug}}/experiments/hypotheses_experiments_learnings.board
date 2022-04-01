@@ -87,29 +87,6 @@
         "width": 100,
         "height": 37
       }
-    },
-    {
-      "id": "03aaf5fe-a0f0-4d30-bdf8-aa64b94155a0",
-      "title": "Experiment 1",
-      "type_specific": {
-        "message": ""
-      },
-      "edge_connections": [],
-      "type": "note",
-      "position": {
-        "x": 674.3333129882812,
-        "y": 333.87500762939453
-      },
-      "size": {
-        "width": 177.5,
-        "height": 130
-      },
-      "color": "#28337e",
-      "collapsed": true,
-      "collapsed_size": {
-        "width": 177.5,
-        "height": 37
-      }
     }
   ],
   "edges": [
