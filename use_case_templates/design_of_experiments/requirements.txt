@@ -1,2 +1,4 @@
-ax
-halerium_utilities
+ax >=0.52.0
+cookiecutter >=1.7.3
+halerium-utilities >=0.3.0
+streamlit >=1.6.0

@@ -1,2 +1,2 @@
-cookiecutter
-halerium_utilities
+cookiecutter >=1.7.3
+halerium-utilities >=0.3.0

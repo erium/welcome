@@ -1,0 +1,636 @@
+{
+  "nodes": [
+    {
+      "id": "73d35fed-08f0-4ec8-b075-78b06bd1d0d2",
+      "title": "Welcome to Halerium",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"This is a Halerium card.\\n\\nHalerium cards live in Halerium boards, which are stored as files. This board is the file \\\"user_guide.board\\\" as you can see in the tab above the board and in the file-list to the far left.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "dbe1affa-3d2c-48c4-b2c3-a4f40bdaae1a",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -1206.4885,
+        "y": 221.66616158040372
+      },
+      "size": {
+        "width": 331.144,
+        "height": 182.96
+      },
+      "color": "#125059",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 837,
+        "height": 57
+      }
+    },
+    {
+      "id": "02f74edb-c34f-4c94-a0a4-eb6e975fb544",
+      "title": "Card Connections",
+      "type_specific": {
+        "message": "{\"ops\":[{\"attributes\":{\"header\":2},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "0ea7c783-d878-49d2-b00b-469c24177b55",
+          "connector": "bottom"
+        },
+        {
+          "id": "8d172c9b-c8ef-420e-9b02-172b8bfcbaf3",
+          "connector": "bottom"
+        },
+        {
+          "id": "009bea3e-8e4a-42ec-9c09-69730ce70fb0",
+          "connector": "left"
+        },
+        {
+          "id": "8d6a9afa-3395-4cf7-b190-f80928bc7779",
+          "connector": "bottom"
+        },
+        {
+          "id": "f71cc681-1572-4d38-8b4d-810aae27e0ef",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 91.50000000000006,
+        "y": 847.8333282470703
+      },
+      "size": {
+        "width": 150.33333333333331,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 150.33333333333331,
+        "height": 37
+      }
+    },
+    {
+      "id": "b827e7cb-6a27-4e90-914f-3a1341d11b99",
+      "title": "Arrow connections",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The connectors on the left or right of a card can only be connected to other connectors on the left or right.\\nThese connections will appear as arrows and are meant to indicate interactions, flows, consequences etc.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "8d6a9afa-3395-4cf7-b190-f80928bc7779",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 173.5000000000001,
+        "y": 1016.1666615804036
+      },
+      "size": {
+        "width": 239.66666666666663,
+        "height": 218.99999999999997
+      },
+      "color": "#125059",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 100,
+        "height": 57
+      }
+    },
+    {
+      "id": "b1437f3e-461f-4689-9285-4b6685358578",
+      "title": "Dashed connections",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The connectors on the top and bottom can only be connected to to opposing connectors (top to bottom, bottom to top).\\nThese connections will appears as dashed lines are are meant to indicate hierarchy.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "0ea7c783-d878-49d2-b00b-469c24177b55",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -86.58333333333323,
+        "y": 1013.9166615804038
+      },
+      "size": {
+        "width": 228.33333333333331,
+        "height": 226.00000000000003
+      },
+      "color": "#125059",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 100,
+        "height": 57
+      }
+    },
+    {
+      "id": "ab912a88-189c-441f-9c9f-87ec259b48d8",
+      "title": "Cards can change color",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the light edit mode, and click on one of the 4 colors on the bottom.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "5e1f4e2d-82fb-4eb9-8645-cadcbf216fa9",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -1173.4999389648438,
+        "y": 1289.7291730244956
+      },
+      "size": {
+        "width": 263.74999999999994,
+        "height": 138.75
+      },
+      "color": "#51455b",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 263.74999999999994,
+        "height": 57
+      }
+    },
+    {
+      "id": "250ecf4e-b579-4e9e-b14d-a8c8563329ff",
+      "title": "Cards can be linked to code",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The Hexagon in the bottom-left indicates that code line(s) is linked to this card, which can be  from multiple notebooks or .py files.\\n\\nHovering - shows all linked code blocks.\\nClicking - view and navigate to the code blocks.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "80740d9d-cd55-48c0-a448-60c42ca6b915",
+          "connector": "left"
+        },
+        {
+          "id": "093a0f46-add0-47c4-8c3d-8ce95a0b2c99",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -512.7499389648432,
+        "y": 575.5625063578289
+      },
+      "size": {
+        "width": 361.4166666666666,
+        "height": 205.91666666666666
+      },
+      "color": "#51455b",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 249.99999999999994,
+        "height": 57
+      }
+    },
+    {
+      "id": "ef9a1fe1-8dcf-4aaa-83ed-3a68b2500ac7",
+      "title": "Cards can be collapsed to title",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "cc345696-ceb0-4714-83ea-7bb1716c7b29",
+          "connector": "bottom"
+        },
+        {
+          "id": "b18a2db1-aa86-403d-84f2-b2995161d3c7",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -659.4166056315104,
+        "y": 1010.3125063578285
+      },
+      "size": {
+        "width": 257.49999999999994,
+        "height": 130
+      },
+      "color": "#28337e",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 257.49999999999994,
+        "height": 37
+      }
+    },
+    {
+      "id": "205cb0e5-78ce-4c87-a7e0-d6834b9e3221",
+      "title": "explanation",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Resize the card as small as possible or use the hover menu from the blue icon on the top-left.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "cc345696-ceb0-4714-83ea-7bb1716c7b29",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -656.9999389648436,
+        "y": 1063.5625063578286
+      },
+      "size": {
+        "width": 256.24999999999994,
+        "height": 155
+      },
+      "color": "#28337e",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 123.75,
+        "height": 57
+      }
+    },
+    {
+      "id": "6625bc40-8200-4c81-b3a7-68af855ae607",
+      "title": "Cards can be edited",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Click into the title or text field of the card. All changes are auto-saved.\\n\\nTo enter a focused editing mode, double click the card or use the hover menu on the top-left.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "5dc9879a-693f-4dce-9aa9-4b65cdfdc857",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -1089.4166056315098,
+        "y": 1007.7291730244953
+      },
+      "size": {
+        "width": 195.16666666666652,
+        "height": 204
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "c72c92b6-cfc5-4466-906a-5a22cdd3d50b",
+      "title": "New cards can be added",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Double click onto the board's background or use the \\\"+\\\"-Button on the bottom-right of the board.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "16df7f00-1b0d-4884-97a1-4904821f3bf8",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -1322.3332722981766,
+        "y": 1009.2291730244954
+      },
+      "size": {
+        "width": 204.99999999999986,
+        "height": 202
+      },
+      "color": "#28337e",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 376.2499999999999,
+        "height": 57
+      }
+    },
+    {
+      "id": "378954ac-2d2f-43ce-9a49-ce2a5dc1b24d",
+      "title": "Cards can be deleted",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Click into the text field of a card, then use the red delete button to the top-right.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "557cf560-38db-40bc-a1dd-49eb140ab44b",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -875.8332722981769,
+        "y": 1007.8958396911619
+      },
+      "size": {
+        "width": 193.9999999999999,
+        "height": 201.58333333333331
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "4a862eb8-d831-42ac-ac8f-3fd21205137e",
+      "title": "Connections can be deleted",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Simply click on the connection line.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "8d172c9b-c8ef-420e-9b02-172b8bfcbaf3",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 451.3000610351566,
+        "y": 1022.9791730244954
+      },
+      "size": {
+        "width": 146.19999999999996,
+        "height": 150
+      },
+      "color": "#125059",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 100,
+        "height": 57
+      }
+    },
+    {
+      "id": "70f3bc0b-4efe-4567-b727-02a8f6ce118e",
+      "title": "Getting Started",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Copy the Halerium project template using Cookiecutter in the linked notebook.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "dbe1affa-3d2c-48c4-b2c3-a4f40bdaae1a",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -731.7111171874999,
+        "y": 235.95428190104167
+      },
+      "size": {
+        "width": 327.52,
+        "height": 157.52
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "b78c274e-c64b-4e69-bb4d-019da0795d77",
+      "title": "Cards",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "16df7f00-1b0d-4884-97a1-4904821f3bf8",
+          "connector": "bottom"
+        },
+        {
+          "id": "5dc9879a-693f-4dce-9aa9-4b65cdfdc857",
+          "connector": "bottom"
+        },
+        {
+          "id": "557cf560-38db-40bc-a1dd-49eb140ab44b",
+          "connector": "bottom"
+        },
+        {
+          "id": "b18a2db1-aa86-403d-84f2-b2995161d3c7",
+          "connector": "bottom"
+        },
+        {
+          "id": "009bea3e-8e4a-42ec-9c09-69730ce70fb0",
+          "connector": "right"
+        },
+        {
+          "id": "5e1f4e2d-82fb-4eb9-8645-cadcbf216fa9",
+          "connector": "bottom"
+        },
+        {
+          "id": "093a0f46-add0-47c4-8c3d-8ce95a0b2c99",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -922.6643880208335,
+        "y": 845.8000488281252
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#28337e",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "e06b7637-8941-404f-a9c9-6aeaee52c1fb",
+      "title": "Creating connections",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Drag one of the white connectors on the edges of a card and drop it onto the connector of another card.\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f71cc681-1572-4d38-8b4d-810aae27e0ef",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -315.99772135416674,
+        "y": 1015.1333821614585
+      },
+      "size": {
+        "width": 196,
+        "height": 191.33333333333334
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "d9a83435-945c-4e0e-bc06-51cb3f03d650",
+      "title": "Notebooks",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "80740d9d-cd55-48c0-a448-60c42ca6b915",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -931.9977213541669,
+        "y": 577.8000488281251
+      },
+      "size": {
+        "width": 117.33333333333334,
+        "height": 130
+      },
+      "color": "#513063",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 117.33333333333334,
+        "height": 37
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "0ea7c783-d878-49d2-b00b-469c24177b55",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "b1437f3e-461f-4689-9285-4b6685358578",
+        "02f74edb-c34f-4c94-a0a4-eb6e975fb544"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "cc345696-ceb0-4714-83ea-7bb1716c7b29",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "205cb0e5-78ce-4c87-a7e0-d6834b9e3221",
+        "ef9a1fe1-8dcf-4aaa-83ed-3a68b2500ac7"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8d172c9b-c8ef-420e-9b02-172b8bfcbaf3",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4a862eb8-d831-42ac-ac8f-3fd21205137e",
+        "02f74edb-c34f-4c94-a0a4-eb6e975fb544"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "dbe1affa-3d2c-48c4-b2c3-a4f40bdaae1a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "73d35fed-08f0-4ec8-b075-78b06bd1d0d2",
+        "70f3bc0b-4efe-4567-b727-02a8f6ce118e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "16df7f00-1b0d-4884-97a1-4904821f3bf8",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "c72c92b6-cfc5-4466-906a-5a22cdd3d50b",
+        "b78c274e-c64b-4e69-bb4d-019da0795d77"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "5dc9879a-693f-4dce-9aa9-4b65cdfdc857",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "b78c274e-c64b-4e69-bb4d-019da0795d77",
+        "6625bc40-8200-4c81-b3a7-68af855ae607"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "557cf560-38db-40bc-a1dd-49eb140ab44b",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "378954ac-2d2f-43ce-9a49-ce2a5dc1b24d",
+        "b78c274e-c64b-4e69-bb4d-019da0795d77"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "b18a2db1-aa86-403d-84f2-b2995161d3c7",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "ef9a1fe1-8dcf-4aaa-83ed-3a68b2500ac7",
+        "b78c274e-c64b-4e69-bb4d-019da0795d77"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "009bea3e-8e4a-42ec-9c09-69730ce70fb0",
+      "type": "solid_arrow",
+      "node_connections": [
+        "b78c274e-c64b-4e69-bb4d-019da0795d77",
+        "02f74edb-c34f-4c94-a0a4-eb6e975fb544"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8d6a9afa-3395-4cf7-b190-f80928bc7779",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "02f74edb-c34f-4c94-a0a4-eb6e975fb544",
+        "b827e7cb-6a27-4e90-914f-3a1341d11b99"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f71cc681-1572-4d38-8b4d-810aae27e0ef",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e06b7637-8941-404f-a9c9-6aeaee52c1fb",
+        "02f74edb-c34f-4c94-a0a4-eb6e975fb544"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "5e1f4e2d-82fb-4eb9-8645-cadcbf216fa9",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "ab912a88-189c-441f-9c9f-87ec259b48d8",
+        "b78c274e-c64b-4e69-bb4d-019da0795d77"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "80740d9d-cd55-48c0-a448-60c42ca6b915",
+      "type": "solid_arrow",
+      "node_connections": [
+        "d9a83435-945c-4e0e-bc06-51cb3f03d650",
+        "250ecf4e-b579-4e9e-b14d-a8c8563329ff"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "093a0f46-add0-47c4-8c3d-8ce95a0b2c99",
+      "type": "solid_arrow",
+      "node_connections": [
+        "b78c274e-c64b-4e69-bb4d-019da0795d77",
+        "250ecf4e-b579-4e9e-b14d-a8c8563329ff"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

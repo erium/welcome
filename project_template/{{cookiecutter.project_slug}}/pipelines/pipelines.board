@@ -1,0 +1,285 @@
+{
+  "nodes": [
+    {
+      "id": "a974d2d1-fd91-4e19-8856-4ba60a6e6659",
+      "title": "EtL",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In etl.py\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "65930fff-b392-4a83-9449-3b3f5a54b570",
+          "connector": "right"
+        },
+        {
+          "id": "8a71a000-391c-44b8-8d0f-3bd72afdb3a5",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 70.015625,
+        "y": 318
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "d0da776e-e4d1-49d5-8d1d-c5d45aab929b",
+      "title": "visualize",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In visualize.py\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "65930fff-b392-4a83-9449-3b3f5a54b570",
+          "connector": "left"
+        },
+        {
+          "id": "893542ed-491c-4151-b85e-caa772748af8",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 223.015625,
+        "y": 318
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "2153833c-705b-4f95-add0-894c4d2a8454",
+      "title": "features",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In features.py\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "893542ed-491c-4151-b85e-caa772748af8",
+          "connector": "left"
+        },
+        {
+          "id": "0cf07523-14b5-44be-9052-871d1fd35490",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 373.015625,
+        "y": 316
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "85c777c4-420e-4eaa-a9c9-7f035e587d78",
+      "title": "train",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In train.py\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "0cf07523-14b5-44be-9052-871d1fd35490",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 526.015625,
+        "y": 318
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "1e1d4719-6d4c-4c72-8509-979e520cd5fc",
+      "title": "pipeline1",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Description of pipeline1 in pipeline1.py\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "8a71a000-391c-44b8-8d0f-3bd72afdb3a5",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -111.984375,
+        "y": 318
+      },
+      "size": {
+        "width": 114.87199999999999,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 174.87199999999999,
+        "height": 37
+      }
+    },
+    {
+      "id": "24aa14b3-01cf-4d69-8d3e-fb1d0bc0d4fd",
+      "title": "Data Preparation Pipeline",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Pipeline that loads the raw data, and prepares the data for further use in the /data folder.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "69cdfd95-c789-41f7-a8ce-8ba83786b028",
+          "connector": "right"
+        },
+        {
+          "id": "f451e2e1-d13b-4035-8eec-d62c3c4adaa5",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -151.6690673828125,
+        "y": 483
+      },
+      "size": {
+        "width": 215,
+        "height": 136
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "56c5994c-275f-45f2-803a-4cedbd7f3b2d",
+      "title": "Load Data",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Load the raw data from an external source in the raw data folder\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "69cdfd95-c789-41f7-a8ce-8ba83786b028",
+          "connector": "left"
+        },
+        {
+          "id": "bc6846d7-fc0c-4c0a-87f8-59ce45470ad5",
+          "connector": "right"
+        },
+        {
+          "id": "f451e2e1-d13b-4035-8eec-d62c3c4adaa5",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 108.3309326171875,
+        "y": 486
+      },
+      "size": {
+        "width": 158.24,
+        "height": 130
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "65f9e471-c16f-4fc5-8e2f-acd8d9966b2b",
+      "title": "Prepare Data",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Process and prepare the data for further use\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "bc6846d7-fc0c-4c0a-87f8-59ce45470ad5",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 313.6909326171875,
+        "y": 486.64
+      },
+      "size": {
+        "width": 112,
+        "height": 130
+      },
+      "color": "#51455b"
+    }
+  ],
+  "edges": [
+    {
+      "id": "65930fff-b392-4a83-9449-3b3f5a54b570",
+      "type": "solid_arrow",
+      "node_connections": [
+        "a974d2d1-fd91-4e19-8856-4ba60a6e6659",
+        "d0da776e-e4d1-49d5-8d1d-c5d45aab929b"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "893542ed-491c-4151-b85e-caa772748af8",
+      "type": "solid_arrow",
+      "node_connections": [
+        "d0da776e-e4d1-49d5-8d1d-c5d45aab929b",
+        "2153833c-705b-4f95-add0-894c4d2a8454"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "0cf07523-14b5-44be-9052-871d1fd35490",
+      "type": "solid_arrow",
+      "node_connections": [
+        "2153833c-705b-4f95-add0-894c4d2a8454",
+        "85c777c4-420e-4eaa-a9c9-7f035e587d78"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8a71a000-391c-44b8-8d0f-3bd72afdb3a5",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1e1d4719-6d4c-4c72-8509-979e520cd5fc",
+        "a974d2d1-fd91-4e19-8856-4ba60a6e6659"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "bc6846d7-fc0c-4c0a-87f8-59ce45470ad5",
+      "type": "solid_arrow",
+      "node_connections": [
+        "56c5994c-275f-45f2-803a-4cedbd7f3b2d",
+        "65f9e471-c16f-4fc5-8e2f-acd8d9966b2b"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f451e2e1-d13b-4035-8eec-d62c3c4adaa5",
+      "type": "solid_arrow",
+      "node_connections": [
+        "24aa14b3-01cf-4d69-8d3e-fb1d0bc0d4fd",
+        "56c5994c-275f-45f2-803a-4cedbd7f3b2d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

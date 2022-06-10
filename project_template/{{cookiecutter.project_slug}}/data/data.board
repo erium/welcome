@@ -61,36 +61,8 @@
       }
     },
     {
-      "id": "c6062e27-47bb-42ad-bd02-497a0002ee55",
-      "title": "prepared",
-      "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Definition of prepared data:\\nready to be read in by preprocessing\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"no imputation\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"no filtering\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
-      },
-      "edge_connections": [
-        {
-          "id": "f2ddeb2c-a1cc-4671-ac2f-a1c570838b26",
-          "connector": "left"
-        }
-      ],
-      "type": "note",
-      "position": {
-        "x": 1108.0156059265137,
-        "y": 295.44791030883783
-      },
-      "size": {
-        "width": 219.99999999999997,
-        "height": 130
-      },
-      "color": "#125059",
-      "collapsed": false,
-      "collapsed_size": {
-        "width": 219.99999999999997,
-        "height": 37
-      }
-    },
-    {
       "id": "2155529e-86b4-4958-bbf5-780f3b09a030",
-      "title": "Transformation",
+      "title": "load data",
       "type_specific": {
         "message": ""
       },
@@ -122,7 +94,7 @@
     },
     {
       "id": "3cf4aacd-2c92-4432-8e2d-b06d589a2f64",
-      "title": "Transformation",
+      "title": "prepare data",
       "type_specific": {
         "message": ""
       },
@@ -132,7 +104,7 @@
           "connector": "left"
         },
         {
-          "id": "f2ddeb2c-a1cc-4671-ac2f-a1c570838b26",
+          "id": "2502877a-0f34-4600-be91-12e27ca1d210",
           "connector": "right"
         }
       ],
@@ -149,6 +121,34 @@
       "collapsed": true,
       "collapsed_size": {
         "width": 140,
+        "height": 37
+      }
+    },
+    {
+      "id": "100f7ef9-0e41-4cff-8369-4b5e365ff645",
+      "title": "Prepared",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "2502877a-0f34-4600-be91-12e27ca1d210",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1078.9892031250001,
+        "y": 339.8449828125
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
         "height": 37
       }
     }
@@ -188,11 +188,11 @@
       }
     },
     {
-      "id": "f2ddeb2c-a1cc-4671-ac2f-a1c570838b26",
+      "id": "2502877a-0f34-4600-be91-12e27ca1d210",
       "type": "solid_arrow",
       "node_connections": [
         "3cf4aacd-2c92-4432-8e2d-b06d589a2f64",
-        "c6062e27-47bb-42ad-bd02-497a0002ee55"
+        "100f7ef9-0e41-4cff-8369-4b5e365ff645"
       ],
       "type_specific": {
         "annotation": ""
