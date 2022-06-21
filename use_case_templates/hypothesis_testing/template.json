@@ -1,0 +1,6 @@
+{
+    "template_name": "Hypothesis Testing",
+    "description": "Templates for classical statistical, causal, and equation hypothesis testing",
+    "overview_board": "hypothesis_testing.board",
+    "subtemplates": ["1-classical","2-causal","3-equation"]
+}
