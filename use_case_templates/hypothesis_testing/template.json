@@ -1,6 +1,87 @@
 {
-    "template_name": "Hypothesis Testing",
-    "description": "Templates for classical statistical, causal, and equation hypothesis testing",
-    "overview_board": "hypothesis_testing.board",
-    "subtemplates": ["1-classical","2-causal","3-equation"]
+    "name": "Hypothesis Testing",
+    "description": "To infer if the data at hand supports a certain hypothesis",
+    "templates": [
+        {
+            "name": "Overview",
+            "isOverview": "true",
+            "description": "Overview board for hypothesis testing templates",
+            "folder_name": "hypothesis_testing_overview-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=hypothesis_testing_overview",
+            "files": [
+                {
+                    "name": "hypothesis_testing_overview.board",
+                    "contentType": "board",
+                    "path": "hypothesis_testing_overview/hypothesis_testing_overview.board"
+                }
+            ]
+        },
+        {
+            "name": "Classical Hypothesis Testing",
+            "isOverview": "false",
+            "description": "To use statistical tests to infer if the data supports a certain hypothesis",
+            "folder_name": "classical_ht-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=classical_ht",
+            "files": [
+                {
+                    "name": "classical_ht.board",
+                    "contentType": "board",
+                    "path": "classical_ht/classical_ht.board"
+                },
+                {
+                    "name": "classical_ht.ipynb",
+                    "contentType": "ipynb",
+                    "path": "classical_ht/classical.ipynb"
+                }
+            ]
+        },
+        {
+            "name": "Causal Hypothesis Testing",
+            "isOverview": "false",
+            "description": "To model good fitting causal structures and obtain causal estimates",
+            "folder_name": "causal-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=causal",
+            "files": [
+                {
+                    "name": "causal_structure.board",
+                    "contentType": "board",
+                    "path": "causal/causal_structure.board"
+                },
+                {
+                    "name": "causal_structure.ipynb",
+                    "contentType": "ipynb",
+                    "path": "causal/causal_structure.ipynb"
+                },
+                {
+                    "name": "causal_estimate.board",
+                    "contentType": "board",
+                    "path": "causal/causal_estimate.board"
+                },
+                {
+                    "name": "causal_estimate.ipynb",
+                    "contentType": "ipynb",
+                    "path": "causal/causal_estimate.ipynb"
+                }
+            ]
+        },
+        {
+            "name": "Equation Hypothesis Testing",
+            "isOverview": "false",
+            "description": "To test if a hypothesis in the form of an equation fits the data well",
+            "folder_name": "equation-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=equation",
+            "files": [
+                {
+                    "name": "equation.board",
+                    "contentType": "board",
+                    "path": "equation/equation.board"
+                },
+                {
+                    "name": "equation.ipynb",
+                    "contentType": "ipynb",
+                    "path": "equation/equation.ipynb"
+                }
+            ]
+        }
+    ]
 }

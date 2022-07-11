@@ -14,12 +14,12 @@
       ],
       "type": "note",
       "position": {
-        "x": -1206.4885,
-        "y": 221.66616158040372
+        "x": -1241.3205,
+        "y": 242.1461615804037
       },
       "size": {
-        "width": 331.144,
-        "height": 182.96
+        "width": 837,
+        "height": 142
       },
       "color": "#125059",
       "collapsed": false,
@@ -354,7 +354,7 @@
       "id": "70f3bc0b-4efe-4567-b727-02a8f6ce118e",
       "title": "Getting Started",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Copy the Halerium project template using Cookiecutter in the linked notebook.\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"Add Halerium data science templates directly to a project or a standalone directory by going to the directory and selecting a template or guide board in the '+' menu in the file list on the top left.\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -364,7 +364,7 @@
       ],
       "type": "note",
       "position": {
-        "x": -731.7111171874999,
+        "x": -261.71111718749995,
         "y": 235.95428190104167
       },
       "size": {

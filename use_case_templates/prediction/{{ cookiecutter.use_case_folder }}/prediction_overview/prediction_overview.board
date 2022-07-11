@@ -1,0 +1,1211 @@
+{
+  "nodes": [
+    {
+      "id": "c6bd0153-cf09-4d03-8a68-f61e08cfd8a4",
+      "title": "0. How to use the board",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"This board guides you to a suitable prediction approach based on your task.\\n\\nGo through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Read the instructions on each \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"card\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Follow the arrows on the \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"green \"},{\"insert\":\"card most suitable to your task OR Delete \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"green \"},{\"insert\":\"cards that do not relate to your task to remove possible paths\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"At the end of the tree, you will reach a \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"card that specifies a suitable prediction approach for your task\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "18bd637f-b30c-4c80-a87b-a2d24dafe276",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -161.01764112630224,
+        "y": -127.37888000000001
+      },
+      "size": {
+        "width": 332.57674666666674,
+        "height": 322.43157333333346
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "d649b85c-9e2b-45c5-904a-901831f15648",
+      "title": "1. Regression or classification",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"A prediction task is to estimate the value of one or more dependent variables, from the values of one or more independent variables. \\n\\nThere are two broad categories of prediction tasks.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Regression\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"A task of predicting a continuous quantity. Both discrete and continuous inputs may be used to generate the quantity.\\n\\nFor example: Given the age of a specific breed of animal, predict its size (in a continuous metric such as length or weight).\\n\\nMore strictly, regression is a process that estimates the relationship between a dependent continuous variable and one or more independent continuous and/or discrete variables.\\n\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Classification\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"A task of predicting a discrete class label. Both discrete and continuous inputs may be used to predict the label.\\n\\nFor example: Given the size of the physical features of an animal (size of ears, body length, number of legs etc.), predict the species of animal(cat, dog etc.).\\n\\nThis would not be a regression problem (although logistic regression models may be used to generate a probabilistic classification label).\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "18bd637f-b30c-4c80-a87b-a2d24dafe276",
+          "connector": "left"
+        },
+        {
+          "id": "a401131c-4e54-49dd-bc4b-6899afb4b560",
+          "connector": "bottom"
+        },
+        {
+          "id": "62c58c39-f524-4ad6-9b15-f2834d561fde",
+          "connector": "bottom"
+        },
+        {
+          "id": "3e4d2ee0-18d0-40af-afb2-df8b9b6626ce",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 339.9680948893228,
+        "y": -56.80000457763674
+      },
+      "size": {
+        "width": 262,
+        "height": 179
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "6d5a76cf-e8de-448c-be88-26596be1be9a",
+      "title": "Regression",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "62c58c39-f524-4ad6-9b15-f2834d561fde",
+          "connector": "top"
+        },
+        {
+          "id": "f635d9b1-dd20-4ee1-9e66-128c9a61f436",
+          "connector": "right"
+        },
+        {
+          "id": "e3b37a8b-b8f7-4235-98d9-4e42e1507849",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 557.0144065494788,
+        "y": 309.6841579295856
+      },
+      "size": {
+        "width": 104.2991616,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 104.2991616,
+        "height": 37
+      }
+    },
+    {
+      "id": "87d53bda-4508-4852-b426-c2c40a516c0f",
+      "title": "Classification",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "a401131c-4e54-49dd-bc4b-6899afb4b560",
+          "connector": "top"
+        },
+        {
+          "id": "a20974d2-9cbf-4991-9003-7bc7ab50e2d1",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 286.1557370572917,
+        "y": 311.3621195539346
+      },
+      "size": {
+        "width": 130.79657333333324,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 130.79657333333324,
+        "height": 37
+      }
+    },
+    {
+      "id": "55e5f5d1-1c42-48cb-978b-a40e28ca101e",
+      "title": "2. Types of Independent Variables",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We also need to distinguish between two principal types of independent variables: continuous and categorical.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Continuous\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"A continuous variable has values that describe a continuous measurable quantity or number. Eg. length, weight, time\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Categorical\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"A categorical variable may take on a countable set of distinct groups.\\n\\nThere are various subtypes of categorical variables: For example, binary (eg. yes/no), nominal (where order does not matter eg. Blood type), and ordinal (ordered values eg. satisfaction levels \\\"strongly disagree\\\", \\\"disagree\\\", \\\"agree\\\", \\\"strongly agree ).\\n\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Algorithm choice and encoding\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"The presence or absence of categorical variables may affect the choice of regression algorithm.\\n\\nSome regression algorithms (e.g. decision trees) can take both continuous and categorical variables as input. Other algorithms (such as linear regression or neural networks) require continuous quantities as direct input. \\n\\nTo use these algorithms with categorical variables, one has to translate these categorical quantities into continuous quantities. There are various methods for this encoding of categorical variables into continuous quantities (e.g. ordinal encoding, one-hot encoding, embedding) with their own advantages and drawbacks, but in any case, the extra effort encoding should be considered when picking the regression algorithm.\\n\\n\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "8b871e69-bf67-45d4-9ac7-3d27b702ee1e",
+          "connector": "bottom"
+        },
+        {
+          "id": "57029411-d00a-43ca-91b9-efd203fb4336",
+          "connector": "bottom"
+        },
+        {
+          "id": "3e4d2ee0-18d0-40af-afb2-df8b9b6626ce",
+          "connector": "left"
+        },
+        {
+          "id": "03935578-1699-4f69-acbc-265510cf925d",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 848.0971362304684,
+        "y": -57.78511411794031
+      },
+      "size": {
+        "width": 272.17566666666664,
+        "height": 181.43233333333333
+      },
+      "color": "#51455b",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 238.753,
+        "height": 57
+      }
+    },
+    {
+      "id": "9249af83-b0da-4c74-9e94-02e63f357dc5",
+      "title": "1a. categorical variables",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Categorical variables may be divided into 3 more categories. This distinction is more important when dealing with classification methods.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Binary\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Binary variables are dichotomous with only two options. For example this could be the answer to a yes/no question or if a certain process is running or not.\\n\\nA binary logistic regression model may be suitable to tackle problems with a binary dependent variable.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Nominal\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Nominal variables are categorical where the order of the categories do not matter or present any useful meaning for the data. For example this could be categorizing blood types or the nationality of a person.\\n\\nA nominal (or multinomial) logistic regression model may be suitable to tackle problems with a nominal dependent variable.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Ordinal\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Ordinal variables are categorical where the order of the categories carry information about rank or extent. For example this could be categorizing the level of satisfaction answered on a survey (\\\"Strongly disagree\\\", \\\"Disagree\\\", \\\"Agree\\\", \\\"Strongly Agree\\\"). However, these ordered categories need not be equally spaced.\\n\\nA proportional odds model may be suitable to tackle problems with an ordinal dependent variable.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Count/Rate\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Count variables are a numerical count following the non-negative integers (0, 1, 2, 3...) eg. Number of cars parked in a carpark. Rates variables are counts divided by a measure of that unit's exposure (consistent unit of observation) eg. Number of calls per month.\\n\\nCount/rate variables usually follow a Poisson distribution; therefore a Poisson regression model would be most suitable.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "3fd32bb3-2694-437d-9d19-8ec9bc0a7175",
+          "connector": "bottom"
+        },
+        {
+          "id": "94c7264e-a996-4b1c-89c7-499b06ad8382",
+          "connector": "bottom"
+        },
+        {
+          "id": "26dfa27d-743e-4f13-a39c-82974b7e86e4",
+          "connector": "bottom"
+        },
+        {
+          "id": "a0c732ab-cca7-4f7a-9f41-72aa0f98ba4d",
+          "connector": "bottom"
+        },
+        {
+          "id": "a20974d2-9cbf-4991-9003-7bc7ab50e2d1",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1899.745067871093,
+        "y": 1018.7975458755491
+      },
+      "size": {
+        "width": 260.89277343750007,
+        "height": 224.71814062499996
+      },
+      "color": "#51455b",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 196.8058593750001,
+        "height": 37
+      }
+    },
+    {
+      "id": "5083b0fb-de75-4277-a3fd-e6b90b04e745",
+      "title": "4. Regularization",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Models may sometimes 'overfit' on the training data, giving good results on training data but not so good results on new test data it has not seen before. This is especially so with noisy data and outliers, as well as data with: \\nLarge number of variables\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Low ratio of observations to variables\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"High Multicollinearity\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\\nApplying regularization on the models would train a simpler model that may improve test results. In a nutshell, it adds a penalty for large parameter values, thereby encouraging models to avoid complex parameters with large values. This may decrease training scores slightly.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "7d771ae5-4de4-4862-8ae1-f28a0406c2bd",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1682.340950927734,
+        "y": -57.684361025492194
+      },
+      "size": {
+        "width": 252.10784016927082,
+        "height": 188.11087890624998
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "05b94685-a5cc-45f3-8710-175ee820129f",
+      "title": "Binary",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "3fd32bb3-2694-437d-9d19-8ec9bc0a7175",
+          "connector": "top"
+        },
+        {
+          "id": "548a9a95-7c55-4cfb-9852-71bf5475c622",
+          "connector": "right"
+        },
+        {
+          "id": "faec3173-ac00-4b63-9518-32dce0561aa0",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2149.3427917480467,
+        "y": 1351.2989135742187
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 57
+      }
+    },
+    {
+      "id": "d1b9b853-6470-4bb6-9d01-219dbab81e73",
+      "title": "Nominal",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "94c7264e-a996-4b1c-89c7-499b06ad8382",
+          "connector": "top"
+        },
+        {
+          "id": "97c65aea-d7d7-46f3-88bf-bbc990d4e5a3",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2085.8251098632813,
+        "y": 1450.378682861328
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 57
+      }
+    },
+    {
+      "id": "55d2f06d-97c6-4061-9aca-1687e55a2eb2",
+      "title": "Ordinal",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "26dfa27d-743e-4f13-a39c-82974b7e86e4",
+          "connector": "top"
+        },
+        {
+          "id": "92a0a508-98d2-43a2-aea7-68e621038270",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2041.2437268066403,
+        "y": 1555.1777490234374
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 57
+      }
+    },
+    {
+      "id": "ddf38d5c-75cc-44b8-8168-b15b1d5809b9",
+      "title": "Binary Logistic",
+      "type_specific": {
+        "message": "{\"ops\":[{\"attributes\":{\"color\":\"#ffffff\"},\"insert\":\"Binary logistic regression models the relationship between a set of predictors and a binary response variable. A binary response has only two possible values, such as win and lose. Binary regression models how changes in the predictor values are associated with changes in the probability of an event occurring.\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "548a9a95-7c55-4cfb-9852-71bf5475c622",
+          "connector": "left"
+        },
+        {
+          "id": "9a9ebbb1-f0f4-4575-9004-3ac1a5722def",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2428.7398489746092,
+        "y": 1365.6922093261717
+      },
+      "size": {
+        "width": 183.2,
+        "height": 130
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "9b60d516-2e60-44f8-94aa-8ce7d2996ba9",
+      "title": "Nominal logistic",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Nominal (or multinomial) logistic models generalize logistic regression to multiclass problems, where it can predict the probability of multiple distinct outcomes. The ordering of the dependent variable does not matter and present any new information or relationships.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "97c65aea-d7d7-46f3-88bf-bbc990d4e5a3",
+          "connector": "left"
+        },
+        {
+          "id": "9664860d-8b8b-4b1d-99ab-f91f02ba231f",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2422.2426205566403,
+        "y": 1699.5327874999996
+      },
+      "size": {
+        "width": 180.64,
+        "height": 130
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "21b8dccc-4b2f-44dd-a880-83f0a3ff8ec0",
+      "title": "Proportional odds (Ordered ",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"An adaption to the logistic regression model by modelling different intercepts that correspond to the partitions of the ordinal categories based on the probability of being in a higher ordinal category.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "92a0a508-98d2-43a2-aea7-68e621038270",
+          "connector": "left"
+        },
+        {
+          "id": "6886b0c5-80fb-4c85-ae8b-123c97963ef3",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2424.0635387369794,
+        "y": 1878.5624051757814
+      },
+      "size": {
+        "width": 171.2448,
+        "height": 134.9152
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "11c28217-ffc3-4cda-bfff-9aff65f715fe",
+      "title": "Poisson",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Count (and rate) data often follows a Poisson distribution. Poisson variables are a count of something over a consistent length of observation. However, this distribution is only suitable for counts of non-negative whole numbers.\\n\\n\"},{\"attributes\":{\"color\":\"#ffffff\"},\"insert\":\"Poisson regression models how changes in the independent variables are associated with changes in the counts. Poisson models are similar to logistic models because they use Maximum Likelihood Estimation and transform the dependent variable using the natural log. \"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "fbbcd0a2-081a-4542-b0eb-c688c7b1674e",
+          "connector": "left"
+        },
+        {
+          "id": "127ad9d3-94df-4030-9ab5-aca7063c2de7",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2429.3701855468753,
+        "y": 1219.7286218261722
+      },
+      "size": {
+        "width": 179.35999999999999,
+        "height": 130
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "1bdd7f99-66a7-4d90-98c0-67aa8c0fdcbc",
+      "title": "Continuous variables",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"\\n\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "e8437e6b-596e-41a2-afbc-ed4c1b0e1ba8",
+          "connector": "left"
+        },
+        {
+          "id": "9acc46ac-419e-4d96-9040-70ea67308827",
+          "connector": "left"
+        },
+        {
+          "id": "e3b37a8b-b8f7-4235-98d9-4e42e1507849",
+          "connector": "left"
+        },
+        {
+          "id": "9ee3d1d9-53f0-458a-9a57-6fb989187f6a",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2058.604196777343,
+        "y": 739.9075299072265
+      },
+      "size": {
+        "width": 245.92,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 245.92,
+        "height": 37
+      }
+    },
+    {
+      "id": "d97d336a-05d3-450e-a3c8-b9b697b7e0e9",
+      "title": "Support vector Classifie",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Support vector regression models can be used to solve both linear and nonlinear problems. It achieves this by selecting candidate data points (support vectors) and constructs a hyperplane that can achieve the largest margin (decision boundaries) between the support vectors.\\n\\nSupport vector machines can make use of kernel functions to compute data in high dimensions with less cost; using linear learning algorithms to learn a nonlinear decision boundary. However, working in high dimensions may be subject to the 'curse of dimensionality' where the data becomes less reliable as it is more sparse in a highly dimensional space.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "faec3173-ac00-4b63-9518-32dce0561aa0",
+          "connector": "left"
+        },
+        {
+          "id": "a69298ca-06c7-4536-965e-9c86493275ba",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2424.811582657877,
+        "y": 1529.1822384521486
+      },
+      "size": {
+        "width": 215.99999999999997,
+        "height": 136
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "9a5e8ae6-b73f-4334-b751-6830aea40928",
+      "title": "ContinUous",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "8b871e69-bf67-45d4-9ac7-3d27b702ee1e",
+          "connector": "top"
+        },
+        {
+          "id": "9acc46ac-419e-4d96-9040-70ea67308827",
+          "connector": "right"
+        },
+        {
+          "id": "0ae57c68-9af8-470d-8a21-db3dd996ea2c",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 805.2825671264181,
+        "y": 235.34586690240707
+      },
+      "size": {
+        "width": 102.74470812499993,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 102.74470812499993,
+        "height": 37
+      }
+    },
+    {
+      "id": "8c8737c8-c0ec-474b-92ff-5c76a4d7b2ff",
+      "title": "Categorical",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "57029411-d00a-43ca-91b9-efd203fb4336",
+          "connector": "top"
+        },
+        {
+          "id": "52b62ed2-f8ef-4724-8535-9bf74736ffd0",
+          "connector": "right"
+        },
+        {
+          "id": "6fc13f46-ac05-4f6e-8454-11e774055779",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1038.7158075296734,
+        "y": 165.6185651197248
+      },
+      "size": {
+        "width": 109.8386754355468,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 118.8386754355468,
+        "height": 37
+      }
+    },
+    {
+      "id": "47acc258-0fb5-4db7-b7c8-aff2e6877101",
+      "title": "Categorical And/or Contiuous Variables",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "52b62ed2-f8ef-4724-8535-9bf74736ffd0",
+          "connector": "left"
+        },
+        {
+          "id": "0ae57c68-9af8-470d-8a21-db3dd996ea2c",
+          "connector": "left"
+        },
+        {
+          "id": "f635d9b1-dd20-4ee1-9e66-128c9a61f436",
+          "connector": "left"
+        },
+        {
+          "id": "4a9ebf90-733f-4e21-9546-6006af69ab63",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2049.1864924430847,
+        "y": 289.6860274672508
+      },
+      "size": {
+        "width": 251.52587890624994,
+        "height": 136.103515625
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 251.52587890624994,
+        "height": 58
+      }
+    },
+    {
+      "id": "3b75a4cd-9130-4f2f-80b2-982c3d7e05c9",
+      "title": "3. Feature Selection, Feauture EngineerinG, and Encoding ",
+      "type_specific": {
+        "message": "{\"ops\":[{\"attributes\":{\"underline\":true},\"insert\":\"Feature Selection\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Certain algorithms (e.g. linear regression) may benefit from carefully selecting only a subset of available features and discarding others in a preprocessing step before feeding the selected features into the regression algorithm. Other algorithms (e.g. PCR) come with a built-in feature selection.\\n\\nSo the choice of algorithm may depend on whether feature selection is beneficial (or even required) and if yes, whether to do this in a separate preprocessing step or directly by the regression algorithm.\\n\\nThe impact of feature selection depends on the specific problem. Generally, if there are very many features, feature selection should be considered. If there is a very limited amount of training data and/or computation capacity available, feature selection is often mandatory. Moreover if features are highly correlated, feature selection may improve the performance.\\n\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Feature Engineering\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Certain algorithms (e.g. linear regression) may benefit from combining one or more existing features into new features through feature engineering. Other algorithms (e.g. polynomial regression or deep neural networks) already have feature-engineering capabilities built.in.\\n\\nSo which algorithm to use may depend on whether feature engineering is beneficial and if yes, whether this should be done in preprocessing or directly by the regression algorithm.\\n\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Encoding\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Encoding can be considered a specific type of feature engineering. It is required if one wishes to use certain algorithms that require continuous numerical values as input when there are categorical features.\\n\\nDepending on the type of categorical feature, there are various methods for encoding, e.g. \\n\\nstraight integer to float conversion,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"ordinal,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"one-hot encoding,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"embedding\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\\n\\n\\n\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "03935578-1699-4f69-acbc-265510cf925d",
+          "connector": "left"
+        },
+        {
+          "id": "7d771ae5-4de4-4862-8ae1-f28a0406c2bd",
+          "connector": "right"
+        },
+        {
+          "id": "ceac5b93-e223-44f4-8cb5-20f8db55ac87",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1295.0151684736802,
+        "y": -60.06568962913741
+      },
+      "size": {
+        "width": 276.41752311197916,
+        "height": 192.61681770833334
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "a533c3ca-6ddc-409e-8d9c-3575bf9a59fd",
+      "title": "Encoding",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "e8437e6b-596e-41a2-afbc-ed4c1b0e1ba8",
+          "connector": "right"
+        },
+        {
+          "id": "6fc13f46-ac05-4f6e-8454-11e774055779",
+          "connector": "left"
+        },
+        {
+          "id": "ceac5b93-e223-44f4-8cb5-20f8db55ac87",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1383.2988212718965,
+        "y": 359.43894476103793
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "98ffa6d3-ee50-4f4a-89cb-b750bc6caf98",
+      "title": "Counts",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "fbbcd0a2-081a-4542-b0eb-c688c7b1674e",
+          "connector": "right"
+        },
+        {
+          "id": "a0c732ab-cca7-4f7a-9f41-72aa0f98ba4d",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2212.07653927803,
+        "y": 1255.2088019624348
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 57
+      }
+    },
+    {
+      "id": "4cc013c7-5ee1-4163-a0e5-edb63724c2ca",
+      "title": "continuous Regression models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"These are some regression models for continuous data. Read on for a brief overview as well as pros and cons of each model.\\n\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Linear Regression\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"The simplest form of regression and often the fastest, a linear regression model tries to capture the line of best fit between the independent and dependent variables.\\n\\nIt may be modelled using a linear equation y = a0 + a1x1 + a2x2 + ... + anxn. Where ak are the parameters to be determined.\\n\\nHowever, linear regression models may not be robust enough to model the true relationships of many processes (which are nonlinear) leading to deterministic errors. It is also prone to outliers skewing the data causing an inaccurate fit. Hence a more complex model may give better results.\\n\\nPros\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"The simplest model - Fast and easy to train\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Gives easily interpretable feature parameters (coefficients and intercepts)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Can be used as a baseline model which more complex models should perform better than\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nCons\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"May not be robust enough to give good predictions on complex non-linear data\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Polynomial Regression\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Polynomial regression models aim to fit a nonlinear equation by taking polynomial functions of an independent variable by minimizing the sum of squared errors.\\n\\nIt may be modelled in one variable using a polynomial equation y = a0 + a1x + a2x^2 + ... + anx^n. Where ak are the parameters to be determined.\\n\\nHowever, polynomial regression models may prone to overfitting the data, giving low bias (good results on training data) but high variance (bad results on test and real world data). Hence polynomial regression models may need regularization to reduce errors from overfitting.\\n\\nPros\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Useful to evaluate non-linear problems that follow polynomial patterns\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nCons\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Tendency to 'overfit' on training data, need to choose appropriate degree and regularization\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Multilayer Perceptron Regression\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Multilayer perceptron regression models are a form of neural network that propagates the inputs through layers of nodes with different weights and activations. They are extremely versatile tools in modelling many different types of prediction tasks. For regression, it can produce a curve with arbitrarily large amount of complexity to predict with low deterministic error.\\n\\nHowever, neural networks often take a lot of time and data to train well, as well as optimization of its architecture parameters (hidden layer size etc.)\\n\\nPros\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Very flexible, good with both linear and non-linear problems\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nCons\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Black box - we do not know how each independent variable is affecting the other\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Computationally very expensive\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Requires a lot of data, with tendency to overfit\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Principle Component Regression\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Not a specific model but rather an extension to other regression models, suitable for problems where there are:\\nLarge number of variables\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"High Multicollinearity\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\nThe issues arising from such data is termed as the 'curse of dimensionality', where fitting models in high dimensional space often requires much more data to train well.\\n\\nPrinciple Component Analysis (PCA) can help to find the principle components (linear combination of original features) that contribute the most to the variance in data and only use those components for regression model training and testing with the other models specified.\\n\\nPros\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Removes correlated features, thereby improving performance\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Reduces overfitting to data in high dimensions\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nCons\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Independent variables become less interpretable as they are turned into principle components\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Information loss from the features removed\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "9ee3d1d9-53f0-458a-9a57-6fb989187f6a",
+          "connector": "left"
+        },
+        {
+          "id": "52969a66-a867-44df-82e2-06b0c2dbef2a",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2413.5264953125,
+        "y": 606.6989203124999
+      },
+      "size": {
+        "width": 321.64777265625,
+        "height": 302.03200000000004
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "8b259dd9-a18e-4d84-8a34-303953e7d833",
+      "title": "Categorical and continuous regression models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"These are some regression models for both categorical and continuous data. Read on for a brief overview as well as pros and cons of each model.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Decision Tree\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Decision Trees use a tree-like structure, splitting at nodes (decision points) with a 'test' on an attribute to different branches representing different outcomes to a test (just like this board!). These splits can have both categorical and continuous target variables.\\n\\nPros\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Works well on linear and non-linear\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Very interpretable with the decision path easily visualisable\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nCons\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Poor performance on small datasets\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Prone to overfitting\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Random Forests\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Random Forests are an ensemble learning method, where multiple decision trees are constructed during training time, and the mean or average prediction of all the trees is used as the result. Therefore, it corrects for a single decision tree's proneness to overfitting.\\n\\nPros\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Good performance on linear and non-linear models\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nCons\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Lose the interpretability of single decision trees\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Need to choose the training parameters\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "4a9ebf90-733f-4e21-9546-6006af69ab63",
+          "connector": "left"
+        },
+        {
+          "id": "789f02e0-5bb5-4aac-b1c7-8f7ca092a3d9",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2424.4030399999997,
+        "y": 115.73163
+      },
+      "size": {
+        "width": 312.33664,
+        "height": 332.83392
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "7bc2bf55-1903-43c0-898a-e3fe994ff7e6",
+      "title": "5. ADD TEMPLATE USING ADD TEMPLATE WIZARD",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After you have selected a suitable approach, you may add the template for that approach.\\n\\nIn the '+' menu in the file browser on the top left, select the prediction approach template.\\n\\nThe available selections are:\\n1-regression\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "789f02e0-5bb5-4aac-b1c7-8f7ca092a3d9",
+          "connector": "left"
+        },
+        {
+          "id": "52969a66-a867-44df-82e2-06b0c2dbef2a",
+          "connector": "left"
+        },
+        {
+          "id": "127ad9d3-94df-4030-9ab5-aca7063c2de7",
+          "connector": "left"
+        },
+        {
+          "id": "9a9ebbb1-f0f4-4575-9004-3ac1a5722def",
+          "connector": "left"
+        },
+        {
+          "id": "a69298ca-06c7-4536-965e-9c86493275ba",
+          "connector": "left"
+        },
+        {
+          "id": "9664860d-8b8b-4b1d-99ab-f91f02ba231f",
+          "connector": "left"
+        },
+        {
+          "id": "6886b0c5-80fb-4c85-ae8b-123c97963ef3",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3224.189368489584,
+        "y": 836.9299690755211
+      },
+      "size": {
+        "width": 332.4343466666668,
+        "height": 230.05162666666672
+      },
+      "color": "#51455b"
+    }
+  ],
+  "edges": [
+    {
+      "id": "18bd637f-b30c-4c80-a87b-a2d24dafe276",
+      "type": "solid_arrow",
+      "node_connections": [
+        "c6bd0153-cf09-4d03-8a68-f61e08cfd8a4",
+        "d649b85c-9e2b-45c5-904a-901831f15648"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "3fd32bb3-2694-437d-9d19-8ec9bc0a7175",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "9249af83-b0da-4c74-9e94-02e63f357dc5",
+        "05b94685-a5cc-45f3-8710-175ee820129f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "94c7264e-a996-4b1c-89c7-499b06ad8382",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "9249af83-b0da-4c74-9e94-02e63f357dc5",
+        "d1b9b853-6470-4bb6-9d01-219dbab81e73"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "26dfa27d-743e-4f13-a39c-82974b7e86e4",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "9249af83-b0da-4c74-9e94-02e63f357dc5",
+        "55d2f06d-97c6-4061-9aca-1687e55a2eb2"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "548a9a95-7c55-4cfb-9852-71bf5475c622",
+      "type": "solid_arrow",
+      "node_connections": [
+        "05b94685-a5cc-45f3-8710-175ee820129f",
+        "ddf38d5c-75cc-44b8-8168-b15b1d5809b9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "97c65aea-d7d7-46f3-88bf-bbc990d4e5a3",
+      "type": "solid_arrow",
+      "node_connections": [
+        "d1b9b853-6470-4bb6-9d01-219dbab81e73",
+        "9b60d516-2e60-44f8-94aa-8ce7d2996ba9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "92a0a508-98d2-43a2-aea7-68e621038270",
+      "type": "solid_arrow",
+      "node_connections": [
+        "55d2f06d-97c6-4061-9aca-1687e55a2eb2",
+        "21b8dccc-4b2f-44dd-a880-83f0a3ff8ec0"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a401131c-4e54-49dd-bc4b-6899afb4b560",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d649b85c-9e2b-45c5-904a-901831f15648",
+        "87d53bda-4508-4852-b426-c2c40a516c0f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "62c58c39-f524-4ad6-9b15-f2834d561fde",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d649b85c-9e2b-45c5-904a-901831f15648",
+        "6d5a76cf-e8de-448c-be88-26596be1be9a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8b871e69-bf67-45d4-9ac7-3d27b702ee1e",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "55e5f5d1-1c42-48cb-978b-a40e28ca101e",
+        "9a5e8ae6-b73f-4334-b751-6830aea40928"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "57029411-d00a-43ca-91b9-efd203fb4336",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "55e5f5d1-1c42-48cb-978b-a40e28ca101e",
+        "8c8737c8-c0ec-474b-92ff-5c76a4d7b2ff"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "3e4d2ee0-18d0-40af-afb2-df8b9b6626ce",
+      "type": "solid_arrow",
+      "node_connections": [
+        "d649b85c-9e2b-45c5-904a-901831f15648",
+        "55e5f5d1-1c42-48cb-978b-a40e28ca101e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "03935578-1699-4f69-acbc-265510cf925d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "55e5f5d1-1c42-48cb-978b-a40e28ca101e",
+        "3b75a4cd-9130-4f2f-80b2-982c3d7e05c9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7d771ae5-4de4-4862-8ae1-f28a0406c2bd",
+      "type": "solid_arrow",
+      "node_connections": [
+        "3b75a4cd-9130-4f2f-80b2-982c3d7e05c9",
+        "5083b0fb-de75-4277-a3fd-e6b90b04e745"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "e8437e6b-596e-41a2-afbc-ed4c1b0e1ba8",
+      "type": "solid_arrow",
+      "node_connections": [
+        "a533c3ca-6ddc-409e-8d9c-3575bf9a59fd",
+        "1bdd7f99-66a7-4d90-98c0-67aa8c0fdcbc"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "52b62ed2-f8ef-4724-8535-9bf74736ffd0",
+      "type": "solid_arrow",
+      "node_connections": [
+        "8c8737c8-c0ec-474b-92ff-5c76a4d7b2ff",
+        "47acc258-0fb5-4db7-b7c8-aff2e6877101"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "9acc46ac-419e-4d96-9040-70ea67308827",
+      "type": "solid_arrow",
+      "node_connections": [
+        "9a5e8ae6-b73f-4334-b751-6830aea40928",
+        "1bdd7f99-66a7-4d90-98c0-67aa8c0fdcbc"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "fbbcd0a2-081a-4542-b0eb-c688c7b1674e",
+      "type": "solid_arrow",
+      "node_connections": [
+        "98ffa6d3-ee50-4f4a-89cb-b750bc6caf98",
+        "11c28217-ffc3-4cda-bfff-9aff65f715fe"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a0c732ab-cca7-4f7a-9f41-72aa0f98ba4d",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "9249af83-b0da-4c74-9e94-02e63f357dc5",
+        "98ffa6d3-ee50-4f4a-89cb-b750bc6caf98"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a20974d2-9cbf-4991-9003-7bc7ab50e2d1",
+      "type": "solid_arrow",
+      "node_connections": [
+        "87d53bda-4508-4852-b426-c2c40a516c0f",
+        "9249af83-b0da-4c74-9e94-02e63f357dc5"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "0ae57c68-9af8-470d-8a21-db3dd996ea2c",
+      "type": "solid_arrow",
+      "node_connections": [
+        "9a5e8ae6-b73f-4334-b751-6830aea40928",
+        "47acc258-0fb5-4db7-b7c8-aff2e6877101"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f635d9b1-dd20-4ee1-9e66-128c9a61f436",
+      "type": "solid_arrow",
+      "node_connections": [
+        "6d5a76cf-e8de-448c-be88-26596be1be9a",
+        "47acc258-0fb5-4db7-b7c8-aff2e6877101"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "e3b37a8b-b8f7-4235-98d9-4e42e1507849",
+      "type": "solid_arrow",
+      "node_connections": [
+        "6d5a76cf-e8de-448c-be88-26596be1be9a",
+        "1bdd7f99-66a7-4d90-98c0-67aa8c0fdcbc"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "6fc13f46-ac05-4f6e-8454-11e774055779",
+      "type": "solid_arrow",
+      "node_connections": [
+        "8c8737c8-c0ec-474b-92ff-5c76a4d7b2ff",
+        "a533c3ca-6ddc-409e-8d9c-3575bf9a59fd"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ceac5b93-e223-44f4-8cb5-20f8db55ac87",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "3b75a4cd-9130-4f2f-80b2-982c3d7e05c9",
+        "a533c3ca-6ddc-409e-8d9c-3575bf9a59fd"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "faec3173-ac00-4b63-9518-32dce0561aa0",
+      "type": "solid_arrow",
+      "node_connections": [
+        "05b94685-a5cc-45f3-8710-175ee820129f",
+        "d97d336a-05d3-450e-a3c8-b9b697b7e0e9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "9ee3d1d9-53f0-458a-9a57-6fb989187f6a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1bdd7f99-66a7-4d90-98c0-67aa8c0fdcbc",
+        "4cc013c7-5ee1-4163-a0e5-edb63724c2ca"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "4a9ebf90-733f-4e21-9546-6006af69ab63",
+      "type": "solid_arrow",
+      "node_connections": [
+        "47acc258-0fb5-4db7-b7c8-aff2e6877101",
+        "8b259dd9-a18e-4d84-8a34-303953e7d833"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "789f02e0-5bb5-4aac-b1c7-8f7ca092a3d9",
+      "type": "solid_arrow",
+      "node_connections": [
+        "8b259dd9-a18e-4d84-8a34-303953e7d833",
+        "7bc2bf55-1903-43c0-898a-e3fe994ff7e6"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "52969a66-a867-44df-82e2-06b0c2dbef2a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "4cc013c7-5ee1-4163-a0e5-edb63724c2ca",
+        "7bc2bf55-1903-43c0-898a-e3fe994ff7e6"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "127ad9d3-94df-4030-9ab5-aca7063c2de7",
+      "type": "solid_arrow",
+      "node_connections": [
+        "11c28217-ffc3-4cda-bfff-9aff65f715fe",
+        "7bc2bf55-1903-43c0-898a-e3fe994ff7e6"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "9a9ebbb1-f0f4-4575-9004-3ac1a5722def",
+      "type": "solid_arrow",
+      "node_connections": [
+        "ddf38d5c-75cc-44b8-8168-b15b1d5809b9",
+        "7bc2bf55-1903-43c0-898a-e3fe994ff7e6"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a69298ca-06c7-4536-965e-9c86493275ba",
+      "type": "solid_arrow",
+      "node_connections": [
+        "d97d336a-05d3-450e-a3c8-b9b697b7e0e9",
+        "7bc2bf55-1903-43c0-898a-e3fe994ff7e6"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "9664860d-8b8b-4b1d-99ab-f91f02ba231f",
+      "type": "solid_arrow",
+      "node_connections": [
+        "9b60d516-2e60-44f8-94aa-8ce7d2996ba9",
+        "7bc2bf55-1903-43c0-898a-e3fe994ff7e6"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "6886b0c5-80fb-4c85-ae8b-123c97963ef3",
+      "type": "solid_arrow",
+      "node_connections": [
+        "21b8dccc-4b2f-44dd-a880-83f0a3ff8ec0",
+        "7bc2bf55-1903-43c0-898a-e3fe994ff7e6"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

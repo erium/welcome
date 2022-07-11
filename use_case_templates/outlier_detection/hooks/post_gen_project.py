@@ -3,24 +3,29 @@ import shutil
 import halerium_utilities as hu
 
 # Select the specified template
-model_templates = '{{cookiecutter.model_templates}}'
-all_templates = ['1-autoencoder', '2-bayesian_supervised',
-                 '3-bayesian_unsupervised', '4-supervised', '5-unsupervised']
+model_templates = '{{cookiecutter.use_case_slug}}'
+all_templates = ['autoencoder', 'bayesian_supervised',
+                 'bayesian_unsupervised', 'supervised', 'unsupervised', 'outlier_detection_overview']
 for template in all_templates:
     if template != model_templates:
         shutil.rmtree('./' + template)
 
+if model_templates == 'outlier_detection_overview':
+    shutil.rmtree('./streamlit')
+    os.remove('./README.md')
+
 hu.file.assign_new_card_ids_to_tree('./')
 
 # Adding cards, connections, and links on experiments board in project template
-project_path = './../../hypotheses_experiments_learnings.board'
+project_path = './../hypotheses_experiments_learnings.board'
 
-board = hu.file.io.read_board(project_path)
-board_titles = [x['title'] for x in board['nodes']]
-experiment_count = board_titles.count('Experiment')
-y_pos = 178 + (155 * experiment_count)
 
-if os.path.exists(project_path):
+if os.path.exists(project_path) and model_templates != 'outlier_detection_overview':
+    board = hu.file.io.read_board(project_path)
+    board_titles = [x['title'] for x in board['nodes']]
+    experiment_count = board_titles.count('Experiment')
+    y_pos = 178 + (155 * experiment_count)
+    
     learning_card = hu.board.board.create_card(title='Learning',
                                                content='Enter learning here',
                                                position={
@@ -60,8 +65,8 @@ if os.path.exists(project_path):
         project_path, experiment_card_id, learning_card_id, 'right', 'left')
 
     # Add link to notebook
-    notebook_dict = {'1-autoencoder': '/autoencoder.ipynb', '2-bayesian_supervised': '/bayesian_supervised.ipynb',
-                     '3-bayesian_unsupervised': '/bayesian_unsupervised.ipynb', '4-supervised': '/supervised.ipynb', '5-unsupervised': '/unsupervised.ipynb'}
+    notebook_dict = {'autoencoder': '/autoencoder.ipynb', 'bayesian_supervised': '/bayesian_supervised.ipynb',
+                     'bayesian_unsupervised': '/bayesian_unsupervised.ipynb', 'supervised': '/supervised.ipynb', 'unsupervised': '/unsupervised.ipynb'}
     notebook_path = model_templates + notebook_dict[model_templates]
     hu.board.board.create_card_cell_link(
         project_path, experiment_card_id, notebook_path, 2)

@@ -4,19 +4,19 @@
       "id": "51d16d59-c92d-4f2a-9bfa-09b9b1fac5c6",
       "title": "Project workflow",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"This board contains an overview of the low level project workflow, as well as descriptions of each module and its read/write permissions.\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"This board contains an overview of the low level project workflow, as well as descriptions of each module and its read/write permissions.\\n\\n\"},{\"attributes\":{\"color\":\"#ffff66\"},\"insert\":\"Yellow \"},{\"insert\":\"- Top Level Folder\\n\"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"Blue \"},{\"insert\":\"- Folder\\n\"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"Green \"},{\"insert\":\"- File/Script\\n\"},{\"attributes\":{\"color\":\"#f06666\"},\"insert\":\"Red \"},{\"insert\":\"- Process/Action\\n\"}]}"
       },
       "edge_connections": [],
       "type": "note",
       "position": {
-        "x": 438.1222916666667,
-        "y": -543.1866666666667
+        "x": 435.6057092666667,
+        "y": -634.6224938666667
       },
       "size": {
-        "width": 226.08,
-        "height": 163.92000000000002
+        "width": 237.8240512,
+        "height": 266.2610176
       },
-      "color": "#125059"
+      "color": "#513063"
     },
     {
       "id": "7215836f-b892-4399-930f-2e0d8efc4323",
@@ -194,10 +194,6 @@
           "connector": "bottom"
         },
         {
-          "id": "b136e0bc-0afd-487e-9a3e-4c216b5bf3ac",
-          "connector": "bottom"
-        },
-        {
           "id": "ad57a2af-a689-42ef-a846-f648e6add5e3",
           "connector": "bottom"
         },
@@ -321,7 +317,7 @@
       ],
       "type": "note",
       "position": {
-        "x": 2395.7986009915107,
+        "x": 2397.1093209915107,
         "y": 503.3230567367842
       },
       "size": {
@@ -344,12 +340,12 @@
       ],
       "type": "note",
       "position": {
-        "x": 2108.270541258177,
-        "y": 503.06486281678417
+        "x": 2189.535181258177,
+        "y": 505.6863028167842
       },
       "size": {
-        "width": 160.47573333333335,
-        "height": 130
+        "width": 165.71861333333337,
+        "height": 150.97152
       },
       "color": "#28337e"
     },
@@ -548,8 +544,8 @@
       ],
       "type": "note",
       "position": {
-        "x": -679.9491632012501,
-        "y": 599.1332612882325
+        "x": -694.7131132812501,
+        "y": 672.9530116882324
       },
       "size": {
         "width": 141.64266666666668,
@@ -571,8 +567,8 @@
       ],
       "type": "note",
       "position": {
-        "x": -458.3563192545834,
-        "y": 592.0721960187755
+        "x": -474.4624466145834,
+        "y": 673.9450100987755
       },
       "size": {
         "width": 124.32,
@@ -594,8 +590,8 @@
       ],
       "type": "note",
       "position": {
-        "x": -266.2060071479167,
-        "y": 594.7573945254421
+        "x": -279.6277799479167,
+        "y": 672.6036767654421
       },
       "size": {
         "width": 156.32,
@@ -617,34 +613,11 @@
       ],
       "type": "note",
       "position": {
-        "x": 392.22175071614595,
-        "y": 324.4788699422201
+        "x": 558.6831907161459,
+        "y": 337.58606994222015
       },
       "size": {
         "width": 275.8890666666666,
-        "height": 130
-      },
-      "color": "#125059"
-    },
-    {
-      "id": "27f428b5-7db8-420b-8330-063bb7e113cf",
-      "title": "use_case_templates.ipynb",
-      "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Serves as entry point to Halerium data science use case templates\\n\"}]}"
-      },
-      "edge_connections": [
-        {
-          "id": "b136e0bc-0afd-487e-9a3e-4c216b5bf3ac",
-          "connector": "top"
-        }
-      ],
-      "type": "note",
-      "position": {
-        "x": 711.6548173828127,
-        "y": 322.0180699422201
-      },
-      "size": {
-        "width": 207.86133333333333,
         "height": 130
       },
       "color": "#125059"
@@ -663,8 +636,8 @@
       ],
       "type": "note",
       "position": {
-        "x": 2836.3073095078125,
-        "y": 113.90706277213548
+        "x": 2696.0602695078123,
+        "y": 127.01426277213548
       },
       "size": {
         "width": 160.16,
@@ -697,7 +670,7 @@
     },
     {
       "id": "3754be43-4e67-48e1-babb-d5e202f4b7ea",
-      "title": "mlflow_pipeline",
+      "title": "pipeline1",
       "type_specific": {
         "message": "{\"ops\":[{\"insert\":\"Template folder for a pipeline utilizing mlflow\\n\"}]}"
       },
@@ -717,8 +690,8 @@
       ],
       "type": "note",
       "position": {
-        "x": 1906.878978841146,
-        "y": 263.98864779663097
+        "x": 1908.1896988411459,
+        "y": 270.542247796631
       },
       "size": {
         "width": 169.12,
@@ -796,8 +769,8 @@
       ],
       "type": "note",
       "position": {
-        "x": 103.546296875,
-        "y": 322.4372265625
+        "x": 222.821816875,
+        "y": 336.85514656249995
       },
       "size": {
         "width": 247.2,
@@ -898,8 +871,8 @@
       ],
       "type": "note",
       "position": {
-        "x": 1342.664150845,
-        "y": 266.29146938750006
+        "x": 1340.074168125,
+        "y": 267.91676218750007
       },
       "size": {
         "width": 220.11374182400002,
@@ -1141,17 +1114,6 @@
       "node_connections": [
         "32cdd0ae-0a66-46a0-9b59-258cbac9fdce",
         "d521f82b-e172-401c-ac5d-2d0bc4c9cd59"
-      ],
-      "type_specific": {
-        "annotation": ""
-      }
-    },
-    {
-      "id": "b136e0bc-0afd-487e-9a3e-4c216b5bf3ac",
-      "type": "dashed_arrow",
-      "node_connections": [
-        "32cdd0ae-0a66-46a0-9b59-258cbac9fdce",
-        "27f428b5-7db8-420b-8330-063bb7e113cf"
       ],
       "type_specific": {
         "annotation": ""

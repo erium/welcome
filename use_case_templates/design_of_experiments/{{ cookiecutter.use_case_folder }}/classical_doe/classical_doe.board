@@ -1,0 +1,747 @@
+{
+  "nodes": [
+    {
+      "id": "3000f30b-1f20-4035-8ef0-218a1a070dc1",
+      "title": "0. How to use the Board",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"cards.\\n\\n#Default example records are prefixed by '#'.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 250.171875,
+        "y": 202.25599999999997
+      },
+      "size": {
+        "width": 256.16,
+        "height": 313.064
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "f0b070ad-8a84-44d4-899e-dda3696b4a14",
+      "title": "1. Describe the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"classical_doe.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name \"},{\"insert\":\"of the classical DoE experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "left"
+        },
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "right"
+        },
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "top"
+        },
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 615.750244140625,
+        "y": 229.68185424804688
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "dc8be860-579e-40fe-b3f6-024589b3c6ef",
+      "title": "2. Import the dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"classical_doe.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path \"},{\"insert\":\"of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "left"
+        },
+        {
+          "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+          "connector": "right"
+        },
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "top"
+        },
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 972.2943725585936,
+        "y": 229.60562133789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "e42d5eb3-07d1-493b-9430-555a397f22c0",
+      "title": "3. Specify the metrics",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the noteboook \\\"classical_doe.ipynb\\\", adjust the respective lines (linked to the card) to\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"metrics \"},{\"insert\":\"used.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+          "connector": "left"
+        },
+        {
+          "id": "122ea292-7343-4745-91f1-261c43d844b7",
+          "connector": "right"
+        },
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "top"
+        },
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1327.0482788085935,
+        "y": 228.92984008789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "2e752258-a41d-4508-b092-e7103d64478a",
+      "title": "4. Specify the parameters",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the noteboook \\\"classical_doe.ipynb\\\", adjust the respective lines (linked to the card) to\\nspecify the (possibly transformed) parameters, including their\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"type\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"possible values\"},{\"insert\":\" or \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"bounds\"},{\"insert\":\".\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "122ea292-7343-4745-91f1-261c43d844b7",
+          "connector": "left"
+        },
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "right"
+        },
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "top"
+        },
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.3295288085935,
+        "y": 228.98843383789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "fff941c8-82f9-40d5-8b5e-76b9f56b4211",
+      "title": "5. Choose the design",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the noteboook \\\"classical_doe.ipynb\\\", adjust the respective lines (linked to the card) to\\nchoose the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"design\"},{\"insert\":\".\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "left"
+        },
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "right"
+        },
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "top"
+        },
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2060.7201538085933,
+        "y": 229.10562133789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "5fc2585e-3bed-4036-80fd-4a4d9a41014a",
+      "title": "6. Run the trials",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Create the trials with the help of the notebook \\\"classical_doe.ipynb\\\":\\nExecute the notebook to \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"obtain the parameters\"},{\"insert\":\" for the trials.\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"The parameters will be stored in a csv file \\\"data_*_running_trials.csv\\\".\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"Perform the suggested trials\"},{\"insert\":\" and add the results for the metrics to the csv file.\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "left"
+        },
+        {
+          "id": "8d03c66a-a5e2-400a-ad84-56c19cb7882a",
+          "connector": "right"
+        },
+        {
+          "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2458.259216308593,
+        "y": 229.16421508789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "e6b5ea26-d56b-42d9-8c51-42469967c149",
+      "title": "7. Get the final results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Use the results of the trials to achieve your project objective.\\n\\nFor example, if the goal is to find optimal parameters, read in the results of the trials using the notebook \\\"best_parameters.ipynb\\\".\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "8d03c66a-a5e2-400a-ad84-56c19cb7882a",
+          "connector": "left"
+        },
+        {
+          "id": "828a5488-fd7b-46d1-8e1b-2a14d5491be4",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2866.579528808593,
+        "y": 228.03140258789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "f35e5e67-794e-4647-a481-e631039fb4c6",
+      "title": "About the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this classical DoE experiment. This would provide a documented summary for the entire experiment.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 614.2850685119629,
+        "y": -91.59120035171509
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "766e8e3f-b14e-4c3e-996e-965db6bf946e",
+      "title": "Experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card: \\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"use case and how it connects to a DoE problem.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"objective\"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\" \"},{\"insert\":\"of the classical DoE,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\" of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Use Case\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Objective\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"General Procedure\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 614.5975685119629,
+        "y": 550.6297469139099
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "4d7c9aa0-23b5-4afc-9050-018e9958938c",
+      "title": "dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card,\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"dataset\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Dataset\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Name: \\nSamples: \\nDimensions: \\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 972.0350971221924,
+        "y": 550.9891028404236
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "76620ef5-872a-489d-abe3-a64fef9e67d4",
+      "title": "metrics",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe any other \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"metrics \"},{\"insert\":\"of importance for judging the result.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1326.4896869659424,
+        "y": 553.5581946372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "b4999665-6cb5-4c6f-ae71-3d95d953aa1a",
+      "title": "Parameters",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe the parameters, including\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"name\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"brief description\"},{\"insert\":\" of meaning,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"type \"},{\"insert\":\"(discrete or continuous),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"possible values\"},{\"insert\":\" (for discrete),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"bounds \"},{\"insert\":\"(for continuous).\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"if the parameters have to satisfy constraints involving multiple parameters (e.g. the bound of one parameter depends on another parameter), transform the parameters to make them independent.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.2921772003174,
+        "y": 558.6094641685486
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "d57c1847-16b8-4dbf-8428-1a9a5f777304",
+      "title": "design",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"design \"},{\"insert\":\"to be employed\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2061.8266010284424,
+        "y": 563.4800696372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "e096c14f-4ce2-4827-bb4c-712dddc9566a",
+      "title": "trials",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"parameters \"},{\"insert\":\"and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"results \"},{\"insert\":\"of the trials performed\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2456.9816303253174,
+        "y": 563.4800696372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "ce8f4732-e008-48de-9a9f-ef285a4eb758",
+      "title": "Final Results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport the results of the optimal parameters\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "828a5488-fd7b-46d1-8e1b-2a14d5491be4",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2865.9042377471924,
+        "y": 563.6653723716736
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "d8c5e2e2-170a-4e23-83d2-52ca6b30a63e",
+      "title": "The Dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We would need to import our data for training and evaluating the models. We need to understand the size, properties, and features of our dataset to decide on the design and expected performance.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 971.8582458496095,
+        "y": -91.36378479003908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "6e0c2ce8-75e7-4063-a2c9-34816a8fce0e",
+      "title": "metrics",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"These are the features you want to design the experiment to obtain parameters for.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1325.5174255371094,
+        "y": -94.10499572753908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "d677cd0b-ad9a-4e02-ab83-0cca20ce89c2",
+      "title": "Parameters",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The parameters related to the metrics for the experiments that will affect the results.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.3318786621094,
+        "y": -95.20851135253908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "dda52ce5-9827-4cd3-b6cc-30c53625e129",
+      "title": "design",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Currently available designs are:\\nfull factorial,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"central,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"central + full factorial,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"central + mixed 2nd order,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"random.\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2059.0769958496094,
+        "y": -97.30323791503908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    }
+  ],
+  "edges": [
+    {
+      "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+      "type": "solid_arrow",
+      "node_connections": [
+        "3000f30b-1f20-4035-8ef0-218a1a070dc1",
+        "f0b070ad-8a84-44d4-899e-dda3696b4a14"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "f0b070ad-8a84-44d4-899e-dda3696b4a14",
+        "dc8be860-579e-40fe-b3f6-024589b3c6ef"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+      "type": "solid_arrow",
+      "node_connections": [
+        "dc8be860-579e-40fe-b3f6-024589b3c6ef",
+        "e42d5eb3-07d1-493b-9430-555a397f22c0"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "122ea292-7343-4745-91f1-261c43d844b7",
+      "type": "solid_arrow",
+      "node_connections": [
+        "e42d5eb3-07d1-493b-9430-555a397f22c0",
+        "2e752258-a41d-4508-b092-e7103d64478a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+      "type": "solid_arrow",
+      "node_connections": [
+        "2e752258-a41d-4508-b092-e7103d64478a",
+        "fff941c8-82f9-40d5-8b5e-76b9f56b4211"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+      "type": "solid_arrow",
+      "node_connections": [
+        "fff941c8-82f9-40d5-8b5e-76b9f56b4211",
+        "5fc2585e-3bed-4036-80fd-4a4d9a41014a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8d03c66a-a5e2-400a-ad84-56c19cb7882a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "5fc2585e-3bed-4036-80fd-4a4d9a41014a",
+        "e6b5ea26-d56b-42d9-8c51-42469967c149"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "f35e5e67-794e-4647-a481-e631039fb4c6",
+        "f0b070ad-8a84-44d4-899e-dda3696b4a14"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "766e8e3f-b14e-4c3e-996e-965db6bf946e",
+        "f0b070ad-8a84-44d4-899e-dda3696b4a14"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d8c5e2e2-170a-4e23-83d2-52ca6b30a63e",
+        "dc8be860-579e-40fe-b3f6-024589b3c6ef"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "dc8be860-579e-40fe-b3f6-024589b3c6ef",
+        "4d7c9aa0-23b5-4afc-9050-018e9958938c"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "6e0c2ce8-75e7-4063-a2c9-34816a8fce0e",
+        "e42d5eb3-07d1-493b-9430-555a397f22c0"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e42d5eb3-07d1-493b-9430-555a397f22c0",
+        "76620ef5-872a-489d-abe3-a64fef9e67d4"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "583daf7b-8155-44d0-adbe-a44310218963",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d677cd0b-ad9a-4e02-ab83-0cca20ce89c2",
+        "2e752258-a41d-4508-b092-e7103d64478a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "2e752258-a41d-4508-b092-e7103d64478a",
+        "b4999665-6cb5-4c6f-ae71-3d95d953aa1a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "dda52ce5-9827-4cd3-b6cc-30c53625e129",
+        "fff941c8-82f9-40d5-8b5e-76b9f56b4211"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d57c1847-16b8-4dbf-8428-1a9a5f777304",
+        "fff941c8-82f9-40d5-8b5e-76b9f56b4211"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e096c14f-4ce2-4827-bb4c-712dddc9566a",
+        "5fc2585e-3bed-4036-80fd-4a4d9a41014a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "828a5488-fd7b-46d1-8e1b-2a14d5491be4",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e6b5ea26-d56b-42d9-8c51-42469967c149",
+        "ce8f4732-e008-48de-9a9f-ef285a4eb758"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

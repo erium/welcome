@@ -1,0 +1,861 @@
+{
+  "nodes": [
+    {
+      "id": "25366418-1570-4dd6-943b-bd96f34bb53c",
+      "title": "0. How to use the Board",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"cards.\\n\\n#Default example records are prefixed by '#'\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -440.77212500000024,
+        "y": 200.12266666666665
+      },
+      "size": {
+        "width": 256.16,
+        "height": 313.064
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "1d5e423b-5e6d-469a-befd-88613c1d94cf",
+      "title": "1. Describe the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"unsupervisd.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name \"},{\"insert\":\"of the outlier detection experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "left"
+        },
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "right"
+        },
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "top"
+        },
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -80.56975585937522,
+        "y": 227.9751875813802
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "0e9343d5-c4f5-428b-bbf8-156102aa5c90",
+      "title": "2. Import the dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"unsupervised.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path \"},{\"insert\":\"of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify if the data is \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"time-series\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "left"
+        },
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "top"
+        },
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "bottom"
+        },
+        {
+          "id": "fca2a674-8bda-4e06-99ff-4aca0963a258",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 275.9743725585934,
+        "y": 227.89895467122395
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "0bc5f0ec-5288-4467-8caa-d96a5cc9ffe2",
+      "title": "4. Select the models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"unsupervised.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"models \"},{\"insert\":\"you wish to run\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "top"
+        },
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "bottom"
+        },
+        {
+          "id": "d801bff0-682e-424d-bd90-a6000d623959",
+          "connector": "left"
+        },
+        {
+          "id": "a518720f-0255-4f3c-8015-13e55488945f",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 982.9842788085936,
+        "y": 230.56824008789064
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "4fdde096-5ef5-4884-ac9c-132796937e91",
+      "title": "6. Get the results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"unsupervised.ipynb\\\", go to the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cell\"},{\"insert\":\" that displays the results\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "right"
+        },
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "top"
+        },
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "bottom"
+        },
+        {
+          "id": "7b505685-11e7-4370-8daa-335e9ebfb2d0",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.3295288085935,
+        "y": 229.86224717122397
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "fae2ad25-c157-46cf-a434-e2cf1871f76b",
+      "title": "7. Interpret the results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Based on the results in 6. evaluate the model performance in the green card below.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "left"
+        },
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "right"
+        },
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "top"
+        },
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2060.7201538085933,
+        "y": 229.97943467122397
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "426210b3-cc96-468b-8438-dfc234e90e71",
+      "title": "8. Export and use streamlit",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After the notebook runs, a joblib file containing the data is exported to the ./out folder.\\n\\nProceed to 'streamlit_detect_outliers.ipynb' and run it. Copy the output link from the first cell to a new tab and change the last few digits (port) to the corresponding port in the second cell. This will open a streamlit web app that will import the trained models and data, and allow you to make outlier predictions with new inputs based on the trained models.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2458.259216308593,
+        "y": 229.16421508789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "10a978b0-4e4c-4b33-9613-95f74e348caa",
+      "title": "About the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this outlier detection experiment. This would provide a documented summary for the entire experiment.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -82.03493148803733,
+        "y": -93.29786701838175
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "ba51d5e7-01cf-4a67-9476-6bf53bb737b2",
+      "title": "Experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card: \\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"use case\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"objective\"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\" \"},{\"insert\":\"of the outlier detection,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\" of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Use Case\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Given the a dataset of ... without outlier labels, we would like to predict the cases of abnormal...\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Objective\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#To detect outliers from the given dataset.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"General Procedure\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Import data - Pick model(s) to run - Interpret and validate results\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -81.72243148803733,
+        "y": 548.9230802472432
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "b67e8b74-77f2-478f-9bd1-81cff4d87c3f",
+      "title": "dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card,\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"dataset\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Dataset\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Name: #Wine Quality\\nSamples: \\nDimensions: \\n\\nTime-series: #No\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 275.71509712219216,
+        "y": 549.2824361737569
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "d44253f4-8fd0-4bd7-aeed-f459037b8fb2",
+      "title": "models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"models \"},{\"insert\":\"to be used\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nModels Chosen: All\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 982.4256869659424,
+        "y": 555.1965946372985
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "c7a44658-91d9-459c-9233-a263c5aa5f11",
+      "title": "results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"best parameters\"},{\"insert\":\" and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"results \"},{\"insert\":\"reported by the outlier detection models.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nModel:\\n\\nNumber of outliers detected\\n\\nClustering Score:\\n\\nParameters:\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.2921772003174,
+        "y": 558.6094641685486
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "4595face-5a0b-417b-a9e6-c288daddf9e0",
+      "title": "interpret and improve",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Interpret and Improve\\\",\\nreport and compare the best score to a benchmark score (if available)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify possible ways to improve results if not satisfactory\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nDoes the result detect the specified outlier proportion\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Benchmark: #0.8 (80% non-outlier data)\\nResult: #0.7\\n\\nAre the results accurate upon validation?\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2061.8266010284424,
+        "y": 563.4800696372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "d0403c06-700d-477c-ad89-9c3fb1e6aaaa",
+      "title": "The Dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We would need to import our dataset for training the models. It is important to understand the size, properties, and features of our dataset such that we can decide on if and how much preprocessing and feature engineering/selection would be needed, as well as if uni/multivariate approaches should be used.\\n\\nIt is not required to divide the data set into sets for training and testing as unsupervised outlier detection algorithms would process and detect outliers in the existing data. Performance of models improve with more data if existing dataset is small.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 275.53824584960927,
+        "y": -93.07045145670574
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "dd649d49-188c-4fb5-ad35-307e031a799d",
+      "title": "models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"You can choose specific models to run (refer to outlier_detection_guide.board for a description of the models) or run all the models available.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 981.4534255371094,
+        "y": -92.46659572753909
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "50fc5db6-5a19-4773-aea3-2682dd6df3bf",
+      "title": "results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"With the setup complete, you may now run the notebook.\\n\\nAfter the notebook has completed running, you can view the final results of all the models.\\n\\nNote that decision boundaries would only be shown for multivariate models trained on bivariate data.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.3318786621094,
+        "y": -95.20851135253908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "2447cc54-315e-4e65-bacd-0928226b2b2d",
+      "title": "interpret",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Unlike with supervised metrics, there is no ground truth for a confusion matrix to be constructed. The notebook provides 3 clustering based metrics that evaluates the clustering of the outlier and non-outlier classes. \\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Silhouette Coefficient\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Higher means better defined clusters. Bounded between -1 (incorrect clustering) to 1 (highly dense clustering). Scores around zero indicate overlapping clusters.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Calinski-Harabasz Index\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Higher means better defined clusters.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Davies-Bouldin Index\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Lower means better separation between clusters. Lower bound of 0; values close to 0 indicate better partition.\\n\\nNote that clustering outlier detection evaluation may not reflect your use case. Eg if abnormal data is hidden in the clusters. \\n\\nOften, we would require external validation of the identified outliers to determine if the models can predict the outliers accurately.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2059.0769958496094,
+        "y": -97.30323791503908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "71d11ec0-857c-4018-aad9-7f3159d630e9",
+      "title": "3. Select the outlier features",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"unsupervised.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"features \"},{\"insert\":\"you wish to detect outliers on in univariate and multivariate\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "fca2a674-8bda-4e06-99ff-4aca0963a258",
+          "connector": "left"
+        },
+        {
+          "id": "a483bea7-217e-4ddd-a297-41054ddf0b81",
+          "connector": "top"
+        },
+        {
+          "id": "20ca1e4f-079e-41d3-9cc0-7edb3838e8f2",
+          "connector": "bottom"
+        },
+        {
+          "id": "d801bff0-682e-424d-bd90-a6000d623959",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 632.5685833333338,
+        "y": 226.94041666666678
+      },
+      "size": {
+        "width": 255.10186666666675,
+        "height": 262.4373333333334
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "d7b3832b-897b-4e69-9d07-9ac6e278ad62",
+      "title": "Features",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We may not want to check every feature in the dataset for outliers. \\n\\nTherefore, we can specify the features we wish to detect outliers on in both a univariate and multivariate approach.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a483bea7-217e-4ddd-a297-41054ddf0b81",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 631.7494166666671,
+        "y": -91.1276666666667
+      },
+      "size": {
+        "width": 255.64800000000008,
+        "height": 256.97600000000006
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "2fb30ff9-f0e9-48a9-8695-6d1be58aeb02",
+      "title": "features",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card,\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"features \"},{\"insert\":\"you wish to detect outliers\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Features\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#fixed acidity\\n\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "20ca1e4f-079e-41d3-9cc0-7edb3838e8f2",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 630.3840833333336,
+        "y": 550.5790312500003
+      },
+      "size": {
+        "width": 258.3786666666668,
+        "height": 261.07200000000006
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "9e6dc3c9-b29e-482a-af94-93614299120e",
+      "title": "5. Specify the Thresholds",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"unsupervised.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"thresholds \"},{\"insert\":\"for outlier detection in each model\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "84df2f76-b4a7-4d15-9da0-45ce4382bd82",
+          "connector": "bottom"
+        },
+        {
+          "id": "ca0039fe-4618-4e26-a1e0-be215a4e053d",
+          "connector": "top"
+        },
+        {
+          "id": "a518720f-0255-4f3c-8015-13e55488945f",
+          "connector": "left"
+        },
+        {
+          "id": "7b505685-11e7-4370-8daa-335e9ebfb2d0",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1346.8529500000004,
+        "y": 226.2816333333334
+      },
+      "size": {
+        "width": 252.9173333333334,
+        "height": 265.16800000000006
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "448e17c7-7a66-47ce-9b20-9ec71c140ad6",
+      "title": "Thresholds",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"For each model, we must specify a threshold at which a data point is considered an outlier, this is related to how sensitive the test is in classifying any point as an outlier.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Univariate\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Univariate models require a threshold number that is related to a statistical range of the data.\\nZ-score: Number of standard deviations the value of a data point is above or below the mean (for normally distributed data)\\nIQR: The middle percentages of values when ordered from smallest to largest\\nPercentile: The value which a percentage of observations fall below\\nSTL: Seasonal decomposition of a time series data into trend, seasonal and residual (noise) components. The residual components that fall beyond a number of standard deviations are considered outliers.\\nARIMA: Autoregressive Integrated Moving Average.  The residual components that fall beyond a number of standard deviations are considered outliers.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Multivariate\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Multivariate models usually require a contamination (or nu) degree that specifies (generally) the proportion of outliers in the dataset\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "ca0039fe-4618-4e26-a1e0-be215a4e053d",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1344.1222833333338,
+        "y": -90.47570000000007
+      },
+      "size": {
+        "width": 254.28266666666673,
+        "height": 252.88000000000005
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "fbe9dbe5-ad80-49b8-9a3c-ba0bc2c74bc6",
+      "title": "Thresholds",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card,\\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"thresholds \"},{\"insert\":\"for the univariate approaches\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"degree of contamination\"},{\"insert\":\" for the multivariate approaches\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Univariate\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Z-score: #std = 3\\nIQR: #num_iqr = 1.5\\nPercentile: #0.99\\nSTL (Time series): #std = 3\\nARIMA (Time series): #p = 1, d = 1, q = 1\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Multivariate\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Contamination/nu: #0.1\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "84df2f76-b4a7-4d15-9da0-45ce4382bd82",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1348.2182833333338,
+        "y": 551.2309666666669
+      },
+      "size": {
+        "width": 254.28266666666673,
+        "height": 259.7066666666667
+      },
+      "color": "#125059"
+    }
+  ],
+  "edges": [
+    {
+      "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+      "type": "solid_arrow",
+      "node_connections": [
+        "25366418-1570-4dd6-943b-bd96f34bb53c",
+        "1d5e423b-5e6d-469a-befd-88613c1d94cf"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1d5e423b-5e6d-469a-befd-88613c1d94cf",
+        "0e9343d5-c4f5-428b-bbf8-156102aa5c90"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+      "type": "solid_arrow",
+      "node_connections": [
+        "4fdde096-5ef5-4884-ac9c-132796937e91",
+        "fae2ad25-c157-46cf-a434-e2cf1871f76b"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+      "type": "solid_arrow",
+      "node_connections": [
+        "fae2ad25-c157-46cf-a434-e2cf1871f76b",
+        "426210b3-cc96-468b-8438-dfc234e90e71"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "10a978b0-4e4c-4b33-9613-95f74e348caa",
+        "1d5e423b-5e6d-469a-befd-88613c1d94cf"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "ba51d5e7-01cf-4a67-9476-6bf53bb737b2",
+        "1d5e423b-5e6d-469a-befd-88613c1d94cf"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d0403c06-700d-477c-ad89-9c3fb1e6aaaa",
+        "0e9343d5-c4f5-428b-bbf8-156102aa5c90"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "0e9343d5-c4f5-428b-bbf8-156102aa5c90",
+        "b67e8b74-77f2-478f-9bd1-81cff4d87c3f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "dd649d49-188c-4fb5-ad35-307e031a799d",
+        "0bc5f0ec-5288-4467-8caa-d96a5cc9ffe2"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "0bc5f0ec-5288-4467-8caa-d96a5cc9ffe2",
+        "d44253f4-8fd0-4bd7-aeed-f459037b8fb2"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "583daf7b-8155-44d0-adbe-a44310218963",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "50fc5db6-5a19-4773-aea3-2682dd6df3bf",
+        "4fdde096-5ef5-4884-ac9c-132796937e91"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4fdde096-5ef5-4884-ac9c-132796937e91",
+        "c7a44658-91d9-459c-9233-a263c5aa5f11"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "2447cc54-315e-4e65-bacd-0928226b2b2d",
+        "fae2ad25-c157-46cf-a434-e2cf1871f76b"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4595face-5a0b-417b-a9e6-c288daddf9e0",
+        "fae2ad25-c157-46cf-a434-e2cf1871f76b"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "fca2a674-8bda-4e06-99ff-4aca0963a258",
+      "type": "solid_arrow",
+      "node_connections": [
+        "0e9343d5-c4f5-428b-bbf8-156102aa5c90",
+        "71d11ec0-857c-4018-aad9-7f3159d630e9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a483bea7-217e-4ddd-a297-41054ddf0b81",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "71d11ec0-857c-4018-aad9-7f3159d630e9",
+        "d7b3832b-897b-4e69-9d07-9ac6e278ad62"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "20ca1e4f-079e-41d3-9cc0-7edb3838e8f2",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "71d11ec0-857c-4018-aad9-7f3159d630e9",
+        "2fb30ff9-f0e9-48a9-8695-6d1be58aeb02"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "84df2f76-b4a7-4d15-9da0-45ce4382bd82",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "9e6dc3c9-b29e-482a-af94-93614299120e",
+        "fbe9dbe5-ad80-49b8-9a3c-ba0bc2c74bc6"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ca0039fe-4618-4e26-a1e0-be215a4e053d",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "9e6dc3c9-b29e-482a-af94-93614299120e",
+        "448e17c7-7a66-47ce-9b20-9ec71c140ad6"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "d801bff0-682e-424d-bd90-a6000d623959",
+      "type": "solid_arrow",
+      "node_connections": [
+        "71d11ec0-857c-4018-aad9-7f3159d630e9",
+        "0bc5f0ec-5288-4467-8caa-d96a5cc9ffe2"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a518720f-0255-4f3c-8015-13e55488945f",
+      "type": "solid_arrow",
+      "node_connections": [
+        "0bc5f0ec-5288-4467-8caa-d96a5cc9ffe2",
+        "9e6dc3c9-b29e-482a-af94-93614299120e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7b505685-11e7-4370-8daa-335e9ebfb2d0",
+      "type": "solid_arrow",
+      "node_connections": [
+        "9e6dc3c9-b29e-482a-af94-93614299120e",
+        "4fdde096-5ef5-4884-ac9c-132796937e91"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

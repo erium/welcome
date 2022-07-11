@@ -3,9 +3,9 @@ import shutil
 import halerium_utilities as hu
 
 # Select the specified template
-model_templates = '{{cookiecutter.model_templates}}'
-all_templates = ["01_bayesian_optimization",
-                 "02_classical_doe", "03_bayesian_modelling"]
+model_templates = '{{cookiecutter.use_case_slug}}'
+all_templates = ["bayesian_optimization",
+                 "classical_doe", "bayesian_modelling", "doe_overview"]
 for template in all_templates:
     if template != model_templates:
         shutil.rmtree('./' + template)
@@ -13,14 +13,15 @@ for template in all_templates:
 hu.file.assign_new_card_ids_to_tree('./')
 
 # Adding cards, connections, and links on experiments board in project template
-project_path = './../../hypotheses_experiments_learnings.board'
+project_path = './../hypotheses_experiments_learnings.board'
 
-board = hu.file.io.read_board(project_path)
-board_titles = [x['title'] for x in board['nodes']]
-experiment_count = board_titles.count('Experiment')
-y_pos = 178 + (155 * experiment_count)
 
-if os.path.exists(project_path):
+if os.path.exists(project_path) and model_templates != "doe_overview":
+    board = hu.file.io.read_board(project_path)
+    board_titles = [x['title'] for x in board['nodes']]
+    experiment_count = board_titles.count('Experiment')
+    y_pos = 178 + (155 * experiment_count)
+    
     learning_card = hu.board.board.create_card(title='Learning',
                                                content='Enter learning here',
                                                position={
@@ -31,7 +32,7 @@ if os.path.exists(project_path):
     learning_card_id = learning_card['id']
 
     experiment_card = hu.board.board.create_card(title='Experiment',
-                                                 content=model_templates + ' outlier detection',
+                                                 content=model_templates + ' design of experiments',
                                                  position={
                                                      "x": 690.816650390625, "y": y_pos},
                                                  size={"width": 100,
@@ -60,8 +61,8 @@ if os.path.exists(project_path):
         project_path, experiment_card_id, learning_card_id, 'right', 'left')
 
     # Add link to notebook
-    notebook_dict = {'01_bayesian_optimization': '/bayesian_optimization.ipynb',
-                     '02_classical_doe': '/classical_doe.ipynb', '03_bayesian_modelling': '/bayesian_modelling.ipynb'}
+    notebook_dict = {'bayesian_optimization': '/bayesian_optimization.ipynb',
+                     'classical_doe': '/classical_doe.ipynb', 'bayesian_modelling': '/bayesian_modelling.ipynb'}
     notebook_path = model_templates + notebook_dict[model_templates]
     hu.board.board.create_card_cell_link(
         project_path, experiment_card_id, notebook_path, 2)

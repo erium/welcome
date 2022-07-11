@@ -1,0 +1,975 @@
+{
+  "nodes": [
+    {
+      "id": "2599e85f-7e0f-40aa-a4d3-87daf21aab7e",
+      "title": "0. How to use the Board",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"cards.\\n\\n#Default example records are prefixed by '#'.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 250.171875,
+        "y": 202.25599999999997
+      },
+      "size": {
+        "width": 256.16,
+        "height": 313.064
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "73a9dfc4-3cfb-4d39-bd08-77d56cd7e176",
+      "title": "1. Describe the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_modelling.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name \"},{\"insert\":\"of the bayesian modelling experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "left"
+        },
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "right"
+        },
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "top"
+        },
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 615.750244140625,
+        "y": 229.68185424804688
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "4e65ea3a-27fe-45fa-aa19-32a3eb814c54",
+      "title": "9. Fit the model",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_modelling.ipynb\\\", adjust the respective lines and run the cells (linked to the card) to\\nread the results from the trials,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"choose a method to fit the model,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"fit the model to the results of the trial,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"extract the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"estimated posterior values\"},{\"insert\":\" for the target variables.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "c557e048-884e-4e7f-8f31-f9ac4f6e90bf",
+          "connector": "left"
+        },
+        {
+          "id": "19f4799c-ecde-46c1-ad79-77097c39b55c",
+          "connector": "top"
+        },
+        {
+          "id": "147964b7-2573-4740-9633-fc60de0898ad",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3704.860778808593,
+        "y": 226.83999633789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "1a9df2d3-b096-46a9-afcc-b80816a9171b",
+      "title": "8. Run the trials",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Perform the suggested trials and add the results for the metrics to the csv file\\n\\\"data_*_running_trials.csv\\\".\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b9633395-3234-4b0e-a191-d8d05a93fcd1",
+          "connector": "left"
+        },
+        {
+          "id": "c557e048-884e-4e7f-8f31-f9ac4f6e90bf",
+          "connector": "right"
+        },
+        {
+          "id": "f4591f44-7032-4551-a0dd-42bd6ab6cb05",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3288.767028808593,
+        "y": 226.66421508789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "d28427bc-d519-4b0e-b492-d2c25622a19f",
+      "title": "2. Import the dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path \"},{\"insert\":\"of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "left"
+        },
+        {
+          "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+          "connector": "right"
+        },
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "top"
+        },
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 972.2943725585936,
+        "y": 229.60562133789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "b0cd4fab-5843-4eac-b530-6277efaf73b9",
+      "title": "3. Specify the model",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the noteboook \\\"bayesian_modelling.ipynb\\\", adjust the respective lines (linked to the card) to\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"Halerium graph\"},{\"insert\":\" of the model.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+          "connector": "left"
+        },
+        {
+          "id": "122ea292-7343-4745-91f1-261c43d844b7",
+          "connector": "right"
+        },
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "top"
+        },
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1327.0482788085935,
+        "y": 228.92984008789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "b50d2dc3-e657-4eb2-8a48-b22cf8e7b7bc",
+      "title": "4. Specify Parameters, Observables, and Targets",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the noteboook \\\"bayesian_modelling.ipynb\\\", adjust the respective lines (linked to the card) to\\nspecify the (possibly transformed) parameters, including their\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"type\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"possible values\"},{\"insert\":\" or \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"bounds\"},{\"insert\":\".\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "122ea292-7343-4745-91f1-261c43d844b7",
+          "connector": "left"
+        },
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "right"
+        },
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "top"
+        },
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1686.1885222677936,
+        "y": 228.98843383789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "97fdffa5-e4dd-4368-bd6e-db4af17b96ad",
+      "title": "5. Specify the designs",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_modelling.ipynb\\\", adjust the respective lines (linked to the card) to\\nspecify the designs, including\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"their name, number, or similar to identify the design,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"number of trials\"},{\"insert\":\", and\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"the values for the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"adjustable parameters\"},{\"insert\":\" for each trial.\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "left"
+        },
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "right"
+        },
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "top"
+        },
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2060.7201538085933,
+        "y": 229.10562133789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "857e04db-6059-4af9-a8c9-038fed6177e8",
+      "title": "6. Compute expected information gain",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_modelling.ipynb\\\", execute the respective cells (linked to the card) to\\nestimate the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"expected information gain\"},{\"insert\":\" (EIG) for each design,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"compare the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"results \"},{\"insert\":\"for the different designs.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "left"
+        },
+        {
+          "id": "8d03c66a-a5e2-400a-ad84-56c19cb7882a",
+          "connector": "right"
+        },
+        {
+          "id": "1d9e73a9-62c3-4095-bf49-b50f28770784",
+          "connector": "top"
+        },
+        {
+          "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2458.259216308593,
+        "y": 229.16421508789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "f9654476-f3d1-41e7-aece-32a56797dcf8",
+      "title": "7. Choose the design",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_modelling.ipynb\\\", adjust the respective lines (linked to the card) to\\nchoose a \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"design \"},{\"insert\":\"for the actual experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"store the\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\" list of parameter values\"},{\"insert\":\" for the trials.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nThe parameters will be stored in a csv file \\\"data_*_running_trials.csv\\\".\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "8d03c66a-a5e2-400a-ad84-56c19cb7882a",
+          "connector": "left"
+        },
+        {
+          "id": "b9633395-3234-4b0e-a191-d8d05a93fcd1",
+          "connector": "right"
+        },
+        {
+          "id": "828a5488-fd7b-46d1-8e1b-2a14d5491be4",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2866.579528808593,
+        "y": 228.03140258789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "8680f376-1f2f-4cf8-898a-9c84cd2496ab",
+      "title": "About the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this bayesian modelling experiment. This would provide a documented summary for the entire experiment.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 614.2850685119629,
+        "y": -91.59120035171509
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "29fba7f2-aef3-4541-be60-2d9b502f7470",
+      "title": "Experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card: \\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"use case\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"objective\"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\" \"},{\"insert\":\"of the regression modelling,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\" of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Use Case\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Objective\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"General Procedure\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 614.5975685119629,
+        "y": 550.6297469139099
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "08cbcb4d-922e-4185-b780-f07d29322969",
+      "title": "dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card,\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"dataset\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Dataset\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Name:\\nSamples: \\nDimensions: \\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 972.0350971221924,
+        "y": 550.9891028404236
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "d053460f-cae2-4bed-99a4-f78b44866b37",
+      "title": "model",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"model\"},{\"insert\":\", its adjustable and non-adjustable, and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"hidden parameters\"},{\"insert\":\", \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"outcomes \"},{\"insert\":\"etc.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1326.4896869659424,
+        "y": 553.5581946372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "98ae6fc5-d968-4609-af4b-91cd7b69841a",
+      "title": "parameters observables targets",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe the adjustable parameters, including\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"name\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"brief description\"},{\"insert\":\" of meaning,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"type \"},{\"insert\":\"(discrete or continuous),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"possible values\"},{\"insert\":\" (for discrete),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"bounds \"},{\"insert\":\"(for continous),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"Halerium variable\"},{\"insert\":\" representing it in the Halerium graph.\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"if the parameters have to satisfy constraints involving multiple parametrs (e.g. the bound of one parameter depends on another parameter), transform the parameters to make them independent.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.2921772003174,
+        "y": 558.6094641685486
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "52429c48-b237-453f-b26d-0087290021b8",
+      "title": "Designs",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe the designs for which to estimate the expected information gain, including\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"a name, number, or similar to identify the design,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"number of trials\"},{\"insert\":\", and \"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"values for the adjustable parameters\"},{\"insert\":\" for each trial.\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2061.8266010284424,
+        "y": 563.4800696372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "d64f008b-6ec5-405c-bfa4-f23656e52fc3",
+      "title": "Expected information gain",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport in the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"EIG \"},{\"insert\":\"and other statistics of the designs.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2456.9816303253174,
+        "y": 563.4800696372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "05a86645-b730-4279-b7b6-3439331daec4",
+      "title": "Choice of design",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nstate the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"choice of the design\"},{\"insert\":\" for the actual experiment,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"justify the choice.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "828a5488-fd7b-46d1-8e1b-2a14d5491be4",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2865.9042377471924,
+        "y": 563.6653723716736
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "207dfe80-6ffa-45d4-a37f-908f66bb1ca8",
+      "title": "trials",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport the parameters and results of the trials performed\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f4591f44-7032-4551-a0dd-42bd6ab6cb05",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3286.4375487484417,
+        "y": 559.0359778404236
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "a3d973d4-cb97-4507-bf22-cd2683682ccf",
+      "title": "model results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"results \"},{\"insert\":\"of the model fit.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "147964b7-2573-4740-9633-fc60de0898ad",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3705.581727981567,
+        "y": 559.0359778404236
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "8b432946-9c81-4baf-8b9f-10c669e76ef8",
+      "title": "The Dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We would need to import our data for training and evaluating the models. We need to understand the size, properties, and features of our dataset to decide on the design needed.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 971.8582458496095,
+        "y": -91.36378479003908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "0d222358-71a8-4e8a-8c7f-68116d9a88a7",
+      "title": "model",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The bayesian modelling is implemented with Halerium graphs, where variables can be mathematically defined and related.\\n\\nPlease visit https://hal.erium.io/ for more information on Halerium Inference.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1324.1752482571094,
+        "y": -94.10499572753908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "8265ce80-e5b2-4efe-bfd8-de4de56a4c95",
+      "title": "parameters observables targets",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"These parameters are related to the features (observables and targets) that are modelled in a Bayesian graph.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.3318786621094,
+        "y": -95.20851135253908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "838772fc-6c94-44c7-a318-5a5af150d0ea",
+      "title": "Designs",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"There are several available designs such as:\\nfull factorial\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"simple central\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"mixed central\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"full central\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nYou may also specify your own designs.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2059.0769958496094,
+        "y": -97.30323791503908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "ed849dc5-8611-42f4-bf7b-e622f149cea2",
+      "title": "Expected information gain",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The information gained about a variable from observing another variable.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "1d9e73a9-62c3-4095-bf49-b50f28770784",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2456.5818786621094,
+        "y": -92.70851135253908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "6789fab2-8643-4441-94d7-270e70092ba7",
+      "title": "model fitting",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Halerium Inference provides a few fitting methods. You may read more here https://hal.erium.io/examples/01_introduction/01_building_blocks.html?highlight=map\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "19f4799c-ecde-46c1-ad79-77097c39b55c",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3704.9314880371094,
+        "y": -88.71730041503908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    }
+  ],
+  "edges": [
+    {
+      "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+      "type": "solid_arrow",
+      "node_connections": [
+        "2599e85f-7e0f-40aa-a4d3-87daf21aab7e",
+        "73a9dfc4-3cfb-4d39-bd08-77d56cd7e176"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "73a9dfc4-3cfb-4d39-bd08-77d56cd7e176",
+        "d28427bc-d519-4b0e-b492-d2c25622a19f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+      "type": "solid_arrow",
+      "node_connections": [
+        "d28427bc-d519-4b0e-b492-d2c25622a19f",
+        "b0cd4fab-5843-4eac-b530-6277efaf73b9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "122ea292-7343-4745-91f1-261c43d844b7",
+      "type": "solid_arrow",
+      "node_connections": [
+        "b0cd4fab-5843-4eac-b530-6277efaf73b9",
+        "b50d2dc3-e657-4eb2-8a48-b22cf8e7b7bc"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+      "type": "solid_arrow",
+      "node_connections": [
+        "b50d2dc3-e657-4eb2-8a48-b22cf8e7b7bc",
+        "97fdffa5-e4dd-4368-bd6e-db4af17b96ad"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+      "type": "solid_arrow",
+      "node_connections": [
+        "97fdffa5-e4dd-4368-bd6e-db4af17b96ad",
+        "857e04db-6059-4af9-a8c9-038fed6177e8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8d03c66a-a5e2-400a-ad84-56c19cb7882a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "857e04db-6059-4af9-a8c9-038fed6177e8",
+        "f9654476-f3d1-41e7-aece-32a56797dcf8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "b9633395-3234-4b0e-a191-d8d05a93fcd1",
+      "type": "solid_arrow",
+      "node_connections": [
+        "f9654476-f3d1-41e7-aece-32a56797dcf8",
+        "1a9df2d3-b096-46a9-afcc-b80816a9171b"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c557e048-884e-4e7f-8f31-f9ac4f6e90bf",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1a9df2d3-b096-46a9-afcc-b80816a9171b",
+        "4e65ea3a-27fe-45fa-aa19-32a3eb814c54"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8680f376-1f2f-4cf8-898a-9c84cd2496ab",
+        "73a9dfc4-3cfb-4d39-bd08-77d56cd7e176"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "29fba7f2-aef3-4541-be60-2d9b502f7470",
+        "73a9dfc4-3cfb-4d39-bd08-77d56cd7e176"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8b432946-9c81-4baf-8b9f-10c669e76ef8",
+        "d28427bc-d519-4b0e-b492-d2c25622a19f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d28427bc-d519-4b0e-b492-d2c25622a19f",
+        "08cbcb4d-922e-4185-b780-f07d29322969"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "0d222358-71a8-4e8a-8c7f-68116d9a88a7",
+        "b0cd4fab-5843-4eac-b530-6277efaf73b9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "b0cd4fab-5843-4eac-b530-6277efaf73b9",
+        "d053460f-cae2-4bed-99a4-f78b44866b37"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "583daf7b-8155-44d0-adbe-a44310218963",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8265ce80-e5b2-4efe-bfd8-de4de56a4c95",
+        "b50d2dc3-e657-4eb2-8a48-b22cf8e7b7bc"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "b50d2dc3-e657-4eb2-8a48-b22cf8e7b7bc",
+        "98ae6fc5-d968-4609-af4b-91cd7b69841a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "838772fc-6c94-44c7-a318-5a5af150d0ea",
+        "97fdffa5-e4dd-4368-bd6e-db4af17b96ad"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "52429c48-b237-453f-b26d-0087290021b8",
+        "97fdffa5-e4dd-4368-bd6e-db4af17b96ad"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "1d9e73a9-62c3-4095-bf49-b50f28770784",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "ed849dc5-8611-42f4-bf7b-e622f149cea2",
+        "857e04db-6059-4af9-a8c9-038fed6177e8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d64f008b-6ec5-405c-bfa4-f23656e52fc3",
+        "857e04db-6059-4af9-a8c9-038fed6177e8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "828a5488-fd7b-46d1-8e1b-2a14d5491be4",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "f9654476-f3d1-41e7-aece-32a56797dcf8",
+        "05a86645-b730-4279-b7b6-3439331daec4"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f4591f44-7032-4551-a0dd-42bd6ab6cb05",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "1a9df2d3-b096-46a9-afcc-b80816a9171b",
+        "207dfe80-6ffa-45d4-a37f-908f66bb1ca8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "19f4799c-ecde-46c1-ad79-77097c39b55c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "6789fab2-8643-4441-94d7-270e70092ba7",
+        "4e65ea3a-27fe-45fa-aa19-32a3eb814c54"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "147964b7-2573-4740-9633-fc60de0898ad",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4e65ea3a-27fe-45fa-aa19-32a3eb814c54",
+        "a3d973d4-cb97-4507-bf22-cd2683682ccf"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

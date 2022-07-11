@@ -1,0 +1,54 @@
+{
+    "name": "Prediction",
+    "description": "To predict an output based on input parameters provided",
+    "templates": [
+        {
+            "name": "Overview",
+            "isOverview": "true",
+            "description": "Overview board for prediction templates",
+            "folder_name": "prediction_overview-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=prediction_overview",
+            "files": [
+                {
+                    "name": "prediction_overview.board",
+                    "contentType": "board",
+                    "path": "prediction_overview/prediction_overview.board"
+                }
+            ]
+        },
+        {
+            "name": "Regression",
+            "isOverview": "false",
+            "description": "To estimate the relationships between a dependent variable and one or more independent variables",
+            "folder_name": "regression-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=regression",
+            "files": [
+                {
+                    "name": "regression.board",
+                    "contentType": "board",
+                    "path": "regression/regression.board"
+                },
+                {
+                    "name": "regression.ipynb",
+                    "contentType": "ipynb",
+                    "path": "regression/regression.ipynb"
+                },
+                {
+                    "name": "regression_streamlit.py",
+                    "contentType": "py",
+                    "path": "regression/regression_streamlit.py"
+                },
+                {
+                    "name": "regression_streamlit_app.ipynb",
+                    "contentType": "ipynb",
+                    "path": "regression/regression_streamlit_app.ipynb"
+                },
+                {
+                    "name": "README.md",
+                    "contentType": "md",
+                    "path": "regression/README.md"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1729 @@
+{
+  "nodes": [
+    {
+      "id": "1ff868f6-6cd0-4e80-8be4-54a7dce2526d",
+      "title": "0. How to use the board",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"This board guides you to a suitable outlier detection approach based on your task.\\n\\nGo through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Read the instructions on each \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"card\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Follow the arrows on the \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"green \"},{\"insert\":\"card most suitable to your task OR Delete \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"green \"},{\"insert\":\"cards that do not relate to your task to remove possible paths\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"At the end of the tree, you will reach a \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"card that specifies a suitable outlier detection approach for your task\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "90b5400d-ccfd-4812-b413-11919d8d947d",
+          "connector": "right"
+        },
+        {
+          "id": "7b5054fd-61aa-4c75-b44c-4850ecdfba44",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -616.1585677200001,
+        "y": -440.22699007999995
+      },
+      "size": {
+        "width": 309.68255999999997,
+        "height": 336.62559999999996
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "8b357d1b-8032-4ef7-99de-92d94826da1c",
+      "title": "2. IS your data labelled?",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Next, we have to determine if we require a supervised or unsupervised approach to outlier detection. This depends on if the outlier data is labelled.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Supervised\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"In supervised learning, the goal is to predict outcomes for new data.\\n\\nThis approach may be used with labelled data, and used to identify outliers in unlabeled data that is provided separately. Note that some forms of supervised outlier detection may also be considered as classification problems.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Unsupervised\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"In unsupervised learning, the goal is to get insights from large volumes of existing data.\\n\\nThis approach may be used with unlabeled data, to find outlier and anomalous data in the original dataset itself. This is often the most common use case for outlier detection.\\n\\nYou may manually label data without such labels by running the notebook 'label_outliers.ipynb' and using the streamlit app. Afterwards, you may use supervised models to identify the outlier data.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Algorithm choice and labelling\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"The presence or absence of outlier labels may affect the choice of outlier detection algorithm.\\n\\nMany outlier detection algorithms (such as Autoencoders and K-means clustering) can take input without labels. However, such algorithms assumes the majority of instances are normal. Other algorithms (such as k-nearest neighbours or Bayesian networks) require labels as direct input. In order to use these algorithms with categorical variables, one has to manually label data points as normal or anomalous and then input those into the model. The advantage of using these supervised models is that they may offer a higher rate of detection than unsupervised techniques due to its ability to incorporate both data and prior knowledge as well as encode interdependencies between variables.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "8a9f3a2c-ac1d-46a6-b503-e205d23b2ac3",
+          "connector": "right"
+        },
+        {
+          "id": "9ee976f6-5541-4785-8a7f-6f7f7697d679",
+          "connector": "left"
+        },
+        {
+          "id": "3d2390d6-f384-4f86-9eda-552a3b3cf62a",
+          "connector": "right"
+        },
+        {
+          "id": "1ee22425-0ca0-4600-8fbe-171ce9f22512",
+          "connector": "bottom"
+        },
+        {
+          "id": "ff2a83e7-87b5-4707-a70c-36d31d5070c3",
+          "connector": "bottom"
+        },
+        {
+          "id": "09fbba9e-1fa7-4c22-a2c4-d94f294dcf89",
+          "connector": "left"
+        },
+        {
+          "id": "d5a181d2-e9fb-4507-9e6f-e348a0be5298",
+          "connector": "top"
+        },
+        {
+          "id": "8b4e3acf-ec2f-4b98-87b7-3ef10548a684",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 424.53437500000007,
+        "y": 96.52799999999999
+      },
+      "size": {
+        "width": 235,
+        "height": 200
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "257c3067-ed77-4115-b288-d9fde08b5c57",
+      "title": "unsupervised",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "1ee22425-0ca0-4600-8fbe-171ce9f22512",
+          "connector": "top"
+        },
+        {
+          "id": "1f8863c9-f71b-4df7-a0af-8a73a4112696",
+          "connector": "right"
+        },
+        {
+          "id": "1c32f9f9-3d27-42fc-aace-e87950e99946",
+          "connector": "right"
+        },
+        {
+          "id": "94318c0a-3529-46e2-b4b0-cc985c4abe7b",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 257.05665340000013,
+        "y": 426.114176
+      },
+      "size": {
+        "width": 118,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 118,
+        "height": 37
+      }
+    },
+    {
+      "id": "46f70d21-8d23-444a-a47c-4e8d0c2c1d68",
+      "title": "supervised",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "8a9f3a2c-ac1d-46a6-b503-e205d23b2ac3",
+          "connector": "left"
+        },
+        {
+          "id": "6f4d745c-bf54-4fc9-bd0e-abed0b2ea097",
+          "connector": "right"
+        },
+        {
+          "id": "72ebf702-d17a-492e-9f9c-b09b062db4de",
+          "connector": "right"
+        },
+        {
+          "id": "927adab5-3dd5-4485-a1e9-c6939bb674fa",
+          "connector": "right"
+        },
+        {
+          "id": "ff2a83e7-87b5-4707-a70c-36d31d5070c3",
+          "connector": "top"
+        },
+        {
+          "id": "978e9696-0e59-4d3b-bc33-a79cec4bb829",
+          "connector": "left"
+        },
+        {
+          "id": "b2da52ad-dc20-4353-8d0d-f804c53a0d3f",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 706.0694220656001,
+        "y": 426.0290348031999
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "80078958-dc0c-40b1-99b0-aee3eb17be39",
+      "title": "Manually label the data (optional)",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"You may use the notebook \\\"label_outliers.ipynb\\\" to manually flag data with outlier labels. You may flag both time series and discrete/continuous data. Note that the streamlit app expects a column labeled 'date' for the time index. The notebook can also load existing outliers if a column labeled 'outlier' is present.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "978e9696-0e59-4d3b-bc33-a79cec4bb829",
+          "connector": "right"
+        },
+        {
+          "id": "b2da52ad-dc20-4353-8d0d-f804c53a0d3f",
+          "connector": "right"
+        },
+        {
+          "id": "94318c0a-3529-46e2-b4b0-cc985c4abe7b",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 451.03561716320013,
+        "y": 416.4469149696
+      },
+      "size": {
+        "width": 191.24,
+        "height": 160
+      },
+      "color": "#51455b",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 191.24,
+        "height": 58
+      }
+    },
+    {
+      "id": "7ee79502-40fd-47da-824c-f096cb4f8626",
+      "title": "supervised models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"You may use the notebook 'supervised.ipynb' to run these models for supervised outlier detection, The board 'supervised.board' will guide you through this process.\\n\\nSupervised models uses a labeled training set with normal and outlier samples. Some models include:\\n\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Classification Models\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Supervised classification models categorise data into a given number of classes, and identify the category to which new data would fall under. For outlier detection, the models will classify new data as normal or outlier based on training on previously supplied labeled data.\\n\\nSome possible classification models include k Nearest Neighbours, Decision Trees, Neural Networks, and Support Vector Machines. You may find more information regarding classification models for prediction in the 'Prediction' template.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "58ca41d3-1f97-41f1-ad9f-daa1b97695f2",
+          "connector": "left"
+        },
+        {
+          "id": "370b0fc9-6059-4d0f-a4f7-d1d0fb25e1d5",
+          "connector": "left"
+        },
+        {
+          "id": "d6add36e-f5a0-46f4-bcae-e0f220f646e7",
+          "connector": "left"
+        },
+        {
+          "id": "9b951e2a-a210-44e7-bfc9-d1d59512152b",
+          "connector": "left"
+        },
+        {
+          "id": "4a10a794-663b-46b1-a374-621b86d2aae3",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1595.1597973360003,
+        "y": 268.47855421440005
+      },
+      "size": {
+        "width": 240.81440965485714,
+        "height": 229.84
+      },
+      "color": "#28337e",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 215,
+        "height": 58
+      }
+    },
+    {
+      "id": "a190f942-d79f-4dcc-b4a2-1a2925c237c8",
+      "title": "3. Data Types",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We also need to distinguish between three data types: discrete, continuous time series, and other continuous data.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Categorical\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"A categorical variable is one that may take on a countable set of distinct groups. There are various subtypes of categorical variables: For example, binary (eg. yes/no), nominal (where order does not matter eg. Blood type), and ordinal (ordered values eg. satisfaction levels \\\"strongly disagree\\\", \\\"disagree\\\", \\\"agree\\\", \\\"strongly agree ) variables may all be considered discrete variables. Outliers may be present where the presence of a specific feature may flag the data point as anomalous, or the combination of several discrete features in a data point are anomalous compared to other data points in the data.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Continuous Time Series\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"We split time series data as they are sequential and have autocorrelation, where observations are dependent on their previous observations.\\n\\nA continuous time series is data that is collected over a continuous period of time, even if the recorded data is discrete. For example, the closing prices of stocks at the end of each day may form a continuous time series. Outliers may be present if a data point differs greatly from its temporal neighbours or from seasonal variation,\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Other Continuous\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"All other forms of continuous data. A continuous variable has values that describe a continuous measurable quantity or number. For example, length, weight, and time may all be considered numerical variables. Outliers may be present where a data point has values that differ greatly from similar points or from all data points in the dataset.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "3d2390d6-f384-4f86-9eda-552a3b3cf62a",
+          "connector": "left"
+        },
+        {
+          "id": "4a9a4ad3-510a-4b3f-9353-1e45f61c44ef",
+          "connector": "bottom"
+        },
+        {
+          "id": "ac6f3a81-3396-401f-bf55-2d885fb970c2",
+          "connector": "bottom"
+        },
+        {
+          "id": "85948afc-75f7-4baf-be11-f40b51170e43",
+          "connector": "bottom"
+        },
+        {
+          "id": "3d0abdd2-40c0-4a57-ad99-c1442cffacda",
+          "connector": "bottom"
+        },
+        {
+          "id": "a4175789-5462-4ad5-bd75-e76942cb0003",
+          "connector": "bottom"
+        },
+        {
+          "id": "dfff390b-697f-4945-8606-73efcab4f423",
+          "connector": "bottom"
+        },
+        {
+          "id": "dfe84418-55a8-4013-83b5-ac7b88f5b51e",
+          "connector": "bottom"
+        },
+        {
+          "id": "b6019667-7fc2-42c6-91d8-f2dcce7ecfa6",
+          "connector": "top"
+        },
+        {
+          "id": "eaf088a9-7522-40cc-99bd-dbfbeaaaae1f",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 853.6142750000004,
+        "y": 150.60970000000012
+      },
+      "size": {
+        "width": 216.94999999999996,
+        "height": 196.25
+      },
+      "color": "#51455b",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 229.74999999999994,
+        "height": 37
+      }
+    },
+    {
+      "id": "f0a2d041-b5a0-4c3a-888a-b57494bf2782",
+      "title": "understanding outlier types",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"There are 3 types of outliers:\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Global/point outlier\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"These are data points which are far away and different from all other data points in the dataset. They will appear to be completely isolated in one or multiple dimensions. For example, a data point of one person with height 2.4m in a dataset with all other persons having height around 1.8m will be considered a global/point outlier.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Contextual/conditional outlier\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"These are data points that deviate from data points in the same context. This context could be the same discrete category (eg. in a dataset of cats and dogs, where all dogs are white and all cats are black except one white cat; white cat not a global outlier but a contextual outlier) or seasonal variation (eg. 0 degree Celsius in summer, but not an outlier in winter).\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Collective outlier\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"These are a group of data points in a dataset that significantly differs from the rest, while each data point on its own would not be seen as anomalous. For example, when taking the heart rate of a group of 1000 randomly selected people, it is not anomalous for one person to have a heartrate of 150 BPM (exercising). However, if all 1000 people have the same 150BPM at the same time, this becomes a collective outlier.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "74097dce-e256-41bd-85f9-68ded839b905",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -321.6514889786672,
+        "y": -671.9679270997331
+      },
+      "size": {
+        "width": 243,
+        "height": 202
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "e4aa0ce4-bb4e-4404-965d-ba78405b7be9",
+      "title": "Time Series",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "6f4d745c-bf54-4fc9-bd0e-abed0b2ea097",
+          "connector": "left"
+        },
+        {
+          "id": "3d0abdd2-40c0-4a57-ad99-c1442cffacda",
+          "connector": "top"
+        },
+        {
+          "id": "9b951e2a-a210-44e7-bfc9-d1d59512152b",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1000.4549160960004,
+        "y": 378.8098547712
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "ff46e1e9-72e8-48a3-b442-9677dea5441e",
+      "title": "Time series",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "4a9a4ad3-510a-4b3f-9353-1e45f61c44ef",
+          "connector": "top"
+        },
+        {
+          "id": "2b4952f9-ec3e-4de1-8627-1b767078c6ed",
+          "connector": "left"
+        },
+        {
+          "id": "8e69fda1-34ab-4698-ae5f-668fd783fc37",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 878.6384506879998,
+        "y": 703.5072442368
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "2f6a925d-34b6-47fc-8da1-0c64fa4c1857",
+      "title": "Categorical",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "b198f2c0-7f82-45d8-a478-b03d040e6566",
+          "connector": "right"
+        },
+        {
+          "id": "ac6f3a81-3396-401f-bf55-2d885fb970c2",
+          "connector": "top"
+        },
+        {
+          "id": "dc6df1ed-f31f-41f7-8d10-fef2d8fbce8b",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 878.2717161472002,
+        "y": 768.8059383808002
+      },
+      "size": {
+        "width": 106.291456,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 58
+      }
+    },
+    {
+      "id": "5ae3fe0c-2f53-4215-9bef-11634ef8ef6b",
+      "title": "continuous",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "995cd61f-acf2-4205-8fcb-0d4c3b46d1a3",
+          "connector": "right"
+        },
+        {
+          "id": "85948afc-75f7-4baf-be11-f40b51170e43",
+          "connector": "top"
+        },
+        {
+          "id": "744c00a0-9046-4a0d-8926-381e4f8afd4c",
+          "connector": "left"
+        },
+        {
+          "id": "dfe84418-55a8-4013-83b5-ac7b88f5b51e",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 878.7024506879999,
+        "y": 830.8021481471998
+      },
+      "size": {
+        "width": 107.7309411328,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 107.7309411328,
+        "height": 37
+      }
+    },
+    {
+      "id": "76cf3615-8461-46c8-aaaa-1f780fe4f44f",
+      "title": "categorical",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "72ebf702-d17a-492e-9f9c-b09b062db4de",
+          "connector": "left"
+        },
+        {
+          "id": "d6add36e-f5a0-46f4-bcae-e0f220f646e7",
+          "connector": "right"
+        },
+        {
+          "id": "a4175789-5462-4ad5-bd75-e76942cb0003",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1000.6359265279998,
+        "y": 437.2739174400001
+      },
+      "size": {
+        "width": 109.437184,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 58
+      }
+    },
+    {
+      "id": "94398a4c-6a41-4991-826d-f247f49dd379",
+      "title": "continuous",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "927adab5-3dd5-4485-a1e9-c6939bb674fa",
+          "connector": "left"
+        },
+        {
+          "id": "370b0fc9-6059-4d0f-a4f7-d1d0fb25e1d5",
+          "connector": "right"
+        },
+        {
+          "id": "dfff390b-697f-4945-8606-73efcab4f423",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 999.180077056,
+        "y": 491.551422464
+      },
+      "size": {
+        "width": 111.811160064,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 111.811160064,
+        "height": 37
+      }
+    },
+    {
+      "id": "63e158b2-5f19-414d-b0ed-f23479bb6bc9",
+      "title": "other unsupervised models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"You may use the notebook 'unsupervised.ipynb' to run these models for unsupervised outlier detection, The board 'unsupervised.board' will guide you through this process.\\n\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Thresholds/Inter Quartile Range\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"The most basic of outlier detection methods, a threshold may be directly set either statically or dynamically on the dataset, or in terms of the statistical quartile range, with values exceeding the threshold being flagged as outliers.\\n\\nNote that many other models would incorporate thresholds as well, but not directly on the raw data values.\\n\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Elliptic Envelope Covariance\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Assuming the data comes from a known Gaussian distribution, we may be able to define the 'shape' of the data, and define outliers as observations which are far enough from the fit shape. One may fit an ellipse to the central data points by fitting a robust covariance estimate. \\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"One Class SVM\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Outlier detection for rare events often works with very little sample. A One Class SVM finds a function that is positive for regions with high density of points, and negative for small densities.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"K-means Clustering\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"K-means clustering groups together points that are similar (through distance or some other metric) into predefined number K of clusters. A threshold value can be added to detect outliers: if the distance between a data point and its nearest centroid (centre of cluster) is greater than the threshold.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Gaussian Mixture Models\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Another clustering model, by fitting K Gaussians to the data, we can find the distribution parameters like mean and variance for each cluster, and calculate the probability of belonging to each of the clusters. It assumes all the data points are generated from a mixture of a finite number of Gaussian distributions. A threshold can then be used to determine the probability level for outliers.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Local outlier factor\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Local outlier factor computes a score (local outlier factor) reflecting the degree of abnormality of the observations, by measuring the local density deviation (obtained from the k-nearest neighbours) of a given data point wrt its neighbours. The goal is to detect samples that have significantly lower density than their neighbours. \\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Isolation Forest\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Isolation Forests isolates observations by randomly selecting a feature and then randomly selecting a split value. The number of splits required to isolate a sample is a measure of normality. More intuitively, by splitting a dataset randomly, outliers would likely require less splits to be completely isolated, while normal points would require more.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "6b1bd7bd-4f50-44be-9fcf-866201e8a8f5",
+          "connector": "left"
+        },
+        {
+          "id": "995cd61f-acf2-4205-8fcb-0d4c3b46d1a3",
+          "connector": "left"
+        },
+        {
+          "id": "b198f2c0-7f82-45d8-a478-b03d040e6566",
+          "connector": "left"
+        },
+        {
+          "id": "01ccaead-04d6-42b0-8fac-c9df4b80adc6",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1603.4275495253332,
+        "y": 942.1032297813332
+      },
+      "size": {
+        "width": 238.109411328,
+        "height": 237.84
+      },
+      "color": "#28337e",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 238.109411328,
+        "height": 37
+      }
+    },
+    {
+      "id": "66973962-2642-420c-ad05-33371d01acf9",
+      "title": "use cases",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Firstly, we may identify some use cases for outlier detection and how this template may be used. This template allows for both use cases, detecting outliers in unlabeled data in the notebooks, as well as on new data with trained models in the streamlit app.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Data Cleaning\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"To detect and clean existing data of noise or anomalous data. These outliers may then be filtered out, providing a 'clean' dataset for further use. Many unsupervised models can work on an existing unlabeled dataset and build decision boundaries/thresholds to identify outliers.\\n\\nAn example is cleaning the data before it is used to train machine learning models. This would prevent the models from overfitting the noise and skewing the predictions. \\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Events of Interest\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"To detect events of interest on new data, based on training on previous data. Both supervised and unsupervised models may be used to train a model, and use that model to predict outliers on new data. \\n\\nAn example may be fraud detection in financial transactions, where a model can determine if a transaction is fraudulent when compared to previous instances of legitimate/illegitimate transactions.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "13b750e1-dcd3-4808-8e4d-d800e2de9fbd",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 36.03576750000008,
+        "y": -673.1394893749999
+      },
+      "size": {
+        "width": 249.76,
+        "height": 201.67999999999998
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "93eba951-586a-4b61-81ba-8b76b6c5b52c",
+      "title": "1. Do you have domain knowledge?",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We may have domain knowledge of the relationships and dependencies between features or variables in the data. We may include this knowledge into our models, such that they may build upon existing information, apart from those seen in the raw data. This may be able to generate more robust models that map known relationships, while augmenting it with fitted data. A common approach to use when we have domain knowledge is to use Bayesian Networks.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "c00d451c-225c-4eb5-9631-55e81060ac9d",
+          "connector": "bottom"
+        },
+        {
+          "id": "2cee12f5-0699-4459-9dd2-e5307bfd922c",
+          "connector": "bottom"
+        },
+        {
+          "id": "1578c2ae-7cb0-4970-8d17-1c0d13cc4325",
+          "connector": "bottom"
+        },
+        {
+          "id": "7b5054fd-61aa-4c75-b44c-4850ecdfba44",
+          "connector": "left"
+        },
+        {
+          "id": "74097dce-e256-41bd-85f9-68ded839b905",
+          "connector": "top"
+        },
+        {
+          "id": "13b750e1-dcd3-4808-8e4d-d800e2de9fbd",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -143.82100294999995,
+        "y": -382.19975854999996
+      },
+      "size": {
+        "width": 270.139648,
+        "height": 220.3360512
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "b9c2aa27-e5ea-480e-9891-dd5cfbe8dff7",
+      "title": "No",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "c00d451c-225c-4eb5-9631-55e81060ac9d",
+          "connector": "top"
+        },
+        {
+          "id": "09fbba9e-1fa7-4c22-a2c4-d94f294dcf89",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -173.537068495,
+        "y": -119.60808956699998
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "75cbad85-f73b-45a9-930b-1b6ffafbf4fe",
+      "title": "Yes",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "2cee12f5-0699-4459-9dd2-e5307bfd922c",
+          "connector": "top"
+        },
+        {
+          "id": "52e483fd-1b0b-417f-b725-03728f0b7e93",
+          "connector": "right"
+        },
+        {
+          "id": "1578c2ae-7cb0-4970-8d17-1c0d13cc4325",
+          "connector": "top"
+        },
+        {
+          "id": "7e0f6efc-5424-4e64-a82d-e7314047230c",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 75.86187115299992,
+        "y": -117.753383903
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "f3dd461d-bd15-46e2-ac90-86809436f747",
+      "title": "halerium inference (Bayesian Networks)",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"A Bayesian network is a probabilistic graphical model that represents a set of variables and their conditional dependencies. The network will return a probability of membership for the normal or outlier label, which can tell us how much of an outlier a certain data point is.\\n\\nA big advantage is the ability to include domain knowledge, where relationships and dependencies between variables can be specified and included in the model. For example, if you know variable height is related to age, or that bmi could be mapped mathematically to height and weight.\\n\\nPros\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Data can be easily inspected to determine if certain features of data are considered; and exploit all known features\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Domain knowledge of relationships and dependencies may be included\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nCons\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Cannot infer 'new' patterns (as opposed to neural net)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nPlease go to https://hal.erium.io/ for information and documentation regarding the Halerium python package.\\n\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "52e483fd-1b0b-417f-b725-03728f0b7e93",
+          "connector": "left"
+        },
+        {
+          "id": "7e0f6efc-5424-4e64-a82d-e7314047230c",
+          "connector": "left"
+        },
+        {
+          "id": "724d585f-6868-40b5-810f-50e769d13769",
+          "connector": "right"
+        },
+        {
+          "id": "6f3e8af8-f728-4e5b-86c5-9aceaabcb77c",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 250.46689453124995,
+        "y": -224.50103515625005
+      },
+      "size": {
+        "width": 234.4,
+        "height": 243.60000000000002
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "1c1f9e84-370b-4dca-be4d-dc7ae436a9fb",
+      "title": "yes",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "0dd57890-b8a4-4ea0-ad8a-0d1910702937",
+          "connector": "top"
+        },
+        {
+          "id": "2b4952f9-ec3e-4de1-8627-1b767078c6ed",
+          "connector": "right"
+        },
+        {
+          "id": "dc6df1ed-f31f-41f7-8d10-fef2d8fbce8b",
+          "connector": "right"
+        },
+        {
+          "id": "744c00a0-9046-4a0d-8926-381e4f8afd4c",
+          "connector": "right"
+        },
+        {
+          "id": "edecab50-00df-438b-818a-3572b7689d8d",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 623.5229062499997,
+        "y": 769.55103125
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "0894e8ec-831e-4628-a687-26b57aa77d5f",
+      "title": "no",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "af80920e-9079-47a3-8848-87c02d06f0c6",
+          "connector": "top"
+        },
+        {
+          "id": "63c1ce42-e071-4be2-86e9-089fdb6fa16f",
+          "connector": "right"
+        },
+        {
+          "id": "9f71ae65-9016-4222-b8ac-708e3bdd26ee",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 393.9793542499999,
+        "y": 766.7596072499999
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "1a2ac9c5-2e02-49d6-a9bb-ab10b48fad66",
+      "title": "Autoencoders",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"You may use the notebook 'autoencoder.ipynb' to run a convolutional and LSTM autoencoder for unsupervised outlier detection, The board 'autoencoder.board' will guide you through this process.\\n\\nAutoencoders are unsupervised Neural Networks that attempts to encode data by 'compressing' it into lower dimensions through a bottleneck layer (fewer dimensions that input or output layer), and then decoding the data from this bottleneck layer to reconstruct the original input. The main idea is to make the model learn a simpler representation of the data in fewer dimensions, saving on space and complexity.\\n\\nAutoencoders may be used in outlier detection by training on a 'clean' dataset, learning how to encode and decode non-outlier data. Afterwards, when outlier data is provided, the reconstruction should be much more inaccurate than reconstructing non-outlier data. This inaccuracy may be used to flag and identify outliers.\\n\\nThis may be effective for time-series data as well using a LSTM (Long short term memory) autoencoder that can factor in historical time data.\\n\\nPros\\nGreat for feature extraction/dimensionality reduction\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nCons\\nRequires clean training data with no outliers\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"May be onerous to set up limitless permutations of a NN architecture\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "63c1ce42-e071-4be2-86e9-089fdb6fa16f",
+          "connector": "left"
+        },
+        {
+          "id": "15d3e414-70c7-425a-b942-526848ef2a9a",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1610.1155729166667,
+        "y": 1239.3386979166667
+      },
+      "size": {
+        "width": 223.73333333333332,
+        "height": 226.64
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "94eba463-d1d2-4db2-8034-0de2461c6768",
+      "title": "2.1 DOES THE TRAINING DATA INCLUDE OUTLIERS?",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"While most models can be used to detect outliers on the training and new data, some models (eg. Autoencoders) require the training data to be 'clean', consisting only of non-anomalous data, before it can be used to predict new data.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "18cbf5e3-ed79-4a02-929a-0ecd986a16b0",
+          "connector": "left"
+        },
+        {
+          "id": "9f71ae65-9016-4222-b8ac-708e3bdd26ee",
+          "connector": "bottom"
+        },
+        {
+          "id": "edecab50-00df-438b-818a-3572b7689d8d",
+          "connector": "bottom"
+        },
+        {
+          "id": "1c32f9f9-3d27-42fc-aace-e87950e99946",
+          "connector": "left"
+        },
+        {
+          "id": "eaf088a9-7522-40cc-99bd-dbfbeaaaae1f",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 447.54957025,
+        "y": 511.11909375000005
+      },
+      "size": {
+        "width": 203.67999999999998,
+        "height": 194.256
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "331fc1d7-b25e-451f-bd11-a3512214363c",
+      "title": "unsupervised time series models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"attributes\":{\"color\":\"#ffffff\"},\"insert\":\"You may use the notebook 'unsupervised.ipynb' to run these models for unsupervised outlier detection, The board 'unsupervised.board' will guide you through this process.\"},{\"insert\":\"\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Seasonal Trend Decomposition (STL)\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"This univariate technique splits the time series into 3 components: seasonal, trend, and residue using LOESS. To identify outliers, we set a threshold for the residue. The notebook implements univariate STL for the features.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Forecasting Approaches\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Forecasting uses several points in the past to generate a forecast of subsequent points. However, the time data should be stationary (dependent on time). Most approaches use a subset or combination of Moving Averages and Auto Regressors to predict a new data point from past datums. Outliers can be detected when the difference between the predicted and actual future data exceeds a threshold. The notebook implements an ARIMA model that combines MA and AR as well as differentiation to ensure the ata is stationary.\\n\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Clustering Approaches\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"The same clustering approaches used for non-time series data may be applied to time series data (see the card 'Other Unsupervised Models').\\n\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "8e69fda1-34ab-4698-ae5f-668fd783fc37",
+          "connector": "left"
+        },
+        {
+          "id": "ce830c2f-be16-44e7-a1f8-8d9fd34b4790",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1596.765462239583,
+        "y": 646.3867594401042
+      },
+      "size": {
+        "width": 263.2,
+        "height": 242
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "5678158b-441f-4262-927f-c43e19cff3d3",
+      "title": "Univariate or multivariate",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"There are two types of outlier detection techniques: univariate and multivariate\\n\\nUnivariate\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Univariate outlier detection is when we are concerned with only one feature in the dataset, and comparing each data point to other data points with only that feature to detect if it is an outlier.\\n\\nMultivariate\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Multivariate outlier detection is when we include multiple or all features of a data point to determine if the data point as a whole is an outlier. This may include evaluating the relationship and values between each feature of a data point.\\n\\nThe approaches and models for univariate and multivariate outlier detection may differ based on data type and use case requirements.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b6019667-7fc2-42c6-91d8-f2dcce7ecfa6",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 845.4993289062498,
+        "y": -87.05750722656255
+      },
+      "size": {
+        "width": 229.59999999999997,
+        "height": 210
+      },
+      "color": "#513063",
+      "collapsed": false,
+      "collapsed_size": {
+        "width": 229.59999999999997,
+        "height": 37
+      }
+    },
+    {
+      "id": "831f9fa5-8bba-4667-b93c-7511d73fb434",
+      "title": "Supervised Bayesian",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"You may use the notebook 'bayesian_supervised.ipynb' to train and run a Halerium Causal Structure Bayesian network for supervised outlier detection, The board 'bayesian_supervised.board' will guide you through this process.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "340f8e39-b014-483a-9f4b-9fd580954a12",
+          "connector": "left"
+        },
+        {
+          "id": "edb695d6-f033-4c4a-b155-2daced3e78da",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1600.3310156250002,
+        "y": -328.158671875
+      },
+      "size": {
+        "width": 210.07999999999998,
+        "height": 200.8266666666667
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "1ed788fc-0466-4e48-a574-8f103c171c36",
+      "title": "Unsupervised",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "6f3e8af8-f728-4e5b-86c5-9aceaabcb77c",
+          "connector": "left"
+        },
+        {
+          "id": "7dba0bb1-c6de-464f-aa08-723ee7301dd7",
+          "connector": "right"
+        },
+        {
+          "id": "8b4e3acf-ec2f-4b98-87b7-3ef10548a684",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 628.167215625,
+        "y": -213.83055187500003
+      },
+      "size": {
+        "width": 117.92,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 117.92,
+        "height": 37
+      }
+    },
+    {
+      "id": "3ad1faf0-a001-48c2-9e7d-ed3a9a076a13",
+      "title": "Supervised",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "724d585f-6868-40b5-810f-50e769d13769",
+          "connector": "left"
+        },
+        {
+          "id": "340f8e39-b014-483a-9f4b-9fd580954a12",
+          "connector": "right"
+        },
+        {
+          "id": "d5a181d2-e9fb-4507-9e6f-e348a0be5298",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 638.100015625,
+        "y": -289.125271875
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "601b223b-4e63-43be-81bb-7701e9d5d891",
+      "title": "Unsupervised Bayesian",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"You may use the notebook 'bayesian_unsupervised.ipynb' to train and run a Halerium Graphical Bayesian network for unsupervised outlier detection, The board 'bayesian_unsupervised.board' will guide you through this process.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "7dba0bb1-c6de-464f-aa08-723ee7301dd7",
+          "connector": "left"
+        },
+        {
+          "id": "035b374a-1439-4e8d-bf6a-4f59628cc6e2",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1595.7610156250003,
+        "y": -75.528671875
+      },
+      "size": {
+        "width": 234.29333333333332,
+        "height": 216.07999999999998
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "dcf831b0-d7a1-49ae-8e60-ba7a37998074",
+      "title": "4. ADD TEMPLATE USING ADD TEMPLATE WIZARD",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After you have selected a suitable approach, you may add the template for that approach.\\n\\nIn the '+' menu in the file browser on the top left, select the outlier detection approach template.\\n\\nThe available selections are:\\n1-autoencoder\\n2-bayesian_supervised\\n3-bayesian_unsupervised\\n4-supervised (time and non-time)\\n5-unsupervised (time and non-time)\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "edb695d6-f033-4c4a-b155-2daced3e78da",
+          "connector": "left"
+        },
+        {
+          "id": "035b374a-1439-4e8d-bf6a-4f59628cc6e2",
+          "connector": "left"
+        },
+        {
+          "id": "4a10a794-663b-46b1-a374-621b86d2aae3",
+          "connector": "left"
+        },
+        {
+          "id": "ce830c2f-be16-44e7-a1f8-8d9fd34b4790",
+          "connector": "left"
+        },
+        {
+          "id": "01ccaead-04d6-42b0-8fac-c9df4b80adc6",
+          "connector": "left"
+        },
+        {
+          "id": "15d3e414-70c7-425a-b942-526848ef2a9a",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2286.6606852213545,
+        "y": 297.0679628385417
+      },
+      "size": {
+        "width": 328.7453866666666,
+        "height": 306
+      },
+      "color": "#51455b"
+    }
+  ],
+  "edges": [
+    {
+      "id": "b5156b76-5c21-408f-8052-f74930a9c48a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "8b357d1b-8032-4ef7-99de-92d94826da1c",
+        "257c3067-ed77-4115-b288-d9fde08b5c57"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "9ee976f6-5541-4785-8a7f-6f7f7697d679",
+      "type": "solid_arrow",
+      "node_connections": [
+        "87917947-bbad-4ab2-86f9-8bfbf6550cf5",
+        "8b357d1b-8032-4ef7-99de-92d94826da1c"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "6f4d745c-bf54-4fc9-bd0e-abed0b2ea097",
+      "type": "solid_arrow",
+      "node_connections": [
+        "46f70d21-8d23-444a-a47c-4e8d0c2c1d68",
+        "e4aa0ce4-bb4e-4404-965d-ba78405b7be9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "893de06f-54a6-41a8-8d71-12fad263f495",
+      "type": "solid_arrow",
+      "node_connections": [
+        "80078958-dc0c-40b1-99b0-aee3eb17be39",
+        "46f70d21-8d23-444a-a47c-4e8d0c2c1d68"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "72ebf702-d17a-492e-9f9c-b09b062db4de",
+      "type": "solid_arrow",
+      "node_connections": [
+        "46f70d21-8d23-444a-a47c-4e8d0c2c1d68",
+        "76cf3615-8461-46c8-aaaa-1f780fe4f44f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "927adab5-3dd5-4485-a1e9-c6939bb674fa",
+      "type": "solid_arrow",
+      "node_connections": [
+        "46f70d21-8d23-444a-a47c-4e8d0c2c1d68",
+        "94398a4c-6a41-4991-826d-f247f49dd379"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "370b0fc9-6059-4d0f-a4f7-d1d0fb25e1d5",
+      "type": "solid_arrow",
+      "node_connections": [
+        "94398a4c-6a41-4991-826d-f247f49dd379",
+        "7ee79502-40fd-47da-824c-f096cb4f8626"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "995cd61f-acf2-4205-8fcb-0d4c3b46d1a3",
+      "type": "solid_arrow",
+      "node_connections": [
+        "5ae3fe0c-2f53-4215-9bef-11634ef8ef6b",
+        "63e158b2-5f19-414d-b0ed-f23479bb6bc9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "b198f2c0-7f82-45d8-a478-b03d040e6566",
+      "type": "solid_arrow",
+      "node_connections": [
+        "2f6a925d-34b6-47fc-8da1-0c64fa4c1857",
+        "63e158b2-5f19-414d-b0ed-f23479bb6bc9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "d6add36e-f5a0-46f4-bcae-e0f220f646e7",
+      "type": "solid_arrow",
+      "node_connections": [
+        "76cf3615-8461-46c8-aaaa-1f780fe4f44f",
+        "7ee79502-40fd-47da-824c-f096cb4f8626"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "3d2390d6-f384-4f86-9eda-552a3b3cf62a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "8b357d1b-8032-4ef7-99de-92d94826da1c",
+        "a190f942-d79f-4dcc-b4a2-1a2925c237c8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "1ee22425-0ca0-4600-8fbe-171ce9f22512",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8b357d1b-8032-4ef7-99de-92d94826da1c",
+        "257c3067-ed77-4115-b288-d9fde08b5c57"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ff2a83e7-87b5-4707-a70c-36d31d5070c3",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8b357d1b-8032-4ef7-99de-92d94826da1c",
+        "46f70d21-8d23-444a-a47c-4e8d0c2c1d68"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c00d451c-225c-4eb5-9631-55e81060ac9d",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "93eba951-586a-4b61-81ba-8b76b6c5b52c",
+        "b9c2aa27-e5ea-480e-9891-dd5cfbe8dff7"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "4a9a4ad3-510a-4b3f-9353-1e45f61c44ef",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "a190f942-d79f-4dcc-b4a2-1a2925c237c8",
+        "ff46e1e9-72e8-48a3-b442-9677dea5441e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ac6f3a81-3396-401f-bf55-2d885fb970c2",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "a190f942-d79f-4dcc-b4a2-1a2925c237c8",
+        "2f6a925d-34b6-47fc-8da1-0c64fa4c1857"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "3d0abdd2-40c0-4a57-ad99-c1442cffacda",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "a190f942-d79f-4dcc-b4a2-1a2925c237c8",
+        "e4aa0ce4-bb4e-4404-965d-ba78405b7be9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "dfff390b-697f-4945-8606-73efcab4f423",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "a190f942-d79f-4dcc-b4a2-1a2925c237c8",
+        "94398a4c-6a41-4991-826d-f247f49dd379"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "e4e499af-a069-4b38-af70-c7eeb033904d",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "66973962-2642-420c-ad05-33371d01acf9",
+        "f0a2d041-b5a0-4c3a-888a-b57494bf2782"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "0dd57890-b8a4-4ea0-ad8a-0d1910702937",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "038926e5-235f-4cd1-aa36-7be34f2e75c0",
+        "1c1f9e84-370b-4dca-be4d-dc7ae436a9fb"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "63c1ce42-e071-4be2-86e9-089fdb6fa16f",
+      "type": "solid_arrow",
+      "node_connections": [
+        "0894e8ec-831e-4628-a687-26b57aa77d5f",
+        "1a2ac9c5-2e02-49d6-a9bb-ab10b48fad66"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "09fbba9e-1fa7-4c22-a2c4-d94f294dcf89",
+      "type": "solid_arrow",
+      "node_connections": [
+        "b9c2aa27-e5ea-480e-9891-dd5cfbe8dff7",
+        "8b357d1b-8032-4ef7-99de-92d94826da1c"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "1f8863c9-f71b-4df7-a0af-8a73a4112696",
+      "type": "solid_arrow",
+      "node_connections": [
+        "257c3067-ed77-4115-b288-d9fde08b5c57",
+        "038926e5-235f-4cd1-aa36-7be34f2e75c0"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "2b4952f9-ec3e-4de1-8627-1b767078c6ed",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1c1f9e84-370b-4dca-be4d-dc7ae436a9fb",
+        "ff46e1e9-72e8-48a3-b442-9677dea5441e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "dc6df1ed-f31f-41f7-8d10-fef2d8fbce8b",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1c1f9e84-370b-4dca-be4d-dc7ae436a9fb",
+        "2f6a925d-34b6-47fc-8da1-0c64fa4c1857"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "744c00a0-9046-4a0d-8926-381e4f8afd4c",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1c1f9e84-370b-4dca-be4d-dc7ae436a9fb",
+        "5ae3fe0c-2f53-4215-9bef-11634ef8ef6b"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "9f71ae65-9016-4222-b8ac-708e3bdd26ee",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "94eba463-d1d2-4db2-8034-0de2461c6768",
+        "0894e8ec-831e-4628-a687-26b57aa77d5f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "edecab50-00df-438b-818a-3572b7689d8d",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "94eba463-d1d2-4db2-8034-0de2461c6768",
+        "1c1f9e84-370b-4dca-be4d-dc7ae436a9fb"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "1578c2ae-7cb0-4970-8d17-1c0d13cc4325",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "93eba951-586a-4b61-81ba-8b76b6c5b52c",
+        "75cbad85-f73b-45a9-930b-1b6ffafbf4fe"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7e0f6efc-5424-4e64-a82d-e7314047230c",
+      "type": "solid_arrow",
+      "node_connections": [
+        "75cbad85-f73b-45a9-930b-1b6ffafbf4fe",
+        "f3dd461d-bd15-46e2-ac90-86809436f747"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "b2da52ad-dc20-4353-8d0d-f804c53a0d3f",
+      "type": "solid_arrow",
+      "node_connections": [
+        "80078958-dc0c-40b1-99b0-aee3eb17be39",
+        "46f70d21-8d23-444a-a47c-4e8d0c2c1d68"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "1c32f9f9-3d27-42fc-aace-e87950e99946",
+      "type": "solid_arrow",
+      "node_connections": [
+        "257c3067-ed77-4115-b288-d9fde08b5c57",
+        "94eba463-d1d2-4db2-8034-0de2461c6768"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "9b951e2a-a210-44e7-bfc9-d1d59512152b",
+      "type": "solid_arrow",
+      "node_connections": [
+        "e4aa0ce4-bb4e-4404-965d-ba78405b7be9",
+        "7ee79502-40fd-47da-824c-f096cb4f8626"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8e69fda1-34ab-4698-ae5f-668fd783fc37",
+      "type": "solid_arrow",
+      "node_connections": [
+        "ff46e1e9-72e8-48a3-b442-9677dea5441e",
+        "331fc1d7-b25e-451f-bd11-a3512214363c"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "94318c0a-3529-46e2-b4b0-cc985c4abe7b",
+      "type": "solid_arrow",
+      "node_connections": [
+        "257c3067-ed77-4115-b288-d9fde08b5c57",
+        "80078958-dc0c-40b1-99b0-aee3eb17be39"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "dfe84418-55a8-4013-83b5-ac7b88f5b51e",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "a190f942-d79f-4dcc-b4a2-1a2925c237c8",
+        "5ae3fe0c-2f53-4215-9bef-11634ef8ef6b"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "724d585f-6868-40b5-810f-50e769d13769",
+      "type": "solid_arrow",
+      "node_connections": [
+        "f3dd461d-bd15-46e2-ac90-86809436f747",
+        "3ad1faf0-a001-48c2-9e7d-ed3a9a076a13"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "6f3e8af8-f728-4e5b-86c5-9aceaabcb77c",
+      "type": "solid_arrow",
+      "node_connections": [
+        "f3dd461d-bd15-46e2-ac90-86809436f747",
+        "1ed788fc-0466-4e48-a574-8f103c171c36"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "340f8e39-b014-483a-9f4b-9fd580954a12",
+      "type": "solid_arrow",
+      "node_connections": [
+        "3ad1faf0-a001-48c2-9e7d-ed3a9a076a13",
+        "831f9fa5-8bba-4667-b93c-7511d73fb434"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7dba0bb1-c6de-464f-aa08-723ee7301dd7",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1ed788fc-0466-4e48-a574-8f103c171c36",
+        "601b223b-4e63-43be-81bb-7701e9d5d891"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "d5a181d2-e9fb-4507-9e6f-e348a0be5298",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8b357d1b-8032-4ef7-99de-92d94826da1c",
+        "3ad1faf0-a001-48c2-9e7d-ed3a9a076a13"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8b4e3acf-ec2f-4b98-87b7-3ef10548a684",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8b357d1b-8032-4ef7-99de-92d94826da1c",
+        "1ed788fc-0466-4e48-a574-8f103c171c36"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "edb695d6-f033-4c4a-b155-2daced3e78da",
+      "type": "solid_arrow",
+      "node_connections": [
+        "831f9fa5-8bba-4667-b93c-7511d73fb434",
+        "dcf831b0-d7a1-49ae-8e60-ba7a37998074"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "035b374a-1439-4e8d-bf6a-4f59628cc6e2",
+      "type": "solid_arrow",
+      "node_connections": [
+        "601b223b-4e63-43be-81bb-7701e9d5d891",
+        "dcf831b0-d7a1-49ae-8e60-ba7a37998074"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "4a10a794-663b-46b1-a374-621b86d2aae3",
+      "type": "solid_arrow",
+      "node_connections": [
+        "7ee79502-40fd-47da-824c-f096cb4f8626",
+        "dcf831b0-d7a1-49ae-8e60-ba7a37998074"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ce830c2f-be16-44e7-a1f8-8d9fd34b4790",
+      "type": "solid_arrow",
+      "node_connections": [
+        "331fc1d7-b25e-451f-bd11-a3512214363c",
+        "dcf831b0-d7a1-49ae-8e60-ba7a37998074"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "01ccaead-04d6-42b0-8fac-c9df4b80adc6",
+      "type": "solid_arrow",
+      "node_connections": [
+        "63e158b2-5f19-414d-b0ed-f23479bb6bc9",
+        "dcf831b0-d7a1-49ae-8e60-ba7a37998074"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "15d3e414-70c7-425a-b942-526848ef2a9a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1a2ac9c5-2e02-49d6-a9bb-ab10b48fad66",
+        "dcf831b0-d7a1-49ae-8e60-ba7a37998074"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "b6019667-7fc2-42c6-91d8-f2dcce7ecfa6",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "5678158b-441f-4262-927f-c43e19cff3d3",
+        "a190f942-d79f-4dcc-b4a2-1a2925c237c8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7b5054fd-61aa-4c75-b44c-4850ecdfba44",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1ff868f6-6cd0-4e80-8be4-54a7dce2526d",
+        "93eba951-586a-4b61-81ba-8b76b6c5b52c"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "74097dce-e256-41bd-85f9-68ded839b905",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "93eba951-586a-4b61-81ba-8b76b6c5b52c",
+        "f0a2d041-b5a0-4c3a-888a-b57494bf2782"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "13b750e1-dcd3-4808-8e4d-d800e2de9fbd",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "93eba951-586a-4b61-81ba-8b76b6c5b52c",
+        "66973962-2642-420c-ad05-33371d01acf9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "eaf088a9-7522-40cc-99bd-dbfbeaaaae1f",
+      "type": "solid_arrow",
+      "node_connections": [
+        "94eba463-d1d2-4db2-8034-0de2461c6768",
+        "a190f942-d79f-4dcc-b4a2-1a2925c237c8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

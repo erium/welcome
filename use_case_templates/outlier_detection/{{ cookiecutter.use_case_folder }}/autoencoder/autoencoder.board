@@ -1,0 +1,633 @@
+{
+  "nodes": [
+    {
+      "id": "b2feb61d-a25b-499e-b3ed-7f5e422f78c8",
+      "title": "0. How to use the Board",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"cards.\\n\\n#Default example records are prefixed by '#'.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 250.171875,
+        "y": 202.25599999999997
+      },
+      "size": {
+        "width": 256.16,
+        "height": 313.064
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "bd35f439-4006-4c9f-8ba4-5da55adc1f35",
+      "title": "1. Describe the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"autoencoder.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name \"},{\"insert\":\"of the outlier detection experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "left"
+        },
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "right"
+        },
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "top"
+        },
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 615.750244140625,
+        "y": 229.68185424804688
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "91b472d3-82da-41e9-96e2-8389b64a2329",
+      "title": "2. Import the dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"autoencoder.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path \"},{\"insert\":\"of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify if the data is \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"time-series\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "left"
+        },
+        {
+          "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+          "connector": "right"
+        },
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "top"
+        },
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 972.2943725585936,
+        "y": 229.60562133789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "81b8c3ec-0282-4d4d-bd42-87dc83b06dd9",
+      "title": "3. Run the models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Run the trials in the notebook \\\"autoencoder.ipynb\\\":\\n\\nTo start, execute all the notebook cells in order (e.g. click the play icon at the top of the notebook) \\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+          "connector": "left"
+        },
+        {
+          "id": "122ea292-7343-4745-91f1-261c43d844b7",
+          "connector": "right"
+        },
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "top"
+        },
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1326.2290788085934,
+        "y": 230.56824008789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "93af5872-6fc8-4da2-8179-97cb52aac109",
+      "title": "4. Get the results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"autoencoder.ipynb\\\",\\ngo to the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cell\"},{\"insert\":\" that displays the results\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "122ea292-7343-4745-91f1-261c43d844b7",
+          "connector": "left"
+        },
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "right"
+        },
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "top"
+        },
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.3295288085935,
+        "y": 228.98843383789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "3bdb249f-9e28-43b4-84d6-9b4b31fb44e2",
+      "title": "5. Interpret the results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Based on the results in 4. evaluate the autoencoder performance in the green card below.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "left"
+        },
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "right"
+        },
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "top"
+        },
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2060.7201538085933,
+        "y": 229.10562133789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "575b8adf-c236-4cdd-9ba9-de22998864ca",
+      "title": "6. Export and use streamlit",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After the notebook runs, a joblib file containing the data is exported to the ./out folder.\\n\\nProceed to 'streamlit_detect_outliers.ipynb' and run it. Copy the output link from the first cell to a new tab and change the last few digits (port) to the corresponding port in the second cell. This will open a streamlit web app that will import the trained models and data, and allow you to make outlier predictions with new inputs based on the trained models.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2458.259216308593,
+        "y": 229.16421508789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "4e10b464-dc86-4345-9704-d196e6168857",
+      "title": "About the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this autoencoder outlier detection experiment. This would provide a documented summary for the entire experiment.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 614.2850685119629,
+        "y": -91.59120035171509
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "4d36e6bb-0500-4685-ab22-7fd9dfea026b",
+      "title": "Experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card: \\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"use case\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"objective\"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\" \"},{\"insert\":\"of the outlier detection,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\" of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Use Case\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Given the a 'clean' dataset of ... , we would like to predict in new data the cases of abnormal...\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Objective\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#To train an autoencoder to detect outliers in new datasets.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"General Procedure\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Import data - Normalise data - Set up model architecture - Interpret and validate results\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 614.5975685119629,
+        "y": 550.6297469139099
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "ba9a61e7-f955-4ff7-a30c-94b6b9da1e66",
+      "title": "dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card,\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"dataset\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Dataset\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Name: #art daily small noise\\nSamples: \\nDimensions: \\n\\nTime series: #yes\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 972.0350971221924,
+        "y": 550.9891028404236
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "a3ff552b-2559-4bdb-bb07-89fc79474588",
+      "title": "models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"model parameters\"},{\"insert\":\" and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"architecture\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Model Architecture\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Sequential Convolutional\\n_________________________________________________________________\\nLayer (type)                 Output Shape              Param #   \\n=================================================================\\nconv1d_4 (Conv1D)            (None, 16, 32)            2944      \\n_________________________________________________________________\\ndropout_8 (Dropout)          (None, 16, 32)            0         \\n_________________________________________________________________\\nconv1d_5 (Conv1D)            (None, 8, 16)             3600      \\n_________________________________________________________________\\nconv1d_transpose_6 (Conv1DTr (None, 16, 16)            1808      \\n_________________________________________________________________\\ndropout_9 (Dropout)          (None, 16, 16)            0         \\n_________________________________________________________________\\nconv1d_transpose_7 (Conv1DTr (None, 32, 32)            3616      \\n_________________________________________________________________\\nconv1d_transpose_8 (Conv1DTr (None, 32, 1)             225       \\n=================================================================\\nTotal params: 12,193\\nTrainable params: 12,193\\nNon-trainable params: 0\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1326.4896869659424,
+        "y": 552.7389946372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "4f1be63d-9812-492e-9d76-60afc48e1468",
+      "title": "results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"best parameters\"},{\"insert\":\" and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"results \"},{\"insert\":\"reported by the outlier detection models.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nModel:\\n\\nReconstruction error threshold:\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.2921772003174,
+        "y": 558.6094641685486
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "b31dcf98-c7ad-4d15-ab90-eebe01e238fe",
+      "title": "Interpret and improve",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"compare \"},{\"insert\":\"the model training and validation loss to a benchmark (if available)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"possible ways\"},{\"insert\":\" to improve results if not satisfactory\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nDoes the autoencoder train well enough?\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Benchmark loss:\\nResult: \\n\\nAre the reconstruction thresholds low?\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2060.1882010284426,
+        "y": 557.8992696372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "001c9ae2-0784-4c10-bfca-6ac743113995",
+      "title": "The Dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We would need to import our dataset for training the models. \\n\\nNote that autoencoders need to be trained on a 'clean' dataset consisting of only non-outlier data points.\\n\\nIt is not required to divide the data set into sets for training and testing as unsupervised outlier detection algorithms would process and detect outliers in the existing data. Performance of models improve with more data if existing dataset is small.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 971.8582458496095,
+        "y": -91.36378479003908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "13ec721f-a941-44f5-b0c7-fecc5787659a",
+      "title": "models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"With the set up complete, you may now run the notebook.\\n\\nYou may also adjust the parameters for the models in the corresponding cell to adjust thresholds and the autoencoder architecture.\\n\\nThe notebook will run a sequential convolutional neural network as well as a LSTM autoencoder for time-series data.\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1325.5174255371094,
+        "y": -94.10499572753908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "bffa7f36-6144-4d96-b3de-d6862b6bfe0f",
+      "title": "results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After the notebook has completed running, you can view the final results of all the models.\\n\\nNote that the model with the least total MAE will be selected and exported\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.3318786621094,
+        "y": -95.20851135253908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "ea943d0a-2995-4be3-9ecc-752f4aaf0e4f",
+      "title": "Interpret the results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Unlike with supervised metrics, there is no ground truth for a confusion matrix to be constructed. \\n\\nThe notebook will report the mean absolute error (MAE) of the reconstructed data, and set the highest error as the threshold. When new data is passed through the autoencoder, any reconstruction with a larger MAE than this threshold would be considered an outlier.\\n\\nOften, we would require external validation of the identified outliers to determine if the models can predict the outliers accurately.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2059.0769958496094,
+        "y": -98.32723791503908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    }
+  ],
+  "edges": [
+    {
+      "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+      "type": "solid_arrow",
+      "node_connections": [
+        "b2feb61d-a25b-499e-b3ed-7f5e422f78c8",
+        "bd35f439-4006-4c9f-8ba4-5da55adc1f35"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "bd35f439-4006-4c9f-8ba4-5da55adc1f35",
+        "91b472d3-82da-41e9-96e2-8389b64a2329"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+      "type": "solid_arrow",
+      "node_connections": [
+        "91b472d3-82da-41e9-96e2-8389b64a2329",
+        "81b8c3ec-0282-4d4d-bd42-87dc83b06dd9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "122ea292-7343-4745-91f1-261c43d844b7",
+      "type": "solid_arrow",
+      "node_connections": [
+        "81b8c3ec-0282-4d4d-bd42-87dc83b06dd9",
+        "93af5872-6fc8-4da2-8179-97cb52aac109"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+      "type": "solid_arrow",
+      "node_connections": [
+        "93af5872-6fc8-4da2-8179-97cb52aac109",
+        "3bdb249f-9e28-43b4-84d6-9b4b31fb44e2"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+      "type": "solid_arrow",
+      "node_connections": [
+        "3bdb249f-9e28-43b4-84d6-9b4b31fb44e2",
+        "575b8adf-c236-4cdd-9ba9-de22998864ca"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4e10b464-dc86-4345-9704-d196e6168857",
+        "bd35f439-4006-4c9f-8ba4-5da55adc1f35"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4d36e6bb-0500-4685-ab22-7fd9dfea026b",
+        "bd35f439-4006-4c9f-8ba4-5da55adc1f35"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "001c9ae2-0784-4c10-bfca-6ac743113995",
+        "91b472d3-82da-41e9-96e2-8389b64a2329"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "91b472d3-82da-41e9-96e2-8389b64a2329",
+        "ba9a61e7-f955-4ff7-a30c-94b6b9da1e66"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "13ec721f-a941-44f5-b0c7-fecc5787659a",
+        "81b8c3ec-0282-4d4d-bd42-87dc83b06dd9"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "81b8c3ec-0282-4d4d-bd42-87dc83b06dd9",
+        "a3ff552b-2559-4bdb-bb07-89fc79474588"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "583daf7b-8155-44d0-adbe-a44310218963",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "bffa7f36-6144-4d96-b3de-d6862b6bfe0f",
+        "93af5872-6fc8-4da2-8179-97cb52aac109"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "93af5872-6fc8-4da2-8179-97cb52aac109",
+        "4f1be63d-9812-492e-9d76-60afc48e1468"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "ea943d0a-2995-4be3-9ecc-752f4aaf0e4f",
+        "3bdb249f-9e28-43b4-84d6-9b4b31fb44e2"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "b31dcf98-c7ad-4d15-ab90-eebe01e238fe",
+        "3bdb249f-9e28-43b4-84d6-9b4b31fb44e2"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

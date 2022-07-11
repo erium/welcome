@@ -1,0 +1,985 @@
+{
+  "nodes": [
+    {
+      "id": "87d6486e-2449-4b0f-b38f-df1855efbec4",
+      "title": "0. HOW TO USE THE BOARD",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"This board guides you to a suitable hypothesis testing approach based on your task.\\n\\nGo through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Read the instructions on each \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"card\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Follow the arrows on the \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"green \"},{\"insert\":\"card most suitable to your task OR Delete \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"green \"},{\"insert\":\"cards that do not relate to your task to remove possible paths\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"At the end of the tree, you will reach a \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"card that specifies a suitable hypothesis testing approach for your task\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "fae5753b-8871-472e-909a-6ec554a1c73d",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -1138.6698658569142,
+        "y": 73.18132781348568
+      },
+      "size": {
+        "width": 327.47022164479995,
+        "height": 356.1698946048
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "34361a84-5462-4c93-84c9-14dd5d3f786f",
+      "title": "3. Hypothesis Testing Approach",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Based on the arrows you have follow/deleted, you may decide how to test your hypothesis:\\nClassical Statistical hypothesis testing\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Causal inference\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Validity of equation\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Multiple approaches could potentially be used in conjunction.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "6102b5d4-5621-4b04-8254-ef63bae7a98f",
+          "connector": "left"
+        },
+        {
+          "id": "e48b820e-258d-427a-8f98-57d64169402f",
+          "connector": "bottom"
+        },
+        {
+          "id": "bb84c632-e6fa-4ec2-8be5-c9a13e5edd75",
+          "connector": "bottom"
+        },
+        {
+          "id": "65232936-b009-4806-9b5a-cd6ea9b1de65",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 842.5751386172321,
+        "y": 132.20106130285723
+      },
+      "size": {
+        "width": 333.83705682285716,
+        "height": 248.54145444571427
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "0f089fc0-2d7b-41cd-9822-7a01768047b3",
+      "title": "Classical Hypothesis Testing",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"A method of statistical inference used to decide if the data sufficiently support a particular hypothesis. Statistical inference is useful in determining correlation, but does not imply causation.\\n\\nMore simply: to show significant statistical correlation between x and y\\n\\nAfter establishing statistical relationships, you may want to test the causal relationships of these features. Causal inference would be suitable as a next step.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "147bee7d-ece2-4a34-b41a-b2e226bc19e9",
+          "connector": "left"
+        },
+        {
+          "id": "65232936-b009-4806-9b5a-cd6ea9b1de65",
+          "connector": "top"
+        },
+        {
+          "id": "e529ddac-fdd2-4e0e-9fba-77f97f2a1131",
+          "connector": "right"
+        },
+        {
+          "id": "f1656a59-ddfb-4ee9-8310-a78de6b82a49",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -208.4648635732218,
+        "y": 1703.9796764293944
+      },
+      "size": {
+        "width": 307.059488,
+        "height": 270.98973759999996
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "9dd8b1b0-c02c-415c-acc1-3bed497f9d45",
+      "title": "Causal inference",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"This is suitable both with and without domain knowledge about the data, allowing us to model or automatically generate causal relationships that reflect the causal structure.\\n\\nWe can define causal relationships that reflect physical laws, experiences or assumptions.\\n\\nThere are two subtemplates that may be used:\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Causal Structures\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"The template notebooks could generate and evaluate how well the causal structure fits the data. The automatic approach is computationally slow with many features.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Causal Estimates\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"With a suitable causal structure, we could obtain causal estimates of the effect of a treatment feature on an outcome variable and evaluate its statistical robustness as a probable estimate using refutation tests.\\n\\nAfter establishing causal relationships, you may want to test if the features can be expressed as a mathematical equation. The equation goodness of fit would be suitable as a next step.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "16b0d2ab-dbc2-4825-836d-f870c4a8452e",
+          "connector": "left"
+        },
+        {
+          "id": "51935be6-75b7-49af-8855-95fd22b3834d",
+          "connector": "left"
+        },
+        {
+          "id": "bb84c632-e6fa-4ec2-8be5-c9a13e5edd75",
+          "connector": "top"
+        },
+        {
+          "id": "381012aa-c722-46d9-b56c-0643ca614d6f",
+          "connector": "bottom"
+        },
+        {
+          "id": "a16bb8d8-13e2-4e21-9564-020d8c29e121",
+          "connector": "bottom"
+        },
+        {
+          "id": "99c5a6df-2afd-4f67-bf63-76fdabec1833",
+          "connector": "right"
+        },
+        {
+          "id": "195a3574-dd50-4141-94b6-5b361012a0de",
+          "connector": "left"
+        },
+        {
+          "id": "26c18de4-9983-407e-8b30-50512a8fcbb0",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 642.5059412587947,
+        "y": 806.1471753539398
+      },
+      "size": {
+        "width": 312.00261290276575,
+        "height": 270.7503034953144
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "f36e5fd3-01fc-42f1-935f-5438ff89ba74",
+      "title": "Equation Goodness of Fit",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"To model the relationships between parameters as an equation, and testing how well this equation fits the data.\\nThis may be tackled with a goodness of fit test, with observed and expected values from the equation by building Halerium Inference graphs with specified equations and evaluate their performance.\\n\\nMore simply: does equation x significantly reflect the data\\nEg. y = x^2 + 2\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "3816a075-ce1c-495c-b2b6-bc95081c84d3",
+          "connector": "left"
+        },
+        {
+          "id": "e48b820e-258d-427a-8f98-57d64169402f",
+          "connector": "top"
+        },
+        {
+          "id": "1f1174f2-ea9f-4eab-804e-83c38b6d2939",
+          "connector": "right"
+        },
+        {
+          "id": "775d9830-a77a-4058-bf01-850e327fdc14",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1367.3217208320002,
+        "y": 486.009888768
+      },
+      "size": {
+        "width": 298.709346304,
+        "height": 283.545080832
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "dc4040bd-c76d-46ca-ae4a-87aa3084ba11",
+      "title": "2. How Much Domain knowledge do you have?",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The amount of domain knowledge may determine which approach is most suitable.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"None/Minimal\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"With no or minimal domain knowledge about the data, we are unable to model suitable causal structures or equation. \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"Classical statistical hypothesis testing\"},{\"insert\":\" still provides useful tests to work with just the data in determining statistically significant correlation between parameters.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"causal inference\"},{\"insert\":\" template provides a method to generate possible causal structures and evaluate their fit to the data without prior dependency input.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Causal Structures\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Eg. A affects B and C, B affects C,\\nKnowing the relationships and dependencies between parameters would allow us to model a causal structure. These relationships could be known physical laws, from experience, or assumptions to be verified.\\n\\nWe would be able to use \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"causal inference\"},{\"insert\":\" on the model to determine causal effect estimates and fit of the causal model on the data.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Equations\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Eg. y = x^2 + 1\\nEquations that link parameters with mathematical processes would allow us to build a matrix of expected values from the equations. By comparing to the true observed values, we can determine the fit of the equation on the data.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "9ce42f9d-c1e5-4e18-b57e-5eda88688503",
+          "connector": "bottom"
+        },
+        {
+          "id": "14a4fd12-70f8-477c-8c57-35d3f356b1ee",
+          "connector": "bottom"
+        },
+        {
+          "id": "8a13004f-1166-4844-892a-5bb538718ef1",
+          "connector": "bottom"
+        },
+        {
+          "id": "6102b5d4-5621-4b04-8254-ef63bae7a98f",
+          "connector": "right"
+        },
+        {
+          "id": "bd2c295f-5075-447a-b910-7ef8efc2d8b6",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -29.307251507200014,
+        "y": 114.93684797439998
+      },
+      "size": {
+        "width": 347.765925888,
+        "height": 267.77240064
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "e522161c-1897-43b4-8e40-f2bbef39bf68",
+      "title": "None",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "9ce42f9d-c1e5-4e18-b57e-5eda88688503",
+          "connector": "top"
+        },
+        {
+          "id": "147bee7d-ece2-4a34-b41a-b2e226bc19e9",
+          "connector": "right"
+        },
+        {
+          "id": "16b0d2ab-dbc2-4825-836d-f870c4a8452e",
+          "connector": "right"
+        },
+        {
+          "id": "14b1b781-ce36-44b5-8e9d-6f7b66e5b62d",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -182.64060518399998,
+        "y": 900.1244209152002
+      },
+      "size": {
+        "width": 118.8978561024,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 118.8978561024,
+        "height": 37
+      }
+    },
+    {
+      "id": "640d3396-989d-43c5-8da2-50cbd83782be",
+      "title": "Equations",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "8a13004f-1166-4844-892a-5bb538718ef1",
+          "connector": "top"
+        },
+        {
+          "id": "3816a075-ce1c-495c-b2b6-bc95081c84d3",
+          "connector": "right"
+        },
+        {
+          "id": "5a14f986-d2bf-47cf-967b-06c6d8722de5",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 327.618906112,
+        "y": 599.3061986304
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "bc9dbe4e-053b-4ffc-8547-55059b245fd8",
+      "title": "Causal structure",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "14a4fd12-70f8-477c-8c57-35d3f356b1ee",
+          "connector": "top"
+        },
+        {
+          "id": "51935be6-75b7-49af-8855-95fd22b3834d",
+          "connector": "right"
+        },
+        {
+          "id": "bec10762-1592-4190-b85d-be478d22a954",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 61.31523543039998,
+        "y": 754.6523004928
+      },
+      "size": {
+        "width": 147.244640256,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 147.244640256,
+        "height": 37
+      }
+    },
+    {
+      "id": "978d7885-5b08-4fc2-83b6-9997882f84ab",
+      "title": "Causal Structures",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"You may specify or generate causal structures with the features in the data. It will then be trained and tested to determine the fit of the structure with the data.\\n\\nMore simply: to show how well a modelled causal structure fits the data.\\n\\nYou may use a suitable causal structure obtained here to obtain a causal estimate.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "09e2ac5b-9dba-4f0e-882f-5d08a4326516",
+          "connector": "right"
+        },
+        {
+          "id": "381012aa-c722-46d9-b56c-0643ca614d6f",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 576.3326098165,
+        "y": 1142.5878120687498
+      },
+      "size": {
+        "width": 204,
+        "height": 222.8
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "a3f6101d-65a0-40f6-b5c3-9452a4ae3974",
+      "title": "causal Estimates",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"With a causal structure (possibly obtained previously from the causal structures template), you may identify the causal effect of a treatment feature on an outcome variable in the causal structure, while using statistical tests to determine the statistical validity of the estimate.\\n\\nMore simply: to estimate significant causal effects between x and y\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "09e2ac5b-9dba-4f0e-882f-5d08a4326516",
+          "connector": "left"
+        },
+        {
+          "id": "a16bb8d8-13e2-4e21-9564-020d8c29e121",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 852.9182572999996,
+        "y": 1144.2592556
+      },
+      "size": {
+        "width": 215.20000000000002,
+        "height": 219.088
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "03d15816-2754-4527-9df2-4714364bc784",
+      "title": "1. What hypothesis are you testing?",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"This template aims to answer questions related to: is x affected by/related to y? \\n\\nThere are different types of hypothesis that may be tested. Multiple hypotheses may be tested on each feature/set of features.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Associative Hypothesis\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Predicts if variables are linked but not whether one variable directly impacts the other variable.\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Simple Hypothesis\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Predicts a correlation between an independent and dependent variable. \\nEg. Dogs eat more in summer than winter\\n\\nComplex Hypothesis\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Similar to simple hypothesis but contains multiple independent and dependent variables.\\nEg. Age and weight increases your chances of getting diabetes and heart disease\\n\\nNull Hypothesis\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Predicts that there is no significant relationship between test variables. A simple or complex hypothesis may be phrased as a null hypothesis, but it cannot establish the direction of a relationship, only its existence.\\nEg. Dogs eat the same in summer and winter\\n\\nAlternative Hypothesis\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Anything other than the null hypothesis, it will disprove the null hypothesis. In practice, it is established by testing and possibly rejecting the null hypothesis.\\nEg. (Against null hypothesis above) Dogs do not eat the same in summer and winter\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Causal Hypothesis\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Predicts that variables are not only associated, but changes in one variable will cause changes in another. This may require some knowledge of the causal structure.\\n\\nDirectional Hypothesis\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Makes a prediction about the positivity or negativity of the effect of an intervention prior to the test.\\nEg. Adding a charge to plastic bags lead to an increase in uptake of reusable bags.\\n\\nNon-Directional Hypothesis\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Similar to directional hypothesis but does not specify the predicted direction. This may be understood as testing if the causal relation holds.\\nEg. Adding a charge to plastic bags lead to a change in uptake of reusable bags.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Formulaic Hypothesis\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Predicts that variables are linked in a certain mathematical relationship, and changes in the variables are explained by that formula.\\nEg. Force = mass * acceleration\\n\\n\\nEach hypothesis may have different pre-requisites in terms of domain knowledge and complexity of the features, which is explored further in this board.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "fae5753b-8871-472e-909a-6ec554a1c73d",
+          "connector": "left"
+        },
+        {
+          "id": "bd2c295f-5075-447a-b910-7ef8efc2d8b6",
+          "connector": "right"
+        },
+        {
+          "id": "421ef400-7a5f-4ebf-a7f1-db726213d685",
+          "connector": "bottom"
+        },
+        {
+          "id": "8b48dac7-5c6f-4740-b984-f5d44591f184",
+          "connector": "bottom"
+        },
+        {
+          "id": "f0294f51-0694-4f1a-a6e1-13c248f85800",
+          "connector": "bottom"
+        },
+        {
+          "id": "73bfbd1c-9a45-4542-b5bf-c16304c93922",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -629.2539372070313,
+        "y": 121.97524047851564
+      },
+      "size": {
+        "width": 304.64639999999997,
+        "height": 255.3376
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "010fc234-385a-4393-8dda-8e12ce758b54",
+      "title": "Associative",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "421ef400-7a5f-4ebf-a7f1-db726213d685",
+          "connector": "top"
+        },
+        {
+          "id": "14b1b781-ce36-44b5-8e9d-6f7b66e5b62d",
+          "connector": "right"
+        },
+        {
+          "id": "73bfbd1c-9a45-4542-b5bf-c16304c93922",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -753.8708979000002,
+        "y": 484.2734709674999
+      },
+      "size": {
+        "width": 108.19200000000001,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 108.19200000000001,
+        "height": 37
+      }
+    },
+    {
+      "id": "edca9dd2-0634-4e3b-9ee2-0275c14b0848",
+      "title": "causal",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "8b48dac7-5c6f-4740-b984-f5d44591f184",
+          "connector": "top"
+        },
+        {
+          "id": "bec10762-1592-4190-b85d-be478d22a954",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -526.4047193399999,
+        "y": 484.8126069674999
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "58938f8f-8ea6-44a2-ae63-4c6b71484231",
+      "title": "Formulaic",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "f0294f51-0694-4f1a-a6e1-13c248f85800",
+          "connector": "top"
+        },
+        {
+          "id": "5a14f986-d2bf-47cf-967b-06c6d8722de5",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": -294.57089406,
+        "y": 484.7961615275001
+      },
+      "size": {
+        "width": 100,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 100,
+        "height": 37
+      }
+    },
+    {
+      "id": "1c572929-d45a-42d3-ab21-9e996659f5b8",
+      "title": "5. What next?",
+      "type_specific": {
+        "message": "{\"ops\":[{\"attributes\":{\"underline\":true},\"insert\":\"Establish more complex relationships\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"After establishing a certain relationship, you may use that new knowledge to test if more complex relationships may be established using other hypothesis testing templates. A possible workflow may be:\\n\\nStatistical relationship -> Causal relationship -> Equation\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Regression\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"After establishing a certain relationship, you may be able to build a regression model for prediction of data with the features. \\n\\nIn the '+' menu in the file browser on the top left, you may add another hypothesis testing or a regression template.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a4184731-1768-47bf-a103-98e51c30c33c",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2809.253319686666,
+        "y": 790.6287777666666
+      },
+      "size": {
+        "width": 423.072,
+        "height": 401.36
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "c7332462-466e-49a8-a8d8-e68cde716f75",
+      "title": "4. Add template using add template wizard",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After you have selected a suitable approach, you may add the template for that approach.\\n\\nIn the '+' menu in the file browser on the top left, select the hypothesis testing approach template.\\n\\nThe available selections are:\\n1-classical\\n2-causal\\n3-equation\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a4184731-1768-47bf-a103-98e51c30c33c",
+          "connector": "right"
+        },
+        {
+          "id": "1f1174f2-ea9f-4eab-804e-83c38b6d2939",
+          "connector": "left"
+        },
+        {
+          "id": "99c5a6df-2afd-4f67-bf63-76fdabec1833",
+          "connector": "left"
+        },
+        {
+          "id": "e529ddac-fdd2-4e0e-9fba-77f97f2a1131",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2172.3559589589336,
+        "y": 863.4895807701333
+      },
+      "size": {
+        "width": 344.9558820181335,
+        "height": 258.69398691840007
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "8390cd6b-a5d8-445f-91a2-c9f8afba8b1a",
+      "title": "Test more complex hypothesis",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "f1656a59-ddfb-4ee9-8310-a78de6b82a49",
+          "connector": "left"
+        },
+        {
+          "id": "195a3574-dd50-4141-94b6-5b361012a0de",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 249.72086400000003,
+        "y": 1218.1199360000003
+      },
+      "size": {
+        "width": 243.654912,
+        "height": 241.149056
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 243.654912,
+        "height": 37
+      }
+    },
+    {
+      "id": "3386e025-7feb-4fed-add5-7534b5a1dded",
+      "title": "Test more complex hypothesis",
+      "type_specific": {
+        "message": ""
+      },
+      "edge_connections": [
+        {
+          "id": "26c18de4-9983-407e-8b30-50512a8fcbb0",
+          "connector": "left"
+        },
+        {
+          "id": "775d9830-a77a-4058-bf01-850e327fdc14",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1073.9236,
+        "y": 714.9665200000001
+      },
+      "size": {
+        "width": 235.00416,
+        "height": 130
+      },
+      "color": "#125059",
+      "collapsed": true,
+      "collapsed_size": {
+        "width": 235.00416,
+        "height": 37
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "9ce42f9d-c1e5-4e18-b57e-5eda88688503",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "dc4040bd-c76d-46ca-ae4a-87aa3084ba11",
+        "e522161c-1897-43b4-8e40-f2bbef39bf68"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "14a4fd12-70f8-477c-8c57-35d3f356b1ee",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "dc4040bd-c76d-46ca-ae4a-87aa3084ba11",
+        "bc9dbe4e-053b-4ffc-8547-55059b245fd8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8a13004f-1166-4844-892a-5bb538718ef1",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "dc4040bd-c76d-46ca-ae4a-87aa3084ba11",
+        "640d3396-989d-43c5-8da2-50cbd83782be"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "147bee7d-ece2-4a34-b41a-b2e226bc19e9",
+      "type": "solid_arrow",
+      "node_connections": [
+        "e522161c-1897-43b4-8e40-f2bbef39bf68",
+        "0f089fc0-2d7b-41cd-9822-7a01768047b3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "16b0d2ab-dbc2-4825-836d-f870c4a8452e",
+      "type": "solid_arrow",
+      "node_connections": [
+        "e522161c-1897-43b4-8e40-f2bbef39bf68",
+        "9dd8b1b0-c02c-415c-acc1-3bed497f9d45"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "51935be6-75b7-49af-8855-95fd22b3834d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "bc9dbe4e-053b-4ffc-8547-55059b245fd8",
+        "9dd8b1b0-c02c-415c-acc1-3bed497f9d45"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "3816a075-ce1c-495c-b2b6-bc95081c84d3",
+      "type": "solid_arrow",
+      "node_connections": [
+        "640d3396-989d-43c5-8da2-50cbd83782be",
+        "f36e5fd3-01fc-42f1-935f-5438ff89ba74"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "6102b5d4-5621-4b04-8254-ef63bae7a98f",
+      "type": "solid_arrow",
+      "node_connections": [
+        "dc4040bd-c76d-46ca-ae4a-87aa3084ba11",
+        "34361a84-5462-4c93-84c9-14dd5d3f786f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "e48b820e-258d-427a-8f98-57d64169402f",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "34361a84-5462-4c93-84c9-14dd5d3f786f",
+        "f36e5fd3-01fc-42f1-935f-5438ff89ba74"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "bb84c632-e6fa-4ec2-8be5-c9a13e5edd75",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "34361a84-5462-4c93-84c9-14dd5d3f786f",
+        "9dd8b1b0-c02c-415c-acc1-3bed497f9d45"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "65232936-b009-4806-9b5a-cd6ea9b1de65",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "34361a84-5462-4c93-84c9-14dd5d3f786f",
+        "0f089fc0-2d7b-41cd-9822-7a01768047b3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "09e2ac5b-9dba-4f0e-882f-5d08a4326516",
+      "type": "solid_arrow",
+      "node_connections": [
+        "978d7885-5b08-4fc2-83b6-9997882f84ab",
+        "a3f6101d-65a0-40f6-b5c3-9452a4ae3974"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "fae5753b-8871-472e-909a-6ec554a1c73d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "87d6486e-2449-4b0f-b38f-df1855efbec4",
+        "03d15816-2754-4527-9df2-4714364bc784"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "bd2c295f-5075-447a-b910-7ef8efc2d8b6",
+      "type": "solid_arrow",
+      "node_connections": [
+        "03d15816-2754-4527-9df2-4714364bc784",
+        "dc4040bd-c76d-46ca-ae4a-87aa3084ba11"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8b48dac7-5c6f-4740-b984-f5d44591f184",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "03d15816-2754-4527-9df2-4714364bc784",
+        "edca9dd2-0634-4e3b-9ee2-0275c14b0848"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f0294f51-0694-4f1a-a6e1-13c248f85800",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "03d15816-2754-4527-9df2-4714364bc784",
+        "58938f8f-8ea6-44a2-ae63-4c6b71484231"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "14b1b781-ce36-44b5-8e9d-6f7b66e5b62d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "010fc234-385a-4393-8dda-8e12ce758b54",
+        "e522161c-1897-43b4-8e40-f2bbef39bf68"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "bec10762-1592-4190-b85d-be478d22a954",
+      "type": "solid_arrow",
+      "node_connections": [
+        "edca9dd2-0634-4e3b-9ee2-0275c14b0848",
+        "bc9dbe4e-053b-4ffc-8547-55059b245fd8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "5a14f986-d2bf-47cf-967b-06c6d8722de5",
+      "type": "solid_arrow",
+      "node_connections": [
+        "58938f8f-8ea6-44a2-ae63-4c6b71484231",
+        "640d3396-989d-43c5-8da2-50cbd83782be"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a4184731-1768-47bf-a103-98e51c30c33c",
+      "type": "solid_arrow",
+      "node_connections": [
+        "c7332462-466e-49a8-a8d8-e68cde716f75",
+        "1c572929-d45a-42d3-ab21-9e996659f5b8"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "73bfbd1c-9a45-4542-b5bf-c16304c93922",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "03d15816-2754-4527-9df2-4714364bc784",
+        "010fc234-385a-4393-8dda-8e12ce758b54"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "381012aa-c722-46d9-b56c-0643ca614d6f",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "9dd8b1b0-c02c-415c-acc1-3bed497f9d45",
+        "978d7885-5b08-4fc2-83b6-9997882f84ab"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a16bb8d8-13e2-4e21-9564-020d8c29e121",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "9dd8b1b0-c02c-415c-acc1-3bed497f9d45",
+        "a3f6101d-65a0-40f6-b5c3-9452a4ae3974"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "1f1174f2-ea9f-4eab-804e-83c38b6d2939",
+      "type": "solid_arrow",
+      "node_connections": [
+        "f36e5fd3-01fc-42f1-935f-5438ff89ba74",
+        "c7332462-466e-49a8-a8d8-e68cde716f75"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "99c5a6df-2afd-4f67-bf63-76fdabec1833",
+      "type": "solid_arrow",
+      "node_connections": [
+        "9dd8b1b0-c02c-415c-acc1-3bed497f9d45",
+        "c7332462-466e-49a8-a8d8-e68cde716f75"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "e529ddac-fdd2-4e0e-9fba-77f97f2a1131",
+      "type": "solid_arrow",
+      "node_connections": [
+        "0f089fc0-2d7b-41cd-9822-7a01768047b3",
+        "c7332462-466e-49a8-a8d8-e68cde716f75"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f1656a59-ddfb-4ee9-8310-a78de6b82a49",
+      "type": "solid_arrow",
+      "node_connections": [
+        "0f089fc0-2d7b-41cd-9822-7a01768047b3",
+        "8390cd6b-a5d8-445f-91a2-c9f8afba8b1a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "195a3574-dd50-4141-94b6-5b361012a0de",
+      "type": "solid_arrow",
+      "node_connections": [
+        "8390cd6b-a5d8-445f-91a2-c9f8afba8b1a",
+        "9dd8b1b0-c02c-415c-acc1-3bed497f9d45"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "26c18de4-9983-407e-8b30-50512a8fcbb0",
+      "type": "solid_arrow",
+      "node_connections": [
+        "9dd8b1b0-c02c-415c-acc1-3bed497f9d45",
+        "3386e025-7feb-4fed-add5-7534b5a1dded"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "775d9830-a77a-4058-bf01-850e327fdc14",
+      "type": "solid_arrow",
+      "node_connections": [
+        "3386e025-7feb-4fed-add5-7534b5a1dded",
+        "f36e5fd3-01fc-42f1-935f-5438ff89ba74"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

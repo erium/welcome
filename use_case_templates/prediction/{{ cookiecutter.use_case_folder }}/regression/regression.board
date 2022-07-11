@@ -1,0 +1,1241 @@
+{
+  "nodes": [
+    {
+      "id": "39b22147-b458-47ca-b7a6-6e198f0d285f",
+      "title": "0. How to use the Board",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"cards.\\n\\n#Default example records are prefixed by '#'.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 250.171875,
+        "y": 202.25599999999997
+      },
+      "size": {
+        "width": 256.16,
+        "height": 313.064
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "326b8ef0-8a4a-4b4c-937f-f4dc1e71374f",
+      "title": "1. Describe the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name \"},{\"insert\":\"of the regression experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "left"
+        },
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "right"
+        },
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "top"
+        },
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 615.750244140625,
+        "y": 229.68185424804688
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "64d383ce-e353-4b35-8c8b-591a99ff9eeb",
+      "title": "11. Export and use streamlit",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Proceed to 'regression_streamlit_app.ipynb' and run it.\\n\\nOpen the link address from the first cell to a new tab and change the last few digits (port) to the corresponding port in the second cell.\\n\\nThis will open a streamlit web app that will import the trained models and data, and allow you to make predictions with new inputs based on the trained model.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "de572a73-b7c4-4118-9433-776702977ced",
+          "connector": "left"
+        },
+        {
+          "id": "0de7e26d-c573-4ef4-9658-86e19ac696b8",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 4506.454711914061,
+        "y": 226.37673950195312
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "4f82ef15-a13e-49e5-8119-af8ecd3afd3a",
+      "title": "10. Interpret and Improve",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", go to the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cell\"},{\"insert\":\" that displays the test results with different amounts of test data\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "34fe8d58-febb-48da-9d87-ee3c5dc768e0",
+          "connector": "left"
+        },
+        {
+          "id": "de572a73-b7c4-4118-9433-776702977ced",
+          "connector": "right"
+        },
+        {
+          "id": "0f0e17c0-3888-46b1-b882-220b42b9c816",
+          "connector": "top"
+        },
+        {
+          "id": "3029c685-9e4d-45ef-8ffd-dc2d93fd9426",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 4099.352966308593,
+        "y": 226.83999633789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "2b2d88c0-4964-484f-aa20-12cd6974301f",
+      "title": "9. Get the results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\",\\ngo to the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cell\"},{\"insert\":\" that displays the best performing model\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "c557e048-884e-4e7f-8f31-f9ac4f6e90bf",
+          "connector": "left"
+        },
+        {
+          "id": "34fe8d58-febb-48da-9d87-ee3c5dc768e0",
+          "connector": "right"
+        },
+        {
+          "id": "19f4799c-ecde-46c1-ad79-77097c39b55c",
+          "connector": "top"
+        },
+        {
+          "id": "147964b7-2573-4740-9633-fc60de0898ad",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3704.860778808593,
+        "y": 226.83999633789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "cf674127-a6f1-4624-aa9b-b89a768166ba",
+      "title": "8. Run the models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", adjust the respective lines (linked to the card) to:\\n\\nspecify which \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"models \"},{\"insert\":\"to run\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nTo start, execute the code in the notebook cells in order (e.g. click the \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"play icon\"},{\"insert\":\" at the top of the notebook) \\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b9633395-3234-4b0e-a191-d8d05a93fcd1",
+          "connector": "left"
+        },
+        {
+          "id": "c557e048-884e-4e7f-8f31-f9ac4f6e90bf",
+          "connector": "right"
+        },
+        {
+          "id": "3315270d-9c04-4079-98b9-97759b77e566",
+          "connector": "top"
+        },
+        {
+          "id": "f4591f44-7032-4551-a0dd-42bd6ab6cb05",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3288.767028808593,
+        "y": 226.66421508789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "8595d578-e365-46d6-9b08-16e0569992e4",
+      "title": "2. Import the dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path \"},{\"insert\":\"of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"train-test split ratio\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "left"
+        },
+        {
+          "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+          "connector": "right"
+        },
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "top"
+        },
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 972.2943725585936,
+        "y": 229.60562133789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "5c3a0d9f-05df-4ed7-8dd9-2f011bf9bb59",
+      "title": "3. Specify the variables",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"dependent variable(s)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+          "connector": "left"
+        },
+        {
+          "id": "122ea292-7343-4745-91f1-261c43d844b7",
+          "connector": "right"
+        },
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "top"
+        },
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1327.0482788085935,
+        "y": 228.92984008789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "4f4ac754-14f7-4fd1-88cc-df724631601b",
+      "title": "4. Normalise The Data",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"normalisation method\"},{\"insert\":\" to be used for the data.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "122ea292-7343-4745-91f1-261c43d844b7",
+          "connector": "left"
+        },
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "right"
+        },
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "top"
+        },
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.3295288085935,
+        "y": 228.98843383789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "9211d717-e939-4f69-b530-94c9d9a522d5",
+      "title": "5. Reduce Dimensionality",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"dimensionality reduction method\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "left"
+        },
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "right"
+        },
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "top"
+        },
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2060.7201538085933,
+        "y": 229.10562133789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "72c52810-7bf8-4e6d-8143-76772ad199a1",
+      "title": "6. Regularise the data",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"regularisation \"},{\"insert\":\"required\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "left"
+        },
+        {
+          "id": "8d03c66a-a5e2-400a-ad84-56c19cb7882a",
+          "connector": "right"
+        },
+        {
+          "id": "1d9e73a9-62c3-4095-bf49-b50f28770784",
+          "connector": "top"
+        },
+        {
+          "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2458.259216308593,
+        "y": 229.16421508789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "9ffe4933-c590-4333-8b90-397004481121",
+      "title": "7. Limit Iterations",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", adjust the respective lines (linked to the card) to:\\n\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"max iterations\"},{\"insert\":\" for auto training the models\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "8d03c66a-a5e2-400a-ad84-56c19cb7882a",
+          "connector": "left"
+        },
+        {
+          "id": "b9633395-3234-4b0e-a191-d8d05a93fcd1",
+          "connector": "right"
+        },
+        {
+          "id": "828a5488-fd7b-46d1-8e1b-2a14d5491be4",
+          "connector": "bottom"
+        },
+        {
+          "id": "55d1fe7c-4163-457c-995a-5eba9a286b79",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2866.579528808593,
+        "y": 228.03140258789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "8001af3a-d56d-4665-aa4a-85323977fd99",
+      "title": "About the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this regression experiment. This would provide a documented summary for the entire experiment.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 614.2850685119629,
+        "y": -91.59120035171509
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "aab75e00-a947-413c-a564-d5aad18ff430",
+      "title": "Experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card: \\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"use case\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"objective\"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\" \"},{\"insert\":\"of the regression modelling,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\" of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Use Case\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Given the age of a person, we would like to predict his/her likelihood of diabetes\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Objective\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#To predict likelihood of diabetes from age\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"General Procedure\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Import data - Apply Domain Knowledge - Preprocess the data - Pick model(s) to run - Return best performing model\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 614.5975685119629,
+        "y": 550.6297469139099
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "44374ee0-4d5e-420d-a146-97c7cbcd176f",
+      "title": "dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card,\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"dataset\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"train-test split ratio\"},{\"insert\":\" for the data\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Dataset\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Name: #Diabetes\\nSamples: #442\\nDimensions: #11\\n\\nTrain-Test Split: #0.75:0.25\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 972.0350971221924,
+        "y": 550.9891028404236
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "b2046df8-59ea-4ee7-8f2e-569227223a95",
+      "title": "variables",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card: \\ndescribe the independent and dependent variables with their \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"data types\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Variables\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Dependent variable(s)\"},{\"insert\":\"\\n#Age: Continuous\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Independent variable(s)\"},{\"insert\":\"\\n#y, (type)\\n#z, (type)\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1326.4896869659424,
+        "y": 553.5581946372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "5278b1de-43e4-4a11-b4ff-89d0aa2ff954",
+      "title": "normalisation",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"distributions \"},{\"insert\":\"of variables in the dataset\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify if \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"domain knowledge\"},{\"insert\":\" is applied.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Distribution of Variables\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#X - Normal\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Domain Knowledge\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Data already normalised - No normalisation required\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.2921772003174,
+        "y": 558.6094641685486
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "1b2607a8-34d2-4b8e-864f-21612277b848",
+      "title": "dimensionality",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"number of independent variables\"},{\"insert\":\" for the regression model\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe possible \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"methods to reduce\"},{\"insert\":\" the dimensions (if required)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Dimensions\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Raw Independent Dimensions: #9\\nTarget Independent Dimensions: #2\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Reduction Method\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#No reduction/PCA/Manual\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2061.8266010284424,
+        "y": 563.4800696372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "990c9a79-401d-4922-89d3-5af9f932ecb2",
+      "title": "Regularisation",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe potential for \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"outliers \"},{\"insert\":\"and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"overfitting\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the chosen \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"regularisation constant\"},{\"insert\":\" (or auto run by the algorithm)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Outliers and noise\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Minimal present\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Regulisation Constant\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#auto\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2456.9816303253174,
+        "y": 563.4800696372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "a7232b89-265a-4ba8-861b-f735812b14b0",
+      "title": "Iteration Limits",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe the potential for \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"slow performance\"},{\"insert\":\" of training\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"max iterations\"},{\"insert\":\" before auto training stops (if required)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nPolynomial Degree: #4\\n\\nTree Depth: #5\\n\\nMLP Layer size: #200\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "828a5488-fd7b-46d1-8e1b-2a14d5491be4",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2865.9042377471924,
+        "y": 563.6653723716736
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "2119df64-c526-45b1-80ac-864a133a579b",
+      "title": "models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"models \"},{\"insert\":\"to be used.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nModels Chosen: #\"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"'linear'\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"'l1_linear'\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"'l2_linear'\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"'poly'\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"'tree'\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f4591f44-7032-4551-a0dd-42bd6ab6cb05",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3287.779726028442,
+        "y": 559.0359778404236
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "ce53f1f4-08f3-42a2-a7ce-96a3194ba53e",
+      "title": "results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"best parameters and results\"},{\"insert\":\" reported by the regression model.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nModel:\\n\\nTraining Score:\\n\\nTime Taken:\\n\\nParameters:\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "147964b7-2573-4740-9633-fc60de0898ad",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3705.581727981567,
+        "y": 559.0359778404236
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "a57095cf-c438-4e2e-89eb-0437ab876392",
+      "title": "Interpret and improve",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport and compare the best score to a benchmark score (if available)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"possible ways\"},{\"insert\":\" to improve results if not satisfactory\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nDoes the result satisfy the benchmark\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Benchmark: #0.8 (80% accurate prediction)\\nResult: #0.7\\n\\nIs more data required?\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"#Yes, accuracy of models trained with half the data is much lower than the ones trained with full data. It suggests the accuracy of the model will improve further with more data samples.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "3029c685-9e4d-45ef-8ffd-dc2d93fd9426",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 4098.866151809692,
+        "y": 561.2212805747986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "bf8b3e2d-dc6a-4d37-8064-6d904e389b17",
+      "title": "The Dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We would need to import our data for training and evaluating the models. We need to understand the size, properties, and features of our dataset to decide on the preprocessing and feature engineering/selection needed.\\n\\nIt is necessary to divide the data set into two distinct sets for training and testing. Generally, performance of models improve with more training data. However, enough data should still be allocated to testing to ensure reliable test results.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 971.8582458496095,
+        "y": -91.36378479003908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "8bb52dda-a7bb-4468-a1fc-808bcebc33d1",
+      "title": "the variables",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"To pick a suitable normalisation method and regression model, we need to know the number, type, and distribution of variables.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1325.5174255371094,
+        "y": -89.41749572753908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "1c93e037-4794-4df0-b47d-0f9f2e99dbfa",
+      "title": "Data Normalisation",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Normalisation is a technique where data is shifted and rescaled such that parameters would not have large differences in value. This is necessary for most regression models as unnormalised data would fit more towards the variables with larger raw values, giving less influence to variables with smaller raw values, potentially skewing the data.\\n\\nStandard scalar works well on data with normal distribution, while a Minmax scalar works well as a general purpose scaler.\\n\\nHowever, if domain knowledge is applied with Bayesian modelling, it may not be suitable for data to be normalised as a Bayesian model expects data with raw values when constructing the model.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.3318786621094,
+        "y": -95.20851135253908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "82cd10a8-5968-43bf-b24b-fd6239b950d4",
+      "title": "dimensionality reduction",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The data may have a large number of variables. This leads to the 'curse of dimensionality' where models require large amounts of data to effectively distinguish and fit the data well. However, we often do not have this large dataset or time needed to train such a model, hence it may be prudent to remove or combine certain variables and reduce the dimensionality.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Manual Selection\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Manually select features and variables to be removed by inspecting the correlation matrix and determining the variables with low absolute correlation to the target variable(s). It may be suitable to remove these variables as they provide little information in the prediction while contributing to the dimensionality.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Principle Component Analysis\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Principle Component Analysis (PCA) could be used to determine the principle components that contribute the most to the target variable(s). The models may be trained on a subset of these principle components to reduce dimensionality.\\n\\nNote that the correlation matrix and PCA visualisations are shown even if no reduction method is specified, and in that case, no reduction would occur. This may be helpful to determine a suitable reduction method or understand the data more.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2061.5769958496094,
+        "y": -92.30323791503908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "e61145d8-b281-4c97-a467-0dff67efb257",
+      "title": "regularisation",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Models may sometimes 'overfit' on the training data, giving good results on training data but not so good results on new test data it has not seen before. This is especially so with noisy training data and outliers. \\n\\nApplying regularisation on the models would train a simpler model that may improve test results. In a nutshell, it adds a penalty for large parameter values, thereby encouraging models to avoid complex parameters with large values. This may decrease training scores slightly.\\n\\nIt is difficult to determine a suitable regularisation constant by hand. Therefore, the notebook can automatically determine the optimal constant.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "1d9e73a9-62c3-4095-bf49-b50f28770784",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2456.5818786621094,
+        "y": -88.95851135253908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "ea5aadf0-5080-4c80-8414-2298ec45043e",
+      "title": "Max Iterations",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"You can specify the limits at which the notebook will stop in its automatic search for model parameters. It is useful if you have an idea regarding the properties of the data (eg. Polynomial limit for polynomial regression) and may reduce running time.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "55d1fe7c-4163-457c-995a-5eba9a286b79",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2866.7498474121094,
+        "y": -85.35499572753908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "f45e8103-5e1f-4c28-85d4-97e50d418133",
+      "title": "models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"With the set up complete, you may now run the notebook. You can choose specific models to run (refer to prediction_guide.board for a guide to select suitable models) or run all the models available.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "3315270d-9c04-4079-98b9-97759b77e566",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3287.8299255371094,
+        "y": -85.80128479003908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "c8025b52-846e-4ac2-be6c-28ccf10951c4",
+      "title": "results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After the notebook has completed running, you can view the final results of all the models as well as the best performing model.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "19f4799c-ecde-46c1-ad79-77097c39b55c",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3704.9314880371094,
+        "y": -88.71730041503908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "a85e22b4-3dbd-440e-93b5-cdf1a0494592",
+      "title": "Interpretation and improvement",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The testing score that the notebook reports is the r2 score on the test data, with 1 being a perfect prediction. The r2 score is the proportion of the variance in the dependent variable that is predictable from the independent variable, or how much of the total variance is explained by the model. A high score will show a high level of correlation between the test data and model prediction.\\n\\nSometimes, the reported r2 score may be negative, indicating the model does not follow the trend of the data well or at all.\\n\\nIn this case, it is useful to consider methods to improve the results. There are several approaches:\\nIntroduce more sample data (rows) for the models to train with\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Introduce more suitable variables/features (columns) for the models to train with\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"Re-evaluate if the problem is suitable for regression modelling (would a human be able to make the prediction eg. image recognition)\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\nThe approach can be determined by evaluating the results trained with full and half data. If the performance of models trained with half the data is much poorer than that with full data, it suggests performance will improve with more data samples. However, if models trained with both half and full data are poor, it suggests the current model cannot predict the problem and more suitable features or a reconsidering of models is required.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "0f0e17c0-3888-46b1-b882-220b42b9c816",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 4098.556488037109,
+        "y": -88.71730041503908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "03cc856d-7f44-48dc-8693-ff29b72bb6f0",
+      "title": "export model and streamlit",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After the notebook runs, several files are exported to the ./out folder.\\n\\nIf you are happy with the model, you may go to the last cell in the 'regression.ipynb' notebook, uncomment the line with 'save_model' and run this cell. This will save the model in a folder in the current directory and prevents it from being overridden when running the notebook again.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "0de7e26d-c573-4ef4-9658-86e19ac696b8",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 4506.565277099609,
+        "y": -89.82960510253908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    }
+  ],
+  "edges": [
+    {
+      "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+      "type": "solid_arrow",
+      "node_connections": [
+        "39b22147-b458-47ca-b7a6-6e198f0d285f",
+        "326b8ef0-8a4a-4b4c-937f-f4dc1e71374f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "326b8ef0-8a4a-4b4c-937f-f4dc1e71374f",
+        "8595d578-e365-46d6-9b08-16e0569992e4"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+      "type": "solid_arrow",
+      "node_connections": [
+        "8595d578-e365-46d6-9b08-16e0569992e4",
+        "5c3a0d9f-05df-4ed7-8dd9-2f011bf9bb59"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "122ea292-7343-4745-91f1-261c43d844b7",
+      "type": "solid_arrow",
+      "node_connections": [
+        "5c3a0d9f-05df-4ed7-8dd9-2f011bf9bb59",
+        "4f4ac754-14f7-4fd1-88cc-df724631601b"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+      "type": "solid_arrow",
+      "node_connections": [
+        "4f4ac754-14f7-4fd1-88cc-df724631601b",
+        "9211d717-e939-4f69-b530-94c9d9a522d5"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+      "type": "solid_arrow",
+      "node_connections": [
+        "9211d717-e939-4f69-b530-94c9d9a522d5",
+        "72c52810-7bf8-4e6d-8143-76772ad199a1"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8d03c66a-a5e2-400a-ad84-56c19cb7882a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "72c52810-7bf8-4e6d-8143-76772ad199a1",
+        "9ffe4933-c590-4333-8b90-397004481121"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "b9633395-3234-4b0e-a191-d8d05a93fcd1",
+      "type": "solid_arrow",
+      "node_connections": [
+        "9ffe4933-c590-4333-8b90-397004481121",
+        "cf674127-a6f1-4624-aa9b-b89a768166ba"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c557e048-884e-4e7f-8f31-f9ac4f6e90bf",
+      "type": "solid_arrow",
+      "node_connections": [
+        "cf674127-a6f1-4624-aa9b-b89a768166ba",
+        "2b2d88c0-4964-484f-aa20-12cd6974301f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "34fe8d58-febb-48da-9d87-ee3c5dc768e0",
+      "type": "solid_arrow",
+      "node_connections": [
+        "2b2d88c0-4964-484f-aa20-12cd6974301f",
+        "4f82ef15-a13e-49e5-8119-af8ecd3afd3a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "de572a73-b7c4-4118-9433-776702977ced",
+      "type": "solid_arrow",
+      "node_connections": [
+        "4f82ef15-a13e-49e5-8119-af8ecd3afd3a",
+        "64d383ce-e353-4b35-8c8b-591a99ff9eeb"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8001af3a-d56d-4665-aa4a-85323977fd99",
+        "326b8ef0-8a4a-4b4c-937f-f4dc1e71374f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "aab75e00-a947-413c-a564-d5aad18ff430",
+        "326b8ef0-8a4a-4b4c-937f-f4dc1e71374f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "bf8b3e2d-dc6a-4d37-8064-6d904e389b17",
+        "8595d578-e365-46d6-9b08-16e0569992e4"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8595d578-e365-46d6-9b08-16e0569992e4",
+        "44374ee0-4d5e-420d-a146-97c7cbcd176f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8bb52dda-a7bb-4468-a1fc-808bcebc33d1",
+        "5c3a0d9f-05df-4ed7-8dd9-2f011bf9bb59"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "5c3a0d9f-05df-4ed7-8dd9-2f011bf9bb59",
+        "b2046df8-59ea-4ee7-8f2e-569227223a95"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "583daf7b-8155-44d0-adbe-a44310218963",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "1c93e037-4794-4df0-b47d-0f9f2e99dbfa",
+        "4f4ac754-14f7-4fd1-88cc-df724631601b"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4f4ac754-14f7-4fd1-88cc-df724631601b",
+        "5278b1de-43e4-4a11-b4ff-89d0aa2ff954"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "82cd10a8-5968-43bf-b24b-fd6239b950d4",
+        "9211d717-e939-4f69-b530-94c9d9a522d5"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "1b2607a8-34d2-4b8e-864f-21612277b848",
+        "9211d717-e939-4f69-b530-94c9d9a522d5"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "1d9e73a9-62c3-4095-bf49-b50f28770784",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e61145d8-b281-4c97-a467-0dff67efb257",
+        "72c52810-7bf8-4e6d-8143-76772ad199a1"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "990c9a79-401d-4922-89d3-5af9f932ecb2",
+        "72c52810-7bf8-4e6d-8143-76772ad199a1"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "828a5488-fd7b-46d1-8e1b-2a14d5491be4",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "9ffe4933-c590-4333-8b90-397004481121",
+        "a7232b89-265a-4ba8-861b-f735812b14b0"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "55d1fe7c-4163-457c-995a-5eba9a286b79",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "ea5aadf0-5080-4c80-8414-2298ec45043e",
+        "9ffe4933-c590-4333-8b90-397004481121"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "3315270d-9c04-4079-98b9-97759b77e566",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "f45e8103-5e1f-4c28-85d4-97e50d418133",
+        "cf674127-a6f1-4624-aa9b-b89a768166ba"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f4591f44-7032-4551-a0dd-42bd6ab6cb05",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "cf674127-a6f1-4624-aa9b-b89a768166ba",
+        "2119df64-c526-45b1-80ac-864a133a579b"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "19f4799c-ecde-46c1-ad79-77097c39b55c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "c8025b52-846e-4ac2-be6c-28ccf10951c4",
+        "2b2d88c0-4964-484f-aa20-12cd6974301f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "147964b7-2573-4740-9633-fc60de0898ad",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "2b2d88c0-4964-484f-aa20-12cd6974301f",
+        "ce53f1f4-08f3-42a2-a7ce-96a3194ba53e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "0f0e17c0-3888-46b1-b882-220b42b9c816",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "a85e22b4-3dbd-440e-93b5-cdf1a0494592",
+        "4f82ef15-a13e-49e5-8119-af8ecd3afd3a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "3029c685-9e4d-45ef-8ffd-dc2d93fd9426",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4f82ef15-a13e-49e5-8119-af8ecd3afd3a",
+        "a57095cf-c438-4e2e-89eb-0437ab876392"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "0de7e26d-c573-4ef4-9658-86e19ac696b8",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "03cc856d-7f44-48dc-8693-ff29b72bb6f0",
+        "64d383ce-e353-4b35-8c8b-591a99ff9eeb"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

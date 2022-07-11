@@ -1,0 +1,634 @@
+{
+  "nodes": [
+    {
+      "id": "2ee2df07-9220-46ca-aeb8-314fbb453b03",
+      "title": "0. How to use the Board",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"cards.\\n\\n#Default example records are prefixed by '#'.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 250.171875,
+        "y": 202.25599999999997
+      },
+      "size": {
+        "width": 256.16,
+        "height": 313.064
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "c35c5bc1-25c9-4679-9050-d1c2dbe2c58e",
+      "title": "1. Describe the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"causal_estimate.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name \"},{\"insert\":\"of the hypothesis testing experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "left"
+        },
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "right"
+        },
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "top"
+        },
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 615.750244140625,
+        "y": 229.68185424804688
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "81107ee7-188d-4398-8776-178cdcdbb917",
+      "title": "2. Import the dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"causal_estimate.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path \"},{\"insert\":\"of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify if the data is \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"time-series\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "left"
+        },
+        {
+          "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+          "connector": "right"
+        },
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "top"
+        },
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 972.2943725585936,
+        "y": 229.60562133789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "34d8feb6-0c2f-4d8c-aafe-4cf0818d2bf4",
+      "title": "3. Model the causal structure",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"causal_estimate.ipynb\\\", adjust the respective lines (linked to the card) to\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"causal structure\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the specific \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"treatment \"},{\"insert\":\"and \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"outcome\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+          "connector": "left"
+        },
+        {
+          "id": "122ea292-7343-4745-91f1-261c43d844b7",
+          "connector": "right"
+        },
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "top"
+        },
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1327.0482788085935,
+        "y": 228.92984008789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "7c339497-523a-4c86-9382-6765cc7f73cc",
+      "title": "4. Identify, estimate, refute",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"causal_estimate.ipynb\\\",\\ngo to the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cell\"},{\"insert\":\" that displays the results\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "122ea292-7343-4745-91f1-261c43d844b7",
+          "connector": "left"
+        },
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "right"
+        },
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "top"
+        },
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.3295288085935,
+        "y": 228.98843383789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b",
+      "collapsed": false
+    },
+    {
+      "id": "9a452851-b800-412e-9834-eb9fd3bdfbc7",
+      "title": "5. interpret and evaluate",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Based on the results in 4. evaluate the model performance in the green card below.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "left"
+        },
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "right"
+        },
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "top"
+        },
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2060.7201538085933,
+        "y": 229.10562133789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "064c6b66-5ec3-4690-9b0a-ac7b58c19c1b",
+      "title": "6. What Next?",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Establish more complex relationships\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"With a significant causal relationship between variables established, you may want to test for more complex hypotheses such as a formulaic expression. You may open another hypothesis testing template using the template wizard.\\n\\nRegression\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"If you have found an equation to be sufficiently validated, you may be able to build a regression model for prediction of future data with the same features. You may open another regression prediction template using the template wizard.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2458.259216308593,
+        "y": 229.16421508789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "caaaa3ab-4ded-45a3-ab7b-afe962ec1a96",
+      "title": "About the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this hypothesis testing experiment. This would provide a documented summary for the entire experiment.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 614.2850685119629,
+        "y": -91.59120035171509
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "4749aaa7-73a1-4680-b98f-6c0111f8c9b2",
+      "title": "Experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card: \\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"use case\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"objective\"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\" \"},{\"insert\":\"of the hypothesis testing,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\" of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Use Case\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#To determine the causal effect between variables x and y\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Objective\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#To model a causal structure of the parameters and determine the causal effect of a treatment parameter on an outcome.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"General Procedure\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Import data - Model causal structure - Identify estimands - Estimate - Refute results\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 614.5975685119629,
+        "y": 550.6297469139099
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "16aa4ad9-8311-4e13-a032-275a652f433c",
+      "title": "dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card,\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"dataset\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Dataset\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Name: #Wine Quality\\nSamples: #1599\\nDimensions: #12\\n\\nTime-series: #No\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 972.0350971221924,
+        "y": 550.9891028404236
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "3a2f2409-f610-4435-8ac9-16b167b8e5a0",
+      "title": "causal structure",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"causal structure\"},{\"insert\":\" and/or the relationships between the parameters\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Causal Structure\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Treatment Parameter:\\nOutcome:\\nCommon causes (confounder for both treatment and outcome):\\nEffect modifiers (confounder only for outcome):\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Disgraph\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"#fixed acidity -> pH; fixed acidity -> quality;\\n#volatile acidity -> pH; volatile acidity -> quality;\\n#residual sugar -> quality; pH -> quality;\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1326.4896869659424,
+        "y": 553.5581946372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "dca5aea7-7314-4012-9c5e-b826a8377912",
+      "title": "identify, estimate, refute",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nlist the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"estimands \"},{\"insert\":\"and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"assumptions \"},{\"insert\":\"identified\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"record the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"causal estimates\"},{\"insert\":\" from estimation methods\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"state if an estimator does not pass all refutation tests\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Estimand type\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#nonparametric-ate\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Backdoor\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Expression: \\n#  d                                             \\n#─────(E[quality|volatile acidity,fixed acidity])\\n#d[pH]   \\n\\nAssumptions:\\n#Unconfoundedness: If U→{pH} and U→quality then P(quality|pH,volatile acidity,fixed acidity,U) = P(quality|pH,volatile acidity,fixed acidity)\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\nCausal Estimates:\\n#linear: 0.49575748394223895\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"#dml: 0.20754202938065247\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nRefutation Tests:\\n#All passed\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"IV\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#No such variables found\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Frontdoor\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#No such variables found\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.2921772003174,
+        "y": 558.6094641685486
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "e0214701-a1ca-4e4b-a5c2-c71a91af9f9c",
+      "title": "interpret",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nspecify the significant causal estimates between variables\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2061.8266010284424,
+        "y": 562.4314936372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "8f20f595-2ab9-470e-aa23-fc0d6c589efb",
+      "title": "The Dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We would need to import our dataset for conducting the hypothesis testing. It is important to understand the size, properties, and features of our dataset such that we can decide on how we could model the causal structure.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 971.8582458496095,
+        "y": -91.36378479003908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "29ea4ce7-d201-41b3-a074-653d73f9b48b",
+      "title": "causal structure",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"To conduct causal inference, we have to model the causal structure we want to evaluate our parameters with. This would require domain knowledge of physical laws, experiences, or assumptions to build a model of common causes and effect modifiers on the treatment and outcome variables.\\n\\nThey may either be specified directly in lists, or constructed in disgraphs. The causal model will be displayed as a directed acyclic graph (DAG).\\n\\nNote that certain models may result in no identifiable estimands, and require tweaking before the estimate methods could be used.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1325.5174255371094,
+        "y": -94.10499572753908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "1fb15d2d-31ea-4009-b871-a1e270baeec2",
+      "title": "identify, estimate, refute",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"With the causal structure modelled, we may proceed to identify the estimand assumptions, estimate using these estimands, and refute the estimate by conducting statistical tests on modified data.\\n\\nIn the notebook there are 7 estimate methods:\\nlinear_regression\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Propensity score (only for binary treatment):\\t\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"stratification\\t\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"matching\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"weighing\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"econml dml (neural network)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"instrument variable (for iv estimand)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"regression discontinuity (for iv estimand)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nThere are 4 refutation methods:\\nAdding a random common cause\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Replacing treatment with a random (placebo) variable\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Removing a random subset of the data\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Adding unobserved common cause variable\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nA correct estimator should pass all available refutation methods (ie p value above 0.05).\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.3318786621094,
+        "y": -95.20851135253908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "cd65bb7c-c28b-4903-8de3-8bd3e2056a59",
+      "title": "interpret",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"With the causal estimates, one could compare to a set threshold to decide if the causal effect is significant. One may also utilize domain knowledge of known causal relationships (known that x causes effect y in z) in the causal model, to evaluate if the causal model is robust and accurate by running the test again with treatment x and outcome z, while observing if the effect is similar to y.\\n\\nA causal inference model may require many iterations of tweaking and adjustments, especially if modelled with unverified assumptions.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2059.0769958496094,
+        "y": -97.30323791503908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    }
+  ],
+  "edges": [
+    {
+      "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+      "type": "solid_arrow",
+      "node_connections": [
+        "2ee2df07-9220-46ca-aeb8-314fbb453b03",
+        "c35c5bc1-25c9-4679-9050-d1c2dbe2c58e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "c35c5bc1-25c9-4679-9050-d1c2dbe2c58e",
+        "81107ee7-188d-4398-8776-178cdcdbb917"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+      "type": "solid_arrow",
+      "node_connections": [
+        "81107ee7-188d-4398-8776-178cdcdbb917",
+        "34d8feb6-0c2f-4d8c-aafe-4cf0818d2bf4"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "122ea292-7343-4745-91f1-261c43d844b7",
+      "type": "solid_arrow",
+      "node_connections": [
+        "34d8feb6-0c2f-4d8c-aafe-4cf0818d2bf4",
+        "7c339497-523a-4c86-9382-6765cc7f73cc"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+      "type": "solid_arrow",
+      "node_connections": [
+        "7c339497-523a-4c86-9382-6765cc7f73cc",
+        "9a452851-b800-412e-9834-eb9fd3bdfbc7"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+      "type": "solid_arrow",
+      "node_connections": [
+        "9a452851-b800-412e-9834-eb9fd3bdfbc7",
+        "064c6b66-5ec3-4690-9b0a-ac7b58c19c1b"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "caaaa3ab-4ded-45a3-ab7b-afe962ec1a96",
+        "c35c5bc1-25c9-4679-9050-d1c2dbe2c58e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4749aaa7-73a1-4680-b98f-6c0111f8c9b2",
+        "c35c5bc1-25c9-4679-9050-d1c2dbe2c58e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8f20f595-2ab9-470e-aa23-fc0d6c589efb",
+        "81107ee7-188d-4398-8776-178cdcdbb917"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "81107ee7-188d-4398-8776-178cdcdbb917",
+        "16aa4ad9-8311-4e13-a032-275a652f433c"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "29ea4ce7-d201-41b3-a074-653d73f9b48b",
+        "34d8feb6-0c2f-4d8c-aafe-4cf0818d2bf4"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "34d8feb6-0c2f-4d8c-aafe-4cf0818d2bf4",
+        "3a2f2409-f610-4435-8ac9-16b167b8e5a0"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "583daf7b-8155-44d0-adbe-a44310218963",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "1fb15d2d-31ea-4009-b871-a1e270baeec2",
+        "7c339497-523a-4c86-9382-6765cc7f73cc"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "7c339497-523a-4c86-9382-6765cc7f73cc",
+        "dca5aea7-7314-4012-9c5e-b826a8377912"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "cd65bb7c-c28b-4903-8de3-8bd3e2056a59",
+        "9a452851-b800-412e-9834-eb9fd3bdfbc7"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e0214701-a1ca-4e4b-a5c2-c71a91af9f9c",
+        "9a452851-b800-412e-9834-eb9fd3bdfbc7"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

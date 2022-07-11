@@ -1,0 +1,747 @@
+{
+  "nodes": [
+    {
+      "id": "eb15af0d-ec25-40b4-b26c-e7e1133a12e1",
+      "title": "0. How to use the Board",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"cards.\\n\\n#Default example records are prefixed by '#'.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 250.171875,
+        "y": 202.25599999999997
+      },
+      "size": {
+        "width": 256.16,
+        "height": 313.064
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "3a26b268-5f2d-4bd9-b65d-064ccb07480d",
+      "title": "1. Describe the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_supervised.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name \"},{\"insert\":\"of the outlier detection experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+          "connector": "left"
+        },
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "right"
+        },
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "top"
+        },
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 615.750244140625,
+        "y": 229.68185424804688
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "1cf010bb-cad1-4cde-8d25-90c1bd5b2870",
+      "title": "2. Import the dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_supervised.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path \"},{\"insert\":\"of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify if the data is \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"time-series\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"train-test split ratio\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+          "connector": "left"
+        },
+        {
+          "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+          "connector": "right"
+        },
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "top"
+        },
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 973.1332333585937,
+        "y": 229.60562133789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "cf94ca51-8797-46f0-90ef-c1f1ff1eab57",
+      "title": "3 Model the domain knowledge",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_supervised.ipynb\\\", adjust the respective lines (linked to the card) to\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"known dependencies/relationships\"},{\"insert\":\" between the features\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+          "connector": "left"
+        },
+        {
+          "id": "122ea292-7343-4745-91f1-261c43d844b7",
+          "connector": "right"
+        },
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "top"
+        },
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1327.0482788085935,
+        "y": 228.92984008789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "bbac5424-c901-4981-bc2b-890c38bded3d",
+      "title": "4. Run the model",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Run the trials in the notebook \\\"bayesian_supervised.ipynb\\\":\\n\\nTo start, execute all the notebook cells in order (e.g. click the play icon at the top of the notebook) \\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "122ea292-7343-4745-91f1-261c43d844b7",
+          "connector": "left"
+        },
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "right"
+        },
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "top"
+        },
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1684.4906680085935,
+        "y": 228.98843383789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "6a35ae62-a925-4e36-8e0a-7586227a67a1",
+      "title": "5. Get the results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_supervised.ipynb\\\", go to the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cell\"},{\"insert\":\" that displays the results\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+          "connector": "left"
+        },
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "right"
+        },
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "top"
+        },
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2061.5590146085933,
+        "y": 229.10562133789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "2b8dfdbb-efc7-4ab8-a7cb-391dbb03dffc",
+      "title": "6. Interpret the results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Based on the results in 5. evaluate the model performance in the green card below.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+          "connector": "left"
+        },
+        {
+          "id": "8d03c66a-a5e2-400a-ad84-56c19cb7882a",
+          "connector": "right"
+        },
+        {
+          "id": "1d9e73a9-62c3-4095-bf49-b50f28770784",
+          "connector": "top"
+        },
+        {
+          "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2458.259216308593,
+        "y": 229.16421508789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "a806ba7b-9e80-44e4-bb02-ec36b9ee2781",
+      "title": "7. Export and use streamlit",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After the notebook runs, a joblib file containing the data is exported to the ./out folder.\\n\\nProceed to 'streamlit_detect_outliers.ipynb' and run it. Copy the output link from the first cell to a new tab and change the last few digits (port) to the corresponding port in the second cell. This will open a streamlit web app that will import the trained models and data, and allow you to make outlier predictions with new inputs based on the trained models.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "8d03c66a-a5e2-400a-ad84-56c19cb7882a",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2866.579528808593,
+        "y": 228.03140258789062
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "2b42d4f7-b54b-4a41-9512-337b981f713f",
+      "title": "About the experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this supervised bayesian outlier detection experiment. This would provide a documented summary for the entire experiment.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 614.2850685119629,
+        "y": -91.59120035171509
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "7d4113ef-03f1-4d72-b9a1-ab681f8e874c",
+      "title": "Experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card: \\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"use case\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"objective\"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\" \"},{\"insert\":\"of the outlier detection,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\" of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Use Case\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Given the a dataset of ... with outlier labels, we would like to predict the cases of abnormal...\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Objective\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#To detect outliers from the given dataset.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"General Procedure\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Import data - Normalise the data - Set up causal structure and dependencies - Interpret and validate results\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 614.5975685119629,
+        "y": 550.6297469139099
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "c8c8f9ae-1a92-4e1c-99cb-ce969dcb1dc7",
+      "title": "dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card,\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"dataset\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Dataset\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Name: #Height and weight\\nSamples: \\nDimensions: \\n\\nTrain-Test Split: #0.75:0.25\\n\\nTime-series: #No\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 972.0350971221924,
+        "y": 550.9891028404236
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "9e5da71a-5090-4db1-8453-c928b12a6836",
+      "title": "domain knowledge",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"domain knowledge\"},{\"insert\":\" about the data,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Known Dependencies\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Height depends on age\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Known Mathematical Relationships\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1326.4896869659424,
+        "y": 553.5581946372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "28f95cf9-7f20-4438-925e-21baab19b467",
+      "title": "models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"models \"},{\"insert\":\"to be used.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Model Type\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Causal Structure/Graphical\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1683.9499999203176,
+        "y": 558.6094641685486
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "8dce1383-cbec-4516-bebd-362aaac57c8a",
+      "title": "results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"best parameters\"},{\"insert\":\" and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"results \"},{\"insert\":\"reported by the outlier detection models.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nClassification Score:\\n\\nParameters:\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2061.8266010284424,
+        "y": 563.4800696372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "af6cd0bd-c5e5-4664-ba2a-052363c00856",
+      "title": "Interpret and improve",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In this card:\\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"classification metric\"},{\"insert\":\" considered most desirable\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"report and compare the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"best score\"},{\"insert\":\" to a benchmark score (if available)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify possible \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"ways to improve\"},{\"insert\":\" results if not satisfactory\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nMost Important Metric\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\\n\"},{\"insert\":\"Does the result meet the benchmark\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Benchmark: #0.8 (80% non-outlier data)\\nResult: #0.7\\n\\nAre the results accurate upon validation?\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2456.9816303253174,
+        "y": 563.4800696372986
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "7f383672-be08-4cf0-a8a6-81572ce3d51a",
+      "title": "The Dataset",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We would need to import our dataset for training the models. It is important to understand the size, properties, and features of our dataset such that we can decide on if and how imbalanced the data is.\\n\\nSupervised outlier detection algorithms would require data outliers to be labeled.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 971.8582458496095,
+        "y": -91.36378479003908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "51ea45d8-4cc8-4bdd-a639-2f89de7813c2",
+      "title": "domain knowledge",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"With Bayesian Networks, we can model domain knowledge regarding the data; which could include known dependencies or mathematical relations between features. This allows the model to have a 'head-start' in when training with the data, and verifying/modelling in the domain knowledge.\\n\\nIn this template notebook, a Halerium Causal Structure allows one to identify the known dependencies between features, before training the causal structure model.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1325.5174255371094,
+        "y": -94.10499572753908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "6f702f64-2ba8-4dfb-994a-24b3bd54a39c",
+      "title": "models",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"With the set up complete, you may now run the notebook(refer to outlier_detection_guide.board for a description of Bayesian models).\\n\\nYou may also adjust the parameters for the models in the corresponding cell. The cell will return a report of classification metrics if a supervised approach is used.\\n\\nThe notebook implements both a causal structure approach and a graphical construction approach.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "583daf7b-8155-44d0-adbe-a44310218963",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1685.3318786621094,
+        "y": -95.20851135253908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "d199f49b-f040-4862-a939-b92cab79f472",
+      "title": "results",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"After the notebook has completed running, you can view the final results of all the models.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2059.0769958496094,
+        "y": -97.30323791503908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "cc1436cf-c48c-4b54-8e7d-753387a32e53",
+      "title": "Interpret",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Unlike with unsupervised metrics, there is a ground truth where predictions can be evaluated against. It is possible for a confusion matrix to be generated, as well as several classification metrics to be obtained.\\n\\nHere we would need to explain the metrics as well as their results:\\nTrue Positive (TP): Actual and Predicted Outliers\\nTrue Negative (TN): Actual and Predicted Non-outliers\\nFalse Positive (FP): Predicted outlier but actual non-outlier\\nFalse Negative (FN): Predicted non-outlier but actual outlier\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Accuracy\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"(TP + TN) / (TP + TN + FP + FN)\\nRepresents the model's ability to correctly predict an outcome regardless of class. It is useful to evaluate its performance on the existing training data, but does not provide much specific information for prediction on new data.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Precision\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"TP / (TP + FP)\\nRepresents the model's ability to correctly predict the outliers out of all outlier predictions it as made. The value of FP will affect the precision score; therefore, if you were looking for lower false positives, you would look for high precision scores.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Recall\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"TP / (TP + FN)\\nRepresents the model's ability to correctly predict the outliers out of all actual outliers. The value of FN will affect the recall score; therefore, if you were looking for lower false negatives, you would look for high recall scores.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"F Score\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"(2 * Precision * Recall) / (Precision + Recall)\\nRepresents high-level information regarding the model's output quality. It takes into account both precision and recall, distributing the possible dip in detecting FP or FN when only optimising precision or recall.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"ROC AUC\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"The area under the receiver operating characteristic curve, which plots the true positive rate against the false positive rate. It provides an aggregate measure of performance against all possible classification thresholds.\\n\\nYou may then pick the metric to optimise that best suits your use case (eg. minimise false positives/negatives), or a more general metric describing the performance of the model as a whole.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "1d9e73a9-62c3-4095-bf49-b50f28770784",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2456.5818786621094,
+        "y": -92.70851135253908
+      },
+      "size": {
+        "width": 256.16,
+        "height": 258.28
+      },
+      "color": "#28337e"
+    }
+  ],
+  "edges": [
+    {
+      "id": "b44b81c0-d5e8-4d1b-b65a-82e831e6625c",
+      "type": "solid_arrow",
+      "node_connections": [
+        "eb15af0d-ec25-40b4-b26c-e7e1133a12e1",
+        "3a26b268-5f2d-4bd9-b65d-064ccb07480d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ffdb866f-7f89-40f9-b6e1-7ffb0391d15d",
+      "type": "solid_arrow",
+      "node_connections": [
+        "3a26b268-5f2d-4bd9-b65d-064ccb07480d",
+        "1cf010bb-cad1-4cde-8d25-90c1bd5b2870"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
+      "type": "solid_arrow",
+      "node_connections": [
+        "1cf010bb-cad1-4cde-8d25-90c1bd5b2870",
+        "cf94ca51-8797-46f0-90ef-c1f1ff1eab57"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "122ea292-7343-4745-91f1-261c43d844b7",
+      "type": "solid_arrow",
+      "node_connections": [
+        "cf94ca51-8797-46f0-90ef-c1f1ff1eab57",
+        "bbac5424-c901-4981-bc2b-890c38bded3d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a189356d-59e3-4dfd-8d17-0fa20d118088",
+      "type": "solid_arrow",
+      "node_connections": [
+        "bbac5424-c901-4981-bc2b-890c38bded3d",
+        "6a35ae62-a925-4e36-8e0a-7586227a67a1"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "19616ef7-deda-4731-8e6c-cc7d13847c8e",
+      "type": "solid_arrow",
+      "node_connections": [
+        "6a35ae62-a925-4e36-8e0a-7586227a67a1",
+        "2b8dfdbb-efc7-4ab8-a7cb-391dbb03dffc"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8d03c66a-a5e2-400a-ad84-56c19cb7882a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "2b8dfdbb-efc7-4ab8-a7cb-391dbb03dffc",
+        "a806ba7b-9e80-44e4-bb02-ec36b9ee2781"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7f34cda8-d6db-43b9-8f1b-269ce5eefdf5",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "2b42d4f7-b54b-4a41-9512-337b981f713f",
+        "3a26b268-5f2d-4bd9-b65d-064ccb07480d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "7d4113ef-03f1-4d72-b9a1-ab681f8e874c",
+        "3a26b268-5f2d-4bd9-b65d-064ccb07480d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "7f383672-be08-4cf0-a8a6-81572ce3d51a",
+        "1cf010bb-cad1-4cde-8d25-90c1bd5b2870"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "1cf010bb-cad1-4cde-8d25-90c1bd5b2870",
+        "c8c8f9ae-1a92-4e1c-99cb-ce969dcb1dc7"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f8ec4618-575f-423b-acda-42561c5b3ace",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "51ea45d8-4cc8-4bdd-a639-2f89de7813c2",
+        "cf94ca51-8797-46f0-90ef-c1f1ff1eab57"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "cf94ca51-8797-46f0-90ef-c1f1ff1eab57",
+        "9e5da71a-5090-4db1-8453-c928b12a6836"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "583daf7b-8155-44d0-adbe-a44310218963",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "6f702f64-2ba8-4dfb-994a-24b3bd54a39c",
+        "bbac5424-c901-4981-bc2b-890c38bded3d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "bbac5424-c901-4981-bc2b-890c38bded3d",
+        "28f95cf9-7f20-4438-925e-21baab19b467"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c501f053-437e-45d4-a646-fc9e686ef80a",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d199f49b-f040-4862-a939-b92cab79f472",
+        "6a35ae62-a925-4e36-8e0a-7586227a67a1"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8dce1383-cbec-4516-bebd-362aaac57c8a",
+        "6a35ae62-a925-4e36-8e0a-7586227a67a1"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "1d9e73a9-62c3-4095-bf49-b50f28770784",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "cc1436cf-c48c-4b54-8e7d-753387a32e53",
+        "2b8dfdbb-efc7-4ab8-a7cb-391dbb03dffc"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "af6cd0bd-c5e5-4664-ba2a-052363c00856",
+        "2b8dfdbb-efc7-4ab8-a7cb-391dbb03dffc"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

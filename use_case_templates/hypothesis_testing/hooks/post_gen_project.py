@@ -3,8 +3,8 @@ import shutil
 import halerium_utilities as hu
 
 # Select the specified template
-model_templates = '{{cookiecutter.model_templates}}'
-all_templates = ['1-classical', '2-causal', '3-equation']
+model_templates = '{{cookiecutter.use_case_slug}}'
+all_templates = ['classical_ht', 'causal', 'equation', 'hypothesis_testing_overview']
 for template in all_templates:
     if template != model_templates:
         shutil.rmtree('./' + template)
@@ -12,10 +12,10 @@ for template in all_templates:
 hu.file.assign_new_card_ids_to_tree('./')
 
 # Adding cards, connections, and links on experiments board in project template
-project_path = './../../hypotheses_experiments_learnings.board'
+project_path = './../hypotheses_experiments_learnings.board'
 
 
-if os.path.exists(project_path):
+if os.path.exists(project_path) and model_templates != 'hypothesis_testing_overview':
     board = hu.file.io.read_board(project_path)
     board_titles = [x['title'] for x in board['nodes']]
     experiment_count = board_titles.count('Experiment')
@@ -60,7 +60,7 @@ if os.path.exists(project_path):
         project_path, experiment_card_id, learning_card_id, 'right', 'left')
 
     # Add link to notebook
-    notebook_dict = {'1-classical': '/classical_ht.ipynb', '2-causal': '/causal_structure.ipynb', '3-equation': '/equation.ipynb'}
+    notebook_dict = {'classical_ht': '/classical_ht.ipynb', 'causal': '/causal_structure.ipynb', 'equation': '/equation.ipynb'}
     notebook_path = model_templates + notebook_dict[model_templates]
     hu.board.board.create_card_cell_link(
         project_path, experiment_card_id, notebook_path, 2)

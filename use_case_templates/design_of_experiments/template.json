@@ -1,0 +1,107 @@
+{
+    "name": "Design of Experiments",
+    "description": "To design a task that studies the relationship between input and output variables",
+    "templates": [
+        {
+            "name": "Overview",
+            "isOverview": "true",
+            "description": "Overview board for design of experiments templates",
+            "folder_name": "doe_overview-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=doe_overview",
+            "files": [
+                {
+                    "name": "doe_overview.board",
+                    "contentType": "board",
+                    "path": "doe_overview/doe_overview.board"
+                }
+            ]
+        },
+        {
+            "name": "Bayesian Optimization",
+            "isOverview": "false",
+            "description": "To optimize the parameters using a bayesian model",
+            "folder_name": "bayesian_optimization-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_optimization",
+            "files": [
+                {
+                    "name": "bayesian_optimization.board",
+                    "contentType": "board",
+                    "path": "bayesian_optimization/bayesian_optimization.board"
+                },
+                {
+                    "name": "bayesian_optimization.ipynb",
+                    "contentType": "ipynb",
+                    "path": "bayesian_optimization/bayesian_optimization.ipynb"
+                },
+                {
+                    "name": "README.md",
+                    "contentType": "md",
+                    "path": "bayesian_optimization/README.md"
+                }
+            ]
+        },
+        {
+            "name": "Bayesian Modelling",
+            "isOverview": "false",
+            "description": "To estimate the parameters by modelling parametrized equations",
+            "folder_name": "bayesian_modelling-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_modelling",
+            "files": [
+                {
+                    "name": "bayesian_modelling.board",
+                    "contentType": "board",
+                    "path": "bayesian_modelling/bayesian_modelling.board"
+                },
+                {
+                    "name": "bayesian_modelling.ipynb",
+                    "contentType": "ipynb",
+                    "path": "bayesian_modelling/bayesian_modelling.ipynb"
+                },
+                {
+                    "name": "README.md",
+                    "contentType": "md",
+                    "path": "bayesian_modelling/README.md"
+                },
+                {
+                    "name": "classical_designs.py",
+                    "contentType": "py",
+                    "path": "bayesian_modelling/classical_designs.py"
+                }
+            ]
+        },
+        {
+            "name": "Classical Doe",
+            "isOverview": "false",
+            "description": "To estimate the parameters if all trials have to be run in parallel",
+            "folder_name": "classical_doe-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=classical_doe",
+            "files": [
+                {
+                    "name": "classical_doe.board",
+                    "contentType": "board",
+                    "path": "classical_doe/classical_doe.board"
+                },
+                {
+                    "name": "classical_doe.ipynb",
+                    "contentType": "ipynb",
+                    "path": "classical_doe/classical_doe.ipynb"
+                },
+                {
+                    "name": "README.md",
+                    "contentType": "md",
+                    "path": "classical_doe/README.md"
+                },
+                {
+                    "name": "classical_designs.py",
+                    "contentType": "py",
+                    "path": "classical_doe/classical_designs.py"
+                },
+                {
+                    "name": "best_parameters.ipynb",
+                    "contentType": "ipynb",
+                    "path": "classical_doe/best_parameters.ipynb"
+                }
+            ]
+        }
+    ]
+}

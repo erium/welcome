@@ -8,4 +8,4 @@ Open the  guide board 'classical_doe.board' located in this folder. The board ou
 
 When you follow the instruction on the instruction cards, you will creat the experimental design, and also document the whole procedure on the board in the documentation cards.
 
-There is another notebook 'optimization.ipynb' showing how to use the results of the experimental design to fit a model and compute optimal parameters.
+There is another notebook 'bayesian_optimization.ipynb' showing how to use the results of the experimental design to fit a model and compute optimal parameters.

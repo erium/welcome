@@ -39,6 +39,7 @@ if os.path.exists('./../out/unsupervised_model_data.joblib'):
     unsupervised = True
     data = load('./../out/unsupervised_model_data.joblib')
     original_df = data[1]
+    original_col = list(original_df.columns)[:-1]
     time_series = data[2]
     run_models_data = data[0]
     run_models = [k for (k, v) in run_models_data.items()]
@@ -99,6 +100,8 @@ if uploaded_file is not None:
     with st.expander('Uploaded Data'):
         st.write(df)
         st.write(df.shape)
+    if unsupervised:
+        df = df[original_col]
     num_col = len(df.columns)
     plt_v = 3
     plt_h = 5

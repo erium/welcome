@@ -1,0 +1,115 @@
+{
+    "name": "Outlier Detection",
+    "description": "To detect outliers in labelled and unlabelled datasets",
+    "templates": [
+        {
+            "name": "Overview",
+            "isOverview": "true",
+            "description": "Overview board for outlier detection templates",
+            "folder_name": "outlier_detection_overview-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=outlier_detection_overview",
+            "files": [
+                {
+                    "name": "outlier_detection_overview.board",
+                    "contentType": "board",
+                    "path": "outlier_detection_overview/outlier_detection_overview.board"
+                }
+            ]
+        },
+        {
+            "name": "Autoencoder",
+            "isOverview": "false",
+            "description": "To detect outliers by training an autoencoder on clean data and finding poorly reconstructed data",
+            "folder_name": "autoencoder-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=autoencoder",
+            "files": [
+                {
+                    "name": "autoencoder.board",
+                    "contentType": "board",
+                    "path": "autoencoder/autoencoder.board"
+                },
+                {
+                    "name": "autoencoder.ipynb",
+                    "contentType": "ipynb",
+                    "path": "autoencoder/autoencoder.ipynb"
+                }
+            ]
+        },
+        {
+            "name": "Bayesian Supervised",
+            "isOverview": "false",
+            "description": "To train a Bayesian model on labelled outliers and use it to predict outliers in new data",
+            "folder_name": "bayesian_supervised-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_supervised",
+            "files": [
+                {
+                    "name": "bayesian_supervised.board",
+                    "contentType": "board",
+                    "path": "bayesian_supervised/bayesian_supervised.board"
+                },
+                {
+                    "name": "bayesian_supervised.ipynb",
+                    "contentType": "ipynb",
+                    "path": "bayesian_supervised/bayesian_supervised.ipynb"
+                }
+            ]
+        },
+        {
+            "name": "Bayesian Unsupervised",
+            "isOverview": "false",
+            "description": "To detect unlabelled outliers using a Bayesian model",
+            "folder_name": "bayesian_unsupervised-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_unsupervised",
+            "files": [
+                {
+                    "name": "bayesian_unsupervised.board",
+                    "contentType": "board",
+                    "path": "bayesian_unsupervised/bayesian_unsupervised.board"
+                },
+                {
+                    "name": "bayesian_unsupervised.ipynb",
+                    "contentType": "ipynb",
+                    "path": "bayesian_unsupervised/bayesian_unsupervised.ipynb"
+                }
+            ]
+        },
+        {
+            "name": "Supervised",
+            "isOverview": "false",
+            "description": "To detect outliers by training models on labelled outliers and use them to predict outliers in new data",
+            "folder_name": "supervised-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=supervised",
+            "files": [
+                {
+                    "name": "supervised.board",
+                    "contentType": "board",
+                    "path": "supervised/supervised.board"
+                },
+                {
+                    "name": "supervised.ipynb",
+                    "contentType": "ipynb",
+                    "path": "supervised/supervised.ipynb"
+                }
+            ]
+        },
+        {
+            "name": "Unsupervised",
+            "isOverview": "false",
+            "description": "To detect unlabelled outliers through clustering algorithms",
+            "folder_name": "unsupervised-{{user.name}}-{{timestamp}}",
+            "command": "cookiecutter https://github.com/erium/welcome --no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=unsupervised",
+            "files": [
+                {
+                    "name": "unsupervised.board",
+                    "contentType": "board",
+                    "path": "unsupervised/unsupervised.board"
+                },
+                {
+                    "name": "autoencoder.ipynb",
+                    "contentType": "ipynb",
+                    "path": "unsupervised/unsupervised.ipynb"
+                }
+            ]
+        }
+    ]
+}
