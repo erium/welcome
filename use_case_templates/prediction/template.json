@@ -4,7 +4,7 @@
     "templates": [
         {
             "name": "Overview",
-            "isOverview": "true",
+            "isOverview": true,
             "description": "Overview board for prediction templates",
             "folderName": "prediction_overview-{{user.name}}-{{timestamp}}",
             "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=prediction_overview",
@@ -17,7 +17,7 @@
         },
         {
             "name": "Regression",
-            "isOverview": "false",
+            "isOverview": false,
             "description": "To estimate the relationships between a dependent variable and one or more independent variables",
             "folderName": "regression-{{user.name}}-{{timestamp}}",
             "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=regression",
@@ -27,19 +27,19 @@
                     "path": "regression/regression.board"
                 },
                 {
-                    "contentType": "ipynb",
+                    "contentType": "notebook",
                     "path": "regression/regression.ipynb"
                 },
                 {
-                    "contentType": "py",
+                    "contentType": "file",
                     "path": "regression/regression_streamlit.py"
                 },
                 {
-                    "contentType": "ipynb",
+                    "contentType": "notebook",
                     "path": "regression/regression_streamlit_app.ipynb"
                 },
                 {
-                    "contentType": "md",
+                    "contentType": "file",
                     "path": "regression/README.md"
                 }
             ]

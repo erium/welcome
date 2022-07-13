@@ -6,7 +6,7 @@
             "templates": [
                 {
                     "name": "Overview",
-                    "isOverview": "true",
+                    "isOverview": true,
                     "description": "Overview board for design of experiments templates",
                     "folderName": "doe_overview-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=doe_overview",
@@ -19,7 +19,7 @@
                 },
                 {
                     "name": "Bayesian Optimization",
-                    "isOverview": "false",
+                    "isOverview": false,
                     "description": "To optimize the parameters using a bayesian model",
                     "folderName": "bayesian_optimization-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_optimization",
@@ -29,18 +29,18 @@
                             "path": "bayesian_optimization/bayesian_optimization.board"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "bayesian_optimization/bayesian_optimization.ipynb"
                         },
                         {
-                            "contentType": "md",
+                            "contentType": "file",
                             "path": "bayesian_optimization/README.md"
                         }
                     ]
                 },
                 {
                     "name": "Bayesian Modelling",
-                    "isOverview": "false",
+                    "isOverview": false,
                     "description": "To estimate the parameters by modelling parametrized equations",
                     "folderName": "bayesian_modelling-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_modelling",
@@ -50,22 +50,22 @@
                             "path": "bayesian_modelling/bayesian_modelling.board"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "bayesian_modelling/bayesian_modelling.ipynb"
                         },
                         {
-                            "contentType": "md",
+                            "contentType": "file",
                             "path": "bayesian_modelling/README.md"
                         },
                         {
-                            "contentType": "py",
+                            "contentType": "file",
                             "path": "bayesian_modelling/classical_designs.py"
                         }
                     ]
                 },
                 {
                     "name": "Classical Doe",
-                    "isOverview": "false",
+                    "isOverview": false,
                     "description": "To estimate the parameters if all trials have to be run in parallel",
                     "folderName": "classical_doe-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=classical_doe",
@@ -75,19 +75,19 @@
                             "path": "classical_doe/classical_doe.board"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "classical_doe/classical_doe.ipynb"
                         },
                         {
-                            "contentType": "md",
+                            "contentType": "file",
                             "path": "classical_doe/README.md"
                         },
                         {
-                            "contentType": "py",
+                            "contentType": "file",
                             "path": "classical_doe/classical_designs.py"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "classical_doe/best_parameters.ipynb"
                         }
                     ]
@@ -100,7 +100,7 @@
             "templates": [
                 {
                     "name": "Overview",
-                    "isOverview": "true",
+                    "isOverview": true,
                     "description": "Overview board for hypothesis testing templates",
                     "folderName": "hypothesis_testing_overview-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=hypothesis_testing_overview",
@@ -113,7 +113,7 @@
                 },
                 {
                     "name": "Classical Hypothesis Testing",
-                    "isOverview": "false",
+                    "isOverview": false,
                     "description": "To use statistical tests to infer if the data supports a certain hypothesis",
                     "folderName": "classical_ht-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=classical_ht",
@@ -123,14 +123,14 @@
                             "path": "classical_ht/classical_ht.board"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "classical_ht/classical.ipynb"
                         }
                     ]
                 },
                 {
                     "name": "Causal Hypothesis Testing",
-                    "isOverview": "false",
+                    "isOverview": false,
                     "description": "To model good fitting causal structures and obtain causal estimates",
                     "folderName": "causal-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=causal",
@@ -140,7 +140,7 @@
                             "path": "causal/causal_structure.board"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "causal/causal_structure.ipynb"
                         },
                         {
@@ -148,14 +148,14 @@
                             "path": "causal/causal_estimate.board"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "causal/causal_estimate.ipynb"
                         }
                     ]
                 },
                 {
                     "name": "Equation Hypothesis Testing",
-                    "isOverview": "false",
+                    "isOverview": false,
                     "description": "To test if a hypothesis in the form of an equation fits the data well",
                     "folderName": "equation-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=equation",
@@ -165,7 +165,7 @@
                             "path": "equation/equation.board"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "equation/equation.ipynb"
                         }
                     ]
@@ -178,7 +178,7 @@
             "templates": [
                 {
                     "name": "Overview",
-                    "isOverview": "true",
+                    "isOverview": true,
                     "description": "Overview board for outlier detection templates",
                     "folderName": "outlier_detection_overview-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=outlier_detection_overview",
@@ -191,7 +191,7 @@
                 },
                 {
                     "name": "Autoencoder",
-                    "isOverview": "false",
+                    "isOverview": false,
                     "description": "To detect outliers by training an autoencoder on clean data and finding poorly reconstructed data",
                     "folderName": "autoencoder-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=autoencoder",
@@ -201,14 +201,14 @@
                             "path": "autoencoder/autoencoder.board"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "autoencoder/autoencoder.ipynb"
                         }
                     ]
                 },
                 {
                     "name": "Bayesian Supervised",
-                    "isOverview": "false",
+                    "isOverview": false,
                     "description": "To train a Bayesian model on labelled outliers and use it to predict outliers in new data",
                     "folderName": "bayesian_supervised-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_supervised",
@@ -218,14 +218,14 @@
                             "path": "bayesian_supervised/bayesian_supervised.board"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "bayesian_supervised/bayesian_supervised.ipynb"
                         }
                     ]
                 },
                 {
                     "name": "Bayesian Unsupervised",
-                    "isOverview": "false",
+                    "isOverview": false,
                     "description": "To detect unlabelled outliers using a Bayesian model",
                     "folderName": "bayesian_unsupervised-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_unsupervised",
@@ -235,14 +235,14 @@
                             "path": "bayesian_unsupervised/bayesian_unsupervised.board"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "bayesian_unsupervised/bayesian_unsupervised.ipynb"
                         }
                     ]
                 },
                 {
                     "name": "Supervised",
-                    "isOverview": "false",
+                    "isOverview": false,
                     "description": "To detect outliers by training models on labelled outliers and use them to predict outliers in new data",
                     "folderName": "supervised-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=supervised",
@@ -252,14 +252,14 @@
                             "path": "supervised/supervised.board"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "supervised/supervised.ipynb"
                         }
                     ]
                 },
                 {
                     "name": "Unsupervised",
-                    "isOverview": "false",
+                    "isOverview": false,
                     "description": "To detect unlabelled outliers through clustering algorithms",
                     "folderName": "unsupervised-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=unsupervised",
@@ -269,7 +269,7 @@
                             "path": "unsupervised/unsupervised.board"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "unsupervised/unsupervised.ipynb"
                         }
                     ]
@@ -282,7 +282,7 @@
             "templates": [
                 {
                     "name": "Overview",
-                    "isOverview": "true",
+                    "isOverview": true,
                     "description": "Overview board for prediction templates",
                     "folderName": "prediction_overview-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=prediction_overview",
@@ -295,7 +295,7 @@
                 },
                 {
                     "name": "Regression",
-                    "isOverview": "false",
+                    "isOverview": false,
                     "description": "To estimate the relationships between a dependent variable and one or more independent variables",
                     "folderName": "regression-{{user.name}}-{{timestamp}}",
                     "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=regression",
@@ -305,19 +305,19 @@
                             "path": "regression/regression.board"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "regression/regression.ipynb"
                         },
                         {
-                            "contentType": "py",
+                            "contentType": "file",
                             "path": "regression/regression_streamlit.py"
                         },
                         {
-                            "contentType": "ipynb",
+                            "contentType": "notebook",
                             "path": "regression/regression_streamlit_app.ipynb"
                         },
                         {
-                            "contentType": "md",
+                            "contentType": "file",
                             "path": "regression/README.md"
                         }
                     ]

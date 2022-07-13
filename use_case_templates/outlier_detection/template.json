@@ -4,7 +4,7 @@
     "templates": [
         {
             "name": "Overview",
-            "isOverview": "true",
+            "isOverview": true,
             "description": "Overview board for outlier detection templates",
             "folderName": "outlier_detection_overview-{{user.name}}-{{timestamp}}",
             "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=outlier_detection_overview",
@@ -17,7 +17,7 @@
         },
         {
             "name": "Autoencoder",
-            "isOverview": "false",
+            "isOverview": false,
             "description": "To detect outliers by training an autoencoder on clean data and finding poorly reconstructed data",
             "folderName": "autoencoder-{{user.name}}-{{timestamp}}",
             "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=autoencoder",
@@ -27,14 +27,14 @@
                     "path": "autoencoder/autoencoder.board"
                 },
                 {
-                    "contentType": "ipynb",
+                    "contentType": "notebook",
                     "path": "autoencoder/autoencoder.ipynb"
                 }
             ]
         },
         {
             "name": "Bayesian Supervised",
-            "isOverview": "false",
+            "isOverview": false,
             "description": "To train a Bayesian model on labelled outliers and use it to predict outliers in new data",
             "folderName": "bayesian_supervised-{{user.name}}-{{timestamp}}",
             "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_supervised",
@@ -44,14 +44,14 @@
                     "path": "bayesian_supervised/bayesian_supervised.board"
                 },
                 {
-                    "contentType": "ipynb",
+                    "contentType": "notebook",
                     "path": "bayesian_supervised/bayesian_supervised.ipynb"
                 }
             ]
         },
         {
             "name": "Bayesian Unsupervised",
-            "isOverview": "false",
+            "isOverview": false,
             "description": "To detect unlabelled outliers using a Bayesian model",
             "folderName": "bayesian_unsupervised-{{user.name}}-{{timestamp}}",
             "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_unsupervised",
@@ -61,14 +61,14 @@
                     "path": "bayesian_unsupervised/bayesian_unsupervised.board"
                 },
                 {
-                    "contentType": "ipynb",
+                    "contentType": "notebook",
                     "path": "bayesian_unsupervised/bayesian_unsupervised.ipynb"
                 }
             ]
         },
         {
             "name": "Supervised",
-            "isOverview": "false",
+            "isOverview": false,
             "description": "To detect outliers by training models on labelled outliers and use them to predict outliers in new data",
             "folderName": "supervised-{{user.name}}-{{timestamp}}",
             "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=supervised",
@@ -78,14 +78,14 @@
                     "path": "supervised/supervised.board"
                 },
                 {
-                    "contentType": "ipynb",
+                    "contentType": "notebook",
                     "path": "supervised/supervised.ipynb"
                 }
             ]
         },
         {
             "name": "Unsupervised",
-            "isOverview": "false",
+            "isOverview": false,
             "description": "To detect unlabelled outliers through clustering algorithms",
             "folderName": "unsupervised-{{user.name}}-{{timestamp}}",
             "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=unsupervised",
@@ -95,7 +95,7 @@
                     "path": "unsupervised/unsupervised.board"
                 },
                 {
-                    "contentType": "ipynb",
+                    "contentType": "notebook",
                     "path": "unsupervised/unsupervised.ipynb"
                 }
             ]
