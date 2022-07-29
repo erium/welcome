@@ -10,8 +10,9 @@
             "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=doe_overview",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "doe_overview/doe_overview.board"
+                    "type": "board",
+                    "path": "doe_overview/doe_overview.board",
+                    "active": true
                 }
             ]
         },
@@ -23,16 +24,18 @@
             "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_optimization",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "bayesian_optimization/bayesian_optimization.board"
+                    "type": "board",
+                    "path": "bayesian_optimization/bayesian_optimization.board",
+                    "active": true
                 },
                 {
-                    "contentType": "notebook",
+                    "type": "notebook",
                     "path": "bayesian_optimization/bayesian_optimization.ipynb"
                 },
                 {
-                    "contentType": "file",
-                    "path": "bayesian_optimization/README.md"
+                    "type": "file",
+                    "path": "bayesian_optimization/README.md",
+                    "active": true
                 }
             ]
         },
@@ -44,19 +47,21 @@
             "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_modelling",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "bayesian_modelling/bayesian_modelling.board"
+                    "type": "board",
+                    "path": "bayesian_modelling/bayesian_modelling.board",
+                    "active": true
                 },
                 {
-                    "contentType": "notebook",
+                    "type": "notebook",
                     "path": "bayesian_modelling/bayesian_modelling.ipynb"
                 },
                 {
-                    "contentType": "file",
-                    "path": "bayesian_modelling/README.md"
+                    "type": "file",
+                    "path": "bayesian_modelling/README.md",
+                    "active": true
                 },
                 {
-                    "contentType": "file",
+                    "type": "file",
                     "path": "bayesian_modelling/classical_designs.py"
                 }
             ]
@@ -69,23 +74,25 @@
             "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=classical_doe",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "classical_doe/classical_doe.board"
+                    "type": "board",
+                    "path": "classical_doe/classical_doe.board",
+                    "active": true
                 },
                 {
-                    "contentType": "notebook",
+                    "type": "notebook",
                     "path": "classical_doe/classical_doe.ipynb"
                 },
                 {
-                    "contentType": "file",
-                    "path": "classical_doe/README.md"
+                    "type": "file",
+                    "path": "classical_doe/README.md",
+                    "active": true
                 },
                 {
-                    "contentType": "file",
+                    "type": "file",
                     "path": "classical_doe/classical_designs.py"
                 },
                 {
-                    "contentType": "notebook",
+                    "type": "notebook",
                     "path": "classical_doe/best_parameters.ipynb"
                 }
             ]

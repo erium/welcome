@@ -10,8 +10,9 @@
             "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=hypothesis_testing_overview",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "hypothesis_testing_overview/hypothesis_testing_overview.board"
+                    "type": "board",
+                    "path": "hypothesis_testing_overview/hypothesis_testing_overview.board",
+                    "active": true
                 }
             ]
         },
@@ -23,12 +24,14 @@
             "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=classical_ht",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "classical_ht/classical_ht.board"
+                    "type": "board",
+                    "path": "classical_ht/classical_ht.board",
+                    "active": true
                 },
                 {
-                    "contentType": "notebook",
-                    "path": "classical_ht/classical.ipynb"
+                    "type": "notebook",
+                    "path": "classical_ht/classical_ht.ipynb",
+                    "active": true
                 }
             ]
         },
@@ -40,19 +43,21 @@
             "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=causal",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "causal/causal_structure.board"
+                    "type": "board",
+                    "path": "causal/causal_structure.board",
+                    "active": true
                 },
                 {
-                    "contentType": "notebook",
-                    "path": "causal/causal_structure.ipynb"
+                    "type": "notebook",
+                    "path": "causal/causal_structure.ipynb",
+                    "active": true
                 },
                 {
-                    "contentType": "board",
+                    "type": "board",
                     "path": "causal/causal_estimate.board"
                 },
                 {
-                    "contentType": "notebook",
+                    "type": "notebook",
                     "path": "causal/causal_estimate.ipynb"
                 }
             ]
@@ -65,12 +70,14 @@
             "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=equation",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "equation/equation.board"
+                    "type": "board",
+                    "path": "equation/equation.board",
+                    "active": true
                 },
                 {
-                    "contentType": "notebook",
-                    "path": "equation/equation.ipynb"
+                    "type": "notebook",
+                    "path": "equation/equation.ipynb",
+                    "active": true
                 }
             ]
         }

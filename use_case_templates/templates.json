@@ -12,8 +12,9 @@
                     "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=doe_overview",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "doe_overview/doe_overview.board"
+                            "type": "board",
+                            "path": "doe_overview/doe_overview.board",
+                            "active": true
                         }
                     ]
                 },
@@ -25,16 +26,18 @@
                     "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_optimization",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "bayesian_optimization/bayesian_optimization.board"
+                            "type": "board",
+                            "path": "bayesian_optimization/bayesian_optimization.board",
+                            "active": true
                         },
                         {
-                            "contentType": "notebook",
+                            "type": "notebook",
                             "path": "bayesian_optimization/bayesian_optimization.ipynb"
                         },
                         {
-                            "contentType": "file",
-                            "path": "bayesian_optimization/README.md"
+                            "type": "file",
+                            "path": "bayesian_optimization/README.md",
+                            "active": true
                         }
                     ]
                 },
@@ -46,19 +49,21 @@
                     "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_modelling",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "bayesian_modelling/bayesian_modelling.board"
+                            "type": "board",
+                            "path": "bayesian_modelling/bayesian_modelling.board",
+                            "active": true
                         },
                         {
-                            "contentType": "notebook",
+                            "type": "notebook",
                             "path": "bayesian_modelling/bayesian_modelling.ipynb"
                         },
                         {
-                            "contentType": "file",
-                            "path": "bayesian_modelling/README.md"
+                            "type": "file",
+                            "path": "bayesian_modelling/README.md",
+                            "active": true
                         },
                         {
-                            "contentType": "file",
+                            "type": "file",
                             "path": "bayesian_modelling/classical_designs.py"
                         }
                     ]
@@ -71,23 +76,25 @@
                     "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=classical_doe",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "classical_doe/classical_doe.board"
+                            "type": "board",
+                            "path": "classical_doe/classical_doe.board",
+                            "active": true
                         },
                         {
-                            "contentType": "notebook",
+                            "type": "notebook",
                             "path": "classical_doe/classical_doe.ipynb"
                         },
                         {
-                            "contentType": "file",
-                            "path": "classical_doe/README.md"
+                            "type": "file",
+                            "path": "classical_doe/README.md",
+                            "active": true
                         },
                         {
-                            "contentType": "file",
+                            "type": "file",
                             "path": "classical_doe/classical_designs.py"
                         },
                         {
-                            "contentType": "notebook",
+                            "type": "notebook",
                             "path": "classical_doe/best_parameters.ipynb"
                         }
                     ]
@@ -106,8 +113,9 @@
                     "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=hypothesis_testing_overview",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "hypothesis_testing_overview/hypothesis_testing_overview.board"
+                            "type": "board",
+                            "path": "hypothesis_testing_overview/hypothesis_testing_overview.board",
+                            "active": true
                         }
                     ]
                 },
@@ -119,12 +127,14 @@
                     "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=classical_ht",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "classical_ht/classical_ht.board"
+                            "type": "board",
+                            "path": "classical_ht/classical_ht.board",
+                            "active": true
                         },
                         {
-                            "contentType": "notebook",
-                            "path": "classical_ht/classical.ipynb"
+                            "type": "notebook",
+                            "path": "classical_ht/classical_ht.ipynb",
+                            "active": true
                         }
                     ]
                 },
@@ -136,19 +146,21 @@
                     "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=causal",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "causal/causal_structure.board"
+                            "type": "board",
+                            "path": "causal/causal_structure.board",
+                            "active": true
                         },
                         {
-                            "contentType": "notebook",
-                            "path": "causal/causal_structure.ipynb"
+                            "type": "notebook",
+                            "path": "causal/causal_structure.ipynb",
+                            "active": true
                         },
                         {
-                            "contentType": "board",
+                            "type": "board",
                             "path": "causal/causal_estimate.board"
                         },
                         {
-                            "contentType": "notebook",
+                            "type": "notebook",
                             "path": "causal/causal_estimate.ipynb"
                         }
                     ]
@@ -161,12 +173,14 @@
                     "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=equation",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "equation/equation.board"
+                            "type": "board",
+                            "path": "equation/equation.board",
+                            "active": true
                         },
                         {
-                            "contentType": "notebook",
-                            "path": "equation/equation.ipynb"
+                            "type": "notebook",
+                            "path": "equation/equation.ipynb",
+                            "active": true
                         }
                     ]
                 }
@@ -184,8 +198,9 @@
                     "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=outlier_detection_overview",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "outlier_detection_overview/outlier_detection_overview.board"
+                            "type": "board",
+                            "path": "outlier_detection_overview/outlier_detection_overview.board",
+                            "active": true
                         }
                     ]
                 },
@@ -197,12 +212,14 @@
                     "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=autoencoder",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "autoencoder/autoencoder.board"
+                            "type": "board",
+                            "path": "autoencoder/autoencoder.board",
+                            "active": true
                         },
                         {
-                            "contentType": "notebook",
-                            "path": "autoencoder/autoencoder.ipynb"
+                            "type": "notebook",
+                            "path": "autoencoder/autoencoder.ipynb",
+                            "active": true
                         }
                     ]
                 },
@@ -214,12 +231,14 @@
                     "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_supervised",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "bayesian_supervised/bayesian_supervised.board"
+                            "type": "board",
+                            "path": "bayesian_supervised/bayesian_supervised.board",
+                            "active": true
                         },
                         {
-                            "contentType": "notebook",
-                            "path": "bayesian_supervised/bayesian_supervised.ipynb"
+                            "type": "notebook",
+                            "path": "bayesian_supervised/bayesian_supervised.ipynb",
+                            "active": true
                         }
                     ]
                 },
@@ -231,12 +250,14 @@
                     "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_unsupervised",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "bayesian_unsupervised/bayesian_unsupervised.board"
+                            "type": "board",
+                            "path": "bayesian_unsupervised/bayesian_unsupervised.board",
+                            "active": true
                         },
                         {
-                            "contentType": "notebook",
-                            "path": "bayesian_unsupervised/bayesian_unsupervised.ipynb"
+                            "type": "notebook",
+                            "path": "bayesian_unsupervised/bayesian_unsupervised.ipynb",
+                            "active": true
                         }
                     ]
                 },
@@ -248,12 +269,14 @@
                     "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=supervised",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "supervised/supervised.board"
+                            "type": "board",
+                            "path": "supervised/supervised.board",
+                            "active": true
                         },
                         {
-                            "contentType": "notebook",
-                            "path": "supervised/supervised.ipynb"
+                            "type": "notebook",
+                            "path": "supervised/supervised.ipynb",
+                            "active": true
                         }
                     ]
                 },
@@ -265,12 +288,14 @@
                     "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=unsupervised",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "unsupervised/unsupervised.board"
+                            "type": "board",
+                            "path": "unsupervised/unsupervised.board",
+                            "active": true
                         },
                         {
-                            "contentType": "notebook",
-                            "path": "unsupervised/unsupervised.ipynb"
+                            "type": "notebook",
+                            "path": "unsupervised/unsupervised.ipynb",
+                            "active": true
                         }
                     ]
                 }
@@ -288,8 +313,9 @@
                     "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=prediction_overview",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "prediction_overview/prediction_overview.board"
+                            "type": "board",
+                            "path": "prediction_overview/prediction_overview.board",
+                            "active": true
                         }
                     ]
                 },
@@ -301,24 +327,26 @@
                     "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=regression",
                     "files": [
                         {
-                            "contentType": "board",
-                            "path": "regression/regression.board"
+                            "type": "board",
+                            "path": "regression/regression.board",
+                            "active": true
                         },
                         {
-                            "contentType": "notebook",
+                            "type": "notebook",
                             "path": "regression/regression.ipynb"
                         },
                         {
-                            "contentType": "file",
+                            "type": "file",
                             "path": "regression/regression_streamlit.py"
                         },
                         {
-                            "contentType": "notebook",
+                            "type": "notebook",
                             "path": "regression/regression_streamlit_app.ipynb"
                         },
                         {
-                            "contentType": "file",
-                            "path": "regression/README.md"
+                            "type": "file",
+                            "path": "regression/README.md",
+                            "active": true
                         }
                     ]
                 }

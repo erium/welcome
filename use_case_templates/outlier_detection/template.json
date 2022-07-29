@@ -10,8 +10,9 @@
             "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=outlier_detection_overview",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "outlier_detection_overview/outlier_detection_overview.board"
+                    "type": "board",
+                    "path": "outlier_detection_overview/outlier_detection_overview.board",
+                    "active": true
                 }
             ]
         },
@@ -23,12 +24,14 @@
             "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=autoencoder",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "autoencoder/autoencoder.board"
+                    "type": "board",
+                    "path": "autoencoder/autoencoder.board",
+                    "active": true
                 },
                 {
-                    "contentType": "notebook",
-                    "path": "autoencoder/autoencoder.ipynb"
+                    "type": "notebook",
+                    "path": "autoencoder/autoencoder.ipynb",
+                    "active": true
                 }
             ]
         },
@@ -40,12 +43,14 @@
             "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_supervised",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "bayesian_supervised/bayesian_supervised.board"
+                    "type": "board",
+                    "path": "bayesian_supervised/bayesian_supervised.board",
+                    "active": true
                 },
                 {
-                    "contentType": "notebook",
-                    "path": "bayesian_supervised/bayesian_supervised.ipynb"
+                    "type": "notebook",
+                    "path": "bayesian_supervised/bayesian_supervised.ipynb",
+                    "active": true
                 }
             ]
         },
@@ -57,12 +62,14 @@
             "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_unsupervised",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "bayesian_unsupervised/bayesian_unsupervised.board"
+                    "type": "board",
+                    "path": "bayesian_unsupervised/bayesian_unsupervised.board",
+                    "active": true
                 },
                 {
-                    "contentType": "notebook",
-                    "path": "bayesian_unsupervised/bayesian_unsupervised.ipynb"
+                    "type": "notebook",
+                    "path": "bayesian_unsupervised/bayesian_unsupervised.ipynb",
+                    "active": true
                 }
             ]
         },
@@ -74,12 +81,14 @@
             "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=supervised",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "supervised/supervised.board"
+                    "type": "board",
+                    "path": "supervised/supervised.board",
+                    "active": true
                 },
                 {
-                    "contentType": "notebook",
-                    "path": "supervised/supervised.ipynb"
+                    "type": "notebook",
+                    "path": "supervised/supervised.ipynb",
+                    "active": true
                 }
             ]
         },
@@ -91,12 +100,14 @@
             "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=unsupervised",
             "files": [
                 {
-                    "contentType": "board",
-                    "path": "unsupervised/unsupervised.board"
+                    "type": "board",
+                    "path": "unsupervised/unsupervised.board",
+                    "active": true
                 },
                 {
-                    "contentType": "notebook",
-                    "path": "unsupervised/unsupervised.ipynb"
+                    "type": "notebook",
+                    "path": "unsupervised/unsupervised.ipynb",
+                    "active": true
                 }
             ]
         }

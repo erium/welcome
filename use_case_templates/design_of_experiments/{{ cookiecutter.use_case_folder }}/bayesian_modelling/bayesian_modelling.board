@@ -76,6 +76,10 @@
         {
           "id": "147964b7-2573-4740-9633-fc60de0898ad",
           "connector": "bottom"
+        },
+        {
+          "id": "2313f6b1-4300-4037-97af-48e068d0bde9",
+          "connector": "right"
         }
       ],
       "type": "note",
@@ -693,6 +697,29 @@
         "height": 258.28
       },
       "color": "#28337e"
+    },
+    {
+      "id": "bc04abb9-264a-4a5a-8420-d6dd49d59237",
+      "title": "10. COPY TO HYPOTHESIS BOARD (IF IN PROJECT-EXPERIMENT FOLDER)",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Finally, if you are conducting the experiment in a project-experiment folder structure, copy the summary of the results and findings of this experiment to the corresponding card of this experiment on the hypothesis board.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "2313f6b1-4300-4037-97af-48e068d0bde9",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 4121.7568,
+        "y": 228.5299
+      },
+      "size": {
+        "width": 254.206208,
+        "height": 254.51839999999999
+      },
+      "color": "#51455b"
     }
   ],
   "edges": [
@@ -966,6 +993,17 @@
       "node_connections": [
         "4e65ea3a-27fe-45fa-aa19-32a3eb814c54",
         "a3d973d4-cb97-4507-bf22-cd2683682ccf"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "2313f6b1-4300-4037-97af-48e068d0bde9",
+      "type": "solid_arrow",
+      "node_connections": [
+        "4e65ea3a-27fe-45fa-aa19-32a3eb814c54",
+        "bc04abb9-264a-4a5a-8420-d6dd49d59237"
       ],
       "type_specific": {
         "annotation": ""
