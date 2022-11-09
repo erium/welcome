@@ -106,8 +106,8 @@ if option != 'Upload CSV' or uploaded_file is not None:
 
     inputs = scaler_x.transform(inputs)
     inputs = pca.transform(inputs)
-    if model == 'poly':
-        poly_transform = PolynomialFeatures(degree=model_params["model__degree"])
+    if model_name == 'poly':
+        poly_transform = PolynomialFeatures(degree=model_params["poly__degree"])
         inputs = poly_transform.fit_transform(inputs)
 
     outputs = pd.DataFrame(model.predict(inputs))
