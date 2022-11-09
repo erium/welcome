@@ -6,12 +6,12 @@
             "name": "Overview",
             "isOverview": true,
             "description": "Overview board for outlier detection templates",
-            "folderName": "outlier_detection_overview-{{user.name}}-{{timestamp}}",
-            "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=outlier_detection_overview",
+            "folderName": "{{timestamp}}-{{user.initials}}-outlier_detection_overview",
+            "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=outlier_detection_overview",
             "files": [
                 {
                     "type": "board",
-                    "path": "outlier_detection_overview/outlier_detection_overview.board",
+                    "path": "outlier_detection_overview.board",
                     "active": true
                 }
             ]
@@ -20,17 +20,17 @@
             "name": "Autoencoder",
             "isOverview": false,
             "description": "To detect outliers by training an autoencoder on clean data and finding poorly reconstructed data",
-            "folderName": "autoencoder-{{user.name}}-{{timestamp}}",
-            "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=autoencoder",
+            "folderName": "{{timestamp}}-{{user.initials}}-autoencoder",
+            "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=autoencoder",
             "files": [
                 {
                     "type": "board",
-                    "path": "autoencoder/autoencoder.board",
+                    "path": "autoencoder.board",
                     "active": true
                 },
                 {
                     "type": "notebook",
-                    "path": "autoencoder/autoencoder.ipynb",
+                    "path": "autoencoder.ipynb",
                     "active": true
                 }
             ]
@@ -39,17 +39,17 @@
             "name": "Bayesian Supervised",
             "isOverview": false,
             "description": "To train a Bayesian model on labelled outliers and use it to predict outliers in new data",
-            "folderName": "bayesian_supervised-{{user.name}}-{{timestamp}}",
-            "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_supervised",
+            "folderName": "{{timestamp}}-{{user.initials}}-bayesian_supervised",
+            "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=bayesian_supervised",
             "files": [
                 {
                     "type": "board",
-                    "path": "bayesian_supervised/bayesian_supervised.board",
+                    "path": "bayesian_supervised.board",
                     "active": true
                 },
                 {
                     "type": "notebook",
-                    "path": "bayesian_supervised/bayesian_supervised.ipynb",
+                    "path": "bayesian_supervised.ipynb",
                     "active": true
                 }
             ]
@@ -58,17 +58,17 @@
             "name": "Bayesian Unsupervised",
             "isOverview": false,
             "description": "To detect unlabelled outliers using a Bayesian model",
-            "folderName": "bayesian_unsupervised-{{user.name}}-{{timestamp}}",
-            "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=bayesian_unsupervised",
+            "folderName": "{{timestamp}}-{{user.initials}}-bayesian_unsupervised",
+            "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=bayesian_unsupervised",
             "files": [
                 {
                     "type": "board",
-                    "path": "bayesian_unsupervised/bayesian_unsupervised.board",
+                    "path": "bayesian_unsupervised.board",
                     "active": true
                 },
                 {
                     "type": "notebook",
-                    "path": "bayesian_unsupervised/bayesian_unsupervised.ipynb",
+                    "path": "bayesian_unsupervised.ipynb",
                     "active": true
                 }
             ]
@@ -77,17 +77,17 @@
             "name": "Supervised",
             "isOverview": false,
             "description": "To detect outliers by training models on labelled outliers and use them to predict outliers in new data",
-            "folderName": "supervised-{{user.name}}-{{timestamp}}",
-            "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=supervised",
+            "folderName": "{{timestamp}}-{{user.initials}}-supervised",
+            "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=supervised",
             "files": [
                 {
                     "type": "board",
-                    "path": "supervised/supervised.board",
+                    "path": "supervised.board",
                     "active": true
                 },
                 {
                     "type": "notebook",
-                    "path": "supervised/supervised.ipynb",
+                    "path": "supervised.ipynb",
                     "active": true
                 }
             ]
@@ -96,17 +96,17 @@
             "name": "Unsupervised",
             "isOverview": false,
             "description": "To detect unlabelled outliers through clustering algorithms",
-            "folderName": "unsupervised-{{user.name}}-{{timestamp}}",
-            "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=unsupervised",
+            "folderName": "{{timestamp}}-{{user.initials}}-unsupervised",
+            "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=unsupervised",
             "files": [
                 {
                     "type": "board",
-                    "path": "unsupervised/unsupervised.board",
+                    "path": "unsupervised.board",
                     "active": true
                 },
                 {
                     "type": "notebook",
-                    "path": "unsupervised/unsupervised.ipynb",
+                    "path": "unsupervised.ipynb",
                     "active": true
                 }
             ]

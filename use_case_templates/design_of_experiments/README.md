@@ -10,4 +10,4 @@ Each subfolder contains another board. That board outlines a series of steps. Fo
 
 When you follow the instruction on the instruction cards, you will creat the experimental design and/or carry out the experiment and at the same time document the whole procedure on the board in the documentation cards.
 
-The {{cookiecutter.timestamp_directory_name}} folder includes subfolders constraining template boards and notebooks corresponding to the most suitable algorithms for the design of experiments task at hand. You may use cookiecutter (in cookiecutter.ipynb) to copy a project folder containing only the model you would like to use.
+This folder includes subfolders constraining template boards and notebooks corresponding to the most suitable algorithms for the design of experiments task at hand. You may use the template wizard to copy a template containing only the model you would like to use.

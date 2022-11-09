@@ -6,12 +6,12 @@
             "name": "Overview",
             "isOverview": true,
             "description": "Overview board for prediction templates",
-            "folderName": "prediction_overview-{{user.name}}-{{timestamp}}",
-            "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=prediction_overview",
+            "folderName": "{{timestamp}}-{{user.initials}}-prediction_overview",
+            "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=prediction_overview",
             "files": [
                 {
                     "type": "board",
-                    "path": "prediction_overview/prediction_overview.board",
+                    "path": "prediction_overview.board",
                     "active": true
                 }
             ]
@@ -20,29 +20,17 @@
             "name": "Regression",
             "isOverview": false,
             "description": "To estimate the relationships between a dependent variable and one or more independent variables",
-            "folderName": "regression-{{user.name}}-{{timestamp}}",
-            "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=regression",
+            "folderName": "{{timestamp}}-{{user.initials}}-regression",
+            "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=regression",
             "files": [
                 {
                     "type": "board",
-                    "path": "regression/regression.board",
+                    "path": "regression.board",
                     "active": true
                 },
                 {
                     "type": "notebook",
-                    "path": "regression/regression.ipynb"
-                },
-                {
-                    "type": "file",
-                    "path": "regression/regression_streamlit.py"
-                },
-                {
-                    "type": "notebook",
-                    "path": "regression/regression_streamlit_app.ipynb"
-                },
-                {
-                    "type": "file",
-                    "path": "regression/README.md",
+                    "path": "regression.ipynb"
                     "active": true
                 }
             ]

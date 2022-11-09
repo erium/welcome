@@ -27,7 +27,7 @@
       "id": "326b8ef0-8a4a-4b4c-937f-f4dc1e71374f",
       "title": "1. Describe the experiment",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name \"},{\"insert\":\"of the regression experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"No adjustments to notebook required.\\n\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -93,7 +93,7 @@
       "id": "4f82ef15-a13e-49e5-8119-af8ecd3afd3a",
       "title": "10. Interpret and Improve",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", rerun the experiment with half the training data (X_train and y_train)\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", run the last (commented out) cell and rerun the experiment with half the training data (X_train and y_train) from step 8. Run the models.\\n\\nYou may want to save your results first before rerunning.\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -198,7 +198,7 @@
       "id": "8595d578-e365-46d6-9b08-16e0569992e4",
       "title": "2. Import the dataset",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path \"},{\"insert\":\"of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"train-test split ratio\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path \"},{\"insert\":\"of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"train-test split ratio\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nTo start, execute the code in the notebook cells \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"\\\"Importing the dataset\\\"\"},{\"insert\":\" and \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"\\\"Visualising the dataset\\\"\"},{\"insert\":\" to load and generate the dataframe containing the data. This would be useful in the steps to come. \\n\"}]}"
       },
       "edge_connections": [
         {
@@ -336,7 +336,7 @@
     },
     {
       "id": "72c52810-7bf8-4e6d-8143-76772ad199a1",
-      "title": "6. Regularise the data",
+      "title": "6. Regularise the model",
       "type_specific": {
         "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"regression.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"range of regularisation alphas \"},{\"insert\":\"to be searched\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
@@ -408,7 +408,7 @@
       "id": "8001af3a-d56d-4665-aa4a-85323977fd99",
       "title": "About the experiment",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this regression experiment. This would provide a documented summary for the entire experiment.\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this regression experiment. This would provide an introduction to the experiment in the summary.\\n\"}]}"
       },
       "edge_connections": [
         {

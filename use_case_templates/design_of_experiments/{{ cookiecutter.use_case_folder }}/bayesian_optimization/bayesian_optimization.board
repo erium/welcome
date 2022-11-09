@@ -4,7 +4,7 @@
       "id": "f63cd7f1-8fd8-402b-b112-1e58426d8f1b",
       "title": "0. How to use the Board",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"cards.\\n\\n#Default example records are prefixed by '#'.\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"summary card.\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -27,7 +27,7 @@
       "id": "22ffb1c2-265d-48b1-96c9-18ac30e38a73",
       "title": "1. Describe the experiment",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_optimization.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name \"},{\"insert\":\"of the optimization experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"No adjustments to notebook required.\\n\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -91,9 +91,9 @@
     },
     {
       "id": "1a7b6868-dc38-410b-b343-3085fa005b2c",
-      "title": "2. Import the dataset",
+      "title": "2. Specify the Data Path",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_optimization.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path \"},{\"insert\":\"of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_optimization.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path\"},{\"insert\":\" to save the trial data for the experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -103,10 +103,6 @@
         {
           "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
           "connector": "right"
-        },
-        {
-          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
-          "connector": "top"
         },
         {
           "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
@@ -299,7 +295,7 @@
       "id": "0c85767e-c0cf-49aa-9d6c-48992a54c17f",
       "title": "About the experiment",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this optimization experiment. This would provide a documented summary for the entire experiment.\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this optimization experiment. This would provide an introduction to the experiment in the summary.\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -322,12 +318,16 @@
       "id": "4ad19966-69a2-4832-90b4-fefb768b5d1c",
       "title": "Experiment",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card: \\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"use case \"},{\"insert\":\" and how it connects to a DoE and optimization problem,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\" of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Use Case\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Objective\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"General Procedure\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card: \\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"use case \"},{\"insert\":\" and how it connects to a DoE and optimization problem,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\" of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
           "connector": "top"
+        },
+        {
+          "id": "8e3e681e-5302-425b-ba49-cf27bead4d1e",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -339,18 +339,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "4893fad0-11d3-40ed-a4e6-caa820088c4c",
-      "title": "dataset",
+      "title": "data path",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card,\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"dataset\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Dataset\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Name: \\nSamples: \\nDimensions: \\n\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card: \\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"path\"},{\"insert\":\", to save the trial data for the experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
           "connector": "top"
+        },
+        {
+          "id": "989adef3-644e-4491-b934-795629f1678a",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -362,18 +366,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "2a2624d7-7b12-4d51-bbf8-def05e5fb526",
       "title": "Metrics and objective",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"metrics\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"objectives\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"state whether you are \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"maximising \"},{\"insert\":\"or \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"minimising \"},{\"insert\":\"the objective\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Metrics\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Objective\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Maximize\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card: \\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"metrics\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"objectives\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"state whether you are \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"maximising \"},{\"insert\":\"or \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"minimising \"},{\"insert\":\"the objective\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
           "connector": "top"
+        },
+        {
+          "id": "31e2338e-c848-4794-b856-53899922e8c5",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -385,18 +393,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "fc1a0b78-532c-4b23-bd7b-5b35ce612bf0",
       "title": "parameters",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe the parameters, including\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"name\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"brief description\"},{\"insert\":\" of meaning,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"type\"},{\"attributes\":{\"bold\":true},\"insert\":\" \"},{\"insert\":\"(discrete or continuous),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"possible values\"},{\"insert\":\" (for discrete)\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"bounds\"},{\"attributes\":{\"bold\":true},\"insert\":\" \"},{\"insert\":\"(for continuous).\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Parameters\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Name: #x1\\nType: #range\\nDescription: \\nBounds: #[-1.0, 1.0]\\nValue type: #float\\nlog_scale: #False\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card: \\ndescribe the parameters, including\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"name\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"brief description\"},{\"insert\":\" of meaning,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"type\"},{\"attributes\":{\"bold\":true},\"insert\":\" \"},{\"insert\":\"(discrete or continuous),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"possible values\"},{\"insert\":\" (for discrete)\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"bounds\"},{\"attributes\":{\"bold\":true},\"insert\":\" \"},{\"insert\":\"(for continuous).\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
           "connector": "top"
+        },
+        {
+          "id": "e8353f07-3916-4970-97c8-790801d010be",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -408,18 +420,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "fc449c54-66b4-48c8-9d9f-d961b9f71999",
       "title": "constraints",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe any \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"additional constraints\"},{\"insert\":\" on the parameters (apart from those described in 4.),\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe any \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"constraints on the objective\"},{\"insert\":\" and other metrics.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Parameter constraints\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#x1+x2 <= 10\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Outcome constraints\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#quality >= 1\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card: \\ndescribe any \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"additional constraints\"},{\"insert\":\" on the parameters (apart from those described in 4.),\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe any \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"constraints on the objective\"},{\"insert\":\" and other metrics.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
           "connector": "top"
+        },
+        {
+          "id": "c4bed49b-a33a-41f6-b173-d453848ec837",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -431,18 +447,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "064eda1d-0aef-40d6-b854-0bbb5034518f",
       "title": "Schedule",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe the (expected)\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\" total number of trials\"},{\"insert\":\" to run,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe how many trials could or should be \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"run concurrently\"},{\"insert\":\" in a batch.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nTotal Number: #5\\nConcurrent Trails: #10\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card: \\ndescribe the (expected)\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\" total number of trials\"},{\"insert\":\" to run,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe how many trials could or should be \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"run concurrently\"},{\"insert\":\" in a batch.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
           "connector": "top"
+        },
+        {
+          "id": "2f598365-2c23-4671-93c0-668aac214d69",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -454,18 +474,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "721418bd-aaa5-43a5-a4a7-6012cb41a56f",
       "title": "Trials",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"parameters \"},{\"insert\":\"and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"results \"},{\"insert\":\"of the trials performed.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nTrial 1\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card: \\nspecify the file containing the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"parameters \"},{\"insert\":\"and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"results \"},{\"insert\":\"of the trials performed.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"number of times\"},{\"insert\":\" rerunning this stage\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"number of new trials\"},{\"insert\":\" suggested at each rerun\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "828a5488-fd7b-46d1-8e1b-2a14d5491be4",
           "connector": "top"
+        },
+        {
+          "id": "32810166-bc67-4306-a93a-b74218883e5d",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -477,18 +501,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "ed049ad3-a258-4aa9-bed1-a9b4b6693555",
       "title": "Final Results",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the card \\\"Final Results\\\",\\nreport the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"best parameters and results\"},{\"insert\":\" reported by the optimization algorithm.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card: \\nreport the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"best parameters and results\"},{\"insert\":\" reported by the optimization algorithm.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "f4591f44-7032-4551-a0dd-42bd6ab6cb05",
           "connector": "top"
+        },
+        {
+          "id": "18143e2c-faaa-4dcd-97d4-b34a0e657cf1",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -500,30 +528,7 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
-    },
-    {
-      "id": "ada81636-eeee-40e2-afae-417f967328c1",
-      "title": "The Dataset",
-      "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"We would need to import our data for training and evaluating the models. We need to understand the size, properties, and features of our dataset to decide on the metrics and objectives.\\n\"}]}"
-      },
-      "edge_connections": [
-        {
-          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
-          "connector": "bottom"
-        }
-      ],
-      "type": "note",
-      "position": {
-        "x": 971.8582458496095,
-        "y": -91.36378479003908
-      },
-      "size": {
-        "width": 256.16,
-        "height": 258.28
-      },
-      "color": "#28337e"
+      "color": "#51455b"
     },
     {
       "id": "2e833c4a-0a3d-47d0-b2d0-3aa4eaec00d7",
@@ -621,7 +626,7 @@
       "id": "3419634d-617e-4162-90d1-51e0b99783c6",
       "title": "9. COPY TO HYPOTHESIS BOARD (IF IN PROJECT-EXPERIMENT FOLDER)",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Finally, if you are conducting the experiment in a project-experiment folder structure, copy the summary of the results and findings of this experiment to the corresponding card of this experiment on the hypothesis board.\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"Finally, if you are conducting the experiment in a project-experiment folder structure, copy the \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"green \"},{\"insert\":\"summary card of this experiment to the corresponding \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"experiment card of this experiment on the hypothesis board. Then, link that experiment card to the first cell of the bayesian_optimization.ipynb notebook.\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -639,6 +644,84 @@
         "height": 251.634816
       },
       "color": "#51455b"
+    },
+    {
+      "id": "f38ca7cd-fa2d-4fa6-ba98-375adb8b2774",
+      "title": "Summary",
+      "type_specific": {
+        "message": "{\"ops\":[{\"attributes\":{\"underline\":true},\"insert\":\"General\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Use Case\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Objective\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"General Procedure\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Experiment Details\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Data Directory\"},{\"insert\":\"\\n\\n\\nMetrics and objective\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Metrics\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Objective\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Maximize or Minimize\"},{\"insert\":\"\\n\\n\\n\\nParameters\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Parameters\"},{\"insert\":\"\\n\\n\\nConstraints\\nParameter constraints\\n\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\nOutcome constraints\\n\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\nSchedule\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Number of Trials\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Max Batch Size\"},{\"insert\":\"\\n\\n\\n\\nTrials\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\nfull result in ...\\n\\nTimes rerun\\n\\n\\nNew trials suggested\\nRerun 1: \\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Results\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\nBest parameters\\n\\n\\nResults plot\\n\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a1862e8d-27d6-4b04-8cda-300c9ca6c3bc",
+          "connector": "bottom"
+        },
+        {
+          "id": "8e3e681e-5302-425b-ba49-cf27bead4d1e",
+          "connector": "top"
+        },
+        {
+          "id": "989adef3-644e-4491-b934-795629f1678a",
+          "connector": "top"
+        },
+        {
+          "id": "31e2338e-c848-4794-b856-53899922e8c5",
+          "connector": "top"
+        },
+        {
+          "id": "e8353f07-3916-4970-97c8-790801d010be",
+          "connector": "top"
+        },
+        {
+          "id": "c4bed49b-a33a-41f6-b173-d453848ec837",
+          "connector": "top"
+        },
+        {
+          "id": "2f598365-2c23-4671-93c0-668aac214d69",
+          "connector": "top"
+        },
+        {
+          "id": "32810166-bc67-4306-a93a-b74218883e5d",
+          "connector": "top"
+        },
+        {
+          "id": "18143e2c-faaa-4dcd-97d4-b34a0e657cf1",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1826.763600859375,
+        "y": 1167.8084716796875
+      },
+      "size": {
+        "width": 397.795584,
+        "height": 381.13395199999997
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "f1fbd6ad-e5da-46da-aa6b-356870b0c3f0",
+      "title": "Summary - example",
+      "type_specific": {
+        "message": "{\"ops\":[{\"attributes\":{\"underline\":true},\"insert\":\"General\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Use Case\"},{\"insert\":\"\\nTo find the optimal input parameters for a process where predicting the output of the process for various inputs is of low priority (this would be function fitting).\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Objective\"},{\"insert\":\"\\nTo optimize the input parameters x1, x2, x3 for minimal cost\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"General Procedure\"},{\"insert\":\"\\nSpecify metrics and objectives - Specify parameter details, constraints, and schedule - Generate trials, Estimate best parameters\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Experiment Details\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Data Directory\"},{\"insert\":\"\\n./\\n\\nMetrics and objective\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Metrics\"},{\"insert\":\"\\ncost, quality\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Objective\"},{\"insert\":\"\\ncost\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Maximize or Minimize\"},{\"insert\":\"\\nMinimize\\n\\n\\nParameters\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Parameters\"},{\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"{\"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"name\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"x1\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"   \\n     \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"type\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"range\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"\\n     \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"bounds\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"[\"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"-1.0\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"1.0\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"],\"},{\"insert\":\"\\n     \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"value_type\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"float\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"  \"},{\"attributes\":{\"color\":\"#608b4e\"},\"insert\":\"# Optional, defaults to inference from type of \\\"bounds\\\".\"},{\"insert\":\"\\n     \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"log_scale\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#569cd6\"},\"insert\":\"False\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"  \"},{\"attributes\":{\"color\":\"#608b4e\"},\"insert\":\"# Optional, defaults to False.\"},{\"insert\":\"\\n    \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"},\"},{\"insert\":\"\\n    \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"{\"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"name\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"x2\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"   \\n     \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"type\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"range\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"\\n     \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"bounds\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"[\"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"-1.0\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"1.0\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"],\"},{\"insert\":\"\\n     \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"value_type\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"float\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"  \"},{\"attributes\":{\"color\":\"#608b4e\"},\"insert\":\"# Optional, defaults to inference from type of \\\"bounds\\\".\"},{\"insert\":\"\\n     \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"log_scale\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#569cd6\"},\"insert\":\"False\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"  \"},{\"attributes\":{\"color\":\"#608b4e\"},\"insert\":\"# Optional, defaults to False.\"},{\"insert\":\"\\n    \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"},\"},{\"insert\":\"\\n    \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"{\"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"name\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"x3\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"   \\n     \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"type\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"range\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"\\n     \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"bounds\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"[\"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"-1.0\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"1.0\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"],\"},{\"insert\":\"\\n     \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"value_type\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"float\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"  \"},{\"attributes\":{\"color\":\"#608b4e\"},\"insert\":\"# Optional, defaults to inference from type of \\\"bounds\\\".\"},{\"insert\":\"\\n     \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"log_scale\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#569cd6\"},\"insert\":\"False\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"  \"},{\"attributes\":{\"color\":\"#608b4e\"},\"insert\":\"# Optional, defaults to False.\"},{\"insert\":\"\\n    \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"}\"},{\"insert\":\"\\n\\n\\nConstraints\\nParameter constraints\\n\"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"x1 + x2 <= 10\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\nOutcome constraints\\nquality >= 1\"},{\"attributes\":{\"list\":\"ordered\"},\"insert\":\"\\n\"},{\"insert\":\"\\nSchedule\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Number of Trials\"},{\"insert\":\"\\n5\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Max Batch Size\"},{\"insert\":\"\\n10\\n\\n\\nTrials\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\nfull result in data_bayesian_optimization_running_trials.csv\\n\\nTimes rerun\\n1\\n\\nNew trials suggested\\nRerun 1: 10\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Results\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\nBest parameters\\n\\n\\nResults plot\\n\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a1862e8d-27d6-4b04-8cda-300c9ca6c3bc",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1818.86768,
+        "y": 1642.5949600000001
+      },
+      "size": {
+        "width": 418.50496,
+        "height": 396.07616
+      },
+      "color": "#125059"
     }
   ],
   "edges": [
@@ -747,17 +830,6 @@
       "node_connections": [
         "4ad19966-69a2-4832-90b4-fefb768b5d1c",
         "22ffb1c2-265d-48b1-96c9-18ac30e38a73"
-      ],
-      "type_specific": {
-        "annotation": ""
-      }
-    },
-    {
-      "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
-      "type": "dashed_arrow",
-      "node_connections": [
-        "ada81636-eeee-40e2-afae-417f967328c1",
-        "1a7b6868-dc38-410b-b343-3085fa005b2c"
       ],
       "type_specific": {
         "annotation": ""
@@ -890,6 +962,105 @@
       "node_connections": [
         "cd470dcc-ec35-4ae6-8fb6-fbf8f98d98a5",
         "3419634d-617e-4162-90d1-51e0b99783c6"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a1862e8d-27d6-4b04-8cda-300c9ca6c3bc",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "f38ca7cd-fa2d-4fa6-ba98-375adb8b2774",
+        "f1fbd6ad-e5da-46da-aa6b-356870b0c3f0"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8e3e681e-5302-425b-ba49-cf27bead4d1e",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4ad19966-69a2-4832-90b4-fefb768b5d1c",
+        "f38ca7cd-fa2d-4fa6-ba98-375adb8b2774"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "989adef3-644e-4491-b934-795629f1678a",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4893fad0-11d3-40ed-a4e6-caa820088c4c",
+        "f38ca7cd-fa2d-4fa6-ba98-375adb8b2774"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "31e2338e-c848-4794-b856-53899922e8c5",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "2a2624d7-7b12-4d51-bbf8-def05e5fb526",
+        "f38ca7cd-fa2d-4fa6-ba98-375adb8b2774"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "e8353f07-3916-4970-97c8-790801d010be",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "fc1a0b78-532c-4b23-bd7b-5b35ce612bf0",
+        "f38ca7cd-fa2d-4fa6-ba98-375adb8b2774"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c4bed49b-a33a-41f6-b173-d453848ec837",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "fc449c54-66b4-48c8-9d9f-d961b9f71999",
+        "f38ca7cd-fa2d-4fa6-ba98-375adb8b2774"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "2f598365-2c23-4671-93c0-668aac214d69",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "064eda1d-0aef-40d6-b854-0bbb5034518f",
+        "f38ca7cd-fa2d-4fa6-ba98-375adb8b2774"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "32810166-bc67-4306-a93a-b74218883e5d",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "721418bd-aaa5-43a5-a4a7-6012cb41a56f",
+        "f38ca7cd-fa2d-4fa6-ba98-375adb8b2774"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "18143e2c-faaa-4dcd-97d4-b34a0e657cf1",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "f38ca7cd-fa2d-4fa6-ba98-375adb8b2774",
+        "ed049ad3-a258-4aa9-bed1-a9b4b6693555"
       ],
       "type_specific": {
         "annotation": ""

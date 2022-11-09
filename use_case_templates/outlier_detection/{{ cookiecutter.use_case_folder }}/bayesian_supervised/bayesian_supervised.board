@@ -4,7 +4,7 @@
       "id": "eb15af0d-ec25-40b4-b26c-e7e1133a12e1",
       "title": "0. How to use the Board",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"cards.\\n\\n#Default example records are prefixed by '#'.\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"summary card.\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -27,7 +27,7 @@
       "id": "3a26b268-5f2d-4bd9-b65d-064ccb07480d",
       "title": "1. Describe the experiment",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_supervised.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name \"},{\"insert\":\"of the outlier detection experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"No adjustment to notebook required.\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -62,7 +62,7 @@
       "id": "1cf010bb-cad1-4cde-8d25-90c1bd5b2870",
       "title": "2. Import the dataset",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_supervised.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path \"},{\"insert\":\"of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify if the data is \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"time-series\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"train-test split ratio\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"bayesian_supervised.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path \"},{\"insert\":\"of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify if the data is \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"time-series\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"train-test split ratio\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nTo start, execute the code in the notebook cells \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"\\\"Importing the dataset\\\"\"},{\"insert\":\" and \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"\\\"Visualising the dataset\\\"\"},{\"insert\":\" to load and generate the dataframe containing the data. This would be useful in the steps to come. \\n\"}]}"
       },
       "edge_connections": [
         {
@@ -264,7 +264,7 @@
       "id": "2b42d4f7-b54b-4a41-9512-337b981f713f",
       "title": "About the experiment",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this supervised bayesian outlier detection experiment. This would provide a documented summary for the entire experiment.\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this supervised bayesian outlier detection experiment. This would provide an introduction to the experiment in the summary.\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -287,12 +287,16 @@
       "id": "7d4113ef-03f1-4d72-b9a1-ab681f8e874c",
       "title": "Experiment",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card: \\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"use case\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"objective\"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\" \"},{\"insert\":\"of the outlier detection,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\" of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Use Case\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Given the a dataset of ... with outlier labels, we would like to predict the cases of abnormal...\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Objective\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#To detect outliers from the given dataset.\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"General Procedure\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Import data - Normalise the data - Set up causal structure and dependencies - Interpret and validate results\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card:\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"use case\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"objective\"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\" \"},{\"insert\":\"of the outlier detection,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\" of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
           "connector": "top"
+        },
+        {
+          "id": "00e1fbb3-67eb-4a67-9257-51a709ab55eb",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -304,18 +308,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "c8c8f9ae-1a92-4e1c-99cb-ce969dcb1dc7",
       "title": "dataset",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card,\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"dataset\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Dataset\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Name: #Height and weight\\nSamples: \\nDimensions: \\n\\nTrain-Test Split: #0.75:0.25\\n\\nTime-series: #No\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card:\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"dataset\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
           "connector": "top"
+        },
+        {
+          "id": "029af9e4-bc67-43c0-a6ed-0eed6207a501",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -327,18 +335,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "9e5da71a-5090-4db1-8453-c928b12a6836",
       "title": "domain knowledge",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"domain knowledge\"},{\"insert\":\" about the data,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Known Dependencies\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Height depends on age\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Known Mathematical Relationships\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card:\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"domain knowledge\"},{\"insert\":\" about the data,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
           "connector": "top"
+        },
+        {
+          "id": "2b022747-6136-4461-af1a-b0ab19c5a0aa",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -350,18 +362,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "28f95cf9-7f20-4438-925e-21baab19b467",
       "title": "models",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card:\\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"models \"},{\"insert\":\"to be used.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Model Type\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"#Causal Structure/Graphical\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card:\\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"models \"},{\"insert\":\"to be used.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
           "connector": "top"
+        },
+        {
+          "id": "4e08ce91-89b1-4ed1-b929-8e199ba7f04e",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -373,18 +389,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "8dce1383-cbec-4516-bebd-362aaac57c8a",
       "title": "results",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"best parameters\"},{\"insert\":\" and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"results \"},{\"insert\":\"reported by the outlier detection models.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nClassification Score:\\n\\nParameters:\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card:\\nreport the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"best parameters\"},{\"insert\":\" and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"results \"},{\"insert\":\"reported by the outlier detection models.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
           "connector": "top"
+        },
+        {
+          "id": "54a8f9b6-d46b-4276-856f-e264c4729457",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -396,18 +416,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "af6cd0bd-c5e5-4664-ba2a-052363c00856",
       "title": "Interpret and improve",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card:\\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"classification metric\"},{\"insert\":\" considered most desirable\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"report and compare the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"best score\"},{\"insert\":\" to a benchmark score (if available)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify possible \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"ways to improve\"},{\"insert\":\" results if not satisfactory\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nMost Important Metric\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\\n\"},{\"insert\":\"Does the result meet the benchmark\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Benchmark: #0.8 (80% non-outlier data)\\nResult: #0.7\\n\\nAre the results accurate upon validation?\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card:\\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"classification metric\"},{\"insert\":\" considered most desirable\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"report and compare the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"best score\"},{\"insert\":\" to a benchmark score (if available)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify possible \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"ways to improve\"},{\"insert\":\" results if not satisfactory\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
           "connector": "top"
+        },
+        {
+          "id": "efd209b4-ac7d-493e-97e0-fbbe2245994f",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -419,7 +443,7 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "7f383672-be08-4cf0-a8a6-81572ce3d51a",
@@ -558,6 +582,76 @@
         "height": 262.38272
       },
       "color": "#51455b"
+    },
+    {
+      "id": "9cc46822-258e-4c2e-9998-b11832d8b670",
+      "title": "Summary",
+      "type_specific": {
+        "message": "{\"ops\":[{\"attributes\":{\"underline\":true},\"insert\":\"General\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Use Case\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Objective\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"General Procedure\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Experiment details\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nDataset\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Name\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Samples\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Dimensions\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Train-Test Split\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Time Series\"},{\"insert\":\"\\n\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Domain Knowledge\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nKnown Dependencies\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\nKnown Mathematical Relationships\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\nModel Type\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Results\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\nInterpret and Improve\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\nDoes the result meet the benchmark?\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Benchmark Accuracy\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Result Accuracy\"},{\"insert\":\"\\n\\n\\nAre the results accurate upon validation?\\n\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "15a9764b-4eb0-4819-9f28-37549e75e13c",
+          "connector": "bottom"
+        },
+        {
+          "id": "00e1fbb3-67eb-4a67-9257-51a709ab55eb",
+          "connector": "top"
+        },
+        {
+          "id": "029af9e4-bc67-43c0-a6ed-0eed6207a501",
+          "connector": "top"
+        },
+        {
+          "id": "2b022747-6136-4461-af1a-b0ab19c5a0aa",
+          "connector": "top"
+        },
+        {
+          "id": "4e08ce91-89b1-4ed1-b929-8e199ba7f04e",
+          "connector": "top"
+        },
+        {
+          "id": "54a8f9b6-d46b-4276-856f-e264c4729457",
+          "connector": "top"
+        },
+        {
+          "id": "efd209b4-ac7d-493e-97e0-fbbe2245994f",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1453.9879557291672,
+        "y": 1074.7484130859377
+      },
+      "size": {
+        "width": 558.24,
+        "height": 516.8800000000001
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "b9b77a9e-da5e-4d0c-ad3c-cb7b68ef9a41",
+      "title": "Summary - Example (Using example dataset)",
+      "type_specific": {
+        "message": "{\"ops\":[{\"attributes\":{\"underline\":true},\"insert\":\"General\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Use Case\"},{\"insert\":\"\\nGiven the a dataset of ... with outlier labels, we would like to predict the cases of abnormal...\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Objective\"},{\"insert\":\"\\nTo detect outliers from the given dataset.\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"General Procedure\"},{\"insert\":\"\\nImport data - Normalise the data - Set up causal structure and dependencies - Interpret and validate results\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Experiment details\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nDataset\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Name\"},{\"insert\":\"\\nheight and weight labelled\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Samples\"},{\"insert\":\"\\n198\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Dimensions\"},{\"insert\":\"\\n6\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Train-Test Split\"},{\"insert\":\"\\n0.75:0.25\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Time Series\"},{\"insert\":\"\\nNo\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Domain Knowledge\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nKnown Dependencies\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Height depends on age\\n\\nKnown Mathematical Relationships\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\nModel Type\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Halerium Causal Structure\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Results\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"attributes\":{\"background\":\"#181754\"},\"insert\":\"True Negatives (Non-outliers)                           49\"},{\"insert\":\"\\n\"},{\"attributes\":{\"background\":\"#181754\"},\"insert\":\"False Positives (Non-outliers predicted as outliers)     0\"},{\"insert\":\"\\n\"},{\"attributes\":{\"background\":\"#181754\"},\"insert\":\"False Negatives (Outliers predicted as non-outliers      1\"},{\"insert\":\"\\n\"},{\"attributes\":{\"background\":\"#181754\"},\"insert\":\"True Positives (Outliers)                                0\"},{\"insert\":\"\\n\"},{\"attributes\":{\"background\":\"#181754\"},\"insert\":\"dtype: int64\"},{\"insert\":\"\\n\"},{\"attributes\":{\"background\":\"#181754\"},\"insert\":\"              precision    recall  f1-score   support\"},{\"insert\":\"\\n\\n\"},{\"attributes\":{\"background\":\"#181754\"},\"insert\":\" Non-outlier       0.98      1.00      0.99        49\"},{\"insert\":\"\\n\"},{\"attributes\":{\"background\":\"#181754\"},\"insert\":\"     Outlier       0.00      0.00      0.00         1\"},{\"insert\":\"\\n\\n\"},{\"attributes\":{\"background\":\"#181754\"},\"insert\":\"    accuracy                           0.98        50\"},{\"insert\":\"\\n\"},{\"attributes\":{\"background\":\"#181754\"},\"insert\":\"   macro avg       0.49      0.50      0.49        50\"},{\"insert\":\"\\n\"},{\"attributes\":{\"background\":\"#181754\"},\"insert\":\"weighted avg       0.96      0.98      0.97        50\"},{\"insert\":\"\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\nInterpret and Improve\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\nDoes the result meet the benchmark?\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Benchmark Accuracy\"},{\"insert\":\"\\n0.9\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Result Accuracy\"},{\"insert\":\"\\n0.98\\n\\nAre the results accurate upon validation?\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "15a9764b-4eb0-4819-9f28-37549e75e13c",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1444.707877604167,
+        "y": 1752.508410644532
+      },
+      "size": {
+        "width": 576.2666666666668,
+        "height": 534.2666666666668
+      },
+      "color": "#125059"
     }
   ],
   "edges": [
@@ -776,6 +870,83 @@
       "node_connections": [
         "a806ba7b-9e80-44e4-bb02-ec36b9ee2781",
         "7aa32a8f-6a8c-4ff4-9548-5567f10ea8bf"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "15a9764b-4eb0-4819-9f28-37549e75e13c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "9cc46822-258e-4c2e-9998-b11832d8b670",
+        "b9b77a9e-da5e-4d0c-ad3c-cb7b68ef9a41"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "00e1fbb3-67eb-4a67-9257-51a709ab55eb",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "7d4113ef-03f1-4d72-b9a1-ab681f8e874c",
+        "9cc46822-258e-4c2e-9998-b11832d8b670"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "029af9e4-bc67-43c0-a6ed-0eed6207a501",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "c8c8f9ae-1a92-4e1c-99cb-ce969dcb1dc7",
+        "9cc46822-258e-4c2e-9998-b11832d8b670"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "2b022747-6136-4461-af1a-b0ab19c5a0aa",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "9e5da71a-5090-4db1-8453-c928b12a6836",
+        "9cc46822-258e-4c2e-9998-b11832d8b670"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "4e08ce91-89b1-4ed1-b929-8e199ba7f04e",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "28f95cf9-7f20-4438-925e-21baab19b467",
+        "9cc46822-258e-4c2e-9998-b11832d8b670"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "54a8f9b6-d46b-4276-856f-e264c4729457",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8dce1383-cbec-4516-bebd-362aaac57c8a",
+        "9cc46822-258e-4c2e-9998-b11832d8b670"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "efd209b4-ac7d-493e-97e0-fbbe2245994f",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "af6cd0bd-c5e5-4664-ba2a-052363c00856",
+        "9cc46822-258e-4c2e-9998-b11832d8b670"
       ],
       "type_specific": {
         "annotation": ""

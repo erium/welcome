@@ -71,7 +71,7 @@ st.title("Label Outliers")
 
 paths = []
 
-for root, dirs, files in os.walk("./../data"):
+for root, dirs, files in os.walk("./data"):
     for file in files:
         if file.endswith(".csv"):
             paths.append(file)
@@ -83,7 +83,7 @@ with type_col:
     data_type = st.radio("Select the type of data", ("Discrete/Continuous", "Time Series"), on_change=change_data)
 st.caption("Note: Changing the dataset and type will remove all previously labeled points.")
 
-df_check = pd.read_csv('./../data/' + path)
+df_check = pd.read_csv('./data/' + path)
 date_present = 'date' in df_check
 outlier_present = 'outlier' in df_check
 
@@ -91,7 +91,7 @@ if not date_present and data_type == "Time Series":
     st.error('Error: No column labeled date present')
 
 if data_type == "Discrete/Continuous":
-    df = pd.read_csv('./../data/' + path)
+    df = pd.read_csv('./data/' + path)
     rows = df.shape[0]
 
     if outlier_present and not st.session_state.outlier_loaded:
@@ -200,7 +200,7 @@ if data_type == "Discrete/Continuous":
 
 # For Time Series Data
 if data_type == "Time Series" and date_present:
-    df = pd.read_csv('./../data/' + path, parse_dates=['date'], index_col = 'date')
+    df = pd.read_csv('./data/' + path, parse_dates=['date'], index_col = 'date')
     rows = df.shape[0]
 
     if outlier_present and not st.session_state.outlier_loaded:

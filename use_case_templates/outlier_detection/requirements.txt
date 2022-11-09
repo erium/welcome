@@ -1,6 +1,6 @@
 cookiecutter >=1.7.3
 halerium >=3.2.1
-halerium-utilities >=0.3.0
+halerium-utilities >=0.4.0
 imblearn >=0.0
 streamlit >=1.6.0
 seaborn >=0.11.2

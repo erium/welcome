@@ -6,12 +6,12 @@
             "name": "Overview",
             "isOverview": true,
             "description": "Overview board for hypothesis testing templates",
-            "folderName": "hypothesis_testing_overview-{{user.name}}-{{timestamp}}",
-            "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=hypothesis_testing_overview",
+            "folderName": "{{timestamp}}-{{user.initials}}-hypothesis_testing_overview",
+            "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=hypothesis_testing_overview",
             "files": [
                 {
                     "type": "board",
-                    "path": "hypothesis_testing_overview/hypothesis_testing_overview.board",
+                    "path": "hypothesis_testing_overview.board",
                     "active": true
                 }
             ]
@@ -20,17 +20,17 @@
             "name": "Classical Hypothesis Testing",
             "isOverview": false,
             "description": "To use statistical tests to infer if the data supports a certain hypothesis",
-            "folderName": "classical_ht-{{user.name}}-{{timestamp}}",
-            "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=classical_ht",
+            "folderName": "{{timestamp}}-{{user.initials}}-classical_ht",
+            "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=classical_ht",
             "files": [
                 {
                     "type": "board",
-                    "path": "classical_ht/classical_ht.board",
+                    "path": "classical_ht.board",
                     "active": true
                 },
                 {
                     "type": "notebook",
-                    "path": "classical_ht/classical_ht.ipynb",
+                    "path": "classical_ht.ipynb",
                     "active": true
                 }
             ]
@@ -39,26 +39,26 @@
             "name": "Causal Hypothesis Testing",
             "isOverview": false,
             "description": "To model good fitting causal structures and obtain causal estimates",
-            "folderName": "causal-{{user.name}}-{{timestamp}}",
-            "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=causal",
+            "folderName": "{{timestamp}}-{{user.initials}}-causal",
+            "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=causal",
             "files": [
                 {
                     "type": "board",
-                    "path": "causal/causal_structure.board",
+                    "path": "causal_structure.board",
                     "active": true
                 },
                 {
                     "type": "notebook",
-                    "path": "causal/causal_structure.ipynb",
+                    "path": "causal_structure.ipynb",
                     "active": true
                 },
                 {
                     "type": "board",
-                    "path": "causal/causal_estimate.board"
+                    "path": "causal_estimate.board"
                 },
                 {
                     "type": "notebook",
-                    "path": "causal/causal_estimate.ipynb"
+                    "path": "causal_estimate.ipynb"
                 }
             ]
         },
@@ -66,17 +66,17 @@
             "name": "Equation Hypothesis Testing",
             "isOverview": false,
             "description": "To test if a hypothesis in the form of an equation fits the data well",
-            "folderName": "equation-{{user.name}}-{{timestamp}}",
-            "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} use_case_name=equation",
+            "folderName": "{{timestamp}}-{{user.initials}}-equation",
+            "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=equation",
             "files": [
                 {
                     "type": "board",
-                    "path": "equation/equation.board",
+                    "path": "equation.board",
                     "active": true
                 },
                 {
                     "type": "notebook",
-                    "path": "equation/equation.ipynb",
+                    "path": "equation.ipynb",
                     "active": true
                 }
             ]

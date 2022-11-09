@@ -35,9 +35,9 @@ unsupervised = False
 unsupervised_bayesian = False
 supervised_bayesian = False
 
-if os.path.exists('./../out/unsupervised_model_data.joblib'):
+if os.path.exists('./out/unsupervised_model_data.joblib'):
     unsupervised = True
-    data = load('./../out/unsupervised_model_data.joblib')
+    data = load('./out/unsupervised_model_data.joblib')
     original_df = data[1]
     original_col = list(original_df.columns)[:-1]
     time_series = data[2]
@@ -46,30 +46,30 @@ if os.path.exists('./../out/unsupervised_model_data.joblib'):
     num_models = len(run_models)
     run_multi_models = [model for model in run_models if model not in ['z_score', 'iqr', 'percentile', 'stl']]
     num_multi_models = len(run_multi_models)
-elif os.path.exists('./../out/autoencoder_model'):
+elif os.path.exists('./out/autoencoder_model'):
     autoencoder = True
-    model = keras.models.load_model('./../out/autoencoder_model')
-    data = load('./../out/autoencoder_model_data.joblib')
+    model = keras.models.load_model('./out/autoencoder_model')
+    data = load('./out/autoencoder_model_data.joblib')
     scaler, TIME_STEPS, threshold = data[0]
     original_df = data[1]
     time_series = data[2]
-elif os.path.exists('./../out/supervised_model.joblib'):
-    data = load('./../out/supervised_model.joblib')
+elif os.path.exists('./out/supervised_model.joblib'):
+    data = load('./out/supervised_model.joblib')
     original_df = data[1]
     time_series = data[2]
     scaler = data[3]
     run_models_data = data[0]
     run_models = run_models_data[0]
-elif os.path.exists('./../out/unsupervised_bayesian.joblib'):
+elif os.path.exists('./out/unsupervised_bayesian.joblib'):
     unsupervised_bayesian = True
-    data = load('./../out/unsupervised_bayesian.joblib')
+    data = load('./out/unsupervised_bayesian.joblib')
     original_df = data[0]
     time_series = data[1]
-    graph = hal.Graph.from_specification(file="./../out/graph.json")
-    trained_graph = hal.Graph.from_specification(file="./../out/trained_graph.json")
-elif os.path.exists('./../out/supervised_bayesian.joblib'):
+    graph = hal.Graph.from_specification(file="./out/graph.json")
+    trained_graph = hal.Graph.from_specification(file="./out/trained_graph.json")
+elif os.path.exists('./out/supervised_bayesian.joblib'):
     supervised_bayesian = True
-    data = load('./../out/supervised_bayesian.joblib')
+    data = load('./out/supervised_bayesian.joblib')
     train_data = data[0]
     dependencies = data[1]
     original_df = data[2]

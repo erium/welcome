@@ -1,6 +1,7 @@
 import os
 import shutil
 import halerium_utilities as hu
+from halerium_utilities import notebook
 
 # Select the specified template
 model_templates = '{{cookiecutter.use_case_slug}}'
@@ -14,7 +15,7 @@ if model_templates == 'outlier_detection_overview':
     shutil.rmtree('./streamlit')
     os.remove('./README.md')
 
-hu.file.assign_new_card_ids_to_tree('./')
+hu.file.card_ids.assign_new_card_ids_to_tree('./')
 
 # Adding cards, connections, and links on experiments board in project template
 project_path = './../hypotheses_experiments_learnings.board'
@@ -68,5 +69,16 @@ if os.path.exists(project_path) and model_templates != 'outlier_detection_overvi
     notebook_dict = {'autoencoder': '/autoencoder.ipynb', 'bayesian_supervised': '/bayesian_supervised.ipynb',
                      'bayesian_unsupervised': '/bayesian_unsupervised.ipynb', 'supervised': '/supervised.ipynb', 'unsupervised': '/unsupervised.ipynb'}
     notebook_path = model_templates + notebook_dict[model_templates]
-    hu.board.board.create_card_cell_link(
-        project_path, experiment_card_id, notebook_path, 2)
+    notebook.link.create_card_cell_link(
+        experiment_card_id, notebook_path, 1)
+
+# To move directory one up
+folder = r"./"
+subfolders = [f.path for f in os.scandir(folder) if f.is_dir()]
+
+for sub in subfolders:
+    for f in os.listdir(sub):
+        src = os.path.join(sub, f)
+        dst = os.path.join(folder, f)
+        shutil.move(src, dst)
+    shutil.rmtree(sub)

@@ -4,7 +4,7 @@
       "id": "3000f30b-1f20-4035-8ef0-218a1a070dc1",
       "title": "0. How to use the Board",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"cards.\\n\\n#Default example records are prefixed by '#'.\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"summary card.\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -27,7 +27,7 @@
       "id": "f0b070ad-8a84-44d4-899e-dda3696b4a14",
       "title": "1. Describe the experiment",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"classical_doe.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name \"},{\"insert\":\"of the classical DoE experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"No adjustments to notebook required.\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -60,9 +60,9 @@
     },
     {
       "id": "dc8be860-579e-40fe-b3f6-024589b3c6ef",
-      "title": "2. Import the dataset",
+      "title": "2. Specify the data path",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"classical_doe.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path \"},{\"insert\":\"of the dataset file\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"classical_doe.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"path\"},{\"insert\":\" to save the trial data for the experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -72,10 +72,6 @@
         {
           "id": "023c7908-0c14-4c27-a465-ce9021cc61be",
           "connector": "right"
-        },
-        {
-          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
-          "connector": "top"
         },
         {
           "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
@@ -132,7 +128,7 @@
       "id": "2e752258-a41d-4508-b092-e7103d64478a",
       "title": "4. Specify the parameters",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the noteboook \\\"classical_doe.ipynb\\\", adjust the respective lines (linked to the card) to\\nspecify the (possibly transformed) parameters, including their\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"type\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"possible values\"},{\"insert\":\" or \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"bounds\"},{\"insert\":\".\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the noteboook \\\"classical_doe.ipynb\\\", adjust the respective lines (linked to the card) to\\nspecify the (possibly transformed) parameters, including their\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"name\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"type\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"possible values\"},{\"insert\":\" or \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"bounds\"},{\"insert\":\".\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIf the parameters have to satisfy constraints involving multiple parameters (e.g. the bound of one parameter depends on another parameter), transform the parameters to make them independent.\\n\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -167,7 +163,7 @@
       "id": "fff941c8-82f9-40d5-8b5e-76b9f56b4211",
       "title": "5. Choose the design",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the noteboook \\\"classical_doe.ipynb\\\", adjust the respective lines (linked to the card) to\\nchoose the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"design\"},{\"insert\":\".\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the noteboook \\\"classical_doe.ipynb\\\", adjust the respective lines (linked to the card) to\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"design\"},{\"insert\":\".\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -231,7 +227,7 @@
     },
     {
       "id": "e6b5ea26-d56b-42d9-8c51-42469967c149",
-      "title": "7. Get the final results",
+      "title": "7. Judge the design",
       "type_specific": {
         "message": "{\"ops\":[{\"insert\":\"Use the results of the trials to achieve your project objective.\\n\\nFor example, if the goal is to find optimal parameters, read in the results of the trials using the notebook \\\"best_parameters.ipynb\\\".\\n\"}]}"
       },
@@ -264,7 +260,7 @@
       "id": "f35e5e67-794e-4647-a481-e631039fb4c6",
       "title": "About the experiment",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this classical DoE experiment. This would provide a documented summary for the entire experiment.\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"It is useful to provide an overview of the use case, objective and general procedure of this classical DoE experiment. This would provide an introduction to the experiment in the summary.\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -287,12 +283,16 @@
       "id": "766e8e3f-b14e-4c3e-996e-965db6bf946e",
       "title": "Experiment",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card: \\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"use case and how it connects to a DoE problem.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"objective\"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\" \"},{\"insert\":\"of the classical DoE,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\" of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Use Case\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Objective\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"General Procedure\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card:\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"use case and how it connects to a DoE problem.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"objective\"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\" \"},{\"insert\":\"of the classical DoE,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\" of the project.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "83e39d3a-b594-4907-85f1-bcb5587712f3",
           "connector": "top"
+        },
+        {
+          "id": "44a5ef1a-2389-4fe5-b00d-73349022068d",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -304,18 +304,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "4d7c9aa0-23b5-4afc-9050-018e9958938c",
-      "title": "dataset",
+      "title": "data path",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card,\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"dataset\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Dataset\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Name: \\nSamples: \\nDimensions: \\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card:\\nspecify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"path\"},{\"insert\":\", to save the trial data for the experiment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "530306eb-aa92-425c-a36b-a03b67c17a75",
           "connector": "top"
+        },
+        {
+          "id": "64e5b32b-9697-426e-ba02-19e9b1a134c4",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -327,18 +331,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "76620ef5-872a-489d-abe3-a64fef9e67d4",
       "title": "metrics",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe any other \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"metrics \"},{\"insert\":\"of importance for judging the result.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card:\\ndescribe any other \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"metrics \"},{\"insert\":\"of importance for judging the result.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "02a38459-c0fe-4636-9331-cc7727ccb563",
           "connector": "top"
+        },
+        {
+          "id": "a85479a0-00f4-4462-b7b6-feb54862f50b",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -350,18 +358,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "b4999665-6cb5-4c6f-ae71-3d95d953aa1a",
       "title": "Parameters",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe the parameters, including\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"name\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"brief description\"},{\"insert\":\" of meaning,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"type \"},{\"insert\":\"(discrete or continuous),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"possible values\"},{\"insert\":\" (for discrete),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"bounds \"},{\"insert\":\"(for continuous).\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"if the parameters have to satisfy constraints involving multiple parameters (e.g. the bound of one parameter depends on another parameter), transform the parameters to make them independent.\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card:\\ndescribe the parameters, including\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"name\"},{\"insert\":\",\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"brief description\"},{\"insert\":\" of meaning,\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"type \"},{\"insert\":\"(discrete or continuous),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"possible values\"},{\"insert\":\" (for discrete),\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"bounds \"},{\"insert\":\"(for continuous).\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "f9f6e90a-6901-436d-9b35-7ceba49e4f27",
           "connector": "top"
+        },
+        {
+          "id": "3b6c4b50-a08d-478a-9fc9-c4cd01ef0afe",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -373,18 +385,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "d57c1847-16b8-4dbf-8428-1a9a5f777304",
       "title": "design",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card:\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"design \"},{\"insert\":\"to be employed\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card:\\ndescribe the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"design \"},{\"insert\":\"to be employed\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"number \"},{\"insert\":\"of trials\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"order \"},{\"insert\":\"and inclusion of mixed terms for expected performance of polynomial models\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "282a7214-9d60-48c0-80d7-74a09f6f4684",
           "connector": "top"
+        },
+        {
+          "id": "58ac5996-121a-4695-bd5b-88c65c68502d",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -396,18 +412,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "e096c14f-4ce2-4827-bb4c-712dddc9566a",
       "title": "trials",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"parameters \"},{\"insert\":\"and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"results \"},{\"insert\":\"of the trials performed\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card:\\nspecify the file containing the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"parameters \"},{\"insert\":\"and \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"results \"},{\"insert\":\"of the trials performed\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "370b5c33-803c-48cc-b43e-8979d1fd5861",
           "connector": "top"
+        },
+        {
+          "id": "3d2983c3-8445-452f-9b79-727d9e878624",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -419,18 +439,22 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
+      "color": "#51455b"
     },
     {
       "id": "ce8f4732-e008-48de-9a9f-ef285a4eb758",
-      "title": "Final Results",
+      "title": "judge design",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In this card:\\nreport the results of the optimal parameters\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"In the summary card:\\nreport the \"},{\"attributes\":{\"color\":\"#66b966\",\"bold\":true},\"insert\":\"d utility\"},{\"insert\":\" of the design compared to a random design\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
       },
       "edge_connections": [
         {
           "id": "828a5488-fd7b-46d1-8e1b-2a14d5491be4",
           "connector": "top"
+        },
+        {
+          "id": "e306c035-5156-409c-a48f-9138e20511c8",
+          "connector": "bottom"
         }
       ],
       "type": "note",
@@ -442,30 +466,7 @@
         "width": 256.16,
         "height": 258.28
       },
-      "color": "#125059"
-    },
-    {
-      "id": "d8c5e2e2-170a-4e23-83d2-52ca6b30a63e",
-      "title": "The Dataset",
-      "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"We would need to import our data for training and evaluating the models. We need to understand the size, properties, and features of our dataset to decide on the design and expected performance.\\n\"}]}"
-      },
-      "edge_connections": [
-        {
-          "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
-          "connector": "bottom"
-        }
-      ],
-      "type": "note",
-      "position": {
-        "x": 971.8582458496095,
-        "y": -91.36378479003908
-      },
-      "size": {
-        "width": 256.16,
-        "height": 258.28
-      },
-      "color": "#28337e"
+      "color": "#51455b"
     },
     {
       "id": "6e0c2ce8-75e7-4063-a2c9-34816a8fce0e",
@@ -540,7 +541,7 @@
       "id": "79ebf790-904f-4576-b613-5cf151ad4419",
       "title": "8. COPY TO HYPOTHESIS BOARD (IF IN PROJECT-EXPERIMENT FOLDER)",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Finally, if you are conducting the experiment in a project-experiment folder structure, copy the summary of the results and findings of this experiment to the corresponding card of this experiment on the hypothesis board.\\n\"}]}"
+        "message": "{\"ops\":[{\"insert\":\"Finally, if you are conducting the experiment in a project-experiment folder structure, copy the \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"green \"},{\"insert\":\"summary card of this experiment to the corresponding \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"experiment card of this experiment on the hypothesis board. Then, link that experiment card to the first cell of the classical_doe.ipynb notebook.\\n\"}]}"
       },
       "edge_connections": [
         {
@@ -558,6 +559,80 @@
         "height": 261.072
       },
       "color": "#51455b"
+    },
+    {
+      "id": "4faf33c5-45b5-474d-8e4d-d717a40ea26e",
+      "title": "Summary",
+      "type_specific": {
+        "message": "{\"ops\":[{\"attributes\":{\"underline\":true},\"insert\":\"General\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Use Case\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Objective\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"General Procedure\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Experiment Details\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Data Directory\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Metrics\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\n\\nParameters\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\n\\nDesign\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Chosen Design\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"n trials\"},{\"insert\":\"\\n\\n\\n\\nPolynomial model (Expected Performance)\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Order\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Mixed Terms\"},{\"insert\":\"\\n\\n\\n\\nTrial Generation\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\nfull result in ...\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Judge the design\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\nd utility for chosen design\\n\\n\\nd utility for random design\\n\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "fd12a07a-87b1-4471-988a-469ed0f860f8",
+          "connector": "bottom"
+        },
+        {
+          "id": "44a5ef1a-2389-4fe5-b00d-73349022068d",
+          "connector": "top"
+        },
+        {
+          "id": "64e5b32b-9697-426e-ba02-19e9b1a134c4",
+          "connector": "top"
+        },
+        {
+          "id": "a85479a0-00f4-4462-b7b6-feb54862f50b",
+          "connector": "top"
+        },
+        {
+          "id": "3b6c4b50-a08d-478a-9fc9-c4cd01ef0afe",
+          "connector": "top"
+        },
+        {
+          "id": "58ac5996-121a-4695-bd5b-88c65c68502d",
+          "connector": "top"
+        },
+        {
+          "id": "3d2983c3-8445-452f-9b79-727d9e878624",
+          "connector": "top"
+        },
+        {
+          "id": "e306c035-5156-409c-a48f-9138e20511c8",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1628.731201171875,
+        "y": 1154.2125854492188
+      },
+      "size": {
+        "width": 421.1264,
+        "height": 387.2288
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "652a3d12-c63a-4476-95b8-fb32433d3714",
+      "title": "Summary - Example",
+      "type_specific": {
+        "message": "{\"ops\":[{\"attributes\":{\"underline\":true},\"insert\":\"General\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Use Case\"},{\"insert\":\"\\nTo design an experiment where all trials have to be planned before results from any other trials are available (e.g. all trials have to be run in parallel).\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Objective\"},{\"insert\":\"\\nTo design an experiment for metrics cost and quality\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"General Procedure\"},{\"insert\":\"\\nSpecify metrics and parameters - Specify Design - Generate Trials - Judge the design\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Experiment Details\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Data Directory\"},{\"insert\":\"\\n./\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Metrics\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"cost, quality\\n\\n\\nParameters\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"{\"},{\"insert\":\"\\n        \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"name\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"x1\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"           \"},{\"attributes\":{\"color\":\"#608b4e\"},\"insert\":\"# the name of the parameter\"},{\"insert\":\"\\n        \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"type\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"range\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"        \"},{\"attributes\":{\"color\":\"#608b4e\"},\"insert\":\"# the type of parameter: \\\"range\\\" is for continuous parameters\"},{\"insert\":\"\\n        \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"bounds\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"[\"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"0\"},{\"insert\":\".\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"1\"},{\"insert\":\".\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"],\"},{\"insert\":\"     \"},{\"attributes\":{\"color\":\"#608b4e\"},\"insert\":\"# the lower and upper bound of the parameter as a tuple for range parameters\"},{\"insert\":\"\\n        \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"n_values\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"3\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"          \"},{\"attributes\":{\"color\":\"#608b4e\"},\"insert\":\"# the number of different values for the range parameter to try\"},{\"insert\":\"\\n    \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"},\"},{\"insert\":\"\\n    \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"{\"},{\"insert\":\"\\n        \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"name\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"x2\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"\\n        \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"type\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"range\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"\\n        \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"bounds\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"[\"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"0\"},{\"insert\":\".\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"10\"},{\"insert\":\".\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"],\"},{\"insert\":\"\\n        \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"n_values\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"3\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\" \\n    \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"},\"},{\"insert\":\"  \\n    \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"{\"},{\"insert\":\"\\n        \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"name\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"x3\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"\\n        \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"type\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"range\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\"\\n        \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"bounds\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"[\"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"-5\"},{\"insert\":\".\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"5\"},{\"insert\":\".\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"],\"},{\"insert\":\"\\n        \"},{\"attributes\":{\"color\":\"#ce9178\"},\"insert\":\"\\\"n_values\\\"\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\":\"},{\"insert\":\" \"},{\"attributes\":{\"color\":\"#b5cea8\"},\"insert\":\"3\"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\",\"},{\"insert\":\" \\n    \"},{\"attributes\":{\"color\":\"#dcdcdc\"},\"insert\":\"}\"},{\"insert\":\"\\n\\n\\nDesign\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Chosen Design\"},{\"insert\":\"\\nfull_factorial\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"n trials\"},{\"insert\":\"\\n100\\n\\n\\nPolynomial model (Expected Performance)\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Order\"},{\"insert\":\"\\n2\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Mixed Terms\"},{\"insert\":\"\\nFalse\\n\\n\\nTrial Generation\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":{\"image\":\"data:image/png;base64,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mFhZB3fScoTVIn1FOW8xuuC+rJqXdfIX60IxMWCyJQrXlLi531LrhIb3o60mgQl5g06nemi5i5Zdpl8T2QAuYTE+oQVL8hwONS4hflWtl1ohR3FEr8NkQbRsABcXZnBDWwckGs7DkdXXW2du3zvn2x0GEWhMYzUvz7zdguqpu2pNlI8G38FlNKFVbabTpxzlZ2izCYhkz13cyIoR7QVI70fyZh1SW2nUlLcs51GLXrVkmb6CaKMLe5rUViZXZdWmrJN/WBeKpwABUw+2H7mIfft3okZsRV4Vz48MolwuR+8OOaevhjq7Qoj1H83rpuw1vZ2hjn9AvLlHf+3TLUh+rEZr3BIN4Afy22Uy/dMetCWvoc5YoL7ePL/3AHZ9DES19OOIhidxUhvF81/vLaChUW1o5FRbAg3qup/AjPUIkzB0NYVwY36jgxVncALJcCRzFLJ7DDG0qDLUhKTdGj6z9BVHdOAQyQqI8iuruWWdfMe6UDTPvBB680f1XDM/n1LPylNtrR7KleLnLOVzcyPI5x/0vA8K5rN3zMPywOtY+oxrZOCUHBEREZEDBkxEREREDhgwERERETlgwERERETkgAETERERkQMGTEREREQOGDAREREROWDAREREROSAARMRERGRA9Nf+s7+dUsiIiKiSsYRJiIiIiIH/FtyJSTof1soyOcf9LwPCuazd8zD8sDrWPqMa2TgCBMRERGRAwZMRERERA4YMBERERE5YMBERERE5IABExEREZEDBkxEREREDhgwERERETlgwERERETkoCABU6jlIvYdUY/X3sNGtb88dGI0NY7HT+VjFKPH1G7XvKa3d+ae8drjuD2sduZj+NxK+sf3jqudfjiO28b7ao815M2xDzFnpE99iD61e/2pc0/LL3kd3Oe/KhNp59x3cxRzNzvVFkkyTzLKhbzeeVxnr+nLgqrfq2VTlt1zOKO2nHkt61QIrAulwXvAVPUe6rfN4YsLb+H6hZtIhHai+aU31MHgO3OvB83xs9i8oR2b+2fQfDqfxsZ7ejuyEkRxTX/tDdeArjyDDllpuoARLX07RnDA55t2YuW9N284iIODarcroiE/XY94v57+ZLwep3wN+JawGG7ycC1FetRjbz7XqwItLgDNr6+9THpNXxYWlhDe46VueC3rVAisC8XnPWBafh+fXzgG/cfdv8WyeFLz8+e1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\"}},{\"insert\":\"\\nfull result in data_classical_doe_running_trials.csv\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Judge the design\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\nd utility for chosen design\\n5.780743515792328\\n\\nd utility for random design\\n3.6054172069881845\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "fd12a07a-87b1-4471-988a-469ed0f860f8",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1623.3551328125,
+        "y": 1657.2973696289062
+      },
+      "size": {
+        "width": 433.824,
+        "height": 406.48
+      },
+      "color": "#125059"
     }
   ],
   "edges": [
@@ -655,17 +730,6 @@
       "node_connections": [
         "766e8e3f-b14e-4c3e-996e-965db6bf946e",
         "f0b070ad-8a84-44d4-899e-dda3696b4a14"
-      ],
-      "type_specific": {
-        "annotation": ""
-      }
-    },
-    {
-      "id": "5d317b44-c7b4-44d6-8cac-2f00105bf77c",
-      "type": "dashed_arrow",
-      "node_connections": [
-        "d8c5e2e2-170a-4e23-83d2-52ca6b30a63e",
-        "dc8be860-579e-40fe-b3f6-024589b3c6ef"
       ],
       "type_specific": {
         "annotation": ""
@@ -776,6 +840,94 @@
       "node_connections": [
         "e6b5ea26-d56b-42d9-8c51-42469967c149",
         "79ebf790-904f-4576-b613-5cf151ad4419"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "fd12a07a-87b1-4471-988a-469ed0f860f8",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4faf33c5-45b5-474d-8e4d-d717a40ea26e",
+        "652a3d12-c63a-4476-95b8-fb32433d3714"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "44a5ef1a-2389-4fe5-b00d-73349022068d",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "766e8e3f-b14e-4c3e-996e-965db6bf946e",
+        "4faf33c5-45b5-474d-8e4d-d717a40ea26e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "64e5b32b-9697-426e-ba02-19e9b1a134c4",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4d7c9aa0-23b5-4afc-9050-018e9958938c",
+        "4faf33c5-45b5-474d-8e4d-d717a40ea26e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a85479a0-00f4-4462-b7b6-feb54862f50b",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "76620ef5-872a-489d-abe3-a64fef9e67d4",
+        "4faf33c5-45b5-474d-8e4d-d717a40ea26e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "3b6c4b50-a08d-478a-9fc9-c4cd01ef0afe",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "b4999665-6cb5-4c6f-ae71-3d95d953aa1a",
+        "4faf33c5-45b5-474d-8e4d-d717a40ea26e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "58ac5996-121a-4695-bd5b-88c65c68502d",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d57c1847-16b8-4dbf-8428-1a9a5f777304",
+        "4faf33c5-45b5-474d-8e4d-d717a40ea26e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "3d2983c3-8445-452f-9b79-727d9e878624",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e096c14f-4ce2-4827-bb4c-712dddc9566a",
+        "4faf33c5-45b5-474d-8e4d-d717a40ea26e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "e306c035-5156-409c-a48f-9138e20511c8",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "ce8f4732-e008-48de-9a9f-ef285a4eb758",
+        "4faf33c5-45b5-474d-8e4d-d717a40ea26e"
       ],
       "type_specific": {
         "annotation": ""
