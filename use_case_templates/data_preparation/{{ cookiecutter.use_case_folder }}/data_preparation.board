@@ -1,0 +1,1587 @@
+{
+  "nodes": [
+    {
+      "id": "ce728a6a-05d7-4a6b-9244-70f586b6ee42",
+      "title": "0. How to use the Board",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Go through the \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"yellow \"},{\"insert\":\"cards in order. Follow the instructions on each of these cards. Note that some actions may be \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"skipped \"},{\"insert\":\"or done in a \"},{\"attributes\":{\"color\":\"#ffff00\"},\"insert\":\"different order\"},{\"insert\":\" depending on your data requirements.\\n\\nThe \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"cards provide more information regarding the process at each step. \\n\\nAdjust and/or run code in the \"},{\"attributes\":{\"background\":\"#b2b200\"},\"insert\":\"linked cells\"},{\"insert\":\". Then, record the details on the \"},{\"attributes\":{\"color\":\"#008a00\"},\"insert\":\"green \"},{\"insert\":\"summary card.\\n\\nThe \"},{\"attributes\":{\"color\":\"#f06666\"},\"insert\":\"red \"},{\"insert\":\"cards detail some potential sources of error.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "c847ec84-747f-41ae-a2dd-60dce3125c8c",
+          "connector": "right"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 130.863825,
+        "y": 186.8928
+      },
+      "size": {
+        "width": 294.03839999999997,
+        "height": 352.376
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "e033f860-ee7c-4cde-9e7e-0dc965ffff8e",
+      "title": "2. Import the Data",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Perform the steps in order:\\n2.1 Read the Data\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"2.2 Merge the Data (if multiple filepaths)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nTo start, execute the code in the notebook cells \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"\\\"Import the data\\\"\"},{\"insert\":\" and \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"\\\"Visualising the raw imported data\\\"\"},{\"insert\":\" to load and generate the dataframe containing the data. This would be useful in the steps to come. \\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "cf72eeab-cc4f-41a3-a435-b6a06423ecb2",
+          "connector": "left"
+        },
+        {
+          "id": "156b8af5-b829-4804-9d9d-7c8f78761432",
+          "connector": "bottom"
+        },
+        {
+          "id": "d7f87116-91e4-47b4-9947-85d66b0446e9",
+          "connector": "bottom"
+        },
+        {
+          "id": "062fade3-1dbd-44f4-889b-e5563090bf0b",
+          "connector": "right"
+        },
+        {
+          "id": "ca78c9ff-3476-45ad-812f-a1a510c8b81a",
+          "connector": "top"
+        },
+        {
+          "id": "ddd5db60-2ca2-4e12-9f3a-c99c2475bd90",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1005.4997303059373,
+        "y": 226.77823177763662
+      },
+      "size": {
+        "width": 278.0418502399999,
+        "height": 273.18572287999996
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "f3b5609f-fe39-401b-8aa1-acfe52575621",
+      "title": "1. Describe the preparation",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"No adjustments to notebook required,\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "cf72eeab-cc4f-41a3-a435-b6a06423ecb2",
+          "connector": "right"
+        },
+        {
+          "id": "c847ec84-747f-41ae-a2dd-60dce3125c8c",
+          "connector": "left"
+        },
+        {
+          "id": "5e35522a-0e7e-419e-a623-7b091c194692",
+          "connector": "top"
+        },
+        {
+          "id": "09bde4a4-9971-4f3e-b605-0cd4f48b4b38",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 544.2249755859373,
+        "y": 238.9500045776366
+      },
+      "size": {
+        "width": 221.24999999999994,
+        "height": 248.74999999999994
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "369d66e6-38c8-4b6f-9d38-0fd5807c98d3",
+      "title": "Data Preparation",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Often, the raw data we have is not suitable to be directly used for analytics or machine learning purposes.\\n\\nData preparation is the process of gathering, structuring, and organizing the data so that it can be used for further analysis.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "5e35522a-0e7e-419e-a623-7b091c194692",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 539.7249755859373,
+        "y": -97.79999542236325
+      },
+      "size": {
+        "width": 227.74999999999994,
+        "height": 253.49999999999997
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "d71631d7-1d5a-45f6-8f7d-07cfb1596bf6",
+      "title": "Experiment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the summary card: \\ndescribe the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"use case\"},{\"insert\":\",\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"objective\"},{\"attributes\":{\"color\":\"#ffc266\"},\"insert\":\" \"},{\"insert\":\"of the data preparation,\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"describe the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"general procedure\"},{\"insert\":\".\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "09bde4a4-9971-4f3e-b605-0cd4f48b4b38",
+          "connector": "top"
+        },
+        {
+          "id": "782cbae3-9fc7-4e50-87e5-735ca0ea54e4",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 542.1749877929686,
+        "y": 560.9499969482421
+      },
+      "size": {
+        "width": 224.81249999999997,
+        "height": 245.81249999999997
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "d9a0fe42-e917-472c-bac8-00390a3874ea",
+      "title": "2.1 Read the Data",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"data_preparation.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"paths \"},{\"insert\":\"of the raw data\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"sheet number\"},{\"insert\":\" (Excel)\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"separator\"},{\"insert\":\" (Text file)\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"datetime column\"},{\"insert\":\" (time series)\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "156b8af5-b829-4804-9d9d-7c8f78761432",
+          "connector": "top"
+        },
+        {
+          "id": "4877a45f-6fea-49ec-a181-68df4c5628b3",
+          "connector": "right"
+        },
+        {
+          "id": "99c34106-8c62-4976-8b5c-d474e5ae3f1f",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 857.4592657741794,
+        "y": 560.2500250176365
+      },
+      "size": {
+        "width": 263.8309638399999,
+        "height": 278.37007743999993
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "797fba5f-2179-4412-aa77-bb7f4026f0a0",
+      "title": "2.2 Merge the Data",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"data_preparation.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"method of joining \"},{\"insert\":\"the separate raw data dataframes\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "d7f87116-91e4-47b4-9947-85d66b0446e9",
+          "connector": "top"
+        },
+        {
+          "id": "4877a45f-6fea-49ec-a181-68df4c5628b3",
+          "connector": "left"
+        },
+        {
+          "id": "d7181924-dd51-43b0-b6a4-d97aff94fde5",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1178.738534254179,
+        "y": 557.6578477376365
+      },
+      "size": {
+        "width": 283.22620479999995,
+        "height": 282.30443199999996
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "4b5f52c0-f468-4e0b-98bd-acab5ac356ef",
+      "title": "3. Data Structuring",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Perform the steps applicable to your data and requirements:\\n3.1 Pivot the dataframe\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"3.2 Separate mixed populations\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "062fade3-1dbd-44f4-889b-e5563090bf0b",
+          "connector": "left"
+        },
+        {
+          "id": "73d2a4f3-d7e3-4605-afbd-c68183d3edc1",
+          "connector": "bottom"
+        },
+        {
+          "id": "2431b34c-699e-4a71-813c-7c0c1bb223b8",
+          "connector": "bottom"
+        },
+        {
+          "id": "cd89ef96-76d5-42a6-aa4b-49a7aaa5da28",
+          "connector": "right"
+        },
+        {
+          "id": "75c536e2-cfc5-4303-99f0-106426a4a28c",
+          "connector": "top"
+        },
+        {
+          "id": "1f591ad0-8d12-4fd8-a2c1-5bf5c1e79c2c",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1686.7687110900872,
+        "y": 235.23125410079945
+      },
+      "size": {
+        "width": 241.24999999999994,
+        "height": 249.99999999999997
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "02e67e29-bbd9-4cd9-8231-7aa456c69291",
+      "title": "3.1 Pivot the dataframe",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"data_preparation.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify if the dataframe was \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"pivoted\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "73d2a4f3-d7e3-4605-afbd-c68183d3edc1",
+          "connector": "top"
+        },
+        {
+          "id": "d8a0412d-05df-4f57-9619-870ed143670d",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1565.9093933105464,
+        "y": 566.246871948242
+      },
+      "size": {
+        "width": 216.24999999999997,
+        "height": 246.24999999999994
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "29a9c302-9106-46d9-b1b7-91510a813220",
+      "title": "3.2 Separate mixed populations",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"data_preparation.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the different \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"mixed population index ranges\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffffff\"},\"insert\":\"specify \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"label or position index \"},{\"attributes\":{\"color\":\"#ffffff\",\"bold\":true},\"insert\":\"used\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "2431b34c-699e-4a71-813c-7c0c1bb223b8",
+          "connector": "top"
+        },
+        {
+          "id": "6910576d-27dc-4a43-b630-cd70678aee88",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1825.9093933105462,
+        "y": 563.746871948242
+      },
+      "size": {
+        "width": 223.74999999999994,
+        "height": 247.49999999999994
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "a0ca6770-e457-47a6-8f4b-4745e98e5f5f",
+      "title": "4. Data Cleansing",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Perform the steps applicable to your data and requirements:\\n4.1 Standardization\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"4.2 Missing values\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"4.3 Outliers\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "cd89ef96-76d5-42a6-aa4b-49a7aaa5da28",
+          "connector": "left"
+        },
+        {
+          "id": "7576d71e-fb45-456a-9998-503fb0110ce1",
+          "connector": "bottom"
+        },
+        {
+          "id": "1fd2a0d8-ecfd-4818-b127-48697f33c6c1",
+          "connector": "bottom"
+        },
+        {
+          "id": "318e4d28-19b5-44e4-bb71-cc2185a50b6a",
+          "connector": "right"
+        },
+        {
+          "id": "a31d7f59-ae26-472e-8193-de098889266b",
+          "connector": "top"
+        },
+        {
+          "id": "77b39b7b-242f-4287-9b9c-de9b3094fb88",
+          "connector": "top"
+        },
+        {
+          "id": "067cf5c9-ba5e-4325-b07e-afd9cf4a98f1",
+          "connector": "top"
+        },
+        {
+          "id": "aa4b3155-3808-43fa-9947-44576fb1f5f0",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2430.534351348876,
+        "y": 228.3406448364257
+      },
+      "size": {
+        "width": 270.31249999999994,
+        "height": 269.06249999999994
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "70169b7a-842e-4285-9d13-48f6019ec3a3",
+      "title": "4.1 Standardization",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"data_preparation.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"columns \"},{\"insert\":\"and \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"datatype\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"function \"},{\"insert\":\"to rename the columns\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "aa4b3155-3808-43fa-9947-44576fb1f5f0",
+          "connector": "top"
+        },
+        {
+          "id": "2eec76c1-e1ec-49d5-875a-52dd029cf86f",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2173.659351348876,
+        "y": 564.5906448364256
+      },
+      "size": {
+        "width": 237.65179999999995,
+        "height": 261.70539999999994
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "208b9d84-2b3d-4a98-aa41-b860f2190ff1",
+      "title": "4.2 Missing values",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"data_preparation.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"method \"},{\"insert\":\"to deal with missing values\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"custom value\"},{\"insert\":\" to impute (if custom value method chosen)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"attributes\":{\"color\":\"#ffffff\"},\"insert\":\"specify the\"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\" number of missing values\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "7576d71e-fb45-456a-9998-503fb0110ce1",
+          "connector": "top"
+        },
+        {
+          "id": "8160db9b-7c34-43c2-9407-735ad7fb6aba",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2446.396911621093,
+        "y": 561.9906234741209
+      },
+      "size": {
+        "width": 242.49999999999994,
+        "height": 261.24999999999994
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "c8f3911e-b463-4384-a35b-5c975c3b5eb5",
+      "title": "4.3 Outliers",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"data_preparation.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"percentile \"},{\"insert\":\"threshold\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify whether outliers are points above or below percentile\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"features \"},{\"insert\":\"to check for outliers\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "1fd2a0d8-ecfd-4818-b127-48697f33c6c1",
+          "connector": "top"
+        },
+        {
+          "id": "486ba51b-d86f-4659-8332-4a4bbdd41f35",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2738.896911621093,
+        "y": 558.2406234741209
+      },
+      "size": {
+        "width": 244.99999999999994,
+        "height": 262.49999999999994
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "e3fce7fe-ae84-4f9f-8f15-c2aadf546e3a",
+      "title": "5. Data Transformation and Enrichment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Perform the steps applicable to your data and requirements:\\n5.1 Encoding\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"5.2 Transformation and Enrichment\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "318e4d28-19b5-44e4-bb71-cc2185a50b6a",
+          "connector": "left"
+        },
+        {
+          "id": "e7dd837a-ecce-4ee2-b806-1dc846e717ea",
+          "connector": "bottom"
+        },
+        {
+          "id": "c458d1e9-a0cb-4d8b-a88a-9f095412f4b8",
+          "connector": "bottom"
+        },
+        {
+          "id": "8a673fa5-3090-4359-9931-88addb294101",
+          "connector": "right"
+        },
+        {
+          "id": "0e54b671-997e-48e8-8e06-3ec1435a3f5a",
+          "connector": "top"
+        },
+        {
+          "id": "0c503055-e2b4-4729-a241-635607f6ea62",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3302.178085327147,
+        "y": 220.6625032424926
+      },
+      "size": {
+        "width": 292.18749999999994,
+        "height": 276.87499999999994
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "6c0ed4e8-8d70-48ad-94b1-f74dcbb0167d",
+      "title": "5.1 Encoding",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"data_preparation.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"one hot encoding \"},{\"insert\":\"threshold\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "e7dd837a-ecce-4ee2-b806-1dc846e717ea",
+          "connector": "top"
+        },
+        {
+          "id": "91ce97d8-c1e1-4a16-bb67-37a026690872",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3133.542089327147,
+        "y": 557.0724712424924
+      },
+      "size": {
+        "width": 248.43749999999994,
+        "height": 265.93749999999994
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "9330ed5e-3380-4b17-b8e8-7c7545a6f1bd",
+      "title": "5.2  Transformation and Enrichment",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"data_preparation.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\"},\"insert\":\"columns \"},{\"insert\":\"and \"},{\"attributes\":{\"color\":\"#ffc266\"},\"insert\":\"function \"},{\"insert\":\"for single column operations\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#ffc266\"},\"insert\":\"columns \"},{\"insert\":\"and \"},{\"attributes\":{\"color\":\"#ffc266\"},\"insert\":\"operation \"},{\"insert\":\"for single column operations\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify if data should be normalised\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify the \"},{\"attributes\":{\"color\":\"#ffc266\"},\"insert\":\"columns\"},{\"insert\":\", \"},{\"attributes\":{\"color\":\"#ffc266\"},\"insert\":\"thresholds\"},{\"insert\":\", and \"},{\"attributes\":{\"color\":\"#ffc266\"},\"insert\":\"labels \"},{\"insert\":\"for binning\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"specify \"},{\"attributes\":{\"color\":\"#ffc266\"},\"insert\":\"columns \"},{\"insert\":\"to select from the dataframe\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "c458d1e9-a0cb-4d8b-a88a-9f095412f4b8",
+          "connector": "top"
+        },
+        {
+          "id": "ee200fc0-e696-4586-96ef-68e587b19196",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3504.789161327147,
+        "y": 555.2181992424925
+      },
+      "size": {
+        "width": 256.24999999999994,
+        "height": 270.62499999999994
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "b92e895a-5ad9-4d30-9192-1b92dd7105ae",
+      "title": "6. Export the prepared data",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"data_preparation.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the export \"},{\"attributes\":{\"color\":\"#ffc266\",\"bold\":true},\"insert\":\"filepath \"},{\"insert\":\"of the prepared data\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "8a673fa5-3090-4359-9931-88addb294101",
+          "connector": "left"
+        },
+        {
+          "id": "f89089e6-9a6a-4539-aad4-2d4ce7113d8c",
+          "connector": "bottom"
+        },
+        {
+          "id": "290a76dc-9b4f-4636-93d2-a04e7db395bd",
+          "connector": "right"
+        },
+        {
+          "id": "6b35fbb4-3685-4168-b258-ff4f5b2d34a2",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3980.1469306945783,
+        "y": 213.85707139968864
+      },
+      "size": {
+        "width": 244.2362999999999,
+        "height": 288.3593749999999
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "c9f23d08-4d4f-44d1-ae91-6bb801a365ec",
+      "title": "Export ",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"In the notebook \\\"data_preparation.ipynb\\\", adjust the respective lines (linked to the card) to:\\nspecify the \"},{\"attributes\":{\"color\":\"#ffc266\"},\"insert\":\"export path\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "f89089e6-9a6a-4539-aad4-2d4ce7113d8c",
+          "connector": "top"
+        },
+        {
+          "id": "744d91ba-335f-4132-ba85-d5864cd07713",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3981.981566976,
+        "y": 562.233385472
+      },
+      "size": {
+        "width": 240.660178944,
+        "height": 279.20716386303997
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "54026ca0-cded-49aa-bd7a-48d483cf64f7",
+      "title": "7. Copy To Hypothesis Board (if in Project-Experiment folder)",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Finally, if you are conducting the data preparation in a project-experiment folder structure, copy the \"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"green \"},{\"insert\":\"summary card of this experiment to the corresponding \"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"blue \"},{\"insert\":\"experiment card of this process on the hypothesis board. Then, link that experiment card to the first cell of the data_preparation.ipynb notebook.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "290a76dc-9b4f-4636-93d2-a04e7db395bd",
+          "connector": "left"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 4490.78064128,
+        "y": 213.73922304
+      },
+      "size": {
+        "width": 288.978561024,
+        "height": 289.987531776
+      },
+      "color": "#51455b"
+    },
+    {
+      "id": "32a9f132-7ae7-47ae-9cf0-2465cf238ca4",
+      "title": "Importing",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The template supports reading from the following:\\nComma Separated Values File (.csv)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Pandas pickle (.pkl)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Excel Spreadsheet (.xlsx)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Zip folder containing csv (.zip)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Text file (.txt)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Json (.json)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "ca78c9ff-3476-45ad-812f-a1a510c8b81a",
+          "connector": "bottom"
+        },
+        {
+          "id": "8f760d60-b1ce-4736-9f5f-809c32420a29",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 844.5127577600001,
+        "y": -154.67058176
+      },
+      "size": {
+        "width": 248.98167808,
+        "height": 292.40345088
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "4f5d7cd8-d1d1-4d66-80a6-8a5d172dbd32",
+      "title": "Merging",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The template supports 3 ways of merging separate dataframes:\\nVertical (adding rows)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Inner join (extend rows present in all dfs based on index)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Outer join (extend rows that are present in at least 1 df)\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nRead up on joins: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html#pandas.DataFrame.merge\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "ddd5db60-2ca2-4e12-9f3a-c99c2475bd90",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1187.30486784,
+        "y": -159.50246912
+      },
+      "size": {
+        "width": 244.95514623999998,
+        "height": 299.11433728
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "735adcf9-fd37-4e98-ba2e-5c923968878d",
+      "title": "Pivoting",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The dataframe should be in the structure:\\nRows = Samples\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Columns = Features\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nPivot (transpose) the dataframe to this format.\\n\\nThis is to ensure the correct format for further steps.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "75c536e2-cfc5-4303-99f0-106426a4a28c",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1511.1950520320001,
+        "y": -152.33206067199998
+      },
+      "size": {
+        "width": 259.182225408,
+        "height": 313.87828736
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "a7882b44-04e8-45d4-89f1-5d1cb7bb31bf",
+      "title": "Separating Mixed Populations",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The data may contain data coming from two or more populations with distinct behaviors.\\n\\nYou have to manually observe and specify the index ranges for these mixed populations\\n\\nFor example, the data for indexes[0:1000] are from summer, and index[1000:2000] are from winter. Temperature data in those two index ranges come from different populations and should be separated.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "1f591ad0-8d12-4fd8-a2c1-5bf5c1e79c2c",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 1828.29945856,
+        "y": -155.82499839999997
+      },
+      "size": {
+        "width": 287.90481919999996,
+        "height": 316.89818624
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "b403344f-7548-4771-b00a-489746e720cd",
+      "title": "Standardizing",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The raw data may contain data that do not have uniform data types or column names.\\n\\nThe template allows you to standardise:\\nThe datatypes for:\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Each column\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"The entire dataframe\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"The names of the columns\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a31d7f59-ae26-472e-8193-de098889266b",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2156.2244800000003,
+        "y": -139.04811999999998
+      },
+      "size": {
+        "width": 236.31488,
+        "height": 303.01504
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "eb9e1454-57bd-49e8-8921-32cf79b2e868",
+      "title": "Dealing with Missing values",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The data may have missing values from the raw data or due to possible inner joins.\\n\\nThe template would allow you to deal with the missing data by: \\nDeletion of incomplete rows\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Deletes row if missing value in any cell\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"When complete sequence of data not needed/Large number of data points\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Imputation based on other rows\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Zeros\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Fills missing values with value 0\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"When semantically for the features, missing value -> 0\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Custom value\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Fills missing values with custom value\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Mean\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Fills missing values with the mean of the column\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For features that are largely independent of other features\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Not suitable for categorical data as it has an implication of cardinality\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Median\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Fills missing values with the median of the column\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For features that are largely independent of other features\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Not suitable for categorical data as it has an implication of cardinality\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Mode\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Fills missing values with the most frequent value of the column\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For features that are largely independent of other features\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Linear regression\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Fills missing values based off a linear regression of features in the same row\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For features that are dependent on other features\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Knn\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Fills missing values based off the k (default=3) nearest neighbors of features in other rows\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For features that are dependent on other features that displays clustering\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Interpolate\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Fills missing values by interpolating the previous and next values\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"For features that are ordered sequentially (eg. time series data)\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Not suitable for categorical data as it has an implication of cardinality\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Encode\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Encode features with missing values with a new column that = 1 when value is missing and 0 otherwise\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"When missing values are not random -> Missing values are informative\"},{\"attributes\":{\"indent\":2,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nFor more details on missing data imputation: https://www.kdnuggets.com/2020/09/missing-value-imputation-review.html\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "77b39b7b-242f-4287-9b9c-de9b3094fb88",
+          "connector": "bottom"
+        },
+        {
+          "id": "a5c5c892-a819-4520-b6de-46328c4dd136",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2426.2328,
+        "y": -140.93227999999996
+      },
+      "size": {
+        "width": 273.01504000000006,
+        "height": 304.32576
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "fe8b98a0-5f2e-45ac-9f2f-bb1bb76c1328",
+      "title": "Dealing with outliers",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"The raw data may contain distinct outlier data points. You may visualise it with a box plot.\\n\\nThe template provides basic plotting and univariate percentile based outlier detection and removal.\\n\\nMore extensive outlier detection methods may be found in the outlier detection template.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "067cf5c9-ba5e-4325-b07e-afd9cf4a98f1",
+          "connector": "bottom"
+        },
+        {
+          "id": "0956f39c-c0ba-449f-a65a-54df86760548",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2730.40176,
+        "y": -139.90008
+      },
+      "size": {
+        "width": 267.77216,
+        "height": 304.32576
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "81c65142-abdc-462c-a55f-ead5df8d62ce",
+      "title": "Encoding the data",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Categorical data would have to be converted to integer format for models\\n\\nOne-hot encoding\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Transforms all elements into new columns with 0 or 1.\\n\\nSuitable for non-ordinal and low cardinality data.\\n\\nAllows us to apply algorithms which handles binary features (eg. Linear regression)\\n\\nLabel encoding\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Transforms all elements to a numerical value.\\n\\nSuitable for ordinal elements where sequence is important.\\n\\nNote that encoding will produce additional column(s) storing the encoded data. This may increase dimensionality significantly.\\n\\nDefault thresholds to encode:\\nOne hot <= 10 unique\\nLabel > 10 unique\\n\\nYou may manually specify these thresholds.\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "0e54b671-997e-48e8-8e06-3ec1435a3f5a",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3118.3646400000002,
+        "y": -146.18744
+      },
+      "size": {
+        "width": 245.48992,
+        "height": 306.9472
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "e6a1d8f8-123f-4677-9be8-52b0284ffafe",
+      "title": "Transforming and Enriching the data",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"We may require data for our subsequent models that is a transformation of the data. Eg. Product of two columns/Aggregate, binning of data.\\n\\nFurthermore, normalisation and/or dimensionality reduction would be useful to improve performance of models on this data.\\n\\nThe template provides processes for:\\nOperations on one/multiple columns\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Aggregate/Binning\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Normalisation\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Dimensionality Reduction/Feature Selection\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Select columns\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "0c503055-e2b4-4729-a241-635607f6ea62",
+          "connector": "bottom"
+        },
+        {
+          "id": "e7df49ef-9c1c-4751-9d74-0b2697ad325e",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3465.70544,
+        "y": -148.546736
+      },
+      "size": {
+        "width": 278.520064,
+        "height": 306.05591039999996
+      },
+      "color": "#28337e"
+    },
+    {
+      "id": "8592643e-e4e8-4ad3-bbcd-c770f52916f3",
+      "title": "Summary",
+      "type_specific": {
+        "message": "{\"ops\":[{\"attributes\":{\"underline\":true},\"insert\":\"General\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Use Case\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Objective\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"General Procedure\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Importing\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nDataset\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Name(s)\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Merge the data\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Samples (joined)\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Dimensions (joined)\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Time Series\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Structuring\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nPivot\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Mixed Populations\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Cleansing\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nData types\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\nColumn names\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"(List operations)\\n\\nMissing values\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Number of missing values\\n\\n\\nEncode missing values\\n\\n\\nMethod used\\n\\n\\nOutliers\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Percentile\\n\\n\\nFilter upper or lower\\n\\n\\nFeatures\\n\\n\\nOutliers found\\n\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Transformation and Enrichment\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nEncoding\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"One hot encoding threshold\\n\\n\\nTransformation\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"(List transformations)\\n\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nNormalisation\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\nBinning\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Feature: \\nThresholds: \\nLabels:\\n\\nSelect columns\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"\\n\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Export\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nExport path\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b8a3e0d1-8b1f-4355-a223-2393b8c79c87",
+          "connector": "bottom"
+        },
+        {
+          "id": "782cbae3-9fc7-4e50-87e5-735ca0ea54e4",
+          "connector": "top"
+        },
+        {
+          "id": "99c34106-8c62-4976-8b5c-d474e5ae3f1f",
+          "connector": "top"
+        },
+        {
+          "id": "d7181924-dd51-43b0-b6a4-d97aff94fde5",
+          "connector": "top"
+        },
+        {
+          "id": "d8a0412d-05df-4f57-9619-870ed143670d",
+          "connector": "top"
+        },
+        {
+          "id": "6910576d-27dc-4a43-b630-cd70678aee88",
+          "connector": "top"
+        },
+        {
+          "id": "2eec76c1-e1ec-49d5-875a-52dd029cf86f",
+          "connector": "top"
+        },
+        {
+          "id": "8160db9b-7c34-43c2-9407-735ad7fb6aba",
+          "connector": "top"
+        },
+        {
+          "id": "486ba51b-d86f-4659-8332-4a4bbdd41f35",
+          "connector": "top"
+        },
+        {
+          "id": "91ce97d8-c1e1-4a16-bb67-37a026690872",
+          "connector": "top"
+        },
+        {
+          "id": "ee200fc0-e696-4586-96ef-68e587b19196",
+          "connector": "top"
+        },
+        {
+          "id": "744d91ba-335f-4132-ba85-d5864cd07713",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2028.7015620800003,
+        "y": 1121.6871949400002
+      },
+      "size": {
+        "width": 497.09573120000005,
+        "height": 492.40883712000004
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "8f42bc46-93b0-404c-9d75-4a9f1785ea9f",
+      "title": "Summary - example (using example dataset)",
+      "type_specific": {
+        "message": "{\"ops\":[{\"attributes\":{\"underline\":true},\"insert\":\"General\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Use Case\"},{\"insert\":\"\\nGiven a raw dataset, prepare the data by structuring, cleaning, and transforming the data into a format that is suitable for further use as inputs to models/further analysis.\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Objective\"},{\"insert\":\"\\nTo prepare the raw dataset of Daily Climate in Delhi.\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"General Procedure\"},{\"insert\":\"\\nImport data - Structure the data - Clean the data - Transform/Enrich the data - Export the prepared data\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Importing\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nDataset\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Name(s)\"},{\"insert\":\"\\nDailyDelhiClimate\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Merge the data\"},{\"insert\":\"\\nNo merge (1 data file)\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Samples (joined)\"},{\"insert\":\"\\n1462\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Dimensions (joined)\"},{\"insert\":\"\\n4\\n\\n\"},{\"attributes\":{\"bold\":true},\"insert\":\"Time Series\"},{\"insert\":\"\\nYes\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Structuring\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nPivot\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"No pivot\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Mixed Populations\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"No mixed populations\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Cleansing\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nData types\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"float for numeric columns\\n\\nColumn names\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"(List operations)\\nRemove underscores '_'\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Change names to all lower case\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nMissing values\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Number of missing values\\n4\\n\\nEncode missing values\\nNo \\n\\nMethod used\\nMean\\n\\nOutliers\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Percentile\\n0.99\\n\\nFilter upper or lower\\nUpper\\n\\nFeatures\\nAll features\\n\\nOutliers found\\n58\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Transformation and Enrichment\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nEncoding\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"One hot encoding threshold\\n10\\n\\nTransformation\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"(List transformations)\\nmeantemp *= 2\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"result = meanpressure / meantemp + humidity\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nNormalisation\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Yes\\n\\nBinning\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"Feature: meantemp\\nThresholds: 0, 0.33, 0.67, 1\\nLabels: Low, Medium, High\\n\\nSelect columns\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"},{\"insert\":\"meantemp, humidity, windspeed, meanpressure, result, meantemp_bin\\n\\n\\n\"},{\"attributes\":{\"underline\":true},\"insert\":\"Export\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nExport path\\n./data/export.csv\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "b8a3e0d1-8b1f-4355-a223-2393b8c79c87",
+          "connector": "top"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2029.2086783999998,
+        "y": 1783.3347128
+      },
+      "size": {
+        "width": 502.653184,
+        "height": 478.9660928
+      },
+      "color": "#125059"
+    },
+    {
+      "id": "c883e663-86ea-4103-a4d9-a700ac4d1a22",
+      "title": "Standardizing Errors",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Invalid conversions\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nConverting column values to an invalid datatype\\nEg. Non-numeric to int or float\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":{\"image\":\"data:image/png;base64,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\"}},{\"insert\":\"\\n\\nFix: Skip these columns or convert them to numeric (through encoding)\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "c105e145-f0d2-4a1d-9c8e-e6b9caf4da48",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2169.7604096,
+        "y": -482.85512704
+      },
+      "size": {
+        "width": 207.3741824,
+        "height": 233.34765056
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "6e5df34d-6225-4b2c-a4c8-5633205c65a9",
+      "title": "Importing errors",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Missing file extension\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"Filepaths specified are missing the extension (.csv/.txt etc)\\n\\nAt import step:\\n\"},{\"insert\":{\"image\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArQAAAAcCAYAAACQ7ixwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAxcSURBVHhe7Z1PSBzJF8ff/q7CgJcRoruHoAQhHhZzCHrIEmEhBLxkjQghewriTSRn181ZxFuQnDb8QIzZi7AEFlySg5LDhj0YEDHksKsH5yIMeN599a+7urp6pnqmZ8aO3w80OzPd6ap+r+rVq/deu19du/bgXwIAAAAAAKCk/E//FwAAAAAAgFIChxYAAAAAAJQaOLQAAAAAAKDUwKEFAAAAAAClBg4tAAAAAAAoNXBoAQAAAABAqYFDCwAAAAAASg0cWgAAAAAAUGrg0AIAAAAAgFIDhxYAAAAAAJQaOLQAAAAAAKDUNHRo57d/odPTdVrV32MW6O3pa3q7pr/mYPXda76nPg5/onn9eydRz2G1Kw/fc4GGrK0HyU3Ku0u6zYuvb4kxKY9f6NUTfbIN1H2z5VXcXJimV4fWveTR3vgO6lvgeIiQ1zexG09+osPoGfh4t6BPxOSSm77f4fa0/qEsKBsbPWfi6ILtKkJuvnvoMeC/rx7HXbYdzeZp91FyKN+Y9QGdXllC7H3BNHRoN37/THUaoltuh9Zu0Aid0J9L+nsOnt75gQYHf6Bn+xf6ly5RP6Bn3K5oWx2L9FSfAmGsjg9Rff+PzstNLoTFOJVJpmnqZh8dv/mZNvQvEZ9247GxdU6TK52fiEXPhfr+y+gZnu3301wbMuzJPBV6Xxkjsp5j8MONlB56ZkMCkYupxxHPx3P6zshg5YDt8AXtrejvJbNdlZvfRs7M/Nf9+hMAoD1aDyx+qTQuOXjxFx3UiUbGk8ZZODb06QgO4VWCnY37wxd08PuO/qGErN2lyUrARmxpUTpLI7Pt7fCV49Ub52Nj5kfa/NRHk0vdjYw0hOUqHLLvvPKfpldLY1ThjcXojDXG+N/4rw/kxc80ym0m7gmaU4TcRvupUj+hY7pOU3JjJTaU57THc6tSHZSXJNmhh6M8Z0Y9G84O0st5+uUDnV5ZGtr7ztCkhnaHdj9eEFWr1qI4Td9UiY4/PNffYxKpwHZ2Dp5UZmbUQ4e1226TEW2INI9dopBO+4hdkYh82WlefyTMLXXwpZDkNeK57OfIjO7oNGSX0zeC+e+vs7Pxnh6+0D8ksGXxmpYn+vTvDjoFGT2n+xzm/Ao7NsTO2Ep8rU92ecdbngizyk700zeuXp3x5tNVUu/tOMVarm4bnvnh4+mHE6JKP43o74ak3ApIy9ky8Y1NR+9ePT35lsYqF7T3/7RdaY1kyt6fvtVzeVv3n/u+anTn0Wuz8WbOzw3zl+Ep61qPjB2Z+PsXRrgNSc5Tv90KkVvcZmKs+9qsHdHmR15CRvmz0DF/31VnEiRk28i+uTYka/y689Rzz7B5auy9LRe/vU+12ejaIAYT+vLbtxCdMqFya4Z4RpblK62vw+2FqP2s+SAP6FTS1Pbq9hLzTv8Wy9f0e0ra9pFZ656+Oeg8Q3oc5ZBHiK6ca/zjVhBqjwL7xjR9KUwu7BWzw2b0wlM71N8NLLRbH8SuSB1FRLiaIhQ12x+n4lYOaICV6xVgZYyWI4HwkTHBKhOPafnmZ1WewPejiQce4Qln6zGNfVSp0Wf7lIqEiYm1PHFOm1oeg4O7dMb39i4QYvGbJX3tLh3z9+xB0AsWaI6dVN8mRg3KxzRZi1P2/lQwX/eIaN2SxzHrZNGWh44KpVOsnkhR3vHGkyx/hLlPLcQRPKnGj6I2ZT89uhLRUXl+ix3Kttihh2/4HsM3rOdiOd7LU/qRdMqFQZ2rxuU3qjShnXk6RHP3zvX9PDoVGL2K8/qnFCKapz8Wg0nZv6S9uv7JC8/lm9x/oUvu+1z1vdJbQuZMwHgzpRCbn/iLXcLiRoqEwedN29mWOd/ANoQSYEPmt+/yc5g2RT99EfxQuTHcxrKQl7g+Yy4IxBoyMM7OL2+Kz7w2JJad33YYeP4l5CYOTxROyNdeF8ThiRCGz1Nh729TTd/PKzfZ5hAdm75FNuzHjCBAcyoTU1R9o+6XZd/CdBoot1B4nozVXso+mT6KMe9mcqHTJEG2V0Q1ue8V43dYfYgjnWaOKnsa9U8cd5z5FewjBcgjVFch9t7jN6hSP5+zGtI3RVOHVpUd9NHY98rYykhd/TPtugp1UoOZEa4CURG3X+PBxYL8zTOxJG4NbVYKRFxnzr2o0RkLM+nUKES9onGyNv45dyJhqlYz6XQ8p01hAKx6spgTXojMwDilGi8kA1/7Fjc9kLucvpE10yyXTV/qQG5wuP/uRErBztkdu9/P6U/WlT/1GEDO8dY4whwKy99+Tl2S49dVQSwdsVGw6tj1hrK10o8FusVO/d5arIeNmffJ++eGdR+NxzZ12iPimmodIT4857HkUKB9U2NxN7FAZduGUJrbkI2ZxcT4z4rgByNspZkPnrkQ1cuKc9XbtMgbh1beu3Dx2vcU8ZpVBMdbsRPjlZssr7BspF43fWtHKGKNMWMka7zl0WmY3EI4od9MgEE/83GtvXr2L1+nOWwv2xoVJFunt0vqnQLb9uQhj4/UVB6aQsaRLyO39Advov06Du1bc4dWlx0oY6sdtY9/WY6Jgb13OwLKnnyxERcXVfogIqpRm3zIdF871GrWsykH0jeYzv6xHAqxq0rsVAapyg+fuIZJO76a+rm1k1E1R5en5k9FBL0vUglyRNaS6aB2dZVnvIkIM+VLZ8vnSmcikikj3mF2dpAzytkxRiSPY64cinP621z7pEoDcrdrP4NKW/UcnxN5qSjOvo1U+1RE1bpfZplOKCE2RER7rDZPZ4f0iU4j1hA2fTXrvYtEGVsowh6r6LN5Bm9UW0SIVkR2LV4bOp7xEuNXRPhNO7Je35PJLJognQbKrSdcEZ3mtL0bM7/SHju7I3RA6y37AkX7SAWOI7m+WmuTZIf+rnF/2wiIBDi0xhG7TlNrWdEhET5m5dhpNhme7yTq4e03u6OjabSw0/gjJNLBSCw8JUBHYNuOrKyt86LNTqWVMpKp2ZbIOd5khNmTVWiAfPHR+TfCIZ8bFpEw8wwBadkCkNEZmQIXG8pQx1xtPhMvb8qMg0iZmf7HR6sRgMLQ2ZAiIzDFUax9k9GsREmCPjqaeVHpwsRfkGi7JCYcmQrWdlmuJy2jggyy/9rB8To2UdpTPefIbHbdXZFE9YwyTdxaajqcPDoNlFtPuAI6zWl7V9+pdPxmbYyWvfXwIXTCRypoHMkAhptxUA54vXaqv+cnyKFVaU/eXcyO+csNdEQy7ggvAOKNZf0tN87DKkdCfbYRoeeo1uRSoaPaE3fj+hjeSS+KOtSsSGcQOkrUqMA+Byba2GiXtfpIGMwG9ZpOSlzVDqejTaloITu4mTvFps5NnvHG5xpFmD2o8ZZMDwlkZM3akMxvP+hChJaRaaIhun/I7dXCorPSIKZKQURJQHb9UW/RaXfXQPI46f3Cm8++SYfVrcG1UBuULtfJywiRnTViW9K1CG2HkHYigC5E/00Zie00dHyT2KpOQ+XWC75YnYbb3ihwwrb76R0VEfWv0Spw1qgEoKM+UjvjSJdvTD6K+67WU6ucpQXCHFqpDPXJX27AXrssZDah7cdUfcOK0GdjtEPGh3R6KuZFLacwWi7gcXhevHjgLSwXqX79N0NVu+rwLhRRW+Zo50WY5qg/mzREc6Y93kmLYuqeR8Jyoep+GtdrKt2bXax8oc4TJZAplLolj3vn0oHx444n1+kOHW9MaITZSqOol/nSO3FpXKxxJMZlOsosonnqvEr/mWd2owmBc0EjDVMl68U8hS0v9fJBumBfvKghd/36OnW4bebrWzOEgVbtqBSbGSuukZZRPGssyWP8yJkzgX0TL0PI31VZSCSblqIdOcYbkxrrbt90+lS8nKHOq6Pl9F0I3Oa6KF2J2rxNtS1PlLlAuckNYBCBOnXT6zyeBnz1hdEz6EPaXnc+h87TMGQ9pGVDzHEpdBoqt0KBTl1CbK8JCB1vGdsd2550uzv0cI31bffRnad5fKRmBOoqzN5z30eVs27up9bd9JqVh6+uXXvwr/4MQAI5ucRbzD0v4WgdEYW+X4tf4CstwqDLt9jbm/AAgOKRb7DTbtJWyjkr3jDvdOkB6ATQafkIjNCCq0ejP9VVEnhHWfr/GYRkQaYS4107AODyoGr/XFJlVqBEQKdlBBFaAC4rIsWzomo17T8TBwC4bIgUu0qxxth/Sg2UD+i0bMChBQAAAAAApQYlBwAAAAAAoNTAoQUAAAAAACWG6D9I3by21/D2FAAAAABJRU5ErkJggg==\"}},{\"insert\":\"\\n\\nFix: Include the extension for the files\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "8f760d60-b1ce-4736-9f5f-809c32420a29",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 858.43649536,
+        "y": -483.29135103999994
+      },
+      "size": {
+        "width": 218.11160064,
+        "height": 248.11160064
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "89594775-659d-4d3e-8d3b-885d68c0a9db",
+      "title": "Missing values errors",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Missing values will be kept when:\\n\\nusing Mean, Median, Interpolate on missing categorical values\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"using Encode on missing values\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nYou will have to deal with them using another method.\\n\\n\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "a5c5c892-a819-4520-b6de-46328c4dd136",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2453.7151744000003,
+        "y": -492.27389952000004
+      },
+      "size": {
+        "width": 217.440512,
+        "height": 249.1182336
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "373fce39-5e78-4a8d-9a4a-4d8e7339a298",
+      "title": "Outlier detection errors",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Outlier detection on categorical features\\n\\n\"},{\"insert\":{\"image\":\"data:image/png;base64,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\"}},{\"insert\":\"\\n\\nFix: Skip the features or convert to numeric data (via encoding)\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "0956f39c-c0ba-449f-a65a-54df86760548",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 2758.7249786879997,
+        "y": -490.49546137600004
+      },
+      "size": {
+        "width": 215.964116992,
+        "height": 254.554051584
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "b6e4f9f0-2930-4258-82bd-14262afd07e5",
+      "title": "Export errors",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"No extension included\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"First file (export) without extension and second file (export.csv) with extension. Will result in different filetypes.\\n\"},{\"insert\":{\"image\":\"data:image/png;base64,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\"}},{\"insert\":\"\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "6b35fbb4-3685-4168-b258-ff4f5b2d34a2",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3992.6690304,
+        "y": -475.871266816
+      },
+      "size": {
+        "width": 210.259863552,
+        "height": 225.89856665599999
+      },
+      "color": "#513063"
+    },
+    {
+      "id": "5ff7a181-6f69-401b-bc6e-f95072df5e50",
+      "title": "Transforming/Enriching errors",
+      "type_specific": {
+        "message": "{\"ops\":[{\"insert\":\"Binning categorical features\"},{\"attributes\":{\"header\":1},\"insert\":\"\\n\"},{\"insert\":\"\\nFix: Convert categorical features to numerical features (via encoding)\\n\"}]}"
+      },
+      "edge_connections": [
+        {
+          "id": "e7df49ef-9c1c-4751-9d74-0b2697ad325e",
+          "connector": "bottom"
+        }
+      ],
+      "type": "note",
+      "position": {
+        "x": 3490.016299008,
+        "y": -480.241764352
+      },
+      "size": {
+        "width": 232.070244352,
+        "height": 250.259084288
+      },
+      "color": "#513063"
+    }
+  ],
+  "edges": [
+    {
+      "id": "cf72eeab-cc4f-41a3-a435-b6a06423ecb2",
+      "type": "solid_arrow",
+      "node_connections": [
+        "f3b5609f-fe39-401b-8aa1-acfe52575621",
+        "e033f860-ee7c-4cde-9e7e-0dc965ffff8e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c847ec84-747f-41ae-a2dd-60dce3125c8c",
+      "type": "solid_arrow",
+      "node_connections": [
+        "ce728a6a-05d7-4a6b-9244-70f586b6ee42",
+        "f3b5609f-fe39-401b-8aa1-acfe52575621"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "5e35522a-0e7e-419e-a623-7b091c194692",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "369d66e6-38c8-4b6f-9d38-0fd5807c98d3",
+        "f3b5609f-fe39-401b-8aa1-acfe52575621"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "09bde4a4-9971-4f3e-b605-0cd4f48b4b38",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "f3b5609f-fe39-401b-8aa1-acfe52575621",
+        "d71631d7-1d5a-45f6-8f7d-07cfb1596bf6"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "156b8af5-b829-4804-9d9d-7c8f78761432",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e033f860-ee7c-4cde-9e7e-0dc965ffff8e",
+        "d9a0fe42-e917-472c-bac8-00390a3874ea"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "d7f87116-91e4-47b4-9947-85d66b0446e9",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e033f860-ee7c-4cde-9e7e-0dc965ffff8e",
+        "797fba5f-2179-4412-aa77-bb7f4026f0a0"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "4877a45f-6fea-49ec-a181-68df4c5628b3",
+      "type": "solid_arrow",
+      "node_connections": [
+        "d9a0fe42-e917-472c-bac8-00390a3874ea",
+        "797fba5f-2179-4412-aa77-bb7f4026f0a0"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "062fade3-1dbd-44f4-889b-e5563090bf0b",
+      "type": "solid_arrow",
+      "node_connections": [
+        "e033f860-ee7c-4cde-9e7e-0dc965ffff8e",
+        "4b5f52c0-f468-4e0b-98bd-acab5ac356ef"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "73d2a4f3-d7e3-4605-afbd-c68183d3edc1",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4b5f52c0-f468-4e0b-98bd-acab5ac356ef",
+        "02e67e29-bbd9-4cd9-8231-7aa456c69291"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "2431b34c-699e-4a71-813c-7c0c1bb223b8",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4b5f52c0-f468-4e0b-98bd-acab5ac356ef",
+        "29a9c302-9106-46d9-b1b7-91510a813220"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "cd89ef96-76d5-42a6-aa4b-49a7aaa5da28",
+      "type": "solid_arrow",
+      "node_connections": [
+        "4b5f52c0-f468-4e0b-98bd-acab5ac356ef",
+        "a0ca6770-e457-47a6-8f4b-4745e98e5f5f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "7576d71e-fb45-456a-9998-503fb0110ce1",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "a0ca6770-e457-47a6-8f4b-4745e98e5f5f",
+        "208b9d84-2b3d-4a98-aa41-b860f2190ff1"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "1fd2a0d8-ecfd-4818-b127-48697f33c6c1",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "a0ca6770-e457-47a6-8f4b-4745e98e5f5f",
+        "c8f3911e-b463-4384-a35b-5c975c3b5eb5"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "318e4d28-19b5-44e4-bb71-cc2185a50b6a",
+      "type": "solid_arrow",
+      "node_connections": [
+        "a0ca6770-e457-47a6-8f4b-4745e98e5f5f",
+        "e3fce7fe-ae84-4f9f-8f15-c2aadf546e3a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "e7dd837a-ecce-4ee2-b806-1dc846e717ea",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e3fce7fe-ae84-4f9f-8f15-c2aadf546e3a",
+        "6c0ed4e8-8d70-48ad-94b1-f74dcbb0167d"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "c458d1e9-a0cb-4d8b-a88a-9f095412f4b8",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e3fce7fe-ae84-4f9f-8f15-c2aadf546e3a",
+        "9330ed5e-3380-4b17-b8e8-7c7545a6f1bd"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8a673fa5-3090-4359-9931-88addb294101",
+      "type": "solid_arrow",
+      "node_connections": [
+        "e3fce7fe-ae84-4f9f-8f15-c2aadf546e3a",
+        "b92e895a-5ad9-4d30-9192-1b92dd7105ae"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "f89089e6-9a6a-4539-aad4-2d4ce7113d8c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "b92e895a-5ad9-4d30-9192-1b92dd7105ae",
+        "c9f23d08-4d4f-44d1-ae91-6bb801a365ec"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "290a76dc-9b4f-4636-93d2-a04e7db395bd",
+      "type": "solid_arrow",
+      "node_connections": [
+        "b92e895a-5ad9-4d30-9192-1b92dd7105ae",
+        "54026ca0-cded-49aa-bd7a-48d483cf64f7"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ca78c9ff-3476-45ad-812f-a1a510c8b81a",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "32a9f132-7ae7-47ae-9cf0-2465cf238ca4",
+        "e033f860-ee7c-4cde-9e7e-0dc965ffff8e"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ddd5db60-2ca2-4e12-9f3a-c99c2475bd90",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e033f860-ee7c-4cde-9e7e-0dc965ffff8e",
+        "4f5d7cd8-d1d1-4d66-80a6-8a5d172dbd32"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "75c536e2-cfc5-4303-99f0-106426a4a28c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "735adcf9-fd37-4e98-ba2e-5c923968878d",
+        "4b5f52c0-f468-4e0b-98bd-acab5ac356ef"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "1f591ad0-8d12-4fd8-a2c1-5bf5c1e79c2c",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "4b5f52c0-f468-4e0b-98bd-acab5ac356ef",
+        "a7882b44-04e8-45d4-89f1-5d1cb7bb31bf"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a31d7f59-ae26-472e-8193-de098889266b",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "b403344f-7548-4771-b00a-489746e720cd",
+        "a0ca6770-e457-47a6-8f4b-4745e98e5f5f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "77b39b7b-242f-4287-9b9c-de9b3094fb88",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "eb9e1454-57bd-49e8-8921-32cf79b2e868",
+        "a0ca6770-e457-47a6-8f4b-4745e98e5f5f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "067cf5c9-ba5e-4325-b07e-afd9cf4a98f1",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "fe8b98a0-5f2e-45ac-9f2f-bb1bb76c1328",
+        "a0ca6770-e457-47a6-8f4b-4745e98e5f5f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "0e54b671-997e-48e8-8e06-3ec1435a3f5a",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "81c65142-abdc-462c-a55f-ead5df8d62ce",
+        "e3fce7fe-ae84-4f9f-8f15-c2aadf546e3a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "0c503055-e2b4-4729-a241-635607f6ea62",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "e6a1d8f8-123f-4677-9be8-52b0284ffafe",
+        "e3fce7fe-ae84-4f9f-8f15-c2aadf546e3a"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "aa4b3155-3808-43fa-9947-44576fb1f5f0",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "a0ca6770-e457-47a6-8f4b-4745e98e5f5f",
+        "70169b7a-842e-4285-9d13-48f6019ec3a3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "b8a3e0d1-8b1f-4355-a223-2393b8c79c87",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "8592643e-e4e8-4ad3-bbcd-c770f52916f3",
+        "8f42bc46-93b0-404c-9d75-4a9f1785ea9f"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "782cbae3-9fc7-4e50-87e5-735ca0ea54e4",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d71631d7-1d5a-45f6-8f7d-07cfb1596bf6",
+        "8592643e-e4e8-4ad3-bbcd-c770f52916f3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "99c34106-8c62-4976-8b5c-d474e5ae3f1f",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "d9a0fe42-e917-472c-bac8-00390a3874ea",
+        "8592643e-e4e8-4ad3-bbcd-c770f52916f3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "d7181924-dd51-43b0-b6a4-d97aff94fde5",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "797fba5f-2179-4412-aa77-bb7f4026f0a0",
+        "8592643e-e4e8-4ad3-bbcd-c770f52916f3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "d8a0412d-05df-4f57-9619-870ed143670d",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "02e67e29-bbd9-4cd9-8231-7aa456c69291",
+        "8592643e-e4e8-4ad3-bbcd-c770f52916f3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "6910576d-27dc-4a43-b630-cd70678aee88",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "29a9c302-9106-46d9-b1b7-91510a813220",
+        "8592643e-e4e8-4ad3-bbcd-c770f52916f3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "2eec76c1-e1ec-49d5-875a-52dd029cf86f",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "70169b7a-842e-4285-9d13-48f6019ec3a3",
+        "8592643e-e4e8-4ad3-bbcd-c770f52916f3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8160db9b-7c34-43c2-9407-735ad7fb6aba",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "208b9d84-2b3d-4a98-aa41-b860f2190ff1",
+        "8592643e-e4e8-4ad3-bbcd-c770f52916f3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "486ba51b-d86f-4659-8332-4a4bbdd41f35",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "c8f3911e-b463-4384-a35b-5c975c3b5eb5",
+        "8592643e-e4e8-4ad3-bbcd-c770f52916f3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "91ce97d8-c1e1-4a16-bb67-37a026690872",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "6c0ed4e8-8d70-48ad-94b1-f74dcbb0167d",
+        "8592643e-e4e8-4ad3-bbcd-c770f52916f3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "ee200fc0-e696-4586-96ef-68e587b19196",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "9330ed5e-3380-4b17-b8e8-7c7545a6f1bd",
+        "8592643e-e4e8-4ad3-bbcd-c770f52916f3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "744d91ba-335f-4132-ba85-d5864cd07713",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "c9f23d08-4d4f-44d1-ae91-6bb801a365ec",
+        "8592643e-e4e8-4ad3-bbcd-c770f52916f3"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "8f760d60-b1ce-4736-9f5f-809c32420a29",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "6e5df34d-6225-4b2c-a4c8-5633205c65a9",
+        "32a9f132-7ae7-47ae-9cf0-2465cf238ca4"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "a5c5c892-a819-4520-b6de-46328c4dd136",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "89594775-659d-4d3e-8d3b-885d68c0a9db",
+        "eb9e1454-57bd-49e8-8921-32cf79b2e868"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "0956f39c-c0ba-449f-a65a-54df86760548",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "373fce39-5e78-4a8d-9a4a-4d8e7339a298",
+        "fe8b98a0-5f2e-45ac-9f2f-bb1bb76c1328"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "6b35fbb4-3685-4168-b258-ff4f5b2d34a2",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "b6e4f9f0-2930-4258-82bd-14262afd07e5",
+        "b92e895a-5ad9-4d30-9192-1b92dd7105ae"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    },
+    {
+      "id": "e7df49ef-9c1c-4751-9d74-0b2697ad325e",
+      "type": "dashed_arrow",
+      "node_connections": [
+        "5ff7a181-6f69-401b-bc6e-f95072df5e50",
+        "e6a1d8f8-123f-4677-9be8-52b0284ffafe"
+      ],
+      "type_specific": {
+        "annotation": ""
+      }
+    }
+  ]
+}

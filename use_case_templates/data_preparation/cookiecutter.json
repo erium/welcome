@@ -1,0 +1,10 @@
+{
+    "use_case_name": "{{ cookiecutter.use_case_name }}",
+    "use_case_slug": "{{ cookiecutter.use_case_name|lower|replace(' ', '_') }}",
+    "timestamp": "{{ cookiecutter.timestamp }}",
+    "author_name": "{{ cookiecutter.author_name }}", 
+    "author_slug": "{{ cookiecutter.author_name|lower|replace(' ', '_') }}",
+    "author_initials": "{{ cookiecutter.author_initials }}",
+    "use_case_folder": "{{ cookiecutter.timestamp }}-{{ cookiecutter.author_initials }}-{{ cookiecutter.use_case_slug }}",
+    "data_path": "default example"
+}

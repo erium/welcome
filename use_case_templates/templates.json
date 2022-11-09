@@ -1,75 +1,24 @@
 {
     "categories": [
         {
-            "name": "Design of Experiments",
-            "description": "To design a task that studies the relationship between input and output variables",
+            "name": "Data Preparation",
+            "description": "To prepare raw data to a format suitable for further analysis",
             "templates": [
                 {
-                    "name": "Overview",
-                    "isOverview": true,
-                    "description": "Overview board for design of experiments templates",
-                    "folderName": "{{timestamp}}-{{user.initials}}-doe_overview",
-                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=doe_overview",
-                    "files": [
-                        {
-                            "type": "board",
-                            "path": "doe_overview.board",
-                            "active": true
-                        }
-                    ]
-                },
-                {
-                    "name": "Bayesian Optimization",
+                    "name": "Data Preparation",
                     "isOverview": false,
-                    "description": "To optimize the parameters using a bayesian model",
-                    "folderName": "{{timestamp}}-{{user.initials}}-bayesian_optimization",
-                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=bayesian_optimization",
+                    "description": "To prepare raw data to a format suitable for further analysis",
+                    "folderName": "{{timestamp}}-{{user.initials}}-data_preparation",
+                    "command": "--no-input --directory use_case_templates/data_preparation --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=data_preparation",
                     "files": [
                         {
                             "type": "board",
-                            "path": "bayesian_optimization.board",
+                            "path": "data_preparation.board",
                             "active": true
                         },
                         {
                             "type": "notebook",
-                            "path": "bayesian_optimization.ipynb"
-                            "active": true
-                        }
-                    ]
-                },
-                {
-                    "name": "Bayesian Modelling",
-                    "isOverview": false,
-                    "description": "To estimate the parameters by modelling parametrized equations",
-                    "folderName": "{{timestamp}}-{{user.initials}}-bayesian_modelling",
-                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=bayesian_modelling",
-                    "files": [
-                        {
-                            "type": "board",
-                            "path": "bayesian_modelling.board",
-                            "active": true
-                        },
-                        {
-                            "type": "notebook",
-                            "path": "bayesian_modelling.ipynb"
-                        }
-                    ]
-                },
-                {
-                    "name": "Classical Doe",
-                    "isOverview": false,
-                    "description": "To estimate the parameters if all trials have to be run in parallel",
-                    "folderName": "{{timestamp}}-{{user.initials}}-classical_doe",
-                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=classical_doe",
-                    "files": [
-                        {
-                            "type": "board",
-                            "path": "classical_doe.board",
-                            "active": true
-                        },
-                        {
-                            "type": "notebook",
-                            "path": "classical_doe.ipynb"
+                            "path": "data_preparation.ipynb",
                             "active": true
                         }
                     ]
@@ -77,84 +26,38 @@
             ]
         },
         {
-            "name": "Hypothesis Testing",
-            "description": "To infer if the data at hand supports a certain hypothesis",
+            "name": "Prediction",
+            "description": "To predict an output based on input parameters provided",
             "templates": [
                 {
                     "name": "Overview",
                     "isOverview": true,
-                    "description": "Overview board for hypothesis testing templates",
-                    "folderName": "{{timestamp}}-{{user.initials}}-hypothesis_testing_overview",
-                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=hypothesis_testing_overview",
+                    "description": "Overview board for prediction templates",
+                    "folderName": "{{timestamp}}-{{user.initials}}-prediction_overview",
+                    "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=prediction_overview",
                     "files": [
                         {
                             "type": "board",
-                            "path": "hypothesis_testing_overview.board",
+                            "path": "prediction_overview.board",
                             "active": true
                         }
                     ]
                 },
                 {
-                    "name": "Classical Hypothesis Testing",
+                    "name": "Regression",
                     "isOverview": false,
-                    "description": "To use statistical tests to infer if the data supports a certain hypothesis",
-                    "folderName": "{{timestamp}}-{{user.initials}}-classical_ht",
-                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=classical_ht",
+                    "description": "To estimate the relationships between a dependent variable and one or more independent variables",
+                    "folderName": "{{timestamp}}-{{user.initials}}-regression",
+                    "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=regression",
                     "files": [
                         {
                             "type": "board",
-                            "path": "classical_ht.board",
+                            "path": "regression.board",
                             "active": true
                         },
                         {
                             "type": "notebook",
-                            "path": "classical_ht.ipynb",
-                            "active": true
-                        }
-                    ]
-                },
-                {
-                    "name": "Causal Hypothesis Testing",
-                    "isOverview": false,
-                    "description": "To model good fitting causal structures and obtain causal estimates",
-                    "folderName": "{{timestamp}}-{{user.initials}}-causal",
-                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=causal",
-                    "files": [
-                        {
-                            "type": "board",
-                            "path": "causal_structure.board",
-                            "active": true
-                        },
-                        {
-                            "type": "notebook",
-                            "path": "causal_structure.ipynb",
-                            "active": true
-                        },
-                        {
-                            "type": "board",
-                            "path": "causal_estimate.board"
-                        },
-                        {
-                            "type": "notebook",
-                            "path": "causal_estimate.ipynb"
-                        }
-                    ]
-                },
-                {
-                    "name": "Equation Hypothesis Testing",
-                    "isOverview": false,
-                    "description": "To test if a hypothesis in the form of an equation fits the data well",
-                    "folderName": "{{timestamp}}-{{user.initials}}-equation",
-                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=equation",
-                    "files": [
-                        {
-                            "type": "board",
-                            "path": "equation.board",
-                            "active": true
-                        },
-                        {
-                            "type": "notebook",
-                            "path": "equation.ipynb",
+                            "path": "regression.ipynb",
                             "active": true
                         }
                     ]
@@ -277,38 +180,160 @@
             ]
         },
         {
-            "name": "Prediction",
-            "description": "To predict an output based on input parameters provided",
+            "name": "Hypothesis Testing",
+            "description": "To infer if the data at hand supports a certain hypothesis",
             "templates": [
                 {
                     "name": "Overview",
                     "isOverview": true,
-                    "description": "Overview board for prediction templates",
-                    "folderName": "{{timestamp}}-{{user.initials}}-prediction_overview",
-                    "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=prediction_overview",
+                    "description": "Overview board for hypothesis testing templates",
+                    "folderName": "{{timestamp}}-{{user.initials}}-hypothesis_testing_overview",
+                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=hypothesis_testing_overview",
                     "files": [
                         {
                             "type": "board",
-                            "path": "prediction_overview.board",
+                            "path": "hypothesis_testing_overview.board",
                             "active": true
                         }
                     ]
                 },
                 {
-                    "name": "Regression",
+                    "name": "Classical Hypothesis Testing",
                     "isOverview": false,
-                    "description": "To estimate the relationships between a dependent variable and one or more independent variables",
-                    "folderName": "{{timestamp}}-{{user.initials}}-regression",
-                    "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=regression",
+                    "description": "To use statistical tests to infer if the data supports a certain hypothesis",
+                    "folderName": "{{timestamp}}-{{user.initials}}-classical_ht",
+                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=classical_ht",
                     "files": [
                         {
                             "type": "board",
-                            "path": "regression.board",
+                            "path": "classical_ht.board",
                             "active": true
                         },
                         {
                             "type": "notebook",
-                            "path": "regression.ipynb"
+                            "path": "classical_ht.ipynb",
+                            "active": true
+                        }
+                    ]
+                },
+                {
+                    "name": "Causal Hypothesis Testing",
+                    "isOverview": false,
+                    "description": "To model good fitting causal structures and obtain causal estimates",
+                    "folderName": "{{timestamp}}-{{user.initials}}-causal",
+                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=causal",
+                    "files": [
+                        {
+                            "type": "board",
+                            "path": "causal_structure.board",
+                            "active": true
+                        },
+                        {
+                            "type": "notebook",
+                            "path": "causal_structure.ipynb",
+                            "active": true
+                        },
+                        {
+                            "type": "board",
+                            "path": "causal_estimate.board"
+                        },
+                        {
+                            "type": "notebook",
+                            "path": "causal_estimate.ipynb"
+                        }
+                    ]
+                },
+                {
+                    "name": "Equation Hypothesis Testing",
+                    "isOverview": false,
+                    "description": "To test if a hypothesis in the form of an equation fits the data well",
+                    "folderName": "{{timestamp}}-{{user.initials}}-equation",
+                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=equation",
+                    "files": [
+                        {
+                            "type": "board",
+                            "path": "equation.board",
+                            "active": true
+                        },
+                        {
+                            "type": "notebook",
+                            "path": "equation.ipynb",
+                            "active": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Design of Experiments",
+            "description": "To design a task that studies the relationship between input and output variables",
+            "templates": [
+                {
+                    "name": "Overview",
+                    "isOverview": true,
+                    "description": "Overview board for design of experiments templates",
+                    "folderName": "{{timestamp}}-{{user.initials}}-doe_overview",
+                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=doe_overview",
+                    "files": [
+                        {
+                            "type": "board",
+                            "path": "doe_overview.board",
+                            "active": true
+                        }
+                    ]
+                },
+                {
+                    "name": "Bayesian Optimization",
+                    "isOverview": false,
+                    "description": "To optimize the parameters using a bayesian model",
+                    "folderName": "{{timestamp}}-{{user.initials}}-bayesian_optimization",
+                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=bayesian_optimization",
+                    "files": [
+                        {
+                            "type": "board",
+                            "path": "bayesian_optimization.board",
+                            "active": true
+                        },
+                        {
+                            "type": "notebook",
+                            "path": "bayesian_optimization.ipynb",
+                            "active": true
+                        }
+                    ]
+                },
+                {
+                    "name": "Bayesian Modelling",
+                    "isOverview": false,
+                    "description": "To estimate the parameters by modelling parametrized equations",
+                    "folderName": "{{timestamp}}-{{user.initials}}-bayesian_modelling",
+                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=bayesian_modelling",
+                    "files": [
+                        {
+                            "type": "board",
+                            "path": "bayesian_modelling.board",
+                            "active": true
+                        },
+                        {
+                            "type": "notebook",
+                            "path": "bayesian_modelling.ipynb"
+                        }
+                    ]
+                },
+                {
+                    "name": "Classical Doe",
+                    "isOverview": false,
+                    "description": "To estimate the parameters if all trials have to be run in parallel",
+                    "folderName": "{{timestamp}}-{{user.initials}}-classical_doe",
+                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=classical_doe",
+                    "files": [
+                        {
+                            "type": "board",
+                            "path": "classical_doe.board",
+                            "active": true
+                        },
+                        {
+                            "type": "notebook",
+                            "path": "classical_doe.ipynb",
                             "active": true
                         }
                     ]

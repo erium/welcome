@@ -1,0 +1,25 @@
+{
+    "name": "Data Preparation",
+    "description": "To prepare raw data to a format suitable for further analysis",
+    "templates": [
+        {
+            "name": "Data Preparation",
+            "isOverview": false,
+            "description": "To prepare raw data to a format suitable for further analysis",
+            "folderName": "{{timestamp}}-{{user.initials}}-data_preparation",
+            "command": "--no-input --directory use_case_templates/data_preparation --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials={{user.initials}} use_case_name=data_preparation",
+            "files": [
+                {
+                    "type": "board",
+                    "path": "data_preparation.board",
+                    "active": true
+                },
+                {
+                    "type": "notebook",
+                    "path": "data_preparation.ipynb"
+                    "active": true
+                }
+            ]
+        }
+    ]
+}
