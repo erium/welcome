@@ -2,7 +2,7 @@
   "nodes": [
     {
       "id": "061d1f82-3afe-4ef2-883f-c85fbabbd535",
-      "title": "Hypothesis/Question",
+      "title": "HYPOTHESIS/QUESTION",
       "type_specific": {
         "message": ""
       },
@@ -30,7 +30,7 @@
     },
     {
       "id": "9099d286-d7f4-4c6b-bfe7-2356ed382dba",
-      "title": "Experiment",
+      "title": "EXPERIMENT",
       "type_specific": {
         "message": ""
       },
@@ -62,7 +62,7 @@
     },
     {
       "id": "3ebacd28-1850-41f3-bdfe-80e44281065c",
-      "title": "Learning",
+      "title": "LEARNING",
       "type_specific": {
         "message": ""
       },

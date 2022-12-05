@@ -2,7 +2,7 @@
   "nodes": [
     {
       "id": "6bead8d1-ed2a-466a-a289-8769771303bd",
-      "title": "Adjustable Parameter",
+      "title": "ADJUSTABLE PARAMETER",
       "type_specific": {
         "message": ""
       },
@@ -25,7 +25,7 @@
     },
     {
       "id": "043dd29f-cc0f-490a-9253-7de8a8bf9e99",
-      "title": "Unadjustable Parameter",
+      "title": "UNADJUSTABLE PARAMETER",
       "type_specific": {
         "message": ""
       },
@@ -48,7 +48,7 @@
     },
     {
       "id": "39908a78-6d4c-4483-a714-543d7be80426",
-      "title": "measurements",
+      "title": "MEASUREMENTS",
       "type_specific": {
         "message": ""
       },
@@ -71,7 +71,7 @@
     },
     {
       "id": "2ebdf048-ff9a-41e4-8f03-db78f6800c24",
-      "title": "Hidden Parameters ",
+      "title": "HIDDEN PARAMETERS ",
       "type_specific": {
         "message": ""
       },

@@ -2,9 +2,9 @@
   "nodes": [
     {
       "id": "a974d2d1-fd91-4e19-8856-4ba60a6e6659",
-      "title": "EtL",
+      "title": "ETL",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In etl.py\\n\"}]}"
+        "message": "In etl.py\n"
       },
       "edge_connections": [
         {
@@ -29,9 +29,9 @@
     },
     {
       "id": "d0da776e-e4d1-49d5-8d1d-c5d45aab929b",
-      "title": "visualize",
+      "title": "VISUALIZE",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In visualize.py\\n\"}]}"
+        "message": "In visualize.py\n"
       },
       "edge_connections": [
         {
@@ -56,9 +56,9 @@
     },
     {
       "id": "2153833c-705b-4f95-add0-894c4d2a8454",
-      "title": "features",
+      "title": "FEATURES",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In features.py\\n\"}]}"
+        "message": "In features.py\n"
       },
       "edge_connections": [
         {
@@ -83,9 +83,9 @@
     },
     {
       "id": "85c777c4-420e-4eaa-a9c9-7f035e587d78",
-      "title": "train",
+      "title": "TRAIN",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In train.py\\n\"}]}"
+        "message": "In train.py\n"
       },
       "edge_connections": [
         {
@@ -106,9 +106,9 @@
     },
     {
       "id": "1e1d4719-6d4c-4c72-8509-979e520cd5fc",
-      "title": "pipeline1",
+      "title": "PIPELINE1",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Description of pipeline1 in pipeline1.py\\n\"}]}"
+        "message": "Description of pipeline1 in pipeline1.py\n"
       },
       "edge_connections": [
         {
@@ -134,9 +134,9 @@
     },
     {
       "id": "24aa14b3-01cf-4d69-8d3e-fb1d0bc0d4fd",
-      "title": "Data Preparation Pipeline",
+      "title": "DATA PREPARATION PIPELINE",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Pipeline that loads the raw data, and prepares the data for further use in the /data folder.\\n\"}]}"
+        "message": "Pipeline that loads the raw data, and prepares the data for further use in the /data folder.\n"
       },
       "edge_connections": [
         {
@@ -161,9 +161,9 @@
     },
     {
       "id": "56c5994c-275f-45f2-803a-4cedbd7f3b2d",
-      "title": "Load Data",
+      "title": "LOAD DATA",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Load the raw data from an external source in the raw data folder\\n\"}]}"
+        "message": "Load the raw data from an external source in the raw data folder\n"
       },
       "edge_connections": [
         {
@@ -192,9 +192,9 @@
     },
     {
       "id": "65f9e471-c16f-4fc5-8e2f-acd8d9966b2b",
-      "title": "Prepare Data",
+      "title": "PREPARE DATA",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Process and prepare the data for further use\\n\"}]}"
+        "message": "Process and prepare the data for further use\n"
       },
       "edge_connections": [
         {

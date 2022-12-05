@@ -2,9 +2,9 @@
   "nodes": [
     {
       "id": "08045337-dbb4-424e-aae1-4bca80ef41ab",
-      "title": "{{ cookiecutter.project_name }}",
+      "title": "{{ COOKIECUTTER.PROJECT_NAME }}",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Executive Summary\\n\"}]}"
+        "message": "Executive Summary\n"
       },
       "edge_connections": [],
       "type": "note",
@@ -20,7 +20,7 @@
     },
     {
       "id": "553d772e-636d-43a9-8d7a-00d216f5ac1d",
-      "title": "Data Pipeline",
+      "title": "DATA PIPELINE",
       "type_specific": {
         "message": ""
       },
@@ -56,7 +56,7 @@
     },
     {
       "id": "7837dc20-9ff9-45c6-b32c-122eb9aab127",
-      "title": "Data Table",
+      "title": "DATA TABLE",
       "type_specific": {
         "message": ""
       },
@@ -87,7 +87,7 @@
     },
     {
       "id": "698ccecf-54aa-43a0-89c5-45cc346bce71",
-      "title": "Data Storage",
+      "title": "DATA STORAGE",
       "type_specific": {
         "message": ""
       },
@@ -114,7 +114,7 @@
     },
     {
       "id": "d3159ac7-347f-4a98-be37-c4d1a4fee771",
-      "title": "Process Description",
+      "title": "PROCESS DESCRIPTION",
       "type_specific": {
         "message": ""
       },
@@ -165,7 +165,7 @@
     },
     {
       "id": "66a20603-879a-4601-ab9d-795efbcaf30f",
-      "title": "Analytics Model",
+      "title": "ANALYTICS MODEL",
       "type_specific": {
         "message": ""
       },
@@ -232,7 +232,7 @@
     },
     {
       "id": "0382e604-97ec-4d46-8d7c-882791eb8bfa",
-      "title": "Measurable PARAMETERS",
+      "title": "MEASURABLE PARAMETERS",
       "type_specific": {
         "message": ""
       },
@@ -255,7 +255,7 @@
     },
     {
       "id": "dfeff2e0-9e3a-4969-af26-35644fa2d00d",
-      "title": "Unadjustable PARAMETERS",
+      "title": "UNADJUSTABLE PARAMETERS",
       "type_specific": {
         "message": ""
       },
@@ -278,7 +278,7 @@
     },
     {
       "id": "34c19d43-c007-4b28-95af-7167a2fc3544",
-      "title": "Hidden Parameters",
+      "title": "HIDDEN PARAMETERS",
       "type_specific": {
         "message": ""
       },
@@ -301,7 +301,7 @@
     },
     {
       "id": "98b1e638-e7a7-44b3-94ee-5a88195735ad",
-      "title": "KPIs",
+      "title": "KPIS",
       "type_specific": {
         "message": ""
       },
@@ -328,7 +328,7 @@
     },
     {
       "id": "b03ae07d-01f8-4e6b-85a0-c86d2837c417",
-      "title": "Solved Technical Problem",
+      "title": "SOLVED TECHNICAL PROBLEM",
       "type_specific": {
         "message": ""
       },
@@ -355,7 +355,7 @@
     },
     {
       "id": "0e441f01-0a59-40bf-a5a7-e63875d79334",
-      "title": "Added Value",
+      "title": "ADDED VALUE",
       "type_specific": {
         "message": ""
       },
@@ -386,7 +386,7 @@
     },
     {
       "id": "27f6b856-1eb3-48cc-9ea8-6cbd5ce37410",
-      "title": "Business Goal",
+      "title": "BUSINESS GOAL",
       "type_specific": {
         "message": ""
       },
@@ -417,7 +417,7 @@
     },
     {
       "id": "c478a9d7-1eb5-4672-b628-f105472a5e91",
-      "title": "IT Stakeholder",
+      "title": "IT STAKEHOLDER",
       "type_specific": {
         "message": ""
       },
@@ -440,7 +440,7 @@
     },
     {
       "id": "43eeaf3f-01b6-43c1-90d7-93b3a05c2cb4",
-      "title": "Domain Stakeholder",
+      "title": "DOMAIN STAKEHOLDER",
       "type_specific": {
         "message": ""
       },
@@ -463,7 +463,7 @@
     },
     {
       "id": "a1a9208e-f0d0-4996-ba96-c93da29e8bc7",
-      "title": "Business Stakeholder",
+      "title": "BUSINESS STAKEHOLDER",
       "type_specific": {
         "message": ""
       },
@@ -486,7 +486,7 @@
     },
     {
       "id": "ab96ccd7-a5fb-4c60-91bd-56a23ea725d9",
-      "title": "Deployment Strategy",
+      "title": "DEPLOYMENT STRATEGY",
       "type_specific": {
         "message": ""
       },

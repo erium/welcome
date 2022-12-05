@@ -2,9 +2,9 @@
   "nodes": [
     {
       "id": "73d35fed-08f0-4ec8-b075-78b06bd1d0d2",
-      "title": "Welcome to Halerium",
+      "title": "WELCOME TO HALERIUM",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"This is a Halerium card.\\n\\nHalerium cards live in Halerium boards, which are stored as files. This board is the file \\\"user_guide.board\\\" as you can see in the tab above the board and in the file-list to the far left.\\n\"}]}"
+        "message": "This is a Halerium card.\n\nHalerium cards live in Halerium boards, which are stored as files. This board is the file \"user_guide.board\" as you can see in the tab above the board and in the file-list to the far left.\n"
       },
       "edge_connections": [
         {
@@ -30,9 +30,9 @@
     },
     {
       "id": "02f74edb-c34f-4c94-a0a4-eb6e975fb544",
-      "title": "Card Connections",
+      "title": "CARD CONNECTIONS",
       "type_specific": {
-        "message": "{\"ops\":[{\"attributes\":{\"header\":2},\"insert\":\"\\n\"}]}"
+        "message": "##\n"
       },
       "edge_connections": [
         {
@@ -74,9 +74,9 @@
     },
     {
       "id": "b827e7cb-6a27-4e90-914f-3a1341d11b99",
-      "title": "Arrow connections",
+      "title": "ARROW CONNECTIONS",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"The connectors on the left or right of a card can only be connected to other connectors on the left or right.\\nThese connections will appear as arrows and are meant to indicate interactions, flows, consequences etc.\\n\"}]}"
+        "message": "The connectors on the left or right of a card can only be connected to other connectors on the left or right.\nThese connections will appear as arrows and are meant to indicate interactions, flows, consequences etc.\n"
       },
       "edge_connections": [
         {
@@ -102,9 +102,9 @@
     },
     {
       "id": "b1437f3e-461f-4689-9285-4b6685358578",
-      "title": "Dashed connections",
+      "title": "DASHED CONNECTIONS",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"The connectors on the top and bottom can only be connected to to opposing connectors (top to bottom, bottom to top).\\nThese connections will appears as dashed lines are are meant to indicate hierarchy.\\n\"}]}"
+        "message": "The connectors on the top and bottom can only be connected to to opposing connectors (top to bottom, bottom to top).\nThese connections will appears as dashed lines are are meant to indicate hierarchy.\n"
       },
       "edge_connections": [
         {
@@ -130,9 +130,9 @@
     },
     {
       "id": "ab912a88-189c-441f-9c9f-87ec259b48d8",
-      "title": "Cards can change color",
+      "title": "CARDS CAN CHANGE COLOR",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"In the light edit mode, and click on one of the 4 colors on the bottom.\\n\"}]}"
+        "message": "In the light edit mode, and click on one of the 4 colors on the bottom.\n"
       },
       "edge_connections": [
         {
@@ -158,9 +158,9 @@
     },
     {
       "id": "250ecf4e-b579-4e9e-b14d-a8c8563329ff",
-      "title": "Cards can be linked to code",
+      "title": "CARDS CAN BE LINKED TO CODE",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"The Hexagon in the bottom-left indicates that code line(s) is linked to this card, which can be  from multiple notebooks or .py files.\\n\\nHovering - shows all linked code blocks.\\nClicking - view and navigate to the code blocks.\\n\"}]}"
+        "message": "The Hexagon in the bottom-left indicates that code line(s) is linked to this card, which can be  from multiple notebooks or .py files.\n\nHovering - shows all linked code blocks.\nClicking - view and navigate to the code blocks.\n"
       },
       "edge_connections": [
         {
@@ -190,7 +190,7 @@
     },
     {
       "id": "ef9a1fe1-8dcf-4aaa-83ed-3a68b2500ac7",
-      "title": "Cards can be collapsed to title",
+      "title": "CARDS CAN BE COLLAPSED TO TITLE",
       "type_specific": {
         "message": ""
       },
@@ -222,9 +222,9 @@
     },
     {
       "id": "205cb0e5-78ce-4c87-a7e0-d6834b9e3221",
-      "title": "explanation",
+      "title": "EXPLANATION",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Resize the card as small as possible or use the hover menu from the blue icon on the top-left.\\n\"}]}"
+        "message": "Resize the card as small as possible or use the hover menu from the blue icon on the top-left.\n"
       },
       "edge_connections": [
         {
@@ -250,9 +250,9 @@
     },
     {
       "id": "6625bc40-8200-4c81-b3a7-68af855ae607",
-      "title": "Cards can be edited",
+      "title": "CARDS CAN BE EDITED",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Click into the title or text field of the card. All changes are auto-saved.\\n\\nTo enter a focused editing mode, double click the card or use the hover menu on the top-left.\\n\"}]}"
+        "message": "Click into the title or text field of the card. All changes are auto-saved.\n\nTo enter a focused editing mode, double click the card or use the hover menu on the top-left.\n"
       },
       "edge_connections": [
         {
@@ -273,9 +273,9 @@
     },
     {
       "id": "c72c92b6-cfc5-4466-906a-5a22cdd3d50b",
-      "title": "New cards can be added",
+      "title": "NEW CARDS CAN BE ADDED",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Double click onto the board's background or use the \\\"+\\\"-Button on the bottom-right of the board.\\n\"}]}"
+        "message": "Double click onto the board's background or use the \"+\"-Button on the bottom-right of the board.\n"
       },
       "edge_connections": [
         {
@@ -301,9 +301,9 @@
     },
     {
       "id": "378954ac-2d2f-43ce-9a49-ce2a5dc1b24d",
-      "title": "Cards can be deleted",
+      "title": "CARDS CAN BE DELETED",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Click into the text field of a card, then use the red delete button to the top-right.\\n\"}]}"
+        "message": "Click into the text field of a card, then use the red delete button to the top-right.\n"
       },
       "edge_connections": [
         {
@@ -324,9 +324,9 @@
     },
     {
       "id": "4a862eb8-d831-42ac-ac8f-3fd21205137e",
-      "title": "Connections can be deleted",
+      "title": "CONNECTIONS CAN BE DELETED",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Simply click on the connection line.\\n\"}]}"
+        "message": "Simply click on the connection line.\n"
       },
       "edge_connections": [
         {
@@ -352,9 +352,9 @@
     },
     {
       "id": "70f3bc0b-4efe-4567-b727-02a8f6ce118e",
-      "title": "Getting Started",
+      "title": "GETTING STARTED",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Add Halerium data science templates directly to a project or a standalone directory by going to the directory and selecting a template or guide board in the '+' menu in the file list on the top left.\\n\"}]}"
+        "message": "Add Halerium data science templates directly to a project or a standalone directory by going to the directory and selecting a template or guide board in the '+' menu in the file list on the top left.\n"
       },
       "edge_connections": [
         {
@@ -375,7 +375,7 @@
     },
     {
       "id": "b78c274e-c64b-4e69-bb4d-019da0795d77",
-      "title": "Cards",
+      "title": "CARDS",
       "type_specific": {
         "message": ""
       },
@@ -427,9 +427,9 @@
     },
     {
       "id": "e06b7637-8941-404f-a9c9-6aeaee52c1fb",
-      "title": "Creating connections",
+      "title": "CREATING CONNECTIONS",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Drag one of the white connectors on the edges of a card and drop it onto the connector of another card.\\n\"},{\"attributes\":{\"header\":2},\"insert\":\"\\n\"}]}"
+        "message": "Drag one of the white connectors on the edges of a card and drop it onto the connector of another card.\n##\n"
       },
       "edge_connections": [
         {
@@ -450,7 +450,7 @@
     },
     {
       "id": "d9a83435-945c-4e0e-bc06-51cb3f03d650",
-      "title": "Notebooks",
+      "title": "NOTEBOOKS",
       "type_specific": {
         "message": ""
       },

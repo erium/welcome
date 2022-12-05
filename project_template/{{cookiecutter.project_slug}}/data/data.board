@@ -2,7 +2,7 @@
   "nodes": [
     {
       "id": "aeb67b73-6b5e-4eb2-9018-4e53c7c5323a",
-      "title": "Raw",
+      "title": "RAW",
       "type_specific": {
         "message": ""
       },
@@ -30,7 +30,7 @@
     },
     {
       "id": "e8d35114-9d23-4457-ba1a-88f8997e6072",
-      "title": "Interim",
+      "title": "INTERIM",
       "type_specific": {
         "message": ""
       },
@@ -62,7 +62,7 @@
     },
     {
       "id": "2155529e-86b4-4958-bbf5-780f3b09a030",
-      "title": "load data",
+      "title": "LOAD DATA",
       "type_specific": {
         "message": ""
       },
@@ -94,7 +94,7 @@
     },
     {
       "id": "3cf4aacd-2c92-4432-8e2d-b06d589a2f64",
-      "title": "prepare data",
+      "title": "PREPARE DATA",
       "type_specific": {
         "message": ""
       },
@@ -126,7 +126,7 @@
     },
     {
       "id": "100f7ef9-0e41-4cff-8369-4b5e365ff645",
-      "title": "Prepared",
+      "title": "PREPARED",
       "type_specific": {
         "message": ""
       },

@@ -2,7 +2,7 @@
   "nodes": [
     {
       "id": "7aa2937b-5bd7-4b02-85f7-eae1d065b11a",
-      "title": "Todo",
+      "title": "TODO",
       "type_specific": {
         "message": ""
       },
@@ -30,7 +30,7 @@
     },
     {
       "id": "1b6370af-16a2-477d-a3e5-e8ec9970a313",
-      "title": "Doing",
+      "title": "DOING",
       "type_specific": {
         "message": ""
       },
@@ -62,7 +62,7 @@
     },
     {
       "id": "75b1d6f8-5971-44aa-a2dc-0fab038c1279",
-      "title": "Done",
+      "title": "DONE",
       "type_specific": {
         "message": ""
       },

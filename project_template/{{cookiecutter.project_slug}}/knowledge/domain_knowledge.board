@@ -2,7 +2,7 @@
   "nodes": [
     {
       "id": "e5514c80-f09c-4600-8be7-916d57ccb9e0",
-      "title": "Questions",
+      "title": "QUESTIONS",
       "type_specific": {
         "message": ""
       },
@@ -25,7 +25,7 @@
     },
     {
       "id": "816b0ed6-75bb-4249-aabc-d5d228ab5e14",
-      "title": "Answers",
+      "title": "ANSWERS",
       "type_specific": {
         "message": ""
       },
@@ -48,7 +48,7 @@
     },
     {
       "id": "d54f38a3-49ab-44b3-b91a-31cf4f70c4f3",
-      "title": "Generic Domain knowledge",
+      "title": "GENERIC DOMAIN KNOWLEDGE",
       "type_specific": {
         "message": ""
       },

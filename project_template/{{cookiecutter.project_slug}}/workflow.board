@@ -2,9 +2,9 @@
   "nodes": [
     {
       "id": "51d16d59-c92d-4f2a-9bfa-09b9b1fac5c6",
-      "title": "Project workflow",
+      "title": "PROJECT WORKFLOW",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"This board contains an overview of the low level project workflow, as well as descriptions of each module and its read/write permissions.\\n\\n\"},{\"attributes\":{\"color\":\"#ffff66\"},\"insert\":\"Yellow \"},{\"insert\":\"- Top Level Folder\\n\"},{\"attributes\":{\"color\":\"#66a3e0\"},\"insert\":\"Blue \"},{\"insert\":\"- Folder\\n\"},{\"attributes\":{\"color\":\"#66b966\"},\"insert\":\"Green \"},{\"insert\":\"- File/Script\\n\"},{\"attributes\":{\"color\":\"#f06666\"},\"insert\":\"Red \"},{\"insert\":\"- Process/Action\\n\"}]}"
+        "message": "This board contains an overview of the low level project workflow, as well as descriptions of each module and its read/write permissions.\n\nYellow - Top Level Folder\nBlue - Folder\nGreen - File/Script\nRed - Process/Action\n"
       },
       "edge_connections": [],
       "type": "note",
@@ -20,9 +20,9 @@
     },
     {
       "id": "7215836f-b892-4399-930f-2e0d8efc4323",
-      "title": "Data",
+      "title": "DATA",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"The data directory contains the data used during the project.\\n\\nIt has the following subfolders:\\n\\n0_raw: raw, unprocessed data\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"1_interm: processed or generated data\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"2_prepared: prepared ready for model training or other uses\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"scripts: contains scripts for loading and processing the data\"},{\"attributes\":{\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"Note: these scripts must allow data to be reproducibly generated\"},{\"attributes\":{\"indent\":1,\"list\":\"bullet\"},\"insert\":\"\\n\"},{\"insert\":\"\\nIt also contains 'data.board' which provides the description of the data and documents the data processing.\\n\"}]}"
+        "message": "The data directory contains the data used during the project.\n\nIt has the following subfolders:\n\n- 0_raw: raw, unprocessed data\n- 1_interm: processed or generated data\n- 2_prepared: prepared ready for model training or other uses\n- scripts: contains scripts for loading and processing the data\n - Note: these scripts must allow data to be reproducibly generated\n\n\nIt also contains 'data.board' which provides the description of the data and documents the data processing.\n"
       },
       "edge_connections": [
         {
@@ -59,9 +59,9 @@
     },
     {
       "id": "49495a2f-ea29-47b9-9200-7303a40dc4d7",
-      "title": "Output",
+      "title": "OUTPUT",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Contains the assets generated in the course of the project.\\n\"}]}"
+        "message": "Contains the assets generated in the course of the project.\n"
       },
       "edge_connections": [
         {
@@ -98,9 +98,9 @@
     },
     {
       "id": "fabfa3d8-f866-487d-8a7f-43b3ecce0fab",
-      "title": "knowledge",
+      "title": "KNOWLEDGE",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"The knowledge directory contains the domain knowledge or other useful information regarding the project and data.\\n\"}]}"
+        "message": "The knowledge directory contains the domain knowledge or other useful information regarding the project and data.\n"
       },
       "edge_connections": [
         {
@@ -137,9 +137,9 @@
     },
     {
       "id": "e7c7d30b-33fb-4743-8972-feefe18cc37f",
-      "title": "project management",
+      "title": "PROJECT MANAGEMENT",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Contains the documents for project administration and planning.\\n\"}]}"
+        "message": "Contains the documents for project administration and planning.\n"
       },
       "edge_connections": [
         {
@@ -176,9 +176,9 @@
     },
     {
       "id": "32cdd0ae-0a66-46a0-9b59-258cbac9fdce",
-      "title": "experiments",
+      "title": "EXPERIMENTS",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Contains the code and scripts that are created during the experimental phase of the project.\\n\\nExperiments must be self-contained and must not modify any data/files outside themselves.\\n\"}]}"
+        "message": "Contains the code and scripts that are created during the experimental phase of the project.\n\nExperiments must be self-contained and must not modify any data/files outside themselves.\n"
       },
       "edge_connections": [
         {
@@ -219,9 +219,9 @@
     },
     {
       "id": "49b88a80-5b57-48d9-8fea-1fc1e3d1ff94",
-      "title": "applications",
+      "title": "APPLICATIONS",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Contains the code and scripts for the deployment and running of (web-)applications.Note that applications must be self-contained and must not change files, e.g. in the data folder.\\n\"}]}"
+        "message": "Contains the code and scripts for the deployment and running of (web-)applications.Note that applications must be self-contained and must not change files, e.g. in the data folder.\n"
       },
       "edge_connections": [
         {
@@ -258,9 +258,9 @@
     },
     {
       "id": "084d8d98-7a50-4577-ae9e-e457400075b0",
-      "title": "pipelines",
+      "title": "PIPELINES",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Contains the code and scripts for processes that need to be run repeatedly and consistently.\\n\\nRemark: use pipelines to turn 'raw data' into 'prepared data\\n\"}]}"
+        "message": "Contains the code and scripts for processes that need to be run repeatedly and consistently.\n\nRemark: use pipelines to turn 'raw data' into 'prepared data\n"
       },
       "edge_connections": [
         {
@@ -305,9 +305,9 @@
     },
     {
       "id": "6a1b472c-4db0-4479-9191-aea054f9d144",
-      "title": "models",
+      "title": "MODELS",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Trained and serialized models, model predictions, or model summaries\\n\"}]}"
+        "message": "Trained and serialized models, model predictions, or model summaries\n"
       },
       "edge_connections": [
         {
@@ -328,9 +328,9 @@
     },
     {
       "id": "5987e147-de60-4662-b7a8-052ace3bbb67",
-      "title": "visualizations",
+      "title": "VISUALIZATIONS",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Graphs and plots of data, models, and results\\n\"}]}"
+        "message": "Graphs and plots of data, models, and results\n"
       },
       "edge_connections": [
         {
@@ -351,9 +351,9 @@
     },
     {
       "id": "e1d3fc8a-c5c9-4f0a-9025-772cc5ce1b6d",
-      "title": "0_raw",
+      "title": "0_RAW",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"The original, immutable data\\n\"}]}"
+        "message": "The original, immutable data\n"
       },
       "edge_connections": [
         {
@@ -378,9 +378,9 @@
     },
     {
       "id": "b4f3cfb3-8de9-422a-8e69-a06e70528a4e",
-      "title": "1_interim",
+      "title": "1_INTERIM",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Intermediate data that has been transformed.\\n\"}]}"
+        "message": "Intermediate data that has been transformed.\n"
       },
       "edge_connections": [
         {
@@ -409,9 +409,9 @@
     },
     {
       "id": "904e76f5-10fc-4182-91c6-b4121bc5b2ec",
-      "title": "2_prepared",
+      "title": "2_PREPARED",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"The final data set, ready for preprocessing\\n\"}]}"
+        "message": "The final data set, ready for preprocessing\n"
       },
       "edge_connections": [
         {
@@ -440,9 +440,9 @@
     },
     {
       "id": "15400789-ec2c-4e33-bca9-c08b64786549",
-      "title": "data.board",
+      "title": "DATA.BOARD",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Describes the data model and structure\\n\"}]}"
+        "message": "Describes the data model and structure\n"
       },
       "edge_connections": [
         {
@@ -463,9 +463,9 @@
     },
     {
       "id": "417db089-9159-4dac-8143-9dbd96140299",
-      "title": "references",
+      "title": "REFERENCES",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Books, manuals, and all other explanatory materials.\\n\"}]}"
+        "message": "Books, manuals, and all other explanatory materials.\n"
       },
       "edge_connections": [
         {
@@ -486,9 +486,9 @@
     },
     {
       "id": "8ccb1910-a400-408b-821f-f427e422c4e7",
-      "title": "causal_graph",
+      "title": "CAUSAL_GRAPH",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Describes the causal dependencies in this use-case.\\n\"}]}"
+        "message": "Describes the causal dependencies in this use-case.\n"
       },
       "edge_connections": [
         {
@@ -509,9 +509,9 @@
     },
     {
       "id": "0558a619-85d4-4fcb-9734-c6e6d826e7cf",
-      "title": "domain_knowledge",
+      "title": "DOMAIN_KNOWLEDGE",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Contains all domain and process specific knowledge.\\n\"}]}"
+        "message": "Contains all domain and process specific knowledge.\n"
       },
       "edge_connections": [
         {
@@ -532,9 +532,9 @@
     },
     {
       "id": "5b0aa697-1010-41f8-a8e7-f54ad40ec8c9",
-      "title": "meeting_minutes",
+      "title": "MEETING_MINUTES",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Records of meeting minutes\\n\"}]}"
+        "message": "Records of meeting minutes\n"
       },
       "edge_connections": [
         {
@@ -555,9 +555,9 @@
     },
     {
       "id": "ce31e506-842f-4c13-adf8-d0238c4914a6",
-      "title": "reports",
+      "title": "REPORTS",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Generated analysis as HTML, PDF, LaTeX, etc.\\n\"}]}"
+        "message": "Generated analysis as HTML, PDF, LaTeX, etc.\n"
       },
       "edge_connections": [
         {
@@ -578,9 +578,9 @@
     },
     {
       "id": "aae16064-8027-45a0-95c4-d27fc3de107e",
-      "title": "todos",
+      "title": "TODOS",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Kanban board to structure Todos and track their progress.\\n\"}]}"
+        "message": "Kanban board to structure Todos and track their progress.\n"
       },
       "edge_connections": [
         {
@@ -601,9 +601,9 @@
     },
     {
       "id": "d521f82b-e172-401c-ac5d-2d0bc4c9cd59",
-      "title": "hypotheses-experiments-learnings.board",
+      "title": "HYPOTHESES-EXPERIMENTS-LEARNINGS.BOARD",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Board to structure the hypotheses-experiments-learnings process\\n\"}]}"
+        "message": "Board to structure the hypotheses-experiments-learnings process\n"
       },
       "edge_connections": [
         {
@@ -624,9 +624,9 @@
     },
     {
       "id": "e28a6239-390d-4493-a423-33864571ede5",
-      "title": "run.ipynb",
+      "title": "RUN.IPYNB",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Defines and runs a web-application\\n\"}]}"
+        "message": "Defines and runs a web-application\n"
       },
       "edge_connections": [
         {
@@ -647,9 +647,9 @@
     },
     {
       "id": "d8b0cf26-332b-4a0d-bd30-c83dbe22c744",
-      "title": "pipelines.board",
+      "title": "PIPELINES.BOARD",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Describes the individual pipelines, their functionalities and the relationships/process between them\\n\"}]}"
+        "message": "Describes the individual pipelines, their functionalities and the relationships/process between them\n"
       },
       "edge_connections": [
         {
@@ -670,9 +670,9 @@
     },
     {
       "id": "3754be43-4e67-48e1-babb-d5e202f4b7ea",
-      "title": "pipeline1",
+      "title": "PIPELINE1",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Template folder for a pipeline utilizing mlflow\\n\"}]}"
+        "message": "Template folder for a pipeline utilizing mlflow\n"
       },
       "edge_connections": [
         {
@@ -701,7 +701,7 @@
     },
     {
       "id": "82f480b8-7195-47da-a295-c3b16a52c0ac",
-      "title": "{{cookiecutter.project_slug}}",
+      "title": "{{COOKIECUTTER.PROJECT_SLUG}}",
       "type_specific": {
         "message": ""
       },
@@ -757,9 +757,9 @@
     },
     {
       "id": "2ee86fc6-8298-4817-8e5d-86d34200d788",
-      "title": "{{ cookiecutter.author_slug }}",
+      "title": "{{ COOKIECUTTER.AUTHOR_SLUG }}",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"Subfolders for each author with timestamped file names/folders for each experiment\\n\"}]}"
+        "message": "Subfolders for each author with timestamped file names/folders for each experiment\n"
       },
       "edge_connections": [
         {
@@ -780,7 +780,7 @@
     },
     {
       "id": "a07d13e3-7bb1-4ea1-911d-a7251034bfd5",
-      "title": "Stabilize & abstract",
+      "title": "STABILIZE & ABSTRACT",
       "type_specific": {
         "message": ""
       },
@@ -816,9 +816,9 @@
     },
     {
       "id": "2cddc085-588c-49bd-b832-df492d52b0dc",
-      "title": "The module: {{ cookiecutter.module_name }}",
+      "title": "THE MODULE: {{ COOKIECUTTER.MODULE_NAME }}",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"The module allows the functionality of the project to be encapsulated and exported\\n\"}]}"
+        "message": "The module allows the functionality of the project to be encapsulated and exported\n"
       },
       "edge_connections": [
         {
@@ -851,9 +851,9 @@
     },
     {
       "id": "aae79cd5-1f80-4090-8aa2-25805d3fed78",
-      "title": "data_preparation_pipeline",
+      "title": "DATA_PREPARATION_PIPELINE",
       "type_specific": {
-        "message": "{\"ops\":[{\"insert\":\"This template pipeline contains code to load raw data and prepare them for further use\\n\"}]}"
+        "message": "This template pipeline contains code to load raw data and prepare them for further use\n"
       },
       "edge_connections": [
         {
@@ -882,7 +882,7 @@
     },
     {
       "id": "c8cb9f50-e5f6-4653-992d-f9bd973e3427",
-      "title": "Transform",
+      "title": "TRANSFORM",
       "type_specific": {
         "message": ""
       },
@@ -918,7 +918,7 @@
     },
     {
       "id": "4bd904f9-7c1f-456b-b9f9-d8a7bdc52ed9",
-      "title": "Transform",
+      "title": "TRANSFORM",
       "type_specific": {
         "message": ""
       },
