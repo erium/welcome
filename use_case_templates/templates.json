@@ -339,6 +339,48 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Workflow",
+            "description": "Templates facilitating the Halerium workflow",
+            "templates": [
+                {
+                    "name": "Data Project Workspace",
+                    "isOverview": false,
+                    "description": "All files and folders for a data project workspace",
+                    "folderName": "{{timestamp}} Data Project",
+                    "command": "--no-input --directory workflow_templates/project_template --output-dir '{{output-dir}}' folder_name=__new_workspace__ workspace_name='New Workspace'",
+                    "files": [
+                    ]
+                },
+                {
+                    "name": "Data Strategy Workspace",
+                    "isOverview": false,
+                    "description": "All files and folders of the data strategy workspace",
+                    "folderName": "{{timestamp}} Data Strategy",
+                    "command": "--no-input --directory workflow_templates/strategy_workspace --output-dir '{{output-dir}}' workspace_name=DataStrategy",
+                    "files": [
+                    ]
+                },
+                {
+                    "name": "Data Prototype",
+                    "isOverview": false,
+                    "description": "Folder structure for a new data analysis prototype.",
+                    "folderName": "new prototype {{timestamp}}",
+                    "command": "--no-input --directory workflow_templates/new_prototype --output-dir '{{output-dir}}' prototype_name='new prototype {{timestamp}}'",
+                    "files": [
+                    ]
+                },
+                {
+                    "name": "Data Strategy Workshop",
+                    "isOverview": false,
+                    "description": "Board for a new data strategy workshop",
+                    "folderName": "{{timestamp}} Data Strategy Workshop",
+                    "command": "--no-input --directory workflow_templates/new_workshop --output-dir '{{output-dir}}' file_name='{{timestamp}} Data Strategy Workshop'",
+                    "files": [
+                    ]
+                }
+            ]
         }
     ]
 }

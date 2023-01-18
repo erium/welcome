@@ -1,3 +1,0 @@
-cookiecutter >=1.7.3
-streamlit >=1.6.0
-halerium-utilities >=0.3.0

@@ -1,5 +1,0 @@
-{% if cookiecutter.python_interpreter != 'python3' %}
-
-# backwards compatibility
-pathlib2
-{% endif %}
