@@ -9,7 +9,7 @@
                     "isOverview": false,
                     "description": "To prepare raw data to a format suitable for further analysis",
                     "folderName": "{{timestamp}}--data_preparation",
-                    "command": "--no-input --directory use_case_templates/data_preparation --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=data_preparation",
+                    "command": "--no-input --directory use_case_templates/data_preparation --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=data_preparation",
                     "files": [
                         {
                             "type": "board",
@@ -34,7 +34,7 @@
                     "isOverview": true,
                     "description": "Overview board for prediction templates",
                     "folderName": "{{timestamp}}--prediction_overview",
-                    "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=prediction_overview",
+                    "command": "--no-input --directory use_case_templates/prediction --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=prediction_overview",
                     "files": [
                         {
                             "type": "board",
@@ -48,7 +48,7 @@
                     "isOverview": false,
                     "description": "To estimate the relationships between a dependent variable and one or more independent variables",
                     "folderName": "{{timestamp}}--regression",
-                    "command": "--no-input --directory use_case_templates/prediction --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=regression",
+                    "command": "--no-input --directory use_case_templates/prediction --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=regression",
                     "files": [
                         {
                             "type": "board",
@@ -73,7 +73,7 @@
                     "isOverview": true,
                     "description": "Overview board for outlier detection templates",
                     "folderName": "{{timestamp}}--outlier_detection_overview",
-                    "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=outlier_detection_overview",
+                    "command": "--no-input --directory use_case_templates/outlier_detection --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=outlier_detection_overview",
                     "files": [
                         {
                             "type": "board",
@@ -87,7 +87,7 @@
                     "isOverview": false,
                     "description": "To detect outliers by training an autoencoder on clean data and finding poorly reconstructed data",
                     "folderName": "{{timestamp}}--autoencoder",
-                    "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=autoencoder",
+                    "command": "--no-input --directory use_case_templates/outlier_detection --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=autoencoder",
                     "files": [
                         {
                             "type": "board",
@@ -106,7 +106,7 @@
                     "isOverview": false,
                     "description": "To train a Bayesian model on labelled outliers and use it to predict outliers in new data",
                     "folderName": "{{timestamp}}--bayesian_supervised",
-                    "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=bayesian_supervised",
+                    "command": "--no-input --directory use_case_templates/outlier_detection --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=bayesian_supervised",
                     "files": [
                         {
                             "type": "board",
@@ -125,7 +125,7 @@
                     "isOverview": false,
                     "description": "To detect unlabelled outliers using a Bayesian model",
                     "folderName": "{{timestamp}}--bayesian_unsupervised",
-                    "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=bayesian_unsupervised",
+                    "command": "--no-input --directory use_case_templates/outlier_detection --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=bayesian_unsupervised",
                     "files": [
                         {
                             "type": "board",
@@ -144,7 +144,7 @@
                     "isOverview": false,
                     "description": "To detect outliers by training models on labelled outliers and use them to predict outliers in new data",
                     "folderName": "{{timestamp}}--supervised",
-                    "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=supervised",
+                    "command": "--no-input --directory use_case_templates/outlier_detection --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=supervised",
                     "files": [
                         {
                             "type": "board",
@@ -163,7 +163,7 @@
                     "isOverview": false,
                     "description": "To detect unlabelled outliers through clustering algorithms",
                     "folderName": "{{timestamp}}--unsupervised",
-                    "command": "--no-input --directory use_case_templates/outlier_detection --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=unsupervised",
+                    "command": "--no-input --directory use_case_templates/outlier_detection --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=unsupervised",
                     "files": [
                         {
                             "type": "board",
@@ -188,7 +188,7 @@
                     "isOverview": true,
                     "description": "Overview board for hypothesis testing templates",
                     "folderName": "{{timestamp}}--hypothesis_testing_overview",
-                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=hypothesis_testing_overview",
+                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=hypothesis_testing_overview",
                     "files": [
                         {
                             "type": "board",
@@ -202,7 +202,7 @@
                     "isOverview": false,
                     "description": "To use statistical tests to infer if the data supports a certain hypothesis",
                     "folderName": "{{timestamp}}--classical_ht",
-                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=classical_ht",
+                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=classical_ht",
                     "files": [
                         {
                             "type": "board",
@@ -221,7 +221,7 @@
                     "isOverview": false,
                     "description": "To model good fitting causal structures and obtain causal estimates",
                     "folderName": "{{timestamp}}--causal",
-                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=causal",
+                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=causal",
                     "files": [
                         {
                             "type": "board",
@@ -248,7 +248,7 @@
                     "isOverview": false,
                     "description": "To test if a hypothesis in the form of an equation fits the data well",
                     "folderName": "{{timestamp}}--equation",
-                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=equation",
+                    "command": "--no-input --directory use_case_templates/hypothesis_testing --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=equation",
                     "files": [
                         {
                             "type": "board",
@@ -273,7 +273,7 @@
                     "isOverview": true,
                     "description": "Overview board for design of experiments templates",
                     "folderName": "{{timestamp}}--doe_overview",
-                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=doe_overview",
+                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=doe_overview",
                     "files": [
                         {
                             "type": "board",
@@ -287,7 +287,7 @@
                     "isOverview": false,
                     "description": "To optimize the parameters using a bayesian model",
                     "folderName": "{{timestamp}}--bayesian_optimization",
-                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=bayesian_optimization",
+                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=bayesian_optimization",
                     "files": [
                         {
                             "type": "board",
@@ -306,7 +306,7 @@
                     "isOverview": false,
                     "description": "To estimate the parameters by modelling parametrized equations",
                     "folderName": "{{timestamp}}--bayesian_modelling",
-                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=bayesian_modelling",
+                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=bayesian_modelling",
                     "files": [
                         {
                             "type": "board",
@@ -324,7 +324,7 @@
                     "isOverview": false,
                     "description": "To estimate the parameters if all trials have to be run in parallel",
                     "folderName": "{{timestamp}}--classical_doe",
-                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir {{output-dir}} timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=classical_doe",
+                    "command": "--no-input --directory use_case_templates/design_of_experiments --output-dir '{{output-dir}}' timestamp={{timestamp}} author_name={{user.name}} author_initials= use_case_name=classical_doe",
                     "files": [
                         {
                             "type": "board",
